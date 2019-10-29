@@ -1,18 +1,6 @@
-### Example 1: {{ Add title here }}
+
+### Example 1: The operation to power off (stop) a virtual machine.
 ```powershell
-PS C:\> {{ Add code here }}
+PS C:\> Stop-AzVM -Force {Force} -Name {Name} -ResourceGroupName MyResourceGroup
 
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
 
