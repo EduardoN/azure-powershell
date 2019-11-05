@@ -1,18 +1,6 @@
-### Example 1: {{ Add title here }}
+### Example 1: Aborts an unlocked immutability policy.
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+PS C:\> Remove-AzRmStorageContainerImmutabilityPolicy -ContainerName myContainer -Etag {Etag} -ResourceGroupName MyResourceGroup -StorageAccountName {StorageAccountName}
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
 
