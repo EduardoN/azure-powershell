@@ -1,18 +1,6 @@
-### Example 1: {{ Add title here }}
+### Example 1: Deletes an existing namespace.
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+PS C:\> Remove-AzServiceBusNamespace -Name {Name} -ResourceGroupName MyResourceGroup
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
 

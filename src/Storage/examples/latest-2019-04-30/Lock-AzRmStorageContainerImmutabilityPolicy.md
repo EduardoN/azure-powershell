@@ -1,18 +1,6 @@
-### Example 1: {{ Add title here }}
+### Example 1: Sets the ImmutabilityPolicy to Locked state.
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+PS C:\> Lock-AzRmStorageContainerImmutabilityPolicy -ContainerName {ContainerName} -Etag {Etag} -Force {Force} -ResourceGroupName MyResourceGroup -StorageAccountName {StorageAccountName}
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
 

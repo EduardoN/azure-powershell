@@ -1,18 +1,6 @@
-### Example 1: {{ Add title here }}
+### Example 1: The UPDATE operation changes specified attributes of an existing stored secret.
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+PS C:\> Update-AzKeyVaultSecret -Enable {Enable} -InputObject {InputObject} -Version {Version}
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
 

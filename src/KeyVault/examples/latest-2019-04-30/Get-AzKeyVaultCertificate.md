@@ -1,18 +1,6 @@
-### Example 1: {{ Add title here }}
+### Example 1: Gets information about a specific certificate.
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+PS C:\> Get-AzKeyVaultCertificate -Name {Name} -VaultName {VaultName}
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
 

@@ -1,18 +1,6 @@
-### Example 1: {{ Add title here }}
+### Example 1: The delete key operation cannot be used to remove individual versions of a key.
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+PS C:\> Remove-AzKeyVaultKey -Force {Force} -Name {Name} -VaultName {VaultName}
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
 

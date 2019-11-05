@@ -1,18 +1,6 @@
-### Example 1: {{ Add title here }}
+### Example 1: Power off (stop) one or more virtual machines in a VM scale set.
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+PS C:\> Stop-AzVmss -Force {Force} -ResourceGroupName MyResourceGroup -VMScaleSetName {VMScaleSetName}
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
 
