@@ -1,18 +1,6 @@
-### Example 1: {{ Add title here }}
+### Example 1: In order to perform this operation, the key must already exist in the Key Vault.
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+PS C:\> Update-AzKeyVaultKey -Expires {Expires} -Name ITSoftware -VaultName Contoso -Version 00000000-0000-0000-0000-000000000000
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
 

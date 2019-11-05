@@ -1,18 +1,6 @@
-### Example 1: {{ Add title here }}
+### Example 1: The GetCertificatePolicy operation returns the specified certificate policy resources in the specified key vault.
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+PS C:\> Get-AzKeyVaultCertificatePolicy -Name {Name} -VaultName ContosoKV01
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
 

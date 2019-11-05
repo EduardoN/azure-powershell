@@ -1,18 +1,6 @@
-### Example 1: {{ Add title here }}
+### Example 1: When you delete a resource group, all of its resources are also deleted.
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+PS C:\> Remove-AzResourceGroup -AsJob  -Force {Force} -Name ContosoRG01
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
 

@@ -1,18 +1,6 @@
-### Example 1: {{ Add title here }}
+### Example 1: Imports an existing valid certificate, containing a private key, into Azure Key Vault.
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+PS C:\> Import-AzKeyVaultCertificate -FilePath {FilePath} -Name ImportCert01 -Password {Password} -VaultName ContosoKV01
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
 

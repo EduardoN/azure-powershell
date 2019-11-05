@@ -1,18 +1,6 @@
-### Example 1: {{ Add title here }}
+### Example 1: Creates or updates a Service Bus queue.
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+PS C:\> New-AzServiceBusQueue -EnablePartitioning  -MaxSizeInMegabytes {MaxSizeInMegabytes} -Name SB-Queue_example1 -Namespace {Namespace} -ResourceGroupName MyResourceGroup
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
 
