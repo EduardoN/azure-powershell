@@ -1,18 +1,6 @@
-### Example 1: {{ Add title here }}
+### Example 1: Converts virtual machine disks from blob-based to managed disks.
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+PS C:\> ConvertTo-AzVMManagedDisk -ResourceGroupName MyResourceGroup -VMName VM01
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
 
