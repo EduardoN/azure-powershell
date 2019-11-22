@@ -1,18 +1,5 @@
-### Example 1: {{ Add title here }}
+### Example 1: Updates container properties as specified in request body.
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+PS C:\> Update-AzRmStorageContainer -Name {Name} -PublicAccess Container -StorageAccount {StorageAccount}
 ```
-
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
 
