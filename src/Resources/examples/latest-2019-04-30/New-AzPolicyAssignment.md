@@ -1,18 +1,5 @@
-### Example 1: {{ Add title here }}
+### Example 1: This operation creates or updates a policy assignment with the given scope and name.
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+PS C:\> New-AzPolicyAssignment -Name RestrictLocationPolicyAssignment -PolicyDefinition {PolicyDefinition} -Scope /subscriptions/$($Subscription.Id)
 ```
-
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
 

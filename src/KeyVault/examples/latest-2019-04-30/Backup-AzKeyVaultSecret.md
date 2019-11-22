@@ -1,18 +1,5 @@
-### Example 1: {{ Add title here }}
+### Example 1: Requests that a backup of the specified secret be downloaded to the client.
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+PS C:\> Backup-AzKeyVaultSecret -DefaultProfile {DefaultProfile} -Force {Force} -Name MySecret -OutputFile {OutputFile} -VaultName MyKeyVault
 ```
-
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
 
