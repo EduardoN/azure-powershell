@@ -1,18 +1,5 @@
-### Example 1: {{ Add title here }}
+### Example 1: You can cancel a deployment only if the provisioningState is Accepted or Running.
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+PS C:\> Stop-AzDeployment -Name deployment01
 ```
-
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
 
