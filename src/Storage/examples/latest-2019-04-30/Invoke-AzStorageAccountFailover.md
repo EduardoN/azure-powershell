@@ -1,18 +1,5 @@
-### Example 1: {{ Add title here }}
+### Example 1: Failover request can be triggered for a storage account in case of availability issues.
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+PS C:\> Invoke-AzStorageAccountFailover -Name {Name} -ResourceGroupName MyResourceGroup
 ```
-
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
 

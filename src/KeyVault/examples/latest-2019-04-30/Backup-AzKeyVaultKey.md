@@ -1,18 +1,5 @@
-### Example 1: {{ Add title here }}
+### Example 1: The Key Backup operation exports a key from Azure Key Vault in a protected form.
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+PS C:\> Backup-AzKeyVaultKey -DefaultProfile {DefaultProfile} -Force {Force} -Name MyCert -OutputFile {OutputFile} -VaultName MyKeyVault
 ```
-
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
 

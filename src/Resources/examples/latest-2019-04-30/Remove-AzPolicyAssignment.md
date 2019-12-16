@@ -1,18 +1,5 @@
-### Example 1: {{ Add title here }}
+### Example 1: This operation deletes a policy assignment, given its name and the scope it was created in.
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+PS C:\> Remove-AzPolicyAssignment -Name PolicyAssignment07 -Scope <String>
 ```
-
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
 

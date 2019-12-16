@@ -1,18 +1,5 @@
-### Example 1: {{ Add title here }}
+### Example 1: The tag name can have a maximum of 512 characters and is case insensitive.
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+PS C:\> New-AzTag -Name CostCenter -Value 0001
 ```
-
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
 

@@ -1,18 +1,5 @@
-### Example 1: {{ Add title here }}
+### Example 1: The Recover Deleted Key operation is applicable for deleted keys in soft-delete enabled vaults.
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+PS C:\> Undo-AzKeyVaultKeyRemoval -Name {Name} -VaultName MyKeyVault
 ```
-
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
 

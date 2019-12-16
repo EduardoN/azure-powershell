@@ -1,18 +1,5 @@
-### Example 1: {{ Add title here }}
+### Example 1: The SET operation adds a secret to the Azure Key Vault.
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+PS C:\> Set-AzKeyVaultSecret -Name ITSecret -SecretValue {SecretValue} -VaultName Contoso
 ```
-
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
 

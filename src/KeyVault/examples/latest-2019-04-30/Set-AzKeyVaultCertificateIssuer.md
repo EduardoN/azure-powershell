@@ -1,18 +1,5 @@
-### Example 1: {{ Add title here }}
+### Example 1: The SetCertificateIssuer operation adds or updates the specified certificate issuer.
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+PS C:\> Set-AzKeyVaultCertificateIssuer -IssuerProvider {IssuerProvider} -Name {Name} -VaultName Contosokv01
 ```
-
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
 

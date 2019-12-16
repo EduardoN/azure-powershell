@@ -1,18 +1,5 @@
-### Example 1: {{ Add title here }}
+### Example 1: The get key operation is applicable to all key types.
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+PS C:\> Get-AzKeyVaultKey -VaultName Contoso
 ```
-
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
 

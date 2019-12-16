@@ -1,18 +1,5 @@
-### Example 1: {{ Add title here }}
+### Example 1: Deletes all versions of a certificate object along with its associated policy.
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+PS C:\> Remove-AzKeyVaultCertificate -Force {Force} -Name MyCert -VaultName Contoso
 ```
-
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
 

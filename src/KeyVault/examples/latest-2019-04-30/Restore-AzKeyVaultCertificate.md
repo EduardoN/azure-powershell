@@ -1,18 +1,5 @@
-### Example 1: {{ Add title here }}
+### Example 1: Restores a backed up certificate, and all its versions, to a vault.
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+PS C:\> Restore-AzKeyVaultCertificate -InputFile {InputFile} -VaultName MyKeyVault
 ```
-
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
 

@@ -1,18 +1,5 @@
-### Example 1: {{ Add title here }}
+### Example 1: Creates a new container under the specified account as described by request body.
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+PS C:\> New-AzRmStorageContainer -Name {Name} -PublicAccess Blob -ResourceGroupName MyResourceGroup -StorageAccountName {StorageAccountName}
 ```
-
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
 

@@ -1,18 +1,5 @@
-### Example 1: {{ Add title here }}
+### Example 1: Starts a rolling upgrade to move all virtual machine scale set instances to the latest available Platform Image OS version.
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+PS C:\> Start-AzVmssRollingOSUpgrade -AsJob  -ResourceGroupName MyResourceGroup -VMScaleSetName VMSS001
 ```
-
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
 
