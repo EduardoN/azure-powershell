@@ -115,6 +115,12 @@ PS C:\> $Profile = New-AzAutoscaleProfile -DefaultCapacity "1" -MaximumCapacity 
 The first command creates an Autoscale rule named Requests, and then stores it in the $Rule variable.
 The second command creates a profile without a schedule or a fixed date, and then stores it in the $Profile variable.
 
+```
+PS C:> New-AzAutoscaleProfile -DefaultCapacity 1 -MaximumCapacity 10 -MinimumCapacity 1 -Name Profile01 -Rule $Rule
+```
+
+The first command creates an Autoscale rule named Requests, and then stores it in the $Rule variable.
+
 ## PARAMETERS
 
 ### -DefaultCapacity

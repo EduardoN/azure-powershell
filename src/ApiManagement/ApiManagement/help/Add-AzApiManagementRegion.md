@@ -42,6 +42,12 @@ PS C:\>$service = Set-AzApiManagement -InputObject $service -PassThru
 
 This command gets a **PsApiManagement** object, adds two premium SKU units for the region named East US, and then updates deployment.
 
+```
+PS C:> Add-AzApiManagementRegion -ApiManagement $ApiManagement -Capacity 2 -Location $secondarylocation -VirtualNetwork $additionalRegionVirtualNetwork
+```
+
+The Add-AzApiManagementRegion cmdlet adds new instance of type PsApiManagementRegion to the collection of AdditionalRegions of provided instance of type Microsoft.Azure.Commands.ApiManagement.Models.PsApiManagement.
+
 ## PARAMETERS
 
 ### -ApiManagement

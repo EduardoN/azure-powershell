@@ -43,6 +43,12 @@ PS C:\>New-AzStreamAnalyticsOutput -ResourceGroupName "StreamAnalytics-Default-W
 
 This command replaces the definition for Output in the job called StreamingJob without confirmation.
 
+```
+PS C:> New-AzStreamAnalyticsOutput -File C:\Output.json -Force  -JobName StreamingJob -ResourceGroupName StreamAnalytics-Default-West-US
+```
+
+The New-AzStreamAnalyticsOutput cmdlet creates an output within a Stream Analytics job or updates an existing output.
+
 ## PARAMETERS
 
 ### -DefaultProfile

@@ -38,6 +38,12 @@ The first command gets the Azure endpoint named contoso from the profile named C
 The second command removes an IP address range from the endpoint stored in $TrafficManagerEndpoint.
 The final command updates the endpoint in Traffic Manager to match the local value in $TrafficManagerEndpoint.
 
+```
+PS C:> Remove-AzTrafficManagerIpAddressRange -First 1.2.3.4 -TrafficManagerEndpoint $TrafficManagerEndpoint
+```
+
+The first command gets the Azure endpoint named contoso from the profile named ContosoProfile in the resource group named ResourceGroup11, and then stores that object in the $TrafficManagerEndpoint variable.
+
 ## PARAMETERS
 
 ### -DefaultProfile

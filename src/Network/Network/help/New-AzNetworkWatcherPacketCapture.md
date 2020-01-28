@@ -61,6 +61,12 @@ New-AzNetworkWatcherPacketCapture -NetworkWatcher $networkWatcher -TargetVirtual
 In this example we create a packet capture named "PacketCaptureTest" with multiple filters and a time limit. Once the session is complete, it will be saved to the specified storage account. 
 Note: The Azure Network Watcher extension must be installed on the target virtual machine to create packet captures.
 
+```
+PS C:> New-AzNetworkWatcherPacketCapture -Filter $filter1, -NetworkWatcher $networkWatcher -PacketCaptureName PacketCaptureTest -StorageAccountId $storageAccount.id -TargetVirtualMachineId $vm.Id -TimeLimitInSeconds 60
+```
+
+The New-AzNetworkWatcherPacketCapture cmdlet creates a new packet capture resource and starts a packet capture session on a VM.
+
 ## PARAMETERS
 
 ### -AsJob

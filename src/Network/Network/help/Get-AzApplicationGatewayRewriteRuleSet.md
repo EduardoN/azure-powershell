@@ -31,6 +31,12 @@ PS C:\> $Rule = Get-AzApplicationGatewayRewriteRuleSet -Name "RuleSet01" -Applic
 The first command gets the Application Gateway named ApplicationGateway01 and stores the result in the variable named $AppGW.
 The second command gets the rewrite rule set named RuleSet01 from the Application Gateway stored in the variable named $AppGW.
 
+```
+PS C:> Get-AzApplicationGatewayRewriteRuleSet -ApplicationGateway $AppGW -Name RuleSet01
+```
+
+The first command gets the Application Gateway named ApplicationGateway01 and stores the result in the variable named $AppGW.
+
 ## PARAMETERS
 
 ### -ApplicationGateway

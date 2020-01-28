@@ -46,6 +46,12 @@ Enable-AzRecoveryServicesBackupProtection -Vault $vault -Policy $defpol -Name "m
 }
 ```
 
+```
+PS C:> Get-AzRecoveryServicesBackupStatus -Name myAzureVM -ResourceGroupName myAzureVMRG -Type AzureVM
+```
+
+The command returns null/empty if the specified resource is not protected under any Recovery Services vault in the subscription. 
+
 ## PARAMETERS
 
 ### -DefaultProfile

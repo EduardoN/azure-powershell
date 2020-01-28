@@ -39,6 +39,12 @@ PS C:\> Remove-AzVmssNetworkInterfaceConfiguration -VirtualMachineScaleSet $VMSS
 The first command gets a VMSS by using the Get-AzVmss cmdlet, and then stores it in the $VMSS variable.
 The second command removes the network interface configuration named ContosoVmssInterface02 from the set in $VMSS.
 
+```
+PS C:> Remove-AzVmssNetworkInterfaceConfiguration -Name ContosoVmssInterface02 -VirtualMachineScaleSet $VMSS
+```
+
+The first command gets a VMSS by using the Get-AzVmss cmdlet, and then stores it in the $VMSS variable.
+
 ## PARAMETERS
 
 ### -DefaultProfile

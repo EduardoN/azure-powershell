@@ -31,6 +31,12 @@ PS C:\>$AppGw = Remove-AzApplicationGatewayRedirectConfiguration -ApplicationGat
 The first command gets an application gateway and stores it in the $AppGw variable.
 The second command removes the redirect configuration named Redirect01 from the application gateway stored in $AppGw.
 
+```
+PS C:> Remove-AzApplicationGatewayRedirectConfiguration -ApplicationGateway $AppGw -Name Redirect01
+```
+
+The first command gets an application gateway and stores it in the $AppGw variable.
+
 ## PARAMETERS
 
 ### -ApplicationGateway

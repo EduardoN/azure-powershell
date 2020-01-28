@@ -60,6 +60,12 @@ PS C:\> $BackupItem = Get-AzRecoveryServicesBackupItem -Container $Container -Wo
 The first command gets the container of type AzureVM, and then stores it in the $Container variable.
 The second command gets the Backup item named V2VM in $Container, and then stores it in the $BackupItem variable.
 
+```
+PS C:> Get-AzRecoveryServicesBackupItem -Container $Cont[0] -VaultId $vault.ID -WorkloadType AzureVM
+```
+
+The Get-AzRecoveryServicesBackupItem cmdlet gets the items in a container or a value in Azure Backup and the protection status of the items.
+
 ## PARAMETERS
 
 ### -BackupManagementType

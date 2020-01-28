@@ -94,6 +94,12 @@ This approach is used to improve the readability of the following commands.
 The final command add a data disk to the virtual machine stored in $VirtualMachine.
 The command specifies the name and location for the disk, and other properties of the disk.
 
+```
+PS C:> Add-AzVMDataDisk -CreateOption Attach -Lun 0 -ManagedDiskId $disk.Id -Name DataDisk1 -VM $VirtualMachine
+```
+
+The Add-AzVMDataDisk cmdlet adds a data disk to a virtual machine.
+
 ## PARAMETERS
 
 ### -Caching

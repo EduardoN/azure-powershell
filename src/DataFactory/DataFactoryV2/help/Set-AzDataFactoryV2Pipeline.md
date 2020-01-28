@@ -54,6 +54,12 @@ This command creates a pipeline named DPWikisample in the data factory named ADF
 The command bases the pipeline on information in the DPWikisample.json file.
 This file includes information about activities such as Copy Activity and HDInsight Activity in the pipeline.
 
+```
+PS C:> Set-AzDataFactoryV2Pipeline -DataFactoryName WikiADF -DefinitionFile C:\DPWikisample.json -Force  -Name DPWikisample -ResourceGroupName ADF
+```
+
+The Set-AzDataFactoryV2Pipeline cmdlet creates a pipeline in Azure Data Factory.
+
 ## PARAMETERS
 
 ### -DataFactoryName

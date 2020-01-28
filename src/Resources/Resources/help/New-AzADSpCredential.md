@@ -95,6 +95,12 @@ Type      : Password
 
 Gets the service principal with object id '1f99cf81-0146-4f4e-beae-2007d0668476' and pipes that to the New-AzADSpCredential to create a new service principal credential for that service principal with a generated password.
 
+```
+PS C:> New-AzADSpCredential -CertValue $credValue -EndDate $cer.NotAfter -ObjectId 00000000-0000-0000-0000-000000000000
+```
+
+The New-AzADSpCredential cmdlet can be used to add a new credential or to roll credentials for a service principal.
+
 ## PARAMETERS
 
 ### -CertValue

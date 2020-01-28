@@ -47,6 +47,12 @@ This command creates a notification hub in the namespace ContosoNamespace.
 The new hub will be assigned to the ContosoNotificationsGroup.
 You do not need to specify a name or any other configuration information for the hub; that information will be taken from the input file C:\Configurations\InternalHub.json.
 
+```
+PS C:> New-AzNotificationHub -Namespace ContosoNamespace -NotificationHubObj {NotificationHubObj} -ResourceGroup ContosoNotificationsGroup
+```
+
+The New-AzNotificationHub cmdlet creates a notification hub.
+
 ## PARAMETERS
 
 ### -DefaultProfile

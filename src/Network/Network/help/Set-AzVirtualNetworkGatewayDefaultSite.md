@@ -40,6 +40,12 @@ This object reference that is stored in the variable named $LocalGateway represe
 The second command then creates an object reference to the virtual network gateway and stores the result in the variable named $VirtualGateway.
 The third command uses the **Set-AzVirtualNetworkGatewayDefaultSite** cmdlet to assign the default site to ContosoVirtualGateway.
 
+```
+PS C:> Set-AzVirtualNetworkGatewayDefaultSite -GatewayDefaultSite $LocalGateway -VirtualNetworkGateway $VirtualGateway
+```
+
+This example assigns a default site to a virtual network gateway named ContosoVirtualGateway.
+
 ## PARAMETERS
 
 ### -DefaultProfile

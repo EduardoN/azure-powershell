@@ -44,6 +44,12 @@ $database = Get-AzSqlDatabase -DatabaseName $databasename -ResourceGroupName $pr
 $database | New-AzSqlDatabaseSecondary -PartnerResourceGroupName $secondaryresourcegroupname -PartnerServerName $secondaryservername -AllowConnections "All"
 ```
 
+```
+PS C:> New-AzSqlDatabaseSecondary -AllowConnections No -PartnerResourceGroupName $secondaryresourcegroupname -PartnerServerName $secondaryservername
+```
+
+The New-AzSqlDatabaseSecondary cmdlet replaces the Start-AzSqlDatabaseCopy cmdlet when
+
 ## PARAMETERS
 
 ### -AllowConnections

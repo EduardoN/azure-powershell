@@ -39,6 +39,12 @@ The second command sets the duration for the retention policy object to 365 days
 The third command gets the schedule policy object, and then stores it in the $SchPol variable.
 The last command creates a backup protection policy using the retention policy and schedule policy created with the previous commands.
 
+```
+PS C:> Get-AzRecoveryServicesBackupRetentionPolicyObject -WorkloadType AzureVM
+```
+
+The first command gets the retention policy object, and then stores it in the $RetPol variable.
+
 ## PARAMETERS
 
 ### -BackupManagementType

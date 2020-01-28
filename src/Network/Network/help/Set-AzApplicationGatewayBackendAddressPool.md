@@ -43,6 +43,12 @@ PS C:\> $AppGw = Set-AzApplicationGatewayBackendAddressPool -ApplicationGateway 
 The first command gets the application gateway named ApplicationGateway01 in the resource group named ResourceGroup01, and stores it in the $AppGw variable.
 The second command updates the back-end address pool of the application gateway in $AppGw by using IP addresses.
 
+```
+PS C:> Set-AzApplicationGatewayBackendAddressPool -ApplicationGateway $AppGw -BackendIPAddresses 10.10.10.10, -Name Pool02
+```
+
+The first command gets the application gateway named ApplicationGateway01 in the resource group named ResourceGroup01, and stores it in the $AppGw variable.
+
 ## PARAMETERS
 
 ### -ApplicationGateway

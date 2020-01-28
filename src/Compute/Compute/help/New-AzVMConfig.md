@@ -55,6 +55,12 @@ The second command creates a virtual machine object, and then stores it in the $
 The command assigns a name and size to the virtual machine.
 The virtual machine belongs to the availability set stored in $AvailabilitySet.
 
+```
+PS C:> New-AzVMConfig -VMName $VMName -VMSize $VMSize
+```
+
+The first command gets the availability set named AvailabilitySet03 in the resource group named ResourceGroup11, and then stores that object in the $AvailabilitySet variable.
+
 ## PARAMETERS
 
 ### -AssignIdentity

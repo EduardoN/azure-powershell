@@ -39,6 +39,12 @@ PS C:\> Get-AzDataLakeStoreFirewallRule -AccountName "ContosoADL"
 
 Returns all firewall rules in account "ContosoADL"
 
+```
+PS C:> Get-AzDataLakeStoreFirewallRule -Account ContosoADL -Name MyFirewallRule -ResourceGroupName MyResourceGroup
+```
+
+The Get-AzDataLakeStoreFirewallRule cmdlet gets the specified firewall rules in the specified Data Lake Store.
+
 ## PARAMETERS
 
 ### -Account

@@ -55,6 +55,12 @@ The first command uses the **Get-AzDnsRecordset** cmdlet to get the specified re
 The second command updates the specified SOA record in $RecordSet.
 The final command uses the **Set-AzDnsRecordSet** cmdlet to propagate the update in $RecordSet.
 
+```
+PS C:> Set-AzDnsRecordSet -RecordSet $RecordSet
+```
+
+The first command uses the Get-AzDnsRecordSet cmdlet to get the specified record set, and then stores it in the $RecordSet variable.
+
 ## PARAMETERS
 
 ### -DefaultProfile

@@ -35,6 +35,12 @@ Key1                             Key2
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
 
+```
+PS C:> Get-AzCognitiveServicesAccountKey -Name myaccount -ResourceGroupName cognitive-services-resource-group
+```
+
+The Get-AzCognitiveServicesAccountKey cmdlet gets the API keys for a provisioned Cognitive Services account.
+
 ## PARAMETERS
 
 ### -DefaultProfile

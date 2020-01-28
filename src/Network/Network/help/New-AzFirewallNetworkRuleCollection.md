@@ -69,6 +69,12 @@ $ruleCollection.RemoveRuleByName("ALL-udp-traffic")
 This example creates a new network rule collection with two rules and then removes the first rule from the rule collection by calling method
 RemoveRuleByName on the rule collection object. The rule name for method RemoveRuleByName is case-insensitive.
 
+```
+PS C:> New-AzFirewallNetworkRuleCollection -ActionType Allow -Name MyNetworkRuleCollection -Priority 100 -Rule $netRule
+```
+
+This example creates a collection which will allow all traffic that matches either of the two rules.
+
 ## PARAMETERS
 
 ### -ActionType

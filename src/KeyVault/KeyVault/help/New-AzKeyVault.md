@@ -106,6 +106,12 @@ Tags                             :
 This command creates a key vault, just like the previous example. However, it specifies a value of
 Premium for the *SKU* parameter to create a Premium key vault.
 
+```
+PS C:> New-AzKeyVault -Location East US -Name Contoso03Vault -ResourceGroupName Group14
+```
+
+This command creates a key vault named Contoso03Vault, in the Azure region East US. The command
+
 ## PARAMETERS
 
 ### -DefaultProfile

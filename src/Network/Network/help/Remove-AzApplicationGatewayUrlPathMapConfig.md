@@ -34,6 +34,12 @@ The first command gets the application gateway named appGwName and stores the re
 The second command removes the URL path mapping named map01 from the application gateway.
 The third command updates the application gateway.
 
+```
+PS C:> Remove-AzApplicationGatewayUrlPathMapConfig -ApplicationGateway $appgw -Name map01
+```
+
+The first command gets the application gateway named appGwName and stores the result in the $appgw variable.
+
 ## PARAMETERS
 
 ### -ApplicationGateway

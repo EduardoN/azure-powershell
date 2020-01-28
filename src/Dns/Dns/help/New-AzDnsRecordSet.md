@@ -203,6 +203,12 @@ This command creates a **RecordSet**.
 The *Overwrite* parameter ensures that this record set overwrites any pre-existing record set with the same name and type (existing records in that record set are lost).
 The *Confirm* parameter with a value of $False suppresses the confirmation prompt.
 
+```
+PS C:> New-AzDnsRecordSet -DnsRecords $Records -Metadata {Metadata} -Name * -RecordType A -Ttl <UInt32> -Zone $Zone
+```
+
+The New-AzDnsRecordSet cmdlet creates a new Domain Name System (DNS) record set with the specified name and type in the specified zone.
+
 ## PARAMETERS
 
 ### -DefaultProfile

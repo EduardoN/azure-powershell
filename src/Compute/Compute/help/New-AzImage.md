@@ -41,6 +41,12 @@ The next three commands each adds an os disk and two data disks to the image sto
 The URI of each disk is stored in $osDiskVhdUri, $dataDiskVhdUri1, and $dataDiskVhdUri2.
 The final command creates an image named 'ImageName01' in resource group 'ResourceGroup01'.
 
+```
+PS C:> New-AzImage -Image $imageConfig -ImageName ImageName01 -ResourceGroupName ResourceGroup01
+```
+
+The first command creates an image object, and then stores it in the $imageConfig variable.
+
 ## PARAMETERS
 
 ### -AsJob

@@ -32,6 +32,12 @@ PS C:\> $sslpolicy = Get-AzApplicationGatewaySslPolicy -ApplicationGateway $AppG
 The first command gets the Application Gateway named ApplicationGateway01 and stores the result in the variable named $AppGW.
 The second command gets the ssl policy from the Application Gateway stored in the variable named $AppGW.
 
+```
+PS C:> Get-AzApplicationGatewaySslPolicy -ApplicationGateway $AppGW
+```
+
+The first command gets the Application Gateway named ApplicationGateway01 and stores the result in the variable named $AppGW.
+
 ## PARAMETERS
 
 ### -ApplicationGateway

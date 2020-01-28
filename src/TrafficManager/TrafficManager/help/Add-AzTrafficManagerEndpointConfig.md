@@ -49,6 +49,12 @@ This command changes only the local object.
 
 The final command updates the Traffic Manager profile in Azure to match the local value in $TrafficManagerProfile.
 
+```
+PS C:> Add-AzTrafficManagerEndpointConfig -EndpointLocation North Europe -EndpointName contoso -EndpointStatus Enabled -Target www.contoso.com -TrafficManagerProfile $TrafficManagerProfile -Type AzureEndpoints
+```
+
+The Add-AzTrafficManagerEndpointConfig cmdlet adds an endpoint to a local Azure Traffic Manager profile object.
+
 ## PARAMETERS
 
 ### -CustomHeader

@@ -31,6 +31,12 @@ ApplicationId : "Your AppId/Service Principal Id here"
 AppKey        : System.Security.SecureString
 TenantId      : "Tenant Id"
 
+```
+PS C:> New-AzDataMigrationAzureActiveDirectoryApp -AppKey <SecureString> -ApplicationId <String>
+```
+
+ApplicationId : "Your AppId/Service Principal Id here"
+
 ## PARAMETERS
 
 ### -AppKey

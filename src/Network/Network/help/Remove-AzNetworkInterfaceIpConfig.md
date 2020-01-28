@@ -33,6 +33,12 @@ Remove-AzNetworkInterfaceIpConfig -Name IPConfig-1 -NetworkInterface $nic
 The first command gets a network interface called mynic and stores it in the variable $nic. The second command
     removes the IP configuration called IPConfig-1 associated with this network interface.
 
+```
+PS C:> Remove-AzNetworkInterfaceIpConfig -Name IPConfig-1 -NetworkInterface $nic
+```
+
+The first command gets a network interface called mynic and stores it in the variable $nic. The second command
+
 ## PARAMETERS
 
 ### -DefaultProfile

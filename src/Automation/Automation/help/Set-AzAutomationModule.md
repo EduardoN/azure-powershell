@@ -42,6 +42,12 @@ PS C:\>Set-AzAutomationModule -AutomationAccountName "Contoso17" -Name "ContosoM
 
 This command imports an updated version of an existing module named ContosoModule into the Automation account named Contoso17.  The module is stored in an Azure blob in a storage account named contosostorage and a container named modules.
 
+```
+PS C:> Set-AzAutomationModule -AutomationAccountName Contoso17 -ContentLinkUri http://contosostorage.blob.core.windows.net/modules/ContosoModule.zip -Name ContosoModule -ResourceGroupName ResourceGroup01
+```
+
+The Set-AzAutomationModule cmdlet updates a module in Azure Automation.
+
 ## PARAMETERS
 
 ### -AutomationAccountName

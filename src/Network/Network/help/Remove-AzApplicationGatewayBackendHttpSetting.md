@@ -31,6 +31,12 @@ PS C:\> Remove-AzApplicationGatewayBackendHttpSetting -ApplicationGateway $AppGw
 The first command gets an application gateway named ApplicationGateway01 that belongs to the resource group named ResourceGroup01 and stores it in the $AppGw variable.
 The second command removes the back-end HTTP setting named BackEndSetting02 from the application gateway stored in $AppGw.
 
+```
+PS C:> Remove-AzApplicationGatewayBackendHttpSetting -ApplicationGateway $AppGw -Name BackEndSetting02
+```
+
+The first command gets an application gateway named ApplicationGateway01 that belongs to the resource group named ResourceGroup01 and stores it in the $AppGw variable.
+
 ## PARAMETERS
 
 ### -ApplicationGateway

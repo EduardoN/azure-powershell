@@ -66,6 +66,12 @@ The first command gets a virtual network named VNet01 that belongs to the resour
 The second command gets a subnet configuration named Subnet01 using $VNet from the first command and stores it in the $Subnet variable.
 The third command creates a front-end IP configuration named FrontEndIP03 using $Subnet from the second command, and stores it in the $FrontEnd variable.
 
+```
+PS C:> New-AzApplicationGatewayFrontendIPConfig -Name FrontEndConfig01 -PublicIPAddress $PublicIP
+```
+
+The first command creates a public IP resource object and stores it in the $PublicIP variable.
+
 ## PARAMETERS
 
 ### -DefaultProfile

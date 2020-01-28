@@ -53,6 +53,12 @@ The SourceVaultId parameter specifies the Key Vault.
 The command specifies the name of the certificate store and the URL of the certificate.
 You can run the **Add-AzVMSecret** repeatedly to add secrets for other certificates.
 
+```
+PS C:> Add-AzVMSecret -CertificateStore $CertificateStore01 -CertificateUrl $CertUrl -SourceVaultId $SourceVaultId -VM $VM
+```
+
+The first command creates a virtual machine object, and then stores it in the $VirtualMachine variable.
+
 ## PARAMETERS
 
 ### -CertificateStore

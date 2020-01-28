@@ -49,6 +49,12 @@ Step:1 Create a security rule allowing access from the Internet to port 3389.
 Step:2 Create a security rule allowing access from the Internet to port 80.
 Step:3 Add the rules created above to a new NSG named NSG-FrontEnd.
 
+```
+PS C:> New-AzNetworkSecurityGroup -Location centralus -Name NSG-FrontEnd -ResourceGroupName TestRG -SecurityRules $rdpRule
+```
+
+Step:1 Create a security rule allowing access from the Internet to port 3389.
+
 ## PARAMETERS
 
 ### -AsJob

@@ -57,6 +57,12 @@ PS C:\> Invoke-AzHDInsightHiveJob -StatusFolder $statusFolder `
 
 This command submits the query SHOW TABLES to the cluster named your-hadoop-001.
 
+```
+PS C:> Invoke-AzHDInsightHiveJob -DefaultContainer {DefaultContainer} -DefaultStorageAccountKey $storageAccountKey -DefaultStorageAccountName {DefaultStorageAccountName} -Query $query
+```
+
+The Invoke-AzHDInsightHiveJob cmdlet submits a Hive query to an Azure HDInsight cluster and retrieves query results in one operation.
+
 ## PARAMETERS
 
 ### -Arguments

@@ -92,6 +92,12 @@ FlowAnalyticsConfiguration : {
 
 In this example we get the flow logging and Traffic Analytics status for a Network Security Group. The specified NSG has flow logging and Traffic Analytics enabled, default format and no retention policy set.
 
+```
+PS C:> Get-AzNetworkWatcherFlowLogStatus -NetworkWatcher $NW -TargetResourceId $nsg.Id
+```
+
+The Get-AzNetworkWatcherFlowLogStatus cmdlet Gets the status of flow logging on a resource. 
+
 ## PARAMETERS
 
 ### -AsJob

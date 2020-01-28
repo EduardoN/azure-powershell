@@ -32,6 +32,12 @@ PS C:\>Remove-AzBatchAccount -AccountName "pfuller"
 This command removes the Batch account named pfuller.
 This command prompts you for confirmation before it deletes the account.
 
+```
+PS C:> Remove-AzBatchAccount -AccountName pfuller -Force  -ResourceGroupName MyResourceGroup
+```
+
+The Remove-AzBatchAccount cmdlet removes an Azure Batch account.
+
 ## PARAMETERS
 
 ### -AccountName

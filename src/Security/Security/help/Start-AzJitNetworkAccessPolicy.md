@@ -54,6 +54,12 @@ ProvisioningState : Succeeded
 
 Opens up a network connection according to the specified connection request data.
 
+```
+PS C:> Start-AzJitNetworkAccessPolicy -ResourceId /subscriptions/xxxxxxx-xxxx-xxxx-xxxxxxxxxxxxx/resourceGroups/myResourceGroup/providers/Microsoft.DocumentDb/databaseAccounts/myCosmosDBAccount/ -VirtualMachine $vmRules
+```
+
+Invokes a temporary network access request.
+
 ## PARAMETERS
 
 ### -DefaultProfile

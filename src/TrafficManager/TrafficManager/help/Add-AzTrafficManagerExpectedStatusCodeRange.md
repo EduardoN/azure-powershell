@@ -40,6 +40,12 @@ The command stores the local profile in the $TrafficManagerProfile variable.
 The second command adds an expected status code range to the profile stored in $TrafficManagerProfile.
 The final command updates the profile in Traffic Manager to match the local value in $TrafficManagerProfile.
 
+```
+PS C:> Add-AzTrafficManagerExpectedStatusCodeRange -Max 499 -Min 200 -TrafficManagerProfile $TrafficManagerProfile
+```
+
+The first command gets an Azure Traffic Manager profile by using the Get-AzTrafficManagerProfile cmdlet.
+
 ## PARAMETERS
 
 ### -DefaultProfile

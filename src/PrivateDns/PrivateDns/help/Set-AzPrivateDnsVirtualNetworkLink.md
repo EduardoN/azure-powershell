@@ -62,6 +62,12 @@ ProvisioningState       : Succeeded
 
 This command sets IsRegistrationEnabled to True for the link named mylink, linked to zone named myzone.com from the resource group named MyResourceGroup.
 
+```
+PS C:> Set-AzPrivateDnsVirtualNetworkLink -IsRegistrationEnabled $true
+```
+
+The Set-AzPrivateDnsVirtualNetworkLink cmdlet updates a link associated with a zone from a specified resource group.
+
 ## PARAMETERS
 
 ### -DefaultProfile

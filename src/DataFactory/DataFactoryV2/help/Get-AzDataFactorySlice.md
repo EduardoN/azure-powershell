@@ -108,6 +108,12 @@ Ready slices have already run.
 The pending slices are waiting to run at the end of each hour in the interval that the Set-AzDataFactoryPipelineActivePeriod cmdlet specifies.
 In this example, both start and end periods for the pipeline and the slice have a value of one day (24 hours).
 
+```
+PS C:> Get-AzDataFactorySlice -DataFactoryName WikiADF -DatasetName DAWikiAggregatedData -EndDateTime 2014-05-22T16:00:00Z -ResourceGroupName ADF -StartDateTime 2014-05-20T10:00:00Z
+```
+
+The Get-AzDataFactorySlice cmdlet gets data slices for a dataset in Azure Data Factory.
+
 ## PARAMETERS
 
 ### -DataFactory

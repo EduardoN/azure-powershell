@@ -33,6 +33,12 @@ This command removes a webhook named Webhook11 in the Automation account named A
 The command specifies the *Force* parameter.
 Therefore, it does not prompt you for confirmation.
 
+```
+PS C:> Remove-AzAutomationWebhook -AutomationAccountName AutomationAccount01 -Name Webhook11 -ResourceGroupName ResourceGroup01
+```
+
+The Remove-AzAutomationWebhook cmdlet removes a webhook from an Azure Automation runbook.
+
 ## PARAMETERS
 
 ### -AutomationAccountName

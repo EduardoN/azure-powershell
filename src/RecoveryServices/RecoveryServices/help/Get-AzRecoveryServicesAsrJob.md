@@ -41,6 +41,12 @@ PS C:\> $jobs = Get-AzRecoveryServicesAsrJob -TargetObjectId $ASRObjectId
 
 Returns all the jobs on a particular ASR object(reference the ASR object such as replicated item or recovery plan by its ID.) 
 
+```
+PS C:> Get-AzRecoveryServicesAsrJob -Job $Job
+```
+
+The Get-AzRecoveryServicesAsrJob cmdlet gets Azure Site Recovery jobs.
+
 ## PARAMETERS
 
 ### -DefaultProfile

@@ -32,6 +32,12 @@ PS C:\> Remove-AzApplicationGatewaySslCertificate -ApplicationGateway $AppGW -Na
 The first command gets the application gateway named ApplicationGateway01 and stores the result in the variable named $AppGW.
 The second command removes the SSL certificate named Cert02 from the application gateway stored in the $AppGW variable.
 
+```
+PS C:> Remove-AzApplicationGatewaySslCertificate -ApplicationGateway $AppGW -Name Cert02
+```
+
+The first command gets the application gateway named ApplicationGateway01 and stores the result in the variable named $AppGW.
+
 ## PARAMETERS
 
 ### -ApplicationGateway
