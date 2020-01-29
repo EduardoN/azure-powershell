@@ -32,6 +32,12 @@ PS C:\> Get-AzVirtualNetworkGatewayConnectionVpnDeviceConfigScript -ResourceGrou
 The above example uses Get-AzVirtualNetworkGatewaySupportedVpnDevice to get the supported VPN Device brands, models, and firmware versions.
 Then uses one of the returned models information to generate a VPN Device configuration script for the VirtualNetworkGatewayConnection "TestConnection". The device used in this example has DeviceFamily "IOS-Test", DeviceVendor "Cisco-Test" and FirmwareVersion 20.
 
+```
+PS C:> Get-AzVirtualNetworkGatewayConnectionVpnDeviceConfigScript -DeviceFamily IOS-Test -DeviceVendor Cisco-Test -FirmwareVersion 20 -Name TestConnection -ResourceGroupName TestRG
+```
+
+The above example uses Get-AzVirtualNetworkGatewaySupportedVpnDevice to get the supported VPN Device brands, models, and firmware versions.
+
 ## PARAMETERS
 
 ### -DefaultProfile

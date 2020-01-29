@@ -44,6 +44,12 @@ The first command uses the **Get-Content** cmdlet to get a previously exported t
 The second command then uses a for loop to extract all the text except for the first line and the last line, storing the extracted text in a variable named $CertificateText.
 The third command uses the **New-AzVpnClientRootCertificate** cmdlet to create the certificate, storing the created object in a variable named $Certificate.
 
+```
+PS C:> New-AzVpnClientRootCertificate -Name $clientRootCertName -PublicCertData $CertificateText
+```
+
+This example creates a client root certificate and store the certificate object in a variable named $Certificate.
+
 ## PARAMETERS
 
 ### -DefaultProfile

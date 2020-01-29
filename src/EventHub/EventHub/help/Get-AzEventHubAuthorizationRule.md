@@ -80,6 +80,12 @@ PS C:\> Get-AzEventHubAuthorizationRule -ResourceGroupName MyResourceGroupName -
 
 Gets a list of all authorization rule \`MyAuthRuleName\` in the namespace \`MyNamespaceName\`.
 
+```
+PS C:> Get-AzEventHubAuthorizationRule -DefaultProfile {DefaultProfile} -Name MyAuthRuleName -Namespace MyNamespaceName -ResourceGroupName MyResourceGroupName
+```
+
+The Get-AzEventHubAuthorizationRule cmdlet gets either the details of an authorization rule, or a list of all authorization rules for a specified Event Hub.
+
 ## PARAMETERS
 
 ### -AliasName

@@ -46,6 +46,12 @@ This example creates a resource group and a virtual network with two subnets. It
     from the in-memory representation of the virtual network. Set-AzVirtualNetwork is 
     then called to modify the virtual network on the server side.
 
+```
+PS C:> Remove-AzVirtualNetworkSubnetConfig -Name backendSubnet -VirtualNetwork $virtualNetwork
+```
+
+This example creates a resource group and a virtual network with two subnets. It then 
+
 ## PARAMETERS
 
 ### -DefaultProfile

@@ -46,6 +46,12 @@ The fourth command verifies that the scope matches the size of the range, then a
 The fifth command adds the IP address range 15.16.17.18 to 15.16.17.18 to the endpoint stored in $TrafficManagerEndpoint.
 The final command updates the endpoint in Traffic Manager to match the local value in $TrafficManagerEndpoint.
 
+```
+PS C:> Add-AzTrafficManagerIpAddressRange -First 1.2.3.4 -Last 12.13.14.31 -TrafficManagerEndpoint $TrafficManagerEndpoint
+```
+
+The Add-AzTrafficManagerIpAddressRange cmdlet adds an IP address range to a local Azure Traffic Manager endpoint object.
+
 ## PARAMETERS
 
 ### -DefaultProfile

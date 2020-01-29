@@ -44,6 +44,12 @@ The second command gets a subnet using the previously created virtual network.
 The third command gets the application gateway and stores it in the $AppGw variable.
 The fourth command adds the IP configuration to the application gateway stored in $AppGw.
 
+```
+PS C:> Add-AzApplicationGatewayIPConfiguration -ApplicationGateway $AppGw -Name Appgwsubnet01 -Subnet $Subnet
+```
+
+The first command gets a virtual network.
+
 ## PARAMETERS
 
 ### -ApplicationGateway

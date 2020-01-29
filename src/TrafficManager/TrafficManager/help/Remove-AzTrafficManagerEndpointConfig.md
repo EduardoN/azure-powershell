@@ -43,6 +43,12 @@ This command changes only the local object.
 
 The final command updates the Traffic Manager profile named ContosoProfile to match the local value in $TrafficManagerProfile.
 
+```
+PS C:> Remove-AzTrafficManagerEndpointConfig -EndpointName contoso -TrafficManagerProfile $TrafficManagerProfile
+```
+
+The first command gets an Azure Traffic Manager profile by using the Get-AzTrafficManagerProfile cmdlet.
+
 ## PARAMETERS
 
 ### -DefaultProfile

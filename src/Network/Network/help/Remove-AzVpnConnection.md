@@ -81,6 +81,12 @@ PS C:\> Get-AzVpnConnection -ResourceGroupName $vpnGateway.ResourceGroupName -Pa
 
 Same as example 1, but it now removes the connection using the piped object from Get-AzVpnConnection.
 
+```
+PS C:> Remove-AzVpnConnection -Name testConnection -ParentResourceName $vpnGateway.Name -ResourceGroupName $vpnGateway.ResourceGroupName
+```
+
+The above will create a resource group, Virtual WAN, Virtual Network, Virtual Hub and a VpnSite in West US in "testRG" resource group in Azure. 
+
 ## PARAMETERS
 
 ### -DefaultProfile

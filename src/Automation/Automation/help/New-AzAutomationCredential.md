@@ -38,6 +38,12 @@ The command stores that object in the $Password variable.
 The third command creates a credential based on $User and $Password, and then stores it in the $Credential variable.
 The final command creates an Automation credential named ContosoCredential that uses $Credential.
 
+```
+PS C:> New-AzAutomationCredential -AutomationAccountName Contoso17 -Name ContosoCredential -ResourceGroupName ResourceGroup01 -Value $Credential
+```
+
+The first command assigns a user name to the $User variable.
+
 ## PARAMETERS
 
 ### -AutomationAccountName

@@ -40,6 +40,12 @@ PS C:\> $GatewaySubnets = Get-AzApplicationGatewayIPConfiguration -ApplicationGa
 
 The first command gets an application gateway and stores it in the $AppGw variable.The second command gets a list of all IP configurations.
 
+```
+PS C:> Get-AzApplicationGatewayIPConfiguration -ApplicationGateway $AppGw
+```
+
+The Get-AzApplicationGatewayIPConfiguration cmdlet gets the IP configuration of an application gateway.
+
 ## PARAMETERS
 
 ### -ApplicationGateway

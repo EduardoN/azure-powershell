@@ -32,6 +32,12 @@ PS C:\> $SKU = Get-AzApplicationGatewaySku -ApplicationGateway $AppGW
 The first command gets the Application Gateway named ApplicationGateway01 and stores the result in the variable named $AppGW.
 The second command gets the SKU of an application gateway named ApplicationGateway01 and stores the result in the variable named $SKU.
 
+```
+PS C:> Get-AzApplicationGatewaySku -ApplicationGateway $AppGW
+```
+
+The first command gets the Application Gateway named ApplicationGateway01 and stores the result in the variable named $AppGW.
+
 ## PARAMETERS
 
 ### -ApplicationGateway

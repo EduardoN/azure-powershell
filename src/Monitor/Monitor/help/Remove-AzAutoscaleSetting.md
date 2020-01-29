@@ -25,6 +25,12 @@ This cmdlet implements the ShouldProcess pattern, i.e. it might request confirma
 
 ## EXAMPLES
 
+```
+PS C:> Remove-AzAutoscaleSetting -Name MySetting -ResourceGroupName MyResourceGroup
+```
+
+The Remove-AzAutoscaleSetting cmdlet removes an Autoscale setting.
+
 ## PARAMETERS
 
 ### -DefaultProfile

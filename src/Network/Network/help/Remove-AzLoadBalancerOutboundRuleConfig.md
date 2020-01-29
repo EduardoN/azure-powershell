@@ -33,6 +33,12 @@ The first command gets the load balancer that is associated with the outbound ru
 The second command removes the associated outbound rule configuration from the load balancer.
 The third command updates the load balancer.
 
+```
+PS C:> Remove-AzLoadBalancerOutboundRuleConfig -LoadBalancer $slb -Name RuleName
+```
+
+The first command gets the load balancer that is associated with the outbound rule configuration you want to remove, and then stores it in the $slb variable.
+
 ## PARAMETERS
 
 ### -DefaultProfile

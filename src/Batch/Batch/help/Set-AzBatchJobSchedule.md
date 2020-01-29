@@ -34,6 +34,12 @@ The first command gets a job by using **Get-AzBatchJobSchedule**, and then store
 The second command modifies the recurrence interval on the `$JobSchedule.Schedule` object.
 The final command updates the Batch service to match the local object in $JobSchedule.
 
+```
+PS C:> Set-AzBatchJobSchedule -BatchContext $Context -JobSchedule $Job
+```
+
+The first command gets a job by using Get-AzBatchJobSchedule, and then stores it in the $JobSchedule variable.
+
 ## PARAMETERS
 
 ### -BatchContext

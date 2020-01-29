@@ -32,6 +32,12 @@ PS C:> Remove-AzLoadBalancerRuleConfig -Name "MyLBruleName" -LoadBalancer $loadb
 The first command gets the load balancer named MyLoadBalancer, and then stores it in the $loadbalancer variable.
 The second command removes the rule configuration named MyLBruleName from the load balancer in $loadbalancer.
 
+```
+PS C:> Remove-AzLoadBalancerRuleConfig -LoadBalancer $loadbalancer -Name MyLBruleName
+```
+
+The first command gets the load balancer named MyLoadBalancer, and then stores it in the $loadbalancer variable.
+
 ## PARAMETERS
 
 ### -DefaultProfile

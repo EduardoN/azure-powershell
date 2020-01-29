@@ -58,6 +58,12 @@ First command gets the public IP address resource with name $publicIPName in the
     Set-AzPublicIPAddress command updates the public IP address resource with the 
     updated object. DomainNameLabel & Fqdn are modified as expected.
 
+```
+PS C:> Set-AzPublicIpAddress -PublicIpAddress $publicIp
+```
+
+First command gets the public IP address resource with name $publicIPName in the resource 
+
 ## PARAMETERS
 
 ### -AsJob

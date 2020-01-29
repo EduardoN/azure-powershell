@@ -38,6 +38,12 @@ F0       Free
 S0   Standard
 ```
 
+```
+PS C:> Get-AzCognitiveServicesAccountSku -Location westus -Type TextAnalytics
+```
+
+The Get-AzCognitiveServicesAccountSku cmdlet gets the available SKUs for a Cognitive Services account.
+
 ## PARAMETERS
 
 ### -DefaultProfile

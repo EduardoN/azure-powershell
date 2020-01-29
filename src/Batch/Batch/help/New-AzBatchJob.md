@@ -41,6 +41,12 @@ The final command creates a job that has the ID ContosoJob35.
 Tasks added to the job run on the pool that has the ID Pool22.
 Use the Get-AzBatchAccountKeys cmdlet to assign a context to the $Context variable.
 
+```
+PS C:> New-AzBatchJob -BatchContext $Context -Id ContosoJob35 -PoolInformation $PoolInformation
+```
+
+The first command creates a PSPoolInformation object by using the New-Object cmdlet.
+
 ## PARAMETERS
 
 ### -BatchContext

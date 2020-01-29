@@ -34,6 +34,12 @@ The first command gets the application gateway named appGwName and stores the re
 The second command removes the authentication certificate named cert01 from the application gateway.
 The third command updates the application gateway.
 
+```
+PS C:> Remove-AzApplicationGatewayAuthenticationCertificate -ApplicationGateway $appgw -Name cert01
+```
+
+The first command gets the application gateway named appGwName and stores the result in the $appgw variable.
+
 ## PARAMETERS
 
 ### -ApplicationGateway

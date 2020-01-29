@@ -35,6 +35,12 @@ The second command adds a new trusted root certificate to Application Gateway ta
 The third command creates new backend http setting using trusted root certificate for validating the backend server certificate against.
 The fourth command updates the Application Gateway.
 
+```
+PS C:> Add-AzApplicationGatewayTrustedRootCertificate -ApplicationGateway $gw -CertificateFile .\rootCA.cer -Name $certName
+```
+
+The first command gets the application gateway and stores it in $gw variable.
+
 ## PARAMETERS
 
 ### -ApplicationGateway

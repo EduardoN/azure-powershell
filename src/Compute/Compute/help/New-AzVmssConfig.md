@@ -90,6 +90,12 @@ This example creates a VMSS configuration object. The first command uses the
 variable named $VMSS. The second command uses the **New-AzVmss** cmdlet to create a VMSS that
 uses the VMSS configuration object created in the first command.
 
+```
+PS C:> New-AzVmssConfig -Location $Loc -Overprovision False -SkuCapacity 2 -SkuName Standard_A0 -UpgradePolicyMode Automatic
+```
+
+The New-AzVmssConfig cmdlet creates a configurable local Virtual Manager Scale Set (VMSS)
+
 ## PARAMETERS
 
 ### -AssignIdentity

@@ -102,6 +102,12 @@ $azFw | Set-AzFirewall
 
 In this example, the Public IP Address "azFwPublicIp1" as detached from the Firewall.
 
+```
+PS C:> Set-AzFirewall -AzureFirewall $azFw
+```
+
+This example updates the priority of an existing rule collection of an Azure Firewall.
+
 ## PARAMETERS
 
 ### -AsJob

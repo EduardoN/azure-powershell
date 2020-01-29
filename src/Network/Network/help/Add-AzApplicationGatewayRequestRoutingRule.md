@@ -46,6 +46,12 @@ PS C:\> $Appgw = Add-AzApplicationGatewayRequestRoutingRule -ApplicationGateway 
 The first command gets the application gateway and stores it in the $AppGw variable.
 The second command adds the request routing rule to the application gateway.
 
+```
+PS C:> Add-AzApplicationGatewayRequestRoutingRule -ApplicationGateway $AppGw -BackendAddressPool $Pool -BackendHttpSettings $Setting -HttpListener $Listener -Name Rule01 -RuleType Basic
+```
+
+The first command gets the application gateway and stores it in the $AppGw variable.
+
 ## PARAMETERS
 
 ### -ApplicationGateway

@@ -32,6 +32,12 @@ PS C:\> $AppGw = Add-AzApplicationGatewayRewriteRuleSet -ApplicationGateway $App
 The first command gets the application gateway and stores it in the $AppGw variable.
 The second command adds the rewrite rule set to the application gateway.
 
+```
+PS C:> Add-AzApplicationGatewayRewriteRuleSet -ApplicationGateway $AppGw -Name ruleset1 -RewriteRule $rule
+```
+
+The first command gets the application gateway and stores it in the $AppGw variable.
+
 ## PARAMETERS
 
 ### -ApplicationGateway

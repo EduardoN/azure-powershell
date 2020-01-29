@@ -68,6 +68,12 @@ The fourth command create new path rule configuration named rule01 and stores it
 The fifth command adds url path mapping configuration named url01 to the application gateway.
 The sixth command updates the application gateway.
 
+```
+PS C:> Add-AzApplicationGatewayUrlPathMapConfig -ApplicationGateway $Gateway -DefaultBackendAddressPool $AddressPool -DefaultBackendHttpSettings $HttpSettings -Name ContosoUrlPathMap -PathRules $PathRuleConfig
+```
+
+The first command gets an application gateway named appGwName and stores it in $appgw variable.
+
 ## PARAMETERS
 
 ### -ApplicationGateway

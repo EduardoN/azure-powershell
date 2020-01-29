@@ -197,6 +197,12 @@ This example removes a TXT record from an existing record set.
 If this is the only record in the record set, the result is an empty record set.
 To remove a record set entirely, see Remove-AzDnsRecordSet.
 
+```
+PS C:> Remove-AzDnsRecordConfig -Ipv4Address 1.2.3.4 -RecordSet $RecordSet
+```
+
+This example removes an A record from an existing record set.
+
 ## PARAMETERS
 
 ### -CaaFlags

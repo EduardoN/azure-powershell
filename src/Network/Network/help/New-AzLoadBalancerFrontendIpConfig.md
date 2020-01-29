@@ -53,6 +53,12 @@ PS C:\> New-AzLoadBalancerFrontendIpConfig -Name "FrontendIpConfig01" -PublicIpA
 The first command creates a dynamic public IP address named MyPublicIP in the resource group named MyResourceGroup, and then stores it in the $publicip variable.
 The second command creates a front-end IP configuration named FrontendIpConfig01 using the public IP address in $publicip.
 
+```
+PS C:> New-AzLoadBalancerFrontendIpConfig -Name $frontendName -PublicIpAddress $publicip
+```
+
+The first command creates a dynamic public IP address named MyPublicIP in the resource group named MyResourceGroup, and then stores it in the $publicip variable.
+
 ## PARAMETERS
 
 ### -DefaultProfile

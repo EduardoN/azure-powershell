@@ -32,6 +32,12 @@ PS C:\> $AppGw = Set-AzApplicationGatewaySku -ApplicationGateway $AppGw -Name "S
 The first command gets the application gateway named ApplicationGateway01 that belongs to the resource group named ResourceGroup01, and stores it in the $AppGw variable.
 The second command updates the SKU of the application gateway.
 
+```
+PS C:> Set-AzApplicationGatewaySku -ApplicationGateway $AppGw -Capacity 2 -Name Standard_Small -Tier Standard
+```
+
+The first command gets the application gateway named ApplicationGateway01 that belongs to the resource group named ResourceGroup01, and stores it in the $AppGw variable.
+
 ## PARAMETERS
 
 ### -ApplicationGateway

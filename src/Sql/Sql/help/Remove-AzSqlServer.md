@@ -32,6 +32,12 @@ PS C:\>Remove-AzSqlServer -ResourceGroupName "ResourceGroup01" -ServerName "Serv
 
 This command removes the Azure SQL Database server named Server01.
 
+```
+PS C:> Remove-AzSqlServer -Force  -ResourceGroupName ResourceGroup01 -ServerName Server01
+```
+
+The Remove-AzSqlServer cmdlet removes an Azure SQL Database server.
+
 ## PARAMETERS
 
 ### -DefaultProfile

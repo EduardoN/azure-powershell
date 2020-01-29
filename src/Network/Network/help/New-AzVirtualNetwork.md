@@ -71,6 +71,12 @@ default network security group rules. The New-AzVirtualNetworkSubnetConfig cmdle
 in-memory representations of two subnets that both reference the network security group that was
 created. The New-AzVirtualNetwork command then creates the virtual network.
 
+```
+PS C:> New-AzVirtualNetwork -AddressPrefix $VnetAddressPrefix -Location $LocationName -Name $NetworkName -ResourceGroupName $ResourceGroupName -Subnet $SingleSubnet
+```
+
+This example creates a virtual network with two subnets. First, a new resource group is created in
+
 ## PARAMETERS
 
 ### -AddressPrefix

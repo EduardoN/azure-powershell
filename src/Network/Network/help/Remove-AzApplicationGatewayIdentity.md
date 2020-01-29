@@ -31,6 +31,12 @@ PS C:\> $updatedgateway = Set-AzApplicationGateway -ApplicationGateway $appgw
 In this example, we remove identity from an existing application gateway.
 Note: If the gateway is referencing a keyvault secret, then it is also important to remove those ssl certificate references along this operation.
 
+```
+PS C:> Remove-AzApplicationGatewayIdentity -ApplicationGateway $appgw
+```
+
+In this example, we remove identity from an existing application gateway.
+
 ## PARAMETERS
 
 ### -ApplicationGateway

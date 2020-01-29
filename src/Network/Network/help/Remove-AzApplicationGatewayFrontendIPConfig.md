@@ -32,6 +32,12 @@ PS C:\> Remove-AzApplicationGatewayFrontendIPConfig -ApplicationGateway $AppGw -
 The first command gets an application gateway named ApplicationGateway01 and stores it in the $AppGw variable.
 The second command removes the front-end IP configuration named FrontEndIP02 from the application gateway stored in $AppGw.
 
+```
+PS C:> Remove-AzApplicationGatewayFrontendIPConfig -ApplicationGateway $AppGw -Name FrontEndIP02
+```
+
+The first command gets an application gateway named ApplicationGateway01 and stores it in the $AppGw variable.
+
 ## PARAMETERS
 
 ### -ApplicationGateway

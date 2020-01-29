@@ -44,6 +44,12 @@ This schedule creates jobs with a recurrence interval of one day.
 The jobs run on the pool that has the ID ContosoPool06, as specified in the fifth command.
 Use the **Get-AzBatchAccountKeys** cmdlet to assign a context to the $Context variable.
 
+```
+PS C:> New-AzBatchJobSchedule -BatchContext $Context -Id JobSchedule17 -JobSpecification $JobSpecification -Schedule $Schedule
+```
+
+This example creates a job schedule.
+
 ## PARAMETERS
 
 ### -BatchContext

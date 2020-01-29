@@ -45,6 +45,12 @@ A subscription and approval are required.
 This command sets the notification period to 10 days.
 The subscription duration is set to one year.
 
+```
+PS C:> New-AzApiManagementProduct -Context $apimContext -Description Starter Product -LegalTerms Free for all -ProductId 0123456789 -State NotPublished -SubscriptionRequired $False -Title Starter
+```
+
+This command creates an API Management product.
+
 ## PARAMETERS
 
 ### -ApprovalRequired

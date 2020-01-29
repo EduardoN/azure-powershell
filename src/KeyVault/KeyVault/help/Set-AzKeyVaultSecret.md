@@ -90,6 +90,12 @@ the attributes in variables.
 The final command modifies values of the secret named ITSecret in the key vault named Contoso, by
 using the values specified previously as variables.
 
+```
+PS C:> Set-AzKeyVaultSecret -Name $KeyVaultSecretName -SecretValue $Secret -VaultName $VaultName
+```
+
+The first command converts a string into a secure string by using the ConvertTo-SecureString
+
 ## PARAMETERS
 
 ### -ContentType

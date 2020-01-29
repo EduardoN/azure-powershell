@@ -62,6 +62,12 @@ This example first gets an existing vnet.
 Then, it creates a delegation object in memory.
 Finally, it creates a new subnet with that delegation that is added to the vnet. The modified configuration is then sent to the server.
 
+```
+PS C:> Add-AzVirtualNetworkSubnetConfig -AddressPrefix 10.0.2.0/24 -Name backendSubnet -VirtualNetwork $virtualNetwork
+```
+
+This example first creates a resource group as a container of the resources to be created. It then creates a subnet configuration and uses it to create a virtual network. The 
+
 ## PARAMETERS
 
 ### -AddressPrefix

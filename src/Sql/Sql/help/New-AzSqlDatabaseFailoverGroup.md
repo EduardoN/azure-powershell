@@ -41,6 +41,12 @@ C:\> $failoverGroup = New-AzSqlDatabaseFailoverGroup -ResourceGroupName rg1 -Ser
 
 This command creates a new Failover Group with failover policy 'Manual' for two servers in different resource groups.
 
+```
+PS C:> New-AzSqlDatabaseFailoverGroup -FailoverGroupName fg -FailoverPolicy Automatic -GracePeriodWithDataLossHours 1 -PartnerResourceGroupName rg2 -PartnerServerName secondaryserver -ResourceGroupName rg -ServerName primaryserver
+```
+
+Creates a new Azure SQL Database Failover Group for the specified servers.
+
 ## PARAMETERS
 
 ### -AllowReadOnlyFailoverToPrimary

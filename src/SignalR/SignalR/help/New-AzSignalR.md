@@ -46,6 +46,12 @@ HostName                                 Location       ExternalIp      Sku     
 mysignalr1.service.signalr.net           eastus         52.179.3.5      Standard_S1 1         Succeeded         1.0
 ```
 
+```
+PS C:> New-AzSignalR -Location eastus -Name mysignalr1 -ResourceGroupName myResourceGroup1 -Sku Standard_S1 -Tag {Tag}
+```
+
+Create a SignalR service.
+
 ## PARAMETERS
 
 ### -AllowedOrigin

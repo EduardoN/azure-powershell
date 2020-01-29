@@ -51,6 +51,12 @@ new authorization (ContosoCircuitAuthorization) to the ExpressRoute circuit. Thi
 authorization but does not activate that authorization. Activating an authorization requires the
 **Set-AzExpressRouteCircuit** shown in the final command in the example.
 
+```
+PS C:> Add-AzExpressRouteCircuitAuthorization -ExpressRouteCircuit $circuit_init -Name ContosoCircuitAuthorization
+```
+
+The commands in this example add a new authorization to an existing ExpressRoute circuit. The first
+
 ## PARAMETERS
 
 ### -DefaultProfile
