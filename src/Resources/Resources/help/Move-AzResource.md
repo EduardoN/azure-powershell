@@ -35,6 +35,12 @@ The first command gets a resource named ContosoStorageAccount by using the Get-A
 The second command moves that resource into the resource group named ResourceGroup14.
 The command identifies the resource to move by using the **ResourceId** property of $Resource.
 
+```
+PS C:> Move-AzResource -DestinationResourceGroupName ResourceGroup14 -Force  -ResourceId $Resource.ResourceId
+```
+
+The Move-AzResource cmdlet moves existing resources to a different resource group.
+
 ## PARAMETERS
 
 ### -ApiVersion

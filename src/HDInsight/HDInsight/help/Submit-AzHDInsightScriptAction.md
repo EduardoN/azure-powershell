@@ -37,6 +37,12 @@ PS C:\>Submit-AzHDInsightScriptAction `
 
 This command submits a script action to a running HDInsight cluster.
 
+```
+PS C:> Submit-AzHDInsightScriptAction -ClusterName your-hadoop-001 -Name $scriptActionName -NodeTypes HeadNode -Parameters {Parameters} -Uri {Uri}
+```
+
+The Submit-AzHDInsightScriptAction cmdlet submits a new script action to an Azure HDInsight cluster.
+
 ## PARAMETERS
 
 ### -ApplicationName

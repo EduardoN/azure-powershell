@@ -54,6 +54,12 @@ The command stores the virtual machine in the $VirtualMachine variable.
 The second command adds a network interface to the virtual machine stored in $VirtualMachine.
 The final command updates the state of the virtual machine stored in $VirtualMachine in ResourceGroup11.
 
+```
+PS C:> Add-AzVMNetworkInterface -Id $NIC.Id -VM $VirtualMachine
+```
+
+The first command creates a virtual machine object, and then stores it in the $VirtualMachine variable.
+
 ## PARAMETERS
 
 ### -DefaultProfile

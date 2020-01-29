@@ -32,6 +32,12 @@ This command gets the load balancer named MyLoadBalancer and passes it to **Remo
 Finally, the Set-AzLoadBalancer cmdlet updates MyLoadBalancer.
 Note that a backend address pool configuration must exist before you can delete it.
 
+```
+PS C:> Remove-AzLoadBalancerBackendAddressPoolConfig -Name cert01
+```
+
+This command gets the load balancer named MyLoadBalancer and passes it to Remove-AzLoadBalancerBackendAddressPoolConfig, which removes the BackendAddressPool02 configuration from MyLoadBalancer.
+
 ## PARAMETERS
 
 ### -DefaultProfile

@@ -32,6 +32,12 @@ PS C:\> Get-AzLoadBalancerBackendAddressPoolConfig -Name "BackendAddressPool02" 
 The first command gets an existing load balancer named MyLoadBalancer in the resource group named MyResourceGroup, and then stores it in the $loadbalancer variable.
 The second command gets the associated backend address pool configuration named BackendAddressPool02 for the load balancer in $loadbalancer.
 
+```
+PS C:> Get-AzLoadBalancerBackendAddressPoolConfig -LoadBalancer $loadbalancer -Name BackendAddressPool02
+```
+
+The first command gets an existing load balancer named MyLoadBalancer in the resource group named MyResourceGroup, and then stores it in the $loadbalancer variable.
+
 ## PARAMETERS
 
 ### -DefaultProfile

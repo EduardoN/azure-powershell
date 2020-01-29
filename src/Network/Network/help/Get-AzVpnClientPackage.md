@@ -34,6 +34,12 @@ PS C:\>Get-AzVpnClientPackage -ProcessorArchitecture -VirtualNetworkGatewayName 
 This command gets information about the AMD64 VPN client packages stored on the virtual network gateway named ContosoVirtualNetworkGateway.
 To get information about the x86 client packages, set the value of the *ProcessorArchitecture* parameter to x86.
 
+```
+PS C:> Get-AzVpnClientPackage -ProcessorArchitecture Amd64 -ResourceGroupName ContosoResourceGroup -VirtualNetworkGatewayName ContosoVirtualNetworkGateway
+```
+
+This command gets information about the AMD64 VPN client packages stored on the virtual network gateway named ContosoVirtualNetworkGateway.
+
 ## PARAMETERS
 
 ### -DefaultProfile

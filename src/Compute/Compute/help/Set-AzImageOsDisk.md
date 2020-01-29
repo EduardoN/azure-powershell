@@ -43,6 +43,12 @@ The next three commands each adds an os disk and two data disks to the image sto
 The URI of each disk is stored in $osDiskVhdUri, $dataDiskVhdUri1, and $dataDiskVhdUri2.
 The final command creates an image named 'ImageName01' in resource group 'ResourceGroup01'.
 
+```
+PS C:> Set-AzImageOsDisk -BlobUri $osDiskVhdUri -Image $imageConfig -OsState Generalized -OsType Windows
+```
+
+The first command creates an image object, and then stores it in the $imageConfig variable.
+
 ## PARAMETERS
 
 ### -BlobUri

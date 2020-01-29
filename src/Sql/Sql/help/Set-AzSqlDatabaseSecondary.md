@@ -48,6 +48,12 @@ $database = Get-AzSqlDatabase -DatabaseName $databaseName -ResourceGroupName $se
 $database | Set-AzSqlDatabaseSecondary -PartnerResourceGroupName $primaryResourceGroupName -Failover -AllowDataLoss
 ```
 
+```
+PS C:> Set-AzSqlDatabaseSecondary -Failover  -PartnerResourceGroupName $primaryResourceGroupName
+```
+
+The Set-AzSqlDatabaseSecondary cmdlet switches a secondary database to be primary in order to initiate failover.
+
 ## PARAMETERS
 
 ### -AllowDataLoss

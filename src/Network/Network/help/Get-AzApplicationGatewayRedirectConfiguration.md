@@ -31,6 +31,12 @@ PS C:\> $RedirectConfig = Get-AzApplicationGatewayRedirectConfiguration -Name "R
 The first command gets the Application Gateway named ApplicationGateway01 and stores the result in the variable named $AppGW.
 The second command gets the redirect configuration named Redirect01 from the Application Gateway stored in the variable named $AppGW.
 
+```
+PS C:> Get-AzApplicationGatewayRedirectConfiguration -ApplicationGateway $AppGW -Name Redirect01
+```
+
+The first command gets the Application Gateway named ApplicationGateway01 and stores the result in the variable named $AppGW.
+
 ## PARAMETERS
 
 ### -ApplicationGateway

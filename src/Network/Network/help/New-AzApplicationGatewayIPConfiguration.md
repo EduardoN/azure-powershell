@@ -42,6 +42,12 @@ The first command gets a virtual network named VNet01 that belongs to the resour
 The second command gets the subnet configuration for the subnet that the virtual network in the previous command belongs to, and stores it in the $Subnet variable.
 The third command creates the IP configuration using $Subnet.
 
+```
+PS C:> New-AzApplicationGatewayIPConfiguration -Name AppGwSubnet01 -Subnet $Subnet
+```
+
+The first command gets a virtual network named VNet01 that belongs to the resource group named ResourceGroup01.
+
 ## PARAMETERS
 
 ### -DefaultProfile

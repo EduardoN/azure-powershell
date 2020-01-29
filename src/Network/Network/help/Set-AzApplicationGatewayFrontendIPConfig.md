@@ -74,6 +74,12 @@ The second command gets a subnet configuration named Subnet01 using $VNet from t
 The third command gets the application gateway named ApplicationGateway01 that belongs to the resource group named ResourceGroup01, and stores it in the $AppGw variable.
 The fourth command adds a front-end IP configuration named FrontendIP02 using $Subnet from the second command.
 
+```
+PS C:> Set-AzApplicationGatewayFrontendIPConfig -ApplicationGateway $AppGw -Name FrontEndIp01 -PublicIPAddress $PublicIp
+```
+
+The first command creates a public IP address object and stores it in the $PublicIp variable.
+
 ## PARAMETERS
 
 ### -ApplicationGateway

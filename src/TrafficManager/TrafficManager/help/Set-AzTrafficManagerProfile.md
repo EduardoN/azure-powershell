@@ -43,6 +43,12 @@ This command disables the profile.
 
 The third command updates the Traffic Manager profile named ContosoProfile to match the local value in $TrafficManagerProfile.
 
+```
+PS C:> Set-AzTrafficManagerProfile -TrafficManagerProfile $TrafficManagerProfile
+```
+
+The first command gets an Azure Traffic Manager profile by using the Get-AzTrafficManagerProfile cmdlet.
+
 ## PARAMETERS
 
 ### -DefaultProfile

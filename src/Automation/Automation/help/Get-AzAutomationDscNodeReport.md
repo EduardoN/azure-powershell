@@ -68,6 +68,12 @@ The first command gets the DSC node for the computer named Computer14 in the Aut
 The command stores this object in the $Node variable.
 The second command gets metadata for the latest report sent from the DSC node named Computer14 to the Automation account named Contoso17.
 
+```
+PS C:> Get-AzAutomationDscNodeReport -AutomationAccountName Contoso17 -Latest  -NodeId $Node.Id -ResourceGroupName ResourceGroup03
+```
+
+The first command gets the DSC node for the computer named Computer14 in the Automation account named Contoso17.
+
 ## PARAMETERS
 
 ### -AutomationAccountName

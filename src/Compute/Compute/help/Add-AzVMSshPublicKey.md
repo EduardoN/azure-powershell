@@ -33,6 +33,12 @@ The first command gets the virtual machine named VirtualMachine07 by using the *
 The command stores the virtual machine in the $VirtualMachine variable.
 The second command adds the public key to the location on VirtualMachine07 that the Path parameter specifies.
 
+```
+PS C:> Add-AzVMSshPublicKey -KeyData MIIDszCCApugAwIBAgIJALBV9YJCF/tAMA0GCSq12Ib3DQEB21QUAMEUxCzAJBgNV -Path /home/admin/.ssh/authorized_keys -VM $VirtualMachine
+```
+
+The first command gets the virtual machine named VirtualMachine07 by using the Get-AzVM cmdlet.
+
 ## PARAMETERS
 
 ### -DefaultProfile

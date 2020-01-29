@@ -145,6 +145,12 @@ PS C:\> New-AzEventGridSubscription -ResourceId "/subscriptions/55f3dcd4-cac7-43
 
 Creates a new event subscription \`EventSubscription1\` to an EventHub namespace with the specified webhook destination endpoint https://requestb.in/19qlscd1. This event subscription uses default filters.
 
+```
+PS C:> New-AzEventGridSubscription -Endpoint /subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/TestRG/providers/Microsoft.EventHub/namespaces/ContosoNamespace/eventhubs/EH1 -EndpointType webhook -EventSubscriptionName EventSubscription1 -EventTtl {EventTtl} -IncludedEventType $includedEventTypes -MaxDeliveryAttempt {MaxDeliveryAttempt} -ResourceGroupName MyResourceGroup -TopicName Topic1
+```
+
+Create a new event subscription to an Azure Event Grid topic, a supported Azure resource, an Azure subscription or Resource Group.
+
 ## PARAMETERS
 
 ### -AdvancedFilter

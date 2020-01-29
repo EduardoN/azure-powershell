@@ -140,6 +140,12 @@ PS C:\> New-AzRoleAssignment -RoleDefinitionName "Reader" -ApplicationId $servic
 
 Grant reader access to a service principal
 
+```
+PS C:> New-AzRoleAssignment -ObjectId $servicePrincipal.Id -RoleDefinitionName Contributor -Scope $storage.Id
+```
+
+Use the New-AzRoleAssignment command to grant access.
+
 ## PARAMETERS
 
 ### -AllowDelegation

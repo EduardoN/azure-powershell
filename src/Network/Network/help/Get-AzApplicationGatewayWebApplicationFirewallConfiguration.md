@@ -32,6 +32,12 @@ PS C:\> $FirewallConfig = Get-AzApplicationGatewayWebApplicationFirewallConfigur
 The first command gets the application gateway named ApplicationGateway01, and then stores it in the $AppGW variable.
 The second command gets the firewall configuration of the application gateway in $AppGW, and then stores it in $FirewallConfig.
 
+```
+PS C:> Get-AzApplicationGatewayWebApplicationFirewallConfiguration -ApplicationGateway $AppGW
+```
+
+The first command gets the application gateway named ApplicationGateway01, and then stores it in the $AppGW variable.
+
 ## PARAMETERS
 
 ### -ApplicationGateway

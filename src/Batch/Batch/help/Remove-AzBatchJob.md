@@ -43,6 +43,12 @@ The command passes that job to the current cmdlet by using the pipeline operator
 The command deletes that job.
 Because the command includes the *Force* parameter, it does not prompt you for confirmation.
 
+```
+PS C:> Remove-AzBatchJob -BatchContext $Context -Force 
+```
+
+The Remove-AzBatchJob cmdlet deletes an Azure Batch job.
+
 ## PARAMETERS
 
 ### -BatchContext

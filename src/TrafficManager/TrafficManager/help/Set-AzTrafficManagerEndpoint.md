@@ -43,6 +43,12 @@ This command changes the endpoint weight to 20.
 
 The third command updates the endpoint in Traffic Manager to match the local value in $TrafficManagerEndpoint.
 
+```
+PS C:> Set-AzTrafficManagerEndpoint -TrafficManagerEndpoint $TrafficManagerEndpoint
+```
+
+The first command gets an Azure Traffic Manager endpoint by using the Get-AzTrafficManagerEndpoint cmdlet.
+
 ## PARAMETERS
 
 ### -DefaultProfile

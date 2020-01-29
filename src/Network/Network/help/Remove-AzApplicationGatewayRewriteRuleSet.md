@@ -31,6 +31,12 @@ PS C:\> Remove-AzApplicationGatewayRewriteRuleSet -ApplicationGateway $AppGw -Na
 The first command gets an application gateway and stores it in the $AppGw variable.
 The second command removes the rewrite rule set named RuleSet02 from the application gateway stored in $AppGw.
 
+```
+PS C:> Remove-AzApplicationGatewayRewriteRuleSet -ApplicationGateway $AppGw -Name RuleSet02
+```
+
+The first command gets an application gateway and stores it in the $AppGw variable.
+
 ## PARAMETERS
 
 ### -ApplicationGateway

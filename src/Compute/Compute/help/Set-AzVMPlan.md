@@ -24,6 +24,12 @@ Before being able to deploy a Marketplace image through the command-line, progra
 
 ## EXAMPLES
 
+```
+PS C:> Set-AzVMPlan -Name AgentPool01 -Product {Product} -Publisher $Publisher -VM $VirtualMachine
+```
+
+The Set-AzVMPlan cmdlet sets the Azure Marketplace plan information for a virtual machine.
+
 ## PARAMETERS
 
 ### -DefaultProfile

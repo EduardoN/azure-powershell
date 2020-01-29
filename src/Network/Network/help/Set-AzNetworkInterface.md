@@ -82,6 +82,12 @@ $nic | Set-AzNetworkInterface
 
 The first command gets an existing network interface called NetworkInterface1 and stores it in the $nic variable. The second command gets an existing network security group called MyNSG and stores it in the $nsg variable. The third command assigns the $nsg to the $nic. Finally, the forth command applies the changes to the Network interface. To dissociate network security groups from a network interface, simple replace $nsg in the third command with $null.
 
+```
+PS C:> Set-AzNetworkInterface -NetworkInterface $Nic
+```
+
+This example configures a network interface.
+
 ## PARAMETERS
 
 ### -AsJob

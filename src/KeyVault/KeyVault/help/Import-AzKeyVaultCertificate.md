@@ -77,6 +77,12 @@ The first command uses the ConvertTo-SecureString cmdlet to create a secure pass
 stores it in the $Password variable.
 The second command imports the certificate named ImportCert01 into the CosotosoKV01 key vault.
 
+```
+PS C:> Import-AzKeyVaultCertificate -FilePath C:\Users\contosoUser\Desktop\import.pfx -Name ImportCert01 -Password $Password -VaultName ContosoKV01
+```
+
+The first command uses the ConvertTo-SecureString cmdlet to create a secure password, and then
+
 ## PARAMETERS
 
 ### -CertificateCollection

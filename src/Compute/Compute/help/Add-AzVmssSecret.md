@@ -41,6 +41,12 @@ The second command uses the **New-AzVmssVaultCertificateConfig** cmdlet to creat
 The third command uses the **New-AzVmssConfig** cmdlet to create a VMSS configuration object and stores the result in the variable named $VMSS.
 The fourth command adds a secret to the VMSS using the vault secret using the key resource ID and the vault certificate stored in the $Vault and $CertConfig variables.
 
+```
+PS C:> Add-AzVmssSecret -SourceVaultId $Vault.ResourceId -VaultCertificate $CertConfig -VirtualMachineScaleSet $VMSS
+```
+
+This example adds a secret to the VMSS.
+
 ## PARAMETERS
 
 ### -DefaultProfile

@@ -55,6 +55,12 @@ The fourth command replaces the scheduled run times with the current time.
 You can only backup AzureVM once per day, so to reset the backup time you must replace the original schedule.
 The last command creates a backup protection policy using the new schedule.
 
+```
+PS C:> Get-AzRecoveryServicesBackupSchedulePolicyObject -WorkloadType AzureVM
+```
+
+The first command gets the retention policy object, and then stores it in the $RetPol variable.
+
 ## PARAMETERS
 
 ### -BackupManagementType

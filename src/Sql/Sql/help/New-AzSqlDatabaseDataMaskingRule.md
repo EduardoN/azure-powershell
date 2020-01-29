@@ -42,6 +42,12 @@ The database named Database01 contains all these items.
 The rule is a number masking rule that uses a random number between 5 and 14 as the mask value.
 The rule is named Rule01.
 
+```
+PS C:> New-AzSqlDatabaseDataMaskingRule -ColumnName Column01 -DatabaseName Database01 -MaskingFunction NoMasking -ResourceGroupName ResourceGroup01 -SchemaName Schema01 -ServerName Server01 -TableName Table01
+```
+
+The New-AzSqlDatabaseDataMaskingRule cmdlet creates a data masking rule for an Azure SQL database.
+
 ## PARAMETERS
 
 ### -ColumnName

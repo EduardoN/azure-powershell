@@ -44,6 +44,12 @@ The second command then uses a for loop to extract all the text except for the f
 The extracted text is stored in a variable named $CertificateText.
 The third command then uses the text stored in $CertificateText with the **Add-AzVpnClientRootCertificate** cmdlet to add the root certificate to the gateway.
 
+```
+PS C:> Add-AzVpnClientRootCertificate -PublicCertData $CertificateText -ResourceGroupName ContosoResourceGroup -VirtualNetworkGatewayName ContosoVirtualGateway -VpnClientRootCertificateName ContosoClientRootCertificate
+```
+
+This example adds a client root certificate to a virtual gateway named ContosoVirtualGateway.
+
 ## PARAMETERS
 
 ### -DefaultProfile

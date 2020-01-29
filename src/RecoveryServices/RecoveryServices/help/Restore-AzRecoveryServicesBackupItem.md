@@ -76,6 +76,12 @@ The fifth command gets a list of recovery points for the specific backup item fi
 The date range specified is the last 7 days.
 The last command restores the disks to the target storage account DestAccount in the DestRG resource group.
 
+```
+PS C:> Restore-AzRecoveryServicesBackupItem -VaultId $vault.ID -WLRecoveryConfig {WLRecoveryConfig}
+```
+
+The Restore-AzRecoveryServicesBackupItem cmdlet restores the data and configuration for an Azure Backup item to a specified recovery point.
+
 ## PARAMETERS
 
 ### -DefaultProfile

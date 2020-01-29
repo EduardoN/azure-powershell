@@ -33,6 +33,12 @@ The first command gets an application gateway and stores it in the $gw variable.
 The second command removes the trusted root certificate named myRootCA from the application gateway stored in $gw.
 The third command updates the application gateway on Azure.
 
+```
+PS C:> Remove-AzApplicationGatewayTrustedRootCertificate -ApplicationGateway $gw -Name myRootCA
+```
+
+The first command gets an application gateway and stores it in the $gw variable.
+
 ## PARAMETERS
 
 ### -ApplicationGateway

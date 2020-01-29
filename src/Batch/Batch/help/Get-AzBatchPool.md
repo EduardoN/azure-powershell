@@ -101,6 +101,12 @@ VirtualMachineSize                   : small
 
 This command gets the pools whose IDs start with My by using the *Filter* parameter.
 
+```
+PS C:> Get-AzBatchPool -BatchContext $Context
+```
+
+The Get-AzBatchPool cmdlet gets the Azure Batch pools under the Batch account specified with the BatchContext parameter.
+
 ## PARAMETERS
 
 ### -BatchContext

@@ -38,6 +38,12 @@ This example changes the size of a virtual network gateway named ContosoVirtualG
 The first command creates an object reference to ContosoVirtualGateway; this object reference is stored in a variable named $Gateway.
 The second command then uses the **Resize-AzVirtualNetworkGateway** cmdlet to set the *GatewaySku* property to Basic.
 
+```
+PS C:> Resize-AzVirtualNetworkGateway -GatewaySku Basic -VirtualNetworkGateway $Gateway
+```
+
+This example changes the size of a virtual network gateway named ContosoVirtualGateway.
+
 ## PARAMETERS
 
 ### -DefaultProfile

@@ -33,6 +33,12 @@ The cmdlet uses the specified resource group and name of the lab to set the poli
 
 ## EXAMPLES
 
+```
+PS C:> Set-AzDtlAutoStartPolicy -Days Sunday -Enable  -LabName {LabName} -ResourceGroupName MyResourceGroup -Time {Time}
+```
+
+The Set-AzDtlAutoStartPolicy cmdlet sets the auto start policy of a lab, which allows lab virtual machines to be scheduled for automatic start.
+
 ## PARAMETERS
 
 ### -Days

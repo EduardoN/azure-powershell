@@ -30,6 +30,12 @@ $ckt = Get-AzExpressRouteCircuit -Name $CircuitName -ResourceGroupName $RG
 Get-AzExpressRouteCircuitPeeringConfig -Name "AzurePrivatePeering" -ExpressRouteCircuit $ckt
 ```
 
+```
+PS C:> Get-AzExpressRouteCircuitPeeringConfig -ExpressRouteCircuit $ckt -Name AzurePrivatePeering
+```
+
+The Get-AzExpressRouteCircuitPeeringConfig cmdlet retrieves the configuration of a peering
+
 ## PARAMETERS
 
 ### -DefaultProfile

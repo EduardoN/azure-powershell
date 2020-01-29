@@ -35,6 +35,12 @@ resource group named ResourceGroup01 and stores it in the $AppGw variable.
 The second command modifies the gateway in $AppGw to use port 80 for the front-end port named
 FrontEndPort01.
 
+```
+PS C:> Set-AzApplicationGatewayFrontendPort -ApplicationGateway $AppGw -Name FrontEndPort01 -Port 80
+```
+
+The first command gets the application gateway named ApplicationGateway01 that belongs to the
+
 ## PARAMETERS
 
 ### -ApplicationGateway

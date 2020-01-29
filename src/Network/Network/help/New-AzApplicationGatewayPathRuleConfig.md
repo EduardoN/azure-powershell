@@ -53,6 +53,12 @@ The next two commands create a backend address pool and a backend HTTP settings 
 The fourth command creates the path rule object and is stored in a variable named $PathRuleConfig.
 The fifth command uses **Add-AzApplicationGatewayUrlPathMapConfig** to add the configuration settings and the new path rule contained within those settings to ContosoApplicationGateway.
 
+```
+PS C:> New-AzApplicationGatewayPathRuleConfig -BackendAddressPool $AddressPool -BackendHttpSettings $HttpSettings -Name base -Paths /base
+```
+
+These commands create a new application gateway path rule and then use the Add-AzApplicationGatewayUrlPathMapConfig cmdlet to assign that rule to an application gateway.
+
 ## PARAMETERS
 
 ### -BackendAddressPool

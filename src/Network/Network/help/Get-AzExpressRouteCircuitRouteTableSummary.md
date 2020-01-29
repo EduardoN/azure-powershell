@@ -32,6 +32,12 @@ router.
 Get-AzExpressRouteCircuitRouteTableSummary -ResourceGroupName $RG -ExpressRouteCircuitName $CircuitName -DevicePath 'Primary'
 ```
 
+```
+PS C:> Get-AzExpressRouteCircuitRouteTableSummary -DevicePath Primary -ExpressRouteCircuitName $CircuitName -PeeringType AzurePrivatePeering -ResourceGroupName $RG
+```
+
+The Get-AzExpressRouteCircuitRouteTableSummary cmdlet retrieves a summary of BGP neighbor
+
 ## PARAMETERS
 
 ### -DefaultProfile

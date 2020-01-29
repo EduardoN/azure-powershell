@@ -37,6 +37,12 @@ The first command creates DSC meta-configuration files for two servers for the A
 The command saves these files on a desktop.
 The second command uses the **Set-DscLocalConfigurationManager** cmdlet to apply the meta-configuration to the specified computers to onboard them as DSC nodes.
 
+```
+PS C:> Get-AzAutomationDscOnboardingMetaconfig -AutomationAccountName Contoso17 -ComputerName Server01, -OutputFolder C:\Users\PattiFuller\Desktop -ResourceGroupName ResourceGroup03
+```
+
+The first command creates DSC meta-configuration files for two servers for the Automation account named Contoso17.
+
 ## PARAMETERS
 
 ### -AutomationAccountName

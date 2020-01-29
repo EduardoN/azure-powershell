@@ -140,6 +140,12 @@ PS C:\> Restore-AzSqlinstanceDatabase -InputObject $deletedDatabase[0] -PointInT
 The first command gets the deleted instance databases named 'DB1' on Instance 'managedInstance1'
 The second command restores the the fetched database, from the specified point-in-time backup to the instance database named Database01_restored using input object.
 
+```
+PS C:> Restore-AzSqlInstanceDatabase -FromPointInTimeBackup  -InstanceName managedInstance1 -Name Database01 -PointInTime UTCDateTime -ResourceGroupName ResourceGroup01 -TargetInstanceDatabaseName Database01_restored
+```
+
+The Restore-AzSqlInstanceDatabase cmdlet restores an instance database from a geo-redundant backup or a point in time in a live database.
+
 ## PARAMETERS
 
 ### -AsJob

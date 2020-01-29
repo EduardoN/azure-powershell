@@ -50,6 +50,12 @@ The fifth command gets a base **RetentionPolicy** object, and then stores it in 
 The sixth command sets the retention duration policy to 365 days.
 The final command creates a **BackupProtectionPolicy** object based on the schedule and retention policies created by the previous commands.
 
+```
+PS C:> New-AzRecoveryServicesBackupProtectionPolicy -Name NewPolicy -RetentionPolicy $RetPol -SchedulePolicy $SchPol -VaultId $vault.ID -WorkloadType AzureVM
+```
+
+The New-AzRecoveryServicesBackupProtectionPolicy cmdlet creates a Backup protection policy in a vault.
+
 ## PARAMETERS
 
 ### -BackupManagementType
