@@ -35,6 +35,12 @@ PS C:\> Unregister-AzRecoveryServicesBackupContainer -Container $Cont
 The first command gets the Windows container named server01.contoso.com that is registered in the vault, and then stores it in the $Cont variable.
 The second command unregisters the specified Windows Server from the Azure Backup vault.
 
+```
+PS C:> Unregister-AzRecoveryServicesBackupContainer -Container $Cont
+```
+
+The first command gets the Windows container named server01.contoso.com that is registered in the vault, and then stores it in the $Cont variable.
+
 ## PARAMETERS
 
 ### -Container

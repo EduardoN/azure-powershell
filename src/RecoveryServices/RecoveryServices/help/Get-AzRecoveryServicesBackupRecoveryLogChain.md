@@ -44,6 +44,12 @@ The third command gets AzureWorkload backup containers, and stores them in the $
 The fourth command gets the backup item, and then stores it in the $BackupItem variable.
 The last command gets an array of recovery point time ranges for the item in $BackupItem, and then stores them in the $RP variable.
 
+```
+PS C:> Get-AzRecoveryServicesBackupRecoveryLogChain -Item $Item -VaultId $vault.ID
+```
+
+The Get-AzRecoveryServicesBackupRecoveryLogChain cmdlet gets the time range recovery points in time for a backed up Azure Backup item.
+
 ## PARAMETERS
 
 ### -DefaultProfile

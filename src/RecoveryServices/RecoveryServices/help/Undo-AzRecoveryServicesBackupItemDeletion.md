@@ -39,6 +39,12 @@ The fourth command the new item which is in a softdeleted state.
 The last command rehydrates the softdeleted VM.
 
 
+```
+PS C:> Undo-AzRecoveryServicesBackupItemDeletion -Force  -Item $PI[0] -VaultId $vault.ID
+```
+
+The Undo-AzRecoveryServicesBackupItemDeletion cmdlet rehydrates a soft-deleted item.
+
 ## PARAMETERS
 
 ### -DefaultProfile

@@ -49,6 +49,12 @@ PS C:\> $currentJob = Start-AzRecoveryServicesAsrUnplannedFailoverJob -RecoveryP
 
 Starts the unplanned failover operation for the recovery plan with the specified parameters and returns the ASR job used to track the operation.
 
+```
+PS C:> Start-AzRecoveryServicesAsrUnplannedFailoverJob -Direction PrimaryToRecovery -RecoveryPoint $rp[0] -ReplicationProtectedItem $ReplicationProtectedItem
+```
+
+The Start-AzRecoveryServicesAsrUnplannedFailoverJob cmdlet starts unplanned failover of an Azure Site Recovery replication protected item or recovery plan.
+
 ## PARAMETERS
 
 ### -DataEncryptionPrimaryCertFile

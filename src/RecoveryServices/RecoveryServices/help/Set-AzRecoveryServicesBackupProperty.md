@@ -33,6 +33,12 @@ PS C:\> Set-AzRecoveryServicesBackupProperty -Vault $Vault01 -BackupStorageRedun
 The first command gets the vault named TestVault, and then stores it in the $Vault01 variable.
 The second command sets the backup storage redundancy for $Vault01 to GeoRedundant.
 
+```
+PS C:> Set-AzRecoveryServicesBackupProperty -BackupStorageRedundancy GeoRedundant -Vault $Vault01
+```
+
+The first command gets the vault named TestVault, and then stores it in the $Vault01 variable.
+
 ## PARAMETERS
 
 ### -BackupStorageRedundancy
