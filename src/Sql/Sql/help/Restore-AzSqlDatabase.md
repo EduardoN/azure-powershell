@@ -128,6 +128,12 @@ PS C:\> Restore-AzSqlDatabase -FromGeoBackup -ResourceGroupName "TargetResourceG
 The first command gets the geo-redundant backup for the database named Database01, and then stores it in the $GeoBackup variable.
 The second command restores the backup in $GeoBackup to the SQL database named RestoredDatabase.
 
+```
+PS C:> Restore-AzSqlDatabase -Edition Standard -FromPointInTimeBackup  -PointInTime UTCDateTime -ResourceGroupName $Database.ResourceGroupName -ResourceId $Database.ResourceID -ServerName $Database.ServerName -ServiceObjectiveName S2 -TargetDatabaseName RestoredDatabase
+```
+
+The first command gets the SQL database named Database01, and then stores it in the $Database variable.
+
 ## PARAMETERS
 
 ### -AsJob

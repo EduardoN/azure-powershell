@@ -44,6 +44,12 @@ ResourceGroupName ServerName                   Type ServerKeyVaultKeyName
 ----------------- ----------                   ---- ---------------------
 ContosoResourceGroup ContosoServer AzureKeyVault contoso_contosokey_01234567890123456789012345678901
 
+```
+PS C:> Set-AzSqlServerTransparentDataEncryptionProtector -Force  -KeyId https://contoso.vault.azure.net/keys/contosokey/00000000-0000-0000-0000-000000000000 -ResourceGroupName ContosoResourceGroup -ServerName ContosoServer -Type AzureKeyVault
+```
+
+The Set-AzSqlServerTransparentDataEncryptionProtector cmdlet sets the TDE protector for a SQL server.
+
 ## PARAMETERS
 
 ### -AsJob

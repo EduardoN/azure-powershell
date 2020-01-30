@@ -43,6 +43,12 @@ PS C:\> Register-AzStorageSyncServer -ResourceGroupName "myResourceGroup" -Stora
 
 This command will register the local server this command is run on.
 
+```
+PS C:> Register-AzStorageSyncServer -ParentObject {ParentObject}
+```
+
+This command registers a server to a storage sync service, the top-level resource for Azure File Sync. A trust relationship between server and storage sync service is created that ensures secure data transfer and management channels. PowerShell or the Azure portal can then be used to configure what syncs on this server. A server can only be registered to a single storage sync service. If servers ever need to participate in syncing the same set of files, register them to the same storage sync service.
+
 ## PARAMETERS
 
 ### -AsJob
