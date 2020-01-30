@@ -31,6 +31,12 @@ PS C:\>Stop-AzAutomationJob -AutomationAccountName "Contoso17" -Id 2989b069-24fe
 
 This command stops the job that has the specified ID.
 
+```
+PS C:> Stop-AzAutomationJob -AutomationAccountName Contoso17 -DefaultProfile {DefaultProfile} -Id 00000000-0000-0000-0000-000000000000 -ResourceGroupName ResourceGroup01
+```
+
+The Stop-AzAutomationJob cmdlet stops an Azure Automation job.
+
 ## PARAMETERS
 
 ### -AutomationAccountName

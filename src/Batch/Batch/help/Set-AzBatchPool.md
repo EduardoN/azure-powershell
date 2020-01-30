@@ -38,6 +38,12 @@ The first command gets a pool by using **Get-AzBatchPool**, and then stores it i
 The next three commands modify the start task specification on the $Pool object.
 The final command updates the Batch service to match the local object in $Pool.
 
+```
+PS C:> Set-AzBatchPool -BatchContext $Context -Pool $Pool
+```
+
+The first command gets a pool by using Get-AzBatchPool, and then stores it in the $Pool variable.
+
 ## PARAMETERS
 
 ### -BatchContext

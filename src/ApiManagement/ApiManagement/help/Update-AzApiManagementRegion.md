@@ -35,6 +35,12 @@ PS C:\>$apimService = Set-AzApiManagement -InputObject $apimService -PassThru
 
 This command gets the API Management Premium SKU service, having regions in South Central US and North Central US. It then increases the Capacity of the North Central US region to 2 using the **Set-AzApiManagement**. The next cmdlet **Set-AzApiManagement** applies the configuration change to the Api Management service.
 
+```
+PS C:> Update-AzApiManagementRegion -Capacity 2 -Sku Developer
+```
+
+The Update-AzApiManagementRegion cmdlet updates an existing instance of type Microsoft.Azure.Commands.ApiManagement.Models.PsApiManagementRegion in a collection of AdditionalRegions objects of a provided instance of type Microsoft.Azure.Commands.ApiManagement.Models.PsApiManagement.
+
 ## PARAMETERS
 
 ### -ApiManagement

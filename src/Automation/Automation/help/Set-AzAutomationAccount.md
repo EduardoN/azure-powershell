@@ -40,6 +40,12 @@ PS C:\>Set-AzAutomationAccount -Name "AutomationAccount01" -ResourceGroupName "R
 
 This command changes the plan to Basic for the Automation account named AutomationAccount01.
 
+```
+PS C:> Set-AzAutomationAccount -Name AutomationAccount01 -Plan Free -ResourceGroupName ResourceGroup01 -Tags $Tags
+```
+
+The Set-AzAutomationAccount cmdlet modifies an Azure Automation account.
+
 ## PARAMETERS
 
 ### -DefaultProfile
