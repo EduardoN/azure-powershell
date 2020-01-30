@@ -118,6 +118,12 @@ PS C:\> Get-AzDataFactoryV2 -ResourceGroupName "ADF" -Name "WikiADF" | Set-AzDat
 
 This command creates a data factory named WikiADF in the resource group named ADF in the WestUS location.
 
+```
+PS C:> Set-AzDataFactoryV2 -Force  -Location WestUS -Name WikiADF -ResourceGroupName ADF
+```
+
+The Set-AzDataFactoryV2 cmdlet creates a data factory with the specified resource group name and location.
+
 ## PARAMETERS
 
 ### -AccountName

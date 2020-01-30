@@ -46,6 +46,12 @@ Terms               : This should not be shared
 
 This command displays information about data share AdsShare in the Azure data share account WikiAdsAccount and resource group ADS.
 
+```
+PS C:> Get-AzDataShare -AccountName WikiAdsAccount -ResourceGroupName ADS
+```
+
+The Get-AzDataShare cmdlet gets information about data shares in an Azure data share accoount.
+
 ## PARAMETERS
 
 ### -AccountName
