@@ -135,6 +135,12 @@ The first command gets a resource group named ResourceGroup11 by using the Get-A
 The second command gets the policy definition named VirtualMachinePolicy by using the Get-AzPolicyDefinition cmdlet and stores it in the $Policy variable.
 The final command assigns the policy in $Policy to the resource group. A managed identity is automatically created and assigned to the policy assignment.
 
+```
+PS C:> New-AzPolicyAssignment -Name RestrictLocationPolicyAssignment -PolicySetDefinition {PolicySetDefinition} -Scope $ResourceGroup.ResourceId
+```
+
+The New-AzPolicyAssignment cmdlet creates a policy assignment.
+
 ## PARAMETERS
 
 ### -ApiVersion

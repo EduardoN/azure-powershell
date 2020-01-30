@@ -147,6 +147,12 @@ PS C:\>Get-AzRedisCache
 
 This command gets every Redis Cache in the current subscription.
 
+```
+PS C:> Get-AzRedisCache -Name myexists -ResourceGroupName myGroup
+```
+
+The Get-AzRedisCache cmdlet gets the specified Azure Redis Cache.
+
 ## PARAMETERS
 
 ### -DefaultProfile

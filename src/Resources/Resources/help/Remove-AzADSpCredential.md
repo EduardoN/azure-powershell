@@ -68,6 +68,12 @@ PS C:\> Get-AzADServicePrincipal -ObjectId 7663d3fb-6f86-4352-9e6d-cf9d50d5ee82 
 
 Gets the service principal with object id '7663d3fb-6f86-4352-9e6d-cf9d50d5ee82' and pipes that to the Remove-AzADSpCredential cmdlet to remove all credentials from that service principal.
 
+```
+PS C:> Remove-AzADSpCredential -Force  -KeyId 00000000-0000-0000-0000-00000007ebb -ObjectId 00000000-0000-0000-0000-000000000000
+```
+
+The Remove-AzADSpCredential cmdlet can be used to remove a credential key from a service principal in the case of a compromise or as part of credential key rollover expiration.
+
 ## PARAMETERS
 
 ### -DefaultProfile

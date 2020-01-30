@@ -98,6 +98,12 @@ The second command iterates over each of these resources in the resource group a
 
 The final command updates each of these resources.
 
+```
+PS C:> Set-AzResource -Force  -ResourceId /subscriptions/$subscriptionId/resourceGroups/$resourceGroupName/providers/Microsoft.EventHub/namespaces/$namespaceName -Tag @{Name=CostCenter}
+```
+
+The Set-AzResource cmdlet modifies an existing Azure resource.
+
 ## PARAMETERS
 
 ### -ApiVersion

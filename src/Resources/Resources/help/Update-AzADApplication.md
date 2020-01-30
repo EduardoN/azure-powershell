@@ -63,6 +63,12 @@ PS C:\> Get-AzADApplication -ObjectId fb7b3405-ca44-4b5b-8584-12392f5d96d7 | Upd
 
 Gets the application with object id 'fb7b3405-ca44-4b5b-8584-12392f5d96d7' and pipes that to the Update-AzADApplication cmdlet to update the display name of the application to "MyNewDisplayName".
 
+```
+PS C:> Update-AzADApplication -ApplicationId 00000000-0000-0000-0000-000000000000 -DefaultProfile {DefaultProfile} -ReplyUrl {ReplyUrl}
+```
+
+Updates an existing azure active directory application.
+
 ## PARAMETERS
 
 ### -ApplicationId
