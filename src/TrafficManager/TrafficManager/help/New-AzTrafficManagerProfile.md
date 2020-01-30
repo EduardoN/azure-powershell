@@ -44,6 +44,12 @@ PS C:\>New-AzTrafficManagerProfile -Name "ContosoProfile" -ResourceGroupName "Re
 This command creates an Azure Traffic Manager profile named ContosoProfile in resource group ResourceGroup11.
 The DNS FQDN is contosoapp.trafficmanager.net.
 
+```
+PS C:> New-AzTrafficManagerProfile -MonitorPath /default.aspx -MonitorPort 80 -MonitorProtocol HTTP -Name ContosoProfile -ProfileStatus Enabled -RelativeDnsName contosoapp -ResourceGroupName ResourceGroup11 -TrafficRoutingMethod Performance -Ttl <UInt32>
+```
+
+The New-AzTrafficManagerProfile cmdlet creates an Azure Traffic Manager profile.
+
 ## PARAMETERS
 
 ### -CustomHeader
