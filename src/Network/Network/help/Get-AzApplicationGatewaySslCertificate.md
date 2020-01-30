@@ -43,6 +43,12 @@ The first command gets the Application Gateway named ApplicationGateway01 and st
 This second command gets a list of SSL certificates from the application gateway stored in the variable named $AppGW.
 The command then stores the results in the variable named $Certs.
 
+```
+PS C:> Get-AzApplicationGatewaySslCertificate -ApplicationGateway $AppGW -Name Cert01
+```
+
+The first command gets the Application Gateway named ApplicationGateway01 and stores the result in the variable named $AppGW.
+
 ## PARAMETERS
 
 ### -ApplicationGateway

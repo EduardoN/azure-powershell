@@ -68,6 +68,12 @@ $ruleCollection.RemoveRuleByName("r1")
 This example creates a new application rule collection with two rules and then removes the first rule from the rule collection by calling method
 RemoveRuleByName on the rule collection object. The rule name for method RemoveRuleByName is case-insensitive.
 
+```
+PS C:> New-AzFirewallApplicationRuleCollection -ActionType Allow -Name MyAppRuleCollection -Priority 100 -Rule $appRule
+```
+
+This example creates a collection with one rule. All traffic that matches the conditions identified in $rule1 will be allowed.
+
 ## PARAMETERS
 
 ### -ActionType

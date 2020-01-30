@@ -49,6 +49,12 @@ The above will create a resource group, Virtual WAN, Virtual Network, Virtual Hu
 A VPN gateway will be created thereafter in the Virtual Hub.
 Once the gateway has been created, it is connected to the VpnSite using the New-AzVpnConnection command with 1 VpnSiteLinkConnections to the VpnSiteLink of the VpnSite.
 
+```
+PS C:> New-AzVpnSiteLinkConnection -ConnectionBandwidth 100 -Name testLinkConnection1 -VpnSiteLink $vpnSite.VpnSiteLinks[0]
+```
+
+The above will create a resource group, Virtual WAN, Virtual Network, Virtual Hub and a VpnSite with 1 VpnSiteLinks in West US in "testRG" resource group in Azure.
+
 ## PARAMETERS
 
 ### -ConnectionBandwidth

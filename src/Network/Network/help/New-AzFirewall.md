@@ -144,6 +144,12 @@ New-AzFirewall -Name "azFw" -ResourceGroupName $rgName -Location centralus -Virt
 
 This example creates a Firewall which allows MSSQL traffic on standard port 1433 to SQL database sql1.database.windows.net.
 
+```
+PS C:> New-AzFirewall -Location centralus -Name AzureFirewall -PublicIpAddress $pip -ResourceGroupName $rgName -VirtualNetwork $vnet
+```
+
+This example creates a Firewall attached to virtual network "vnet" in the same resource group as the firewall.
+
 ## PARAMETERS
 
 ### -ApplicationRuleCollection

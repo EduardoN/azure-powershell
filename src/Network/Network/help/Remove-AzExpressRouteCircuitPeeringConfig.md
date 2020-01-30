@@ -31,6 +31,12 @@ Remove-AzExpressRouteCircuitPeeringConfig -Name 'AzurePrivatePeering' -ExpressRo
 Set-AzExpressRouteCircuit -ExpressRouteCircuit $circuit
 ```
 
+```
+PS C:> Remove-AzExpressRouteCircuitPeeringConfig -ExpressRouteCircuit $circuit -Name AzurePrivatePeering
+```
+
+The Remove-AzExpressRouteCircuitPeeringConfig cmdlet removes an ExpressRoute circuit
+
 ## PARAMETERS
 
 ### -DefaultProfile

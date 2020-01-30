@@ -34,6 +34,12 @@ The first command gets the application gateway named appGwName and stores the re
 The second command updates the authentication certificate named cert01 in the application gateway.
 The third command updates the application gateway.
 
+```
+PS C:> Set-AzApplicationGatewayAuthenticationCertificate -ApplicationGateway $appgw -CertificateFile C:\cert2.cer -Name cert01
+```
+
+The first command gets the application gateway named appGwName and stores the result in the $appgw variable.
+
 ## PARAMETERS
 
 ### -ApplicationGateway

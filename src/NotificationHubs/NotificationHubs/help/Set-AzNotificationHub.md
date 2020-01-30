@@ -51,6 +51,12 @@ This command modifies the property values for a notification hub found in the Co
 The property values, as well as the name of the hub to be modified, are not specified in the command.
 Instead, that information is contained in the input file C:\Configuration\Hubs.json.
 
+```
+PS C:> Set-AzNotificationHub -Force  -Namespace ContosoNamespace -NotificationHubObj {NotificationHubObj} -ResourceGroup ContosoNotificationsGroup
+```
+
+The Set-AzNotificationHub cmdlet modifies the property values of a notification hub.
+
 ## PARAMETERS
 
 ### -DefaultProfile

@@ -68,6 +68,12 @@ PS C:\> Remove-AzVirtualWan -ResourceId $virtualWan.Id -Passthru
 This example creates a Virtual WAN in a resource group and then immediately deletes it. This deletion happens using the virtual wan resource id returned by New-AzVirtualWan.
 To suppress the prompt when deleting the Virtual WAN, use the -Force flag.
 
+```
+PS C:> Remove-AzVirtualWan -Name MyVirtualWan -ResourceGroupName TestResourceGroup
+```
+
+This example creates a Virtual WAN in a resource group and then immediately deletes it. 
+
 ## PARAMETERS
 
 ### -DefaultProfile

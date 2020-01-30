@@ -32,6 +32,12 @@ PS C:> Remove-AzLoadBalancerProbeConfig -Name "MyProbe" -LoadBalancer $loadbalan
 The first command gets the load balancer named MyLoadBalancer, and then stores it in the $loadbalancer variable.
 The second command deletes the configuration named MyProbe from the load balancer in $loadbalancer.
 
+```
+PS C:> Remove-AzLoadBalancerProbeConfig -LoadBalancer $loadbalancer -Name MyProbe
+```
+
+The first command gets the load balancer named MyLoadBalancer, and then stores it in the $loadbalancer variable.
+
 ## PARAMETERS
 
 ### -DefaultProfile

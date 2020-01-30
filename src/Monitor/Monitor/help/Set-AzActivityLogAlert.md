@@ -103,6 +103,12 @@ PS C:\>Get-AzResource -ResourceGroupName "myResourceGroup" -Name "myLogAlert" | 
 
 If the given log alert rule exists this command disables it.
 
+```
+PS C:> Set-AzActivityLogAlert -Action $actionGrp1 -Condition $condition1, -Location $location -Name $alertName -ResourceGroupName $resourceGroupName -Scope scope1,scope2
+```
+
+The first four commands create leaf condition and action group.
+
 ## PARAMETERS
 
 ### -Action

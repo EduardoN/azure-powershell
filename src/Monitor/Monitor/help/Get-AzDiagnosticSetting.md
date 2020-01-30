@@ -38,6 +38,12 @@ Category : AuditEvent
 
 This command gets the categories and time grains that are logged for an Azure Key Vault with a *ResourceId* of /subscriptions/1a66ce04-b633-4a0b-b2bc-a912ec8986a6/ResourceGroups/ContosoRG/providers/microsoft.keyvault/KeyVaults/ContosoKeyVault.
 
+```
+PS C:> Get-AzDiagnosticSetting -DefaultProfile {DefaultProfile} -ResourceId /subscriptions/00000000-0000-0000-0000-000000000000/ResourceGroups/ContosoRG/providers/microsoft.keyvault/KeyVaults/ContosoKeyVault
+```
+
+The Get-AzDiagnosticSetting cmdlet gets the categories and time grains that are logged for a resource.
+
 ## PARAMETERS
 
 ### -DefaultProfile

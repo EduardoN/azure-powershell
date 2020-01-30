@@ -181,6 +181,12 @@ FlowAnalyticsConfiguration : {
 
 In this example we configure flow logging status and Traffic Analytics for a Network Security Group. In the response, we see the specified NSG has flow logging and Traffic Analytics enabled, default format, and no retention policy set.
 
+```
+PS C:> Set-AzNetworkWatcherConfigFlowLog -EnableFlowLog $true -EnableRetention False -FormatVersion 2 -NetworkWatcher $NW -StorageAccountId $storageID -TargetResourceId $nsg.Id
+```
+
+The Set-AzNetworkWatcherConfigFlowLog configures flow logging for a target resource. 
+
 ## PARAMETERS
 
 ### -AsJob

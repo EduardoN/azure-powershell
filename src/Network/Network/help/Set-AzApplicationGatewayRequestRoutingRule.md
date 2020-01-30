@@ -46,6 +46,12 @@ PS C:\> $AppGw = Set-AzApplicationGatewayRequestRoutingRule -ApplicationGateway 
 The first command gets the application gateway named ApplicationGateway01 and stores it in the $AppGw variable.
 The second command modifies the request routing rule for the application gateway to use back-end HTTP settings specified in the $Setting variable, an HTTP listener specified in the $Listener variable, and a back-end address pool specified in the $Pool variable.
 
+```
+PS C:> Set-AzApplicationGatewayRequestRoutingRule -ApplicationGateway $AppGw -BackendAddressPool $Pool -BackendHttpSettings $Setting -HttpListener $Listener -Name Rule01 -RuleType Basic
+```
+
+The first command gets the application gateway named ApplicationGateway01 and stores it in the $AppGw variable.
+
 ## PARAMETERS
 
 ### -ApplicationGateway

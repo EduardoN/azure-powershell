@@ -41,6 +41,12 @@ PS C:\> $BackendPools = Get-AzApplicationGatewayBackendAddressPool -ApplicationG
 The first command gets the application gateway named ApplicationGateway01 in the resource group named ResourceGroup01 and stores it in the $AppGw variable.
 The second command gets a list of the back-end address pools associated with $AppGw, and stores the list in the $BackendPools variable.
 
+```
+PS C:> Get-AzApplicationGatewayBackendAddressPool -ApplicationGateway $AppGw -Name Pool01
+```
+
+The first command gets the application gateway named ApplicationGateway01 in the resource group named ResourceGroup01 and stores it in the $AppGw variable.
+
 ## PARAMETERS
 
 ### -ApplicationGateway

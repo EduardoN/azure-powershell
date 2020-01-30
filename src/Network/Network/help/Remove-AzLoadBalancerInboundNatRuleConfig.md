@@ -33,6 +33,12 @@ $loadbalancer = Get-AzLoadBalancer -Name mylb -ResourceGroupName myrg
 The first command loads an already existing load balancer called "mylb" and stores it in the variable $load
     balancer. The second command removes the inbound NAT rule associated with this load balancer.
 
+```
+PS C:> Remove-AzLoadBalancerInboundNatRuleConfig -LoadBalancer $loadbalancer -Name myinboundnatrule
+```
+
+The first command loads an already existing load balancer called "mylb" and stores it in the variable $load
+
 ## PARAMETERS
 
 ### -DefaultProfile

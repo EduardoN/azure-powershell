@@ -53,6 +53,12 @@ The first two commands use New-AzAutoscaleRule to create two Autoscale rules, $R
 The third and fourth commands use New-AzAutoscaleProfile to create Autoscale profiles, $Profile1 and $Profile2, using $Rule1 and $Rule2.
 The final command creates an Autoscale setting using the profiles in $Profile1 and $Profile2.
 
+```
+PS C:> Add-AzAutoscaleSetting -AutoscaleProfile $Profile1, -Location East US -Name MySetting -ResourceGroupName Default-Web-EastUS -TargetResourceId /subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/Default-Web-EastUS/providers/microsoft.web/serverFarms/DefaultServerFarm
+```
+
+The first two commands use New-AzAutoscaleRule to create two Autoscale rules, $Rule1 and $Rule2.
+
 ## PARAMETERS
 
 ### -AutoscaleProfile

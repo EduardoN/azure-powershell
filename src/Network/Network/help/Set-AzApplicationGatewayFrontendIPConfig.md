@@ -74,6 +74,12 @@ The second command gets a subnet configuration named Subnet01 using $VNet from t
 The third command gets the application gateway named ApplicationGateway01 that belongs to the resource group named ResourceGroup01, and stores it in the $AppGw variable.
 The fourth command adds a front-end IP configuration named FrontendIP02 using $Subnet from the second command.
 
+```
+PS C:> Set-AzApplicationGatewayFrontendIPConfig -ApplicationGateway $AppGw -Name FrontEndIp01 -PrivateIPAddress 10.0.1.1 -Subnet $Subnet
+```
+
+The first command gets a virtual network named VNet01 that belongs to the resource group named ResourceGroup01, and stores it in the $VNet variable.
+
 ## PARAMETERS
 
 ### -ApplicationGateway

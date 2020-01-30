@@ -186,6 +186,12 @@ PS C:\> $AppgwIdentity = New-AzApplicationGatewayIdentity -UserAssignedIdentity 
 PS C:\> $Gateway = New-AzApplicationGateway -Name "AppGateway01" -ResourceGroupName "ResourceGroup01" -Location "West US" -Identity $AppgwIdentity -BackendAddressPools $Pool -BackendHttpSettingsCollection $PoolSetting -FrontendIpConfigurations $FrontEndIpConfig  -GatewayIpConfigurations $GatewayIpConfig -FrontendPorts $FrontEndPort -HttpListeners $Listener -RequestRoutingRules $Rule -Sku $Sku
 ```
 
+```
+PS C:> New-AzApplicationGateway -BackendAddressPools $Pool -BackendHttpSettingsCollection $PoolSetting -FrontendIPConfigurations {FrontendIPConfigurations} -FrontendPorts $FrontEndPort -GatewayIPConfigurations <PSApplicationGatewayIPConfiguration[]> -HttpListeners $Listener -Location West US -Name $appgwName -RequestRoutingRules $Rule -ResourceGroupName $rgname -Sku $Sku
+```
+
+The New-AzApplicationGateway cmdlet creates an Azure application gateway.
+
 ## PARAMETERS
 
 ### -AsJob

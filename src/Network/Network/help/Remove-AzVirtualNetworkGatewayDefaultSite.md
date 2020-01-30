@@ -37,6 +37,12 @@ This example removes the default site currently assigned to a virtual network ga
 The first command uses **Get-AzVirtualNetworkGateway** to create an object reference to the gateway; this object reference is stored in a variable named $Gateway.
 The second command then uses **Remove-AzVirtualNetworkGatewayDefaultSite** to remove the default site assigned to that gateway.
 
+```
+PS C:> Remove-AzVirtualNetworkGatewayDefaultSite -VirtualNetworkGateway $Gateway
+```
+
+This example removes the default site currently assigned to a virtual network gateway named ContosoVirtualGateway.
+
 ## PARAMETERS
 
 ### -DefaultProfile

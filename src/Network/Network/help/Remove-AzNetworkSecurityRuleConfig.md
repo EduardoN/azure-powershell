@@ -36,6 +36,12 @@ The second command creates a network security group using the rule in $rule1, an
 The third command removes the network security rule configuration named rdp-rule from the network security group in $nsg.
 The forth command saves the change.
 
+```
+PS C:> Remove-AzNetworkSecurityRuleConfig -Name rdp-rule -NetworkSecurityGroup $nsg
+```
+
+The first command creates a network security rule configuration named rdp-rule, and then stores it in the $rule1 variable.
+
 ## PARAMETERS
 
 ### -DefaultProfile

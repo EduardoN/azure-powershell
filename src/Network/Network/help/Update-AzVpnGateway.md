@@ -64,6 +64,12 @@ A VPN gateway will be created thereafter in the Virtual Hub with 2 scale units.
 
 After the gateway has been created, it uses Set-AzVpnGateway to upgrade the gateway to 3 scale units.
 
+```
+PS C:> Update-AzVpnGateway -Name cert01 -ResourceGroupName MyResourceGroup
+```
+
+The Update-AzVpnGateway cmdlet updates a scalable VPN gateway.
+
 ## PARAMETERS
 
 ### -AsJob

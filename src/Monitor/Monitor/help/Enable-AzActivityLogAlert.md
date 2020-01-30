@@ -59,6 +59,12 @@ PS C:\>Get-AzResource -ResourceGroupName "myResourceGroup" -Name "myLogAlert" | 
 
 This command enables the ActivityLogAlert using the ResourceId parameter from the pipe.
 
+```
+PS C:> Enable-AzActivityLogAlert -InputObject $obj
+```
+
+The Enable-AzActivityLogAlert cmdlet allows enabling an activity log alert and setting its tags.
+
 ## PARAMETERS
 
 ### -DefaultProfile

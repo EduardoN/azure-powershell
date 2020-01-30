@@ -32,6 +32,12 @@ PS C:> Remove-AzLoadBalancerFrontendIpConfig -Name "frontendName" -LoadBalancer 
 The first command gets the load balancer that is associated with the front-end IP configuration you want to remove, and then stores it in the $loadbalancer variable.
 The second command removes the associated frontend IP configuration from the load balancer in $loadbalancer.
 
+```
+PS C:> Remove-AzLoadBalancerFrontendIpConfig -LoadBalancer $loadbalancer -Name frontendName
+```
+
+The first command gets the load balancer that is associated with the front-end IP configuration you want to remove, and then stores it in the $loadbalancer variable.
+
 ## PARAMETERS
 
 ### -DefaultProfile

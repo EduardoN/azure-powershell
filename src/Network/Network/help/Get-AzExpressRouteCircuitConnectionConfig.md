@@ -35,6 +35,12 @@ Get-AzExpressRouteCircuitConnectionConfig -Name $circuitConnectionName -ExpressR
 Get-AzExpressRouteCircuit -Name $initiatingCircuitName -ResourceGroupName $rg|Get-AzExpressRouteCircuitConnectionConfig -Name $circuitConnectionName
 ```
 
+```
+PS C:> Get-AzExpressRouteCircuitConnectionConfig -ExpressRouteCircuit $circuit_init
+```
+
+The Get-AzExpressRouteCircuitConnectionConfig cmdlet retrieves the configuration of a circuit connection
+
 ## PARAMETERS
 
 ### -DefaultProfile

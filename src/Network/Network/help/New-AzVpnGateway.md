@@ -67,6 +67,12 @@ ProvisioningState   : Succeeded
 The above will create a resource group, Virtual WAN, Virtual Network, Virtual Hub in West US in "testRG" resource group in Azure. 
 A VPN gateway will be created thereafter in the Virtual Hub with 2 scale units.
 
+```
+PS C:> New-AzVpnGateway -Name testvpngw -ResourceGroupName testRG -VirtualHubId $virtualHub.Id -VpnGatewayScaleUnit 2
+```
+
+The above will create a resource group, Virtual WAN, Virtual Network, Virtual Hub in West US in "testRG" resource group in Azure. 
+
 ## PARAMETERS
 
 ### -AsJob

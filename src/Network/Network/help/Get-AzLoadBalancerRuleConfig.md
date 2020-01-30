@@ -32,6 +32,12 @@ PS C:\> Get-AzLoadBalancerRuleConfig -Name "MyLBrulename" -LoadBalancer $slb
 The first command gets the load balancer named MyLoadBalancer, and then stores it in the variable $slb.
 The second command gets the associated rule configuration named MyLBrulename from the load balancer in $slb.
 
+```
+PS C:> Get-AzLoadBalancerRuleConfig -LoadBalancer $slb -Name MyLBrulename
+```
+
+The first command gets the load balancer named MyLoadBalancer, and then stores it in the variable $slb.
+
 ## PARAMETERS
 
 ### -DefaultProfile

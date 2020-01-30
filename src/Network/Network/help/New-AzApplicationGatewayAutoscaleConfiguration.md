@@ -31,6 +31,12 @@ PS C:\> $gw = New-AzApplicationGateway -Name $appgwName -ResourceGroupName $rgna
 The first command creates an autoscale configuration with minimum capacity 3.
 The second command creates an application gateway with the autoscale configuration.
 
+```
+PS C:> New-AzApplicationGatewayAutoscaleConfiguration -MinCapacity 3
+```
+
+The first command creates an autoscale configuration with minimum capacity 3.
+
 ## PARAMETERS
 
 ### -DefaultProfile

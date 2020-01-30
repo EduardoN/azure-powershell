@@ -32,6 +32,12 @@ PS C:\> $AppGw = Add-AzApplicationGatewayFrontendPort -ApplicationGateway $AppGw
 The first command gets the application gateway named ApplicationGateway01 that belongs to the resource group named ResourceGroup01 and stores it in the $AppGw variable.
 The second command adds port 80 as a front-end port for the application gateway stored in $AppGw and names the port FrontEndPort01.
 
+```
+PS C:> Add-AzApplicationGatewayFrontendPort -ApplicationGateway $AppGw -Name FrontEndPort01 -Port 80
+```
+
+The first command gets the application gateway named ApplicationGateway01 that belongs to the resource group named ResourceGroup01 and stores it in the $AppGw variable.
+
 ## PARAMETERS
 
 ### -ApplicationGateway

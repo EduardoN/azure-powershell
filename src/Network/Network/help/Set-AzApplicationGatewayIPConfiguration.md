@@ -44,6 +44,12 @@ The second command gets the subnet configuration named Subnet01 using $VNet and 
 The third command gets an application gateway named ApplicationGateway01 that belongs to the resource group named ResourceGroup01 and stores it in the $AppGw variable.
 The forth command sets the IP configuration of the application gateway stored in $AppGw to the subnet configuration stored in $Subnet.
 
+```
+PS C:> Set-AzApplicationGatewayIPConfiguration -ApplicationGateway $AppGw -Name AppgwSubnet01 -Subnet $Subnets
+```
+
+The first command gets the virtual network named VNet01 that belongs to the resource group named ResourceGroup01 and stores it in the $VNet variable.
+
 ## PARAMETERS
 
 ### -ApplicationGateway

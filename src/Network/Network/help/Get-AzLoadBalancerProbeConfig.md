@@ -32,6 +32,12 @@ PS C:\> Get-AzLoadBalancerProbeConfig -Name "MyProbe" -LoadBalancer $slb
 The first command gets the load balancer named MyLoadBalancer, and then stores it in the variable $slb.
 The second command gets the associated probe configuration named MyProbe from the load balancer in $slb.
 
+```
+PS C:> Get-AzLoadBalancerProbeConfig -LoadBalancer $slb -Name MyProbe
+```
+
+The first command gets the load balancer named MyLoadBalancer, and then stores it in the variable $slb.
+
 ## PARAMETERS
 
 ### -DefaultProfile
