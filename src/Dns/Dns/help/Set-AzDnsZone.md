@@ -87,6 +87,12 @@ PS C:\>Set-AzDNSZone -ResourceGroupName "MyResourceGroup" -Name "myprivatezone.c
 This command associates the Private DNS zone myprivatezone.com with the virtual network myvnet as a registration network
 by passing the virtual network object represented by $vnet variable to the Set-AzDnsZone cmdlet.
 
+```
+PS C:> Set-AzDnsZone -Name 4 -ResourceGroupName MyResourceGroup
+```
+
+The Set-AzDnsZone cmdlet updates the specified DNS zone in the Azure DNS service.
+
 ## PARAMETERS
 
 ### -DefaultProfile

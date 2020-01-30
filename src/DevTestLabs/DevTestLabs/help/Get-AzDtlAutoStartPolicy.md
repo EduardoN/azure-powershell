@@ -24,6 +24,12 @@ The cmdlet returns the enabled or disabled status of the policy and the days of 
 
 ## EXAMPLES
 
+```
+PS C:> Get-AzDtlAutoStartPolicy -LabName {LabName} -ResourceGroupName MyResourceGroup
+```
+
+The Get-AzDtlAutoStartPolicy cmdlet gets the auto start policy of a lab which schedules lab virtual machines for automatic start.
+
 ## PARAMETERS
 
 ### -DefaultProfile

@@ -175,6 +175,12 @@ The record set is of type TXT and has a TTL of 1 hour (3600 seconds).
 It contains a single DNS record.
 To create a **RecordSet** using only one line of pn_PowerShell_short, or to create a record set with multiple records, see Example 1.
 
+```
+PS C:> New-AzDnsRecordConfig -Cname www.contoso.com
+```
+
+This example creates a RecordSet named www in the zone myzone.com.
+
 ## PARAMETERS
 
 ### -CaaFlags
