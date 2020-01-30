@@ -85,6 +85,12 @@ The second command uses **Add-AzKeyVaultCertificate** to start the process to cr
 The third command uses the Get-AzKeyVaultCertificateOperation cmdlet to poll the operation to verify that it's complete.
 The final command uses the Get-AzKeyVaultCertificate cmdlet to get the certificate.
 
+```
+PS C:> Add-AzKeyVaultCertificate -CertificatePolicy $Policy -Name TestCert01 -VaultName ContosoKV01
+```
+
+The first command uses the New-AzKeyVaultCertificatePolicy cmdlet to create a certificate policy, and then stores it in the $Policy variable.
+
 ## PARAMETERS
 
 ### -CertificatePolicy

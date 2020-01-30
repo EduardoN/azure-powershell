@@ -57,6 +57,12 @@ Sets an account SAS definition 'accountsas' on a KeyVault-managed storage accoun
   - sets a KeyVault-managed storage SAS definition in the vault, with the template uri as the SAS token created above, of SAS type 'account' and valid for 30 days
   - retrieves the actual access token from the KeyVault secret corresponding to the SAS definition
 
+```
+PS C:> Set-AzKeyVaultManagedStorageSasDefinition -AccountName $sa.StorageAccountName -Name accountsas -SasType account -TemplateUri $at -ValidityPeriod {ValidityPeriod} -VaultName $kv.VaultName
+```
+
+Sets an account SAS definition 'accountsas' on a KeyVault-managed storage account 'mysa' in vault 'mykv'. Specifically, the sequence above performs the following:
+
 ## PARAMETERS
 
 ### -AccountName
