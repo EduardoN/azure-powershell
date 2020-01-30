@@ -65,6 +65,12 @@ MetaData          :
 
 This command creates the integration account certificate in the specified resource group.
 
+```
+PS C:> New-AzIntegrationAccountCertificate -CertificateName IntegrationAccountCertificate01 -Name IntegrationAccount31 -PublicCertificateFilePath c:\temp\Certificate.cer -ResourceGroupName ResourceGroup11
+```
+
+The New-AzIntegrationAccountCertificate cmdlet creates an integration account certificate.
+
 ## PARAMETERS
 
 ### -CertificateName

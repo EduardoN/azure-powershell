@@ -154,6 +154,12 @@ The first command gets the logic app named LogicApp03 by using the Get-AzLogicAp
 The command stores the logic app in the $Workflow variable.
 The second command creates a new logic app that uses the definition and parameters of the logic app stored in $Workflow.
 
+```
+PS C:> New-AzLogicApp -DefinitionFilePath d:\workflows\Definition03.json -Location westus -Name LogicApp03 -ResourceGroupName ResourceGroup11
+```
+
+The New-AzLogicApp cmdlet creates a logic app by using the Logic Apps feature.
+
 ## PARAMETERS
 
 ### -DefaultProfile

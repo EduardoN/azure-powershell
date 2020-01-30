@@ -35,6 +35,12 @@ PS C:\>Remove-AzIntegrationAccountSchema -ResourceGroupName "ResourceGroup11" -N
 
 This command removes an integration account schema named IntegrationAccountSchema43.
 
+```
+PS C:> Remove-AzIntegrationAccountSchema -Force  -Name IntegrationAccount31 -ResourceGroupName ResourceGroup11 -SchemaName IntegrationAccountSchema43
+```
+
+The Remove-AzIntegrationAccountSchema cmdlet removes an integration account schema from a resource group.
+
 ## PARAMETERS
 
 ### -DefaultProfile
