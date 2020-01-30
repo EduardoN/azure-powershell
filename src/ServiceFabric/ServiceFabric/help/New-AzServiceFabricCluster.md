@@ -113,6 +113,12 @@ New-AzServiceFabricCluster -ResourceGroupName $RGname -TemplateFile $templateFil
 
 This command will let you bring your own Certificate and custom template and create a new cluster.
 
+```
+PS C:> New-AzServiceFabricCluster -CertificateOutputFolder $pfxfolder -CertificatePassword $pass -CertificateSubjectName $subname -ClusterSize 5 -KeyVaultName $keyVault -Location $clusterloc -Name Contoso01SFCluster -OS WindowsServer2012R2Datacenter -ResourceGroupName $RGname -VmPassword $pass -VmSku {VmSku} -VmUserName adminName
+```
+
+The New-AzServiceFabricCluster command uses certificates that you provide or system generated self-signed certificates to set up a new service fabric cluster. The template used can be a default template or a custom template that you provide. You have the option of specifying a folder to export the self-signed certificates or fetching them later from the key vault.
+
 ## PARAMETERS
 
 ### -CertificateCommonName

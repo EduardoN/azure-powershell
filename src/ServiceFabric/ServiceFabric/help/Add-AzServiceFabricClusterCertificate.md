@@ -59,6 +59,12 @@ PS c:\> add-AzServiceFabricClusterCertificate -ResourceGroupName 'Group2' -Name 
 
 This command will create a self-signed certificate in the Azure key vault and upgrade the cluster to use it as a secondary cluster certificate.
 
+```
+PS C:> Add-AzServiceFabricClusterCertificate -CertificateFile $pfxsourcefile -CertificatePassword $pass -Name Contoso01SFCluster -ResourceGroupName Group1
+```
+
+Use Add-AzServiceFabricClusterCertificate to add a secondary cluster certificate, either from an existing Azure key vault or creating a new Azure key vault using an existing certificate provided or from a new self-signed certificate created. 
+
 ## PARAMETERS
 
 ### -CertificateCommonName
