@@ -33,6 +33,12 @@ PS C:\>Remove-AzHDInsightCluster -ClusterName "your-hadoop-001"
 
 This command removes the cluster named your-hadoop-001.
 
+```
+PS C:> Remove-AzHDInsightCluster -ClusterName your-hadoop-001 -ResourceGroupName MyResourceGroup
+```
+
+The Remove-AzHDInsightCluster cmdlet removes the specified HDInsight service cluster from a subscription.
+
 ## PARAMETERS
 
 ### -ClusterName
