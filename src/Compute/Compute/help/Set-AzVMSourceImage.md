@@ -44,6 +44,12 @@ The virtual machine belongs to the availability set stored in $AvailabilitySet.
 The final command sets values for publisher name, offer, SKU, and version.
 The **Get-AzVMImagePublisher**, **Get-AzVMImageOffer**, **Get-AzVMImageSku**, and **Get-AzVMImage** cmdlets can discover these settings.
 
+```
+PS C:> Set-AzVMSourceImage -Offer UbuntuServer -PublisherName Canonical -Skus 15.10 -VM $VirtualMachine -Version latest
+```
+
+The first command gets the availability set named AvailabilitySet03 in the resource group named ResourceGroup11, and then stores that object in the $AvailabilitySet variable.
+
 ## PARAMETERS
 
 ### -DefaultProfile

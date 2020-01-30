@@ -46,6 +46,12 @@ PS C:\> Update-AzImage -ResourceGroupName 'ResourceGroup01' -ImageName 'Image01'
 
 This command updates the Tag value of the existing image 'Image01' in the resource group 'ResourceGroup01'.
 
+```
+PS C:> Update-AzImage -ImageName Image01 -ResourceGroupName ResourceGroup01
+```
+
+The Update-AzImage cmdlet updates an image.
+
 ## PARAMETERS
 
 ### -AsJob

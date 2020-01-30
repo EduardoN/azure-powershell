@@ -38,6 +38,12 @@ The first command creates a local empty snapshot object with size 5GB in Standar
 The second and third commands set the disk encryption key and key encryption key settings for the snapshot object.
 The last command takes the snapshot object and creates a snapshot with name 'Snapshot01' in resource group 'ResourceGroup01'.
 
+```
+PS C:> Set-AzSnapshotDiskEncryptionKey -SecretUrl $secretUrl -Snapshot $snapshotconfig -SourceVaultId $secretId
+```
+
+The first command creates a local empty snapshot object with size 5GB in Standard_LRS storage account type.  It also sets Windows OS type and enables encryption settings.
+
 ## PARAMETERS
 
 ### -DefaultProfile

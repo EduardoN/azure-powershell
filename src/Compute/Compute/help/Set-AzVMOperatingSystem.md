@@ -84,6 +84,12 @@ The final command sets operating system properties for the virtual machine store
 The command uses the credentials stored in $Credential.
 The command uses variables assigned in previous commands for some parameters.
 
+```
+PS C:> Set-AzVMOperatingSystem -ComputerName $ComputerName -Credential $Credential -VM $$VirtualMachine -Windows 
+```
+
+The Set-AzVMOperatingSystem cmdlet sets operating system properties for a virtual machine.
+
 ## PARAMETERS
 
 ### -ComputerName

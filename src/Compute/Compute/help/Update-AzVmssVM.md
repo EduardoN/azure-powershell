@@ -65,6 +65,12 @@ The next command gets an existing Vmss VM given by the resource group name, the 
 The next command adds the managed disk to the Vmss VM stored locally in $VmssVM.
 The final command updates the Vmss VM with added data disk.
 
+```
+PS C:> Update-AzVmssVM -DataDisk $datadisk -InstanceId 0 -ResourceGroupName myrg -VMScaleSetName myvmss
+```
+
+The first command gets an existing managed disk.
+
 ## PARAMETERS
 
 ### -AsJob

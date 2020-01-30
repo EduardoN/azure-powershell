@@ -50,6 +50,12 @@ PS C:\> New-AzSnapshotUpdateConfig -DiskSizeGB 10 | Update-AzSnapshot -ResourceG
 This command updates an existing snapshot with name 'Snapshot01' in resource group
 'ResourceGroup01' to 10 GB disk size.
 
+```
+PS C:> New-AzSnapshotUpdateConfig -DiskSizeGB 10
+```
+
+This command updates an existing snapshot with name 'Snapshot01' in resource group
+
 ## PARAMETERS
 
 ### -DefaultProfile

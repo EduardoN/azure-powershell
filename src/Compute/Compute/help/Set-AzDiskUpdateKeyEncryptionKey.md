@@ -38,6 +38,12 @@ The first command creates a local empty disk update object with size 10GB in Pre
 The second and third commands set the disk encryption key and key encryption key settings for the disk update object.
 The last command takes the disk update object and updates an existing disk with name 'Disk01' in resource group 'ResourceGroup01'.
 
+```
+PS C:> Set-AzDiskUpdateKeyEncryptionKey -DiskUpdate $diskupdateconfig -KeyUrl $keyUrl -SourceVaultId $keyId
+```
+
+The first command creates a local empty disk update object with size 10GB in Premium_LRS storage account type.  It also sets Windows OS type and enables encryption settings.
+
 ## PARAMETERS
 
 ### -DefaultProfile

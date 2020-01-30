@@ -66,6 +66,12 @@ PS C:\> Save-AzVhd -SourceUri "http://contosoaccount.blob.core.windows.net/vhdst
 
 This command downloads a .vhd file and specifies the storage key.
 
+```
+PS C:> Save-AzVhd -LocalFilePath C:\vhd\Win7Image.vhd -NumberOfThreads 32 -OverWrite  -SourceUri http://contosoaccount.blob.core.windows.net/vhdstore/win7baseimage.vhd -StorageKey zNvcH0r5vAGmC5AbwEtpcyWCMyBd3eMDbdaa4ua6kwxq6vTZH3Y+sw==
+```
+
+The Save-AzVhd cmdlet saves .vhd images from a blob where they are stored to a file.
+
 ## PARAMETERS
 
 ### -AsJob

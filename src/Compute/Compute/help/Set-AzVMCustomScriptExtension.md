@@ -95,6 +95,12 @@ PS C:\> Set-AzVMCustomScriptExtension -ResourceGroupName "ResourceGroup11" -Loca
 This command adds a custom script to the virtual machine named VirtualMachine07.
 The script file is contososcript.exe.
 
+```
+PS C:> Set-AzVMCustomScriptExtension -FileUri https://nlistorageaccntv1.blob.core.windows.net/scripts/myScript.ps1 -Location Central US -Name ContosoTest -ResourceGroupName ResourceGroup11 -Run myScript.ps1 -VMName VirtualMachine07
+```
+
+The Set-AzVMCustomScriptExtension cmdlet adds a custom script Virtual Machine Extension to a virtual machine.
+
 ## PARAMETERS
 
 ### -Argument

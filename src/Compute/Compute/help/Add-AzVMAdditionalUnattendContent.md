@@ -46,6 +46,12 @@ The fifth command assigns content to the $AucContent variable.
 The content includes a password.
 The final command adds the content stored in $AucContent to the unattend.xml file.
 
+```
+PS C:> Add-AzVMAdditionalUnattendContent -Content $AucContent -SettingName AutoLogon -VM $VirtualMachine
+```
+
+The first command gets the availability set named AvailabilitySet03 in the resource group named ResourceGroup11, and then stores that object in the $AvailabilitySet variable.
+
 ## PARAMETERS
 
 ### -Content

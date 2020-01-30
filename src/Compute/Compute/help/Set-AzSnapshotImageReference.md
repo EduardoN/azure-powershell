@@ -34,6 +34,12 @@ The first command creates a local snapshot object with size 10GB in Premium_LRS 
 The second command sets the image ID and the logical unit number 0 for the snapshot object.
 The last command takes the snapshot object and creates a snapshot with name 'Snapshot01' in resource group 'ResourceGroup01'.
 
+```
+PS C:> Set-AzSnapshotImageReference -Id $image -Lun 0 -Snapshot $snapshotconfig
+```
+
+The first command creates a local snapshot object with size 10GB in Premium_LRS storage account type.  It also sets Windows OS type.
+
 ## PARAMETERS
 
 ### -DefaultProfile

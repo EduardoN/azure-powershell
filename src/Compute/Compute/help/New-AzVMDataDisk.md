@@ -44,6 +44,12 @@ The next command creates a data disk object with the managed disk.
 The next command gets an existing Vmss VM given by the resource group name, the vmss name and the instance ID.
 The final command updates the Vmss VM by adding a new data disk.
 
+```
+PS C:> New-AzVMDataDisk -Caching None -CreateOption Attach -Lun 2 -ManagedDiskId $disk.Id -StorageAccountType Standard_LRS
+```
+
+The first command gets an existing managed disk.
+
 ## PARAMETERS
 
 ### -Caching
