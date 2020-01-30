@@ -37,6 +37,12 @@ PS C:\> Clear-AzDefault -ResourceGroup
 
 This command removes the default resource group set by the user in the current context.
 
+```
+PS C:> Clear-AzDefault -Force 
+```
+
+The Clear-AzDefault cmdlet removes the defaults set by 
+
 ## PARAMETERS
 
 ### -DefaultProfile
