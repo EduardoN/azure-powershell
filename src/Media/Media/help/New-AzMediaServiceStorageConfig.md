@@ -35,6 +35,12 @@ The first command creates a storage account object by using **the New-AzStorageA
 The command names this storage account Storage1 and the type is named Standard_GRS and stores the result in the variable named $StorageAccount.
 The second command creates a storage configuration object as the primary storage account associated with the media service using the storage account ID information stored in the $StorageAccount variable.
 
+```
+PS C:> New-AzMediaServiceStorageConfig -IsPrimary  -StorageAccountId $StorageAccount.Id
+```
+
+The first command creates a storage account object by using the New-AzStorageAccount cmdlet.
+
 ## PARAMETERS
 
 ### -DefaultProfile
