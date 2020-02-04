@@ -44,6 +44,12 @@ You can filter the results based on the kind of data source.
 
 ## EXAMPLES
 
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzOperationalInsightsDataSource -Kind AzureAuditLog -ResourceGroupName $ResourceGroupName -WorkspaceName ContosoWorkspace
+```
+
+The Get-AzOperationalInsightsDataSource cmdlet gets data sources.
+
 ## PARAMETERS
 
 ### -DefaultProfile

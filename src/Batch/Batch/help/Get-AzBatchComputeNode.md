@@ -143,6 +143,12 @@ This command gets the pool that has the ID Pool07 by using the Get-AzBatchPool c
 The command passes that pool to the current cmdlet by using the pipeline operator.
 That cmdlet gets all compute nodes from that pool.
 
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzBatchComputeNode -BatchContext $Context -PoolId ContosoPool
+```
+
+The Get-AzBatchComputeNode cmdlet gets Azure Batch compute nodes from a pool.
+
 ## PARAMETERS
 
 ### -BatchContext

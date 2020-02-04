@@ -67,6 +67,12 @@ The first command gets the specified record set.
 The second command deletes the record set, even if it has changed in the meantime.
 Confirmation prompts are suppressed.
 
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Remove-AzDnsRecordSet -Name www -RecordType A -ResourceGroupName MyResourceGroup -ZoneName myzone.com
+```
+
+The Remove-AzDnsRecordSet cmdlet deletes the specified record set from the specified zone.
+
 ## PARAMETERS
 
 ### -DefaultProfile

@@ -25,6 +25,12 @@ Automation stores DSC node configuration as a Managed Object Format (MOF) config
 
 ## EXAMPLES
 
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Remove-AzAutomationDscNodeConfiguration -AutomationAccountName AutomationAccount01 -Force  -IgnoreNodeMappings  -Name Configuration01 -ResourceGroupName MyResourceGroup
+```
+
+The Remove-AzAutomationDscNodeConfiguration cmdlet removes metadata from APS Desired State Configuration (DSC) node configurations in Azure Automation.
+
 ## PARAMETERS
 
 ### -AutomationAccountName

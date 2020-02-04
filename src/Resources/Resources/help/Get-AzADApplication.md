@@ -88,6 +88,12 @@ PS C:\> Get-AzADApplication -ObjectId 39e64ec6-569b-4030-8e1c-c3c519a05d69
 
 Gets the application with the object id '39e64ec6-569b-4030-8e1c-c3c519a05d69'.
 
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzADApplication -DisplayNameStartWith <String>
+```
+
+Lists existing azure active directory applications.
+
 ## PARAMETERS
 
 ### -ApplicationId

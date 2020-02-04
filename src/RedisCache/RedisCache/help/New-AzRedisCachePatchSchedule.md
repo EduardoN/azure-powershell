@@ -31,6 +31,12 @@ PS C:\>New-AzRedisCachePatchSchedule -ResourceGroupName "ResourceGroup13" -Name 
 This command adds a patch schedule to the cache named RedisCache06.
 The Entries parameter takes as its value a command that uses **New-AzRedisCacheScheduleEntry** to create a schedule.
 
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> New-AzRedisCachePatchSchedule -Entries <PSScheduleEntry[]> -Name RedisCache06 -ResourceGroupName ResourceGroup13
+```
+
+This command adds a patch schedule to the cache named RedisCache06.
+
 ## PARAMETERS
 
 ### -DefaultProfile

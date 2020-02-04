@@ -49,6 +49,12 @@ Metadata    :
 This command modifies the integration account map in the specified resource group.
 The command specifies a map definition stored in the $MapContent variable by a previous command.
 
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Set-AzIntegrationAccountMap -Force  -MapFilePath {MapFilePath} -MapName IntegrationAccountMap47 -Name IntegrationAccount31 -ResourceGroupName ResourceGroup11
+```
+
+The Set-AzIntegrationAccountMap cmdlet modifies an integration account map.
+
 ## PARAMETERS
 
 ### -ContentType

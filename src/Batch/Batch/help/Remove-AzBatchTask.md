@@ -51,6 +51,12 @@ The command deletes that task.
 This command specifies the *Force* parameter.
 Therefore, the command does not prompt you for confirmation.
 
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Remove-AzBatchTask -BatchContext $Context -Confirm 
+```
+
+The Remove-AzBatchTask cmdlet deletes an Azure Batch task.
+
 ## PARAMETERS
 
 ### -BatchContext

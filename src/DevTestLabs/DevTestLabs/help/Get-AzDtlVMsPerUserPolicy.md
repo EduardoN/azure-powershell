@@ -24,6 +24,12 @@ The cmdlet returns the enabled or disabled status of the policy and the maximum 
 
 ## EXAMPLES
 
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzDtlVMsPerUserPolicy -LabName {LabName} -ResourceGroupName MyResourceGroup
+```
+
+The Get-AzDtlVMsPerUserPolicy cmdlet gets the virtual machines per user policy of a lab, which allows you to set the maximum number of virtual machines allowed per user.
+
 ## PARAMETERS
 
 ### -DefaultProfile

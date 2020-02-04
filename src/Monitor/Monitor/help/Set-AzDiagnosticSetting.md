@@ -124,6 +124,12 @@ PS C:\>Get-AzDiagnosticSetting -ResourceId "Resource01" | Set-AzDiagnosticSettin
 
 This command uses the PowerShell pipeline to set (not change made) a diagnostic setting.
 
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Set-AzDiagnosticSetting -Enabled $False -Name MySetting -ResourceId Resource01 -WorkspaceId <String>
+```
+
+The Set-AzDiagnosticSetting cmdlet enables or disables each time grain and log category for the particular resource.
+
 ## PARAMETERS
 
 ### -Category

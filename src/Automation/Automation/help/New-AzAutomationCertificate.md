@@ -37,6 +37,12 @@ The second command creates a certificate named ContosoCertificate.
 The command uses the password stored in $Password.
 The command specifies the account name and the path of the file that it uploads.
 
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> New-AzAutomationCertificate -AutomationAccountName Contoso17 -Exportable  -Name ContosoCertificate -Password $Password -Path ./cert.pfx -ResourceGroupName ResourceGroup01
+```
+
+The New-AzAutomationCertificate cmdlet creates a certificate in Azure Automation.
+
 ## PARAMETERS
 
 ### -AutomationAccountName

@@ -38,6 +38,12 @@ PS C:\>Get-AzAutomationRunbook -AutomationAccountName "Contoso17" -ResourceGroup
 
 This command gets all runbooks in the Azure Automation account named Contoso17.
 
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzAutomationRunbook -AutomationAccountName Contoso17 -Name Configuration01 -ResourceGroupName ResourceGroup01
+```
+
+The Get-AzAutomationRunbook cmdlet gets Azure Automation runbooks.
+
 ## PARAMETERS
 
 ### -AutomationAccountName
