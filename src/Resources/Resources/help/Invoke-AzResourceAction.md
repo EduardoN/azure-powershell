@@ -42,6 +42,13 @@ To get a list of supported actions, use the Azure Resource Explorer tool.
 
 ## EXAMPLES
 
+```powershell 
+<!-- Aladdin Generated Example --> 
+PS C:> Invoke-AzResourceAction -Action <String> -Force  -ResourceGroupName MyResourceGroup -ResourceName ContosoSite -ResourceType Microsoft.ClassicCompute/storageAccounts
+```
+
+The Invoke-AzResourceAction cmdlet invokes an action on a specified Azure resource.
+
 ## PARAMETERS
 
 ### -Action

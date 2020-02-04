@@ -70,6 +70,13 @@ Version                      : 08587489107859952120
 
 This command modifies a logic app.
 
+```powershell 
+<!-- Aladdin Generated Example --> 
+PS C:> Set-AzLogicApp -Force  -Name LogicApp17 -ResourceGroupName ResourceGroup11 -State Enabled
+```
+
+The Set-AzLogicApp cmdlet modifies a logic app by using the Logic Apps feature.
+
 ## PARAMETERS
 
 ### -AppServicePlan

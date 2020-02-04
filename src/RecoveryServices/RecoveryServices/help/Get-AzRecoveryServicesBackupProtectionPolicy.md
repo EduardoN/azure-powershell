@@ -63,6 +63,13 @@ PS C:\> $Pol= Get-AzRecoveryServicesBackupProtectionPolicy -Name "DefaultPolicy"
 
 This command gets the protection policy named DefaultPolicy, and then stores it in the $Pol variable.
 
+```powershell 
+<!-- Aladdin Generated Example --> 
+PS C:> Get-AzRecoveryServicesBackupProtectionPolicy -Name DefaultPolicy -VaultId $vault
+```
+
+The Get-AzRecoveryServicesBackupProtectionPolicy cmdlet gets Azure Backup protection policies for a vault.
+
 ## PARAMETERS
 
 ### -BackupManagementType

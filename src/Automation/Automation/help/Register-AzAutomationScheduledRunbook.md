@@ -39,6 +39,13 @@ PS C:\>Register-AzAutomationScheduledRunbook -AutomationAccountName "Contoso17" 
 
 This command associates the runbook named Runbk01 with the schedule named Sched01 in the Azure Automation account named Contoso17.
 
+```powershell 
+<!-- Aladdin Generated Example --> 
+PS C:> Register-AzAutomationScheduledRunbook -AutomationAccountName Contoso17 -Parameters $Params -ResourceGroupName ResourceGroup01 -RunbookName Runbk01 -ScheduleName Sched01
+```
+
+The Register-AzAutomationScheduledRunbook cmdlet associates an Azure Automation runbook to a schedule.
+
 ## PARAMETERS
 
 ### -AutomationAccountName

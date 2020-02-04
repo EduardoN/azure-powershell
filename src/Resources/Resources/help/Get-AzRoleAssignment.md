@@ -176,6 +176,13 @@ PS C:\> Get-AzRoleAssignment -Scope "/subscriptions/96231a05-34ce-4eb4-aa6a-7075
 
 Gets role assignments at the 'site1' website scope.
 
+```powershell 
+<!-- Aladdin Generated Example --> 
+PS C:> Get-AzRoleAssignment -ResourceGroupName testRG
+```
+
+Use the Get-AzRoleAssignment command to list all role assignments that are effective on a scope.
+
 ## PARAMETERS
 
 ### -DefaultProfile

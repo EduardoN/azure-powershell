@@ -58,6 +58,13 @@ PS C:\> Add-AzVhd -Destination "http://contosoaccount.blob.core.windows.net/vhds
 
 This command adds a .vhd file to a storage account and specifies the SAS URI.
 
+```powershell 
+<!-- Aladdin Generated Example --> 
+PS C:> Add-AzVhd -Destination http://contosoaccount.blob.core.windows.net/vhdstore/win7baseimage.vhd -LocalFilePath C:\vhd\Win7Image.vhd -ResourceGroupName MyResourceGroup
+```
+
+The Add-AzVhd cmdlet uploads on-premises virtual hard disks, in .vhd file format, to a blob storage account as fixed virtual hard disks.
+
 ## PARAMETERS
 
 ### -AsJob

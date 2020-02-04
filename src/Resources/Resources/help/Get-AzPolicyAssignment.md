@@ -68,6 +68,13 @@ PS C:\> Get-AzPolicyAssignment -Scope '/providers/Microsoft.Management/managemen
 The first command specifies the ID of the management group to query.
 The second command gets all of the policy assignments that are assigned to the management group with ID 'myManagementGroup'.
 
+```powershell 
+<!-- Aladdin Generated Example --> 
+PS C:> Get-AzPolicyAssignment -IncludeDescendent 
+```
+
+The Get-AzPolicyAssignment cmdlet gets all policy assignments or particular assignments.
+
 ## PARAMETERS
 
 ### -ApiVersion

@@ -109,6 +109,13 @@ PS C:\> $role = Get-AzRoleDefinition -Name "Virtual Machine Contributor"
 PS C:\> New-AzRoleDefinition -InputFile C:\Temp\roleDefinition.json
 ```
 
+```powershell 
+<!-- Aladdin Generated Example --> 
+PS C:> New-AzRoleDefinition -InputFile C:TemproleDefinition.json
+```
+
+The New-AzRoleDefinition cmdlet creates a custom role in Azure Role-Based Access Control.
+
 ## PARAMETERS
 
 ### -DefaultProfile

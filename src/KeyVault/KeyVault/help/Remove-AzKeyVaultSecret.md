@@ -82,6 +82,13 @@ PS C:\> Remove-AzKeyVaultSecret -VaultName 'Contoso' -Name 'FinanceSecret' -InRe
 This command premoves the secret named FinanceSecret from the key vault named Contoso permanently.
 Executing this cmdlet requires the 'purge' permission, which must have been previously and explicitly granted to the user for this key vault.
 
+```powershell 
+<!-- Aladdin Generated Example --> 
+PS C:> Remove-AzKeyVaultSecret -Force  -Name FinanceSecret -VaultName Contoso
+```
+
+The Remove-AzKeyVaultSecret cmdlet deletes a secret in a key vault.
+
 ## PARAMETERS
 
 ### -DefaultProfile

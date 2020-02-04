@@ -70,6 +70,13 @@ ErrorMessage        :
 
 This command gets all runs for slices of the dataset named DAWikiAggregatedData in the data factory named WikiADF that start from 4 PM GMT on 05/21/2014.
 
+```powershell 
+<!-- Aladdin Generated Example --> 
+PS C:> Get-AzDataFactoryRun -DataFactory $DataFactory -DatasetName DAWikiAggregatedData -DefaultProfile {DefaultProfile} -StartDateTime 2014-05-21T16:00:00Z
+```
+
+The Get-AzDataFactoryRun cmdlet gets the runs for a data slice of a dataset in Azure Data Factory.
+
 ## PARAMETERS
 
 ### -DataFactory

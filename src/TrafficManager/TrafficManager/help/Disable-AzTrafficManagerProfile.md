@@ -51,6 +51,13 @@ That cmdlet disables that profile.
 The command specifies the *Force* parameter.
 Therefore, it does not prompt you for confirmation.
 
+```powershell 
+<!-- Aladdin Generated Example --> 
+PS C:> Disable-AzTrafficManagerProfile -Force  -Name ContosoProfile -ResourceGroupName ResourceGroup11
+```
+
+This command gets the profile named ContosoProfile in ResourceGroup11.
+
 ## PARAMETERS
 
 ### -DefaultProfile

@@ -103,6 +103,13 @@ Set-AzVirtualNetworkSubnetConfig -Name frontendSubnet -VirtualNetwork $virtualNe
 $virtualNetwork | Set-AzVirtualNetwork
 ```
 
+```powershell 
+<!-- Aladdin Generated Example --> 
+PS C:> Set-AzVirtualNetworkSubnetConfig -AddressPrefix 10.0.3.0/23 -Name frontendSubnet -NetworkSecurityGroup $networkSecurityGroup -VirtualNetwork $virtualNetwork
+```
+
+This example creates a resource group with one virtual network containing just one 
+
 ## PARAMETERS
 
 ### -AddressPrefix

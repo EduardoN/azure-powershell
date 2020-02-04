@@ -31,6 +31,13 @@ PS C:\>Get-AzHDInsightCluster
 
 This command lists all the Azure HDInsight clusters.
 
+```powershell 
+<!-- Aladdin Generated Example --> 
+PS C:> Get-AzHDInsightCluster -ClusterName $clusterName
+```
+
+The Get-AzHDInsightCluster cmdlet lists the Azure HDInsight service clusters for the current subscription.
+
 ## PARAMETERS
 
 ### -ClusterName

@@ -31,6 +31,13 @@ PS C:\>Remove-AzAutomationAccount -Name "ContosoAutomationAccount" -Force -Resou
 
 This command removes an automation account named ContosoAutomationAccount without prompting for user validation.
 
+```powershell 
+<!-- Aladdin Generated Example --> 
+PS C:> Remove-AzAutomationAccount -Force 
+```
+
+The Remove-AzAutomationAccount cmdlet removes an Azure Automation account from a resource group.
+
 ## PARAMETERS
 
 ### -DefaultProfile

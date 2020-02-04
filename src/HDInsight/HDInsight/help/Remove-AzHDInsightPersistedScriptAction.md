@@ -33,6 +33,13 @@ PS C:\>Remove-AzHDInsightPersistedScriptAction `
 
 This command removes the script action named Scriptaction from the list of persisted script actions on the specified cluster.
 
+```powershell 
+<!-- Aladdin Generated Example --> 
+PS C:> Remove-AzHDInsightPersistedScriptAction -ClusterName your-hadoop-001 -Name $scriptActionName -ResourceGroupName MyResourceGroup
+```
+
+The Remove-AzHDInsightPersistedScriptAction cmdlet removes a persisted script action from the specified Azure HDInsight cluster's list of persisted script actions.
+
 ## PARAMETERS
 
 ### -ClusterName

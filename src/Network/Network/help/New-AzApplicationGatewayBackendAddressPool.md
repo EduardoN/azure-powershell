@@ -39,6 +39,13 @@ PS C:\>$Pool = New-AzApplicationGatewayBackendAddressPool -Name "Pool02" -Backen
 
 This command creates a back-end address pool named Pool02 by using the IP addresses of back-end servers, and stores it in the $Pool variable.
 
+```powershell 
+<!-- Aladdin Generated Example --> 
+PS C:> New-AzApplicationGatewayBackendAddressPool -Name ContosoAddressPool
+```
+
+The New-AzApplicationGatewayBackendAddressPool cmdlet creates a back-end address pool for an Azure application gateway.
+
 ## PARAMETERS
 
 ### -BackendFqdns

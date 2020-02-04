@@ -176,6 +176,13 @@ PS C:\> Remove-AzKeyVaultAccessPolicy -VaultName 'Contoso03Vault' -ResourceGroup
 
 This command removes permission for the Microsoft.Compute resource provider to get secrets from the Contoso03Vault.
 
+```powershell 
+<!-- Aladdin Generated Example --> 
+PS C:> Remove-AzKeyVaultAccessPolicy -ObjectId $account.Identity.PrincipalId -VaultName Contoso03Vault
+```
+
+The Remove-AzKeyVaultAccessPolicy cmdlet removes all permissions for a user or application or for all users and applications from a key vault.
+
 ## PARAMETERS
 
 ### -ApplicationId

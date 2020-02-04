@@ -54,6 +54,13 @@ PS C:\>Get-AzResourceGroup | Remove-AzResourceGroup
 
 This command uses the **Get-AzResourceGroup** cmdlet to get all resource groups, and then passes them to **Remove-AzResourceGroup** by using the pipeline operator.
 
+```powershell 
+<!-- Aladdin Generated Example --> 
+PS C:> Remove-AzResourceGroup -AsJob  -Force  -Name ContosoRG01
+```
+
+The Remove-AzResourceGroup cmdlet removes an Azure resource group and its resources from the current subscription.
+
 ## PARAMETERS
 
 ### -ApiVersion

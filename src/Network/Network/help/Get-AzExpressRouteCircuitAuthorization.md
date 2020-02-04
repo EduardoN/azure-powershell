@@ -58,6 +58,13 @@ property is set to Available. To list only those authorizations that are not ava
 syntax for the Where clause:
 `{$_.AuthorizationUseStatus -ne "Available"}`
 
+```powershell 
+<!-- Aladdin Generated Example --> 
+PS C:> Get-AzExpressRouteCircuitAuthorization -ExpressRouteCircuit $circuit_init -Name cert01
+```
+
+The Get-AzExpressRouteCircuitAuthorization cmdlet gets information about the
+
 ## PARAMETERS
 
 ### -DefaultProfile

@@ -42,6 +42,13 @@ PS C:\>Publish-AzApiManagementTenantGitConfiguration -Context $apimContext -Bran
 This command validates the changes in the Git branch against the configuration database.
 It does not publish changes.
 
+```powershell 
+<!-- Aladdin Generated Example --> 
+PS C:> Publish-AzApiManagementTenantGitConfiguration -Branch master -Context $apimContext -Force  -PassThru 
+```
+
+The Publish-AzApiManagementTenantGitConfiguration cmdlet publishes the changes from a Git branch to the configuration database.
+
 ## PARAMETERS
 
 ### -Branch

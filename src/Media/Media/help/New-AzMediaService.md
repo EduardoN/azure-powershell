@@ -100,6 +100,13 @@ PS C:\> $StorageAccounts = @($PrimaryStorageAccount, $SecondaryStorageAccount)
 This example shows how to create a media service with multiple storage accounts.
 This script uses several other cmdlets.
 
+```powershell 
+<!-- Aladdin Generated Example --> 
+PS C:> New-AzMediaService -AccountName $MediaServiceName -Location $Location -ResourceGroupName $ResourceGroupName -StorageAccountId $StorageAccount.Id
+```
+
+The New-AzMediaService cmdlet creates a media service.
+
 ## PARAMETERS
 
 ### -AccountName

@@ -60,6 +60,13 @@ The first command uses the Get-AzWebApp cmdlet to create an object reference to 
 That object reference is stored in a variable named $WebApp.
 The second command uses the object reference and the **Remove-AzWebAppSSLBinding** cmdlet to remove the SSL binding.
 
+```powershell 
+<!-- Aladdin Generated Example --> 
+PS C:> Remove-AzWebAppSSLBinding -Force  -Name www.contoso.com -ResourceGroupName ContosoResourceGroup -WebAppName ContosoWebApp
+```
+
+The Remove-AzWebAppSSLBinding cmdlet removes a Secure Sockets Layer (SSL) binding from an Azure Web App.
+
 ## PARAMETERS
 
 ### -DefaultProfile

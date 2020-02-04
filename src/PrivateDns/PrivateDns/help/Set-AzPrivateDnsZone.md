@@ -57,6 +57,13 @@ NumberOfRecordSets            : 1
 MaxNumberOfRecordSets         : 5000
 ```
 
+```powershell 
+<!-- Aladdin Generated Example --> 
+PS C:> Set-AzPrivateDnsZone -PrivateZone <PSPrivateDnsZone> -Tag @{tag1=value1;tag2=value2}
+```
+
+The Set-AzPrivateDnsZone cmdlet permanently updates a private Domain Name System (DNS) zone from a specified resource group.
+
 ## PARAMETERS
 
 ### -DefaultProfile

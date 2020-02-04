@@ -51,6 +51,13 @@ PS C:\>New-AzStreamAnalyticsInput -ResourceGroupName "StreamAnalytics-Default-We
 
 This command replaces the definition of the existing input source called EntryStream with the definition from file without confirmation.
 
+```powershell 
+<!-- Aladdin Generated Example --> 
+PS C:> New-AzStreamAnalyticsInput -File C:\Input.json -Force  -JobName StreamingJob -ResourceGroupName StreamAnalytics-Default-West-US
+```
+
+The New-AzStreamAnalyticsInput cmdlet creates an input within a Stream Analytics job or updates an existing input.
+
 ## PARAMETERS
 
 ### -DefaultProfile

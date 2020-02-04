@@ -181,6 +181,13 @@ Tags                :
 
 This command gets all the key vaults in the subscription that start with "myvault".
 
+```powershell 
+<!-- Aladdin Generated Example --> 
+PS C:> Get-AzKeyVault -ResourceGroupName $RGName -VaultName $VaultName
+```
+
+The Get-AzKeyVault cmdlet gets information about the key vaults in a subscription. You can
+
 ## PARAMETERS
 
 ### -DefaultProfile

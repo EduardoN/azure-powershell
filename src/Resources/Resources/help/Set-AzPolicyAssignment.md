@@ -121,6 +121,13 @@ PS C:\> Set-AzPolicyAssignment -Name 'PolicyAssignment' -PolicyParameter .\Allow
 
 The command updates the policy assignment named 'PolicyAssignment' using the policy parameter file AllowedLocations.json from the local working directory.
 
+```powershell 
+<!-- Aladdin Generated Example --> 
+PS C:> Set-AzPolicyAssignment -Id $PolicyAssignment.ResourceId -Metadata {"category":"Virtual Machine"} -NotScope {NotScope}
+```
+
+The Set-AzPolicyAssignment cmdlet modifies a policy assignment.
+
 ## PARAMETERS
 
 ### -ApiVersion

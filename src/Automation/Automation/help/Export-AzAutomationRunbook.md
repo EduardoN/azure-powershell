@@ -32,6 +32,13 @@ PS C:\>Export-AzAutomationRunbook -ResourceGroupName "ResourceGroup01" -Automati
 
 This command exports the published version of an Automation runbook to a user desktop.
 
+```powershell 
+<!-- Aladdin Generated Example --> 
+PS C:> Export-AzAutomationRunbook -AutomationAccountName ContosoAutomationAccount -Name Runbook03 -OutputFolder C:\Users\PattiFuller\Desktop -ResourceGroupName ResourceGroup01
+```
+
+The Export-AzAutomationRunbook cmdlet exports an Azure Automation runbook to a wps_2 script (.ps1 ) file, for wps_2 or wps_2 Workflow runbooks, or to a graphical runbook (.graphrunbook) file, for graphical runbooks.
+
 ## PARAMETERS
 
 ### -AutomationAccountName

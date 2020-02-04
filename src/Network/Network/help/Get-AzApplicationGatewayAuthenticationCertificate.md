@@ -32,6 +32,13 @@ PS C:\> $pool = Get-AzApplicationGatewayBackendAddressPool -Name "pool01" -Appli
 The first command gets the application gateway named appGwName and stores it in the $appgw variable.
 The second command gets the authentication certificate named pool01 and stores it in the $pool variable.
 
+```powershell 
+<!-- Aladdin Generated Example --> 
+PS C:> Get-AzApplicationGatewayAuthenticationCertificate -ApplicationGateway $appgw -Name cert01
+```
+
+The first command gets the application gateway named appGwName and stores it in the $appgw variable.
+
 ## PARAMETERS
 
 ### -ApplicationGateway

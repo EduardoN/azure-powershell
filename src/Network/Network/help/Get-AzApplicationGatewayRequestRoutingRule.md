@@ -41,6 +41,13 @@ PS C:\> $Rules = Get-AzApplicationGatewayRequestRoutingRule -ApplicationGateway 
 The first command gets the Application Gateway named ApplicationGateway01 and stores the result in the variable named $AppGW.
 The second command gets a list of request routing rules from the Application Gateway stored in the variable named $AppGW.
 
+```powershell 
+<!-- Aladdin Generated Example --> 
+PS C:> Get-AzApplicationGatewayRequestRoutingRule -ApplicationGateway $AppGW -Name cert01
+```
+
+The first command gets the Application Gateway named ApplicationGateway01 and stores the result in the variable named $AppGW.
+
 ## PARAMETERS
 
 ### -ApplicationGateway

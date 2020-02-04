@@ -41,6 +41,13 @@ PS C:\>New-AzApiManagementProperty -Context $apimContext -PropertyId "Property12
 
 This command creates a **Property** that has a value that is encrypted.
 
+```powershell 
+<!-- Aladdin Generated Example --> 
+PS C:> New-AzApiManagementProperty -Context $apimContext -Name Property Name -PropertyId Property11 -Value Property Value
+```
+
+The first command assigns two values to the $Tags variable.
+
 ## PARAMETERS
 
 ### -Context

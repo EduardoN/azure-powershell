@@ -37,6 +37,13 @@ PS C:\> $AppGw = Add-AzApplicationGatewayBackendHttpSetting -ApplicationGateway 
 
 The first command gets the application gateway named ApplicationGateway01 that belongs to the resource group named ResourceGroup01 and stores it in the $AppGw variable.The second command adds back-end HTTP settings to the application gateway, setting the port to 88 and the protocol to HTTP and names the settings Setting02.
 
+```powershell 
+<!-- Aladdin Generated Example --> 
+PS C:> Add-AzApplicationGatewayBackendHttpSetting -ApplicationGateway $AppGw -AuthenticationCertificates {AuthenticationCertificates} -CookieBasedAffinity Enabled -Name Setting02 -PickHostNameFromBackendAddress  -Port 88 -Probe $probe -Protocol Http
+```
+
+The Add-AzApplicationGatewayBackendHttpSetting cmdlet adds back-end HTTP settings to an application gateway.
+
 ## PARAMETERS
 
 ### -AffinityCookieName
