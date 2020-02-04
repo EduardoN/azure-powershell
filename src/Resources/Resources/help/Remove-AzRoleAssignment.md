@@ -129,6 +129,12 @@ PS C:\> Remove-AzRoleAssignment -InputObject $roleassignment
 
 Removes the first role assignment object which is fetched from the Get-AzRoleAssignment commandlet.
 
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Remove-AzRoleAssignment -ObjectId 00000000-0000-0000-0000-000000000000 -RoleDefinitionName Reader -Scope $ResourceGroup.ResourceId
+```
+
+Use the Remove-AzRoleAssignment commandlet to revoke access to any principal at given scope and given role.
+
 ## PARAMETERS
 
 ### -DefaultProfile

@@ -64,6 +64,12 @@ C:\Backup.blob
 
 This command uses the $secret object's vault name and name to retrieves the secret and saves its backup to a file named Backup.blob.
 
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Backup-AzKeyVaultSecret -DefaultProfile {DefaultProfile} -Force  -Name MySecret -OutputFile C:\Backup.blob -VaultName MyKeyVault
+```
+
+The Backup-AzKeyVaultSecret cmdlet backs up a specified secret in a key vault by downloading it and storing it in a file.
+
 ## PARAMETERS
 
 ### -DefaultProfile

@@ -157,6 +157,12 @@ This command creates a new deployment by using a custom and a template file on d
 The first two commands read the text for the template file on disk and convert it to an in-memory hashtable.
 The last command uses the *TemplateObject* parameter to specify the hashtable and the *TemplateParameterFile* parameter to specify a file that contains parameters and parameter values.
 
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> New-AzResourceGroupDeployment -Name mynewstorageaccount -ResourceGroupName ContosoEngineering -TemplateFile .storage-account-create-azdeploy.json -TemplateParameterObject <Hashtable>
+```
+
+The New-AzResourceGroupDeployment cmdlet adds a deployment to an existing resource group.
+
 ## PARAMETERS
 
 ### -ApiVersion

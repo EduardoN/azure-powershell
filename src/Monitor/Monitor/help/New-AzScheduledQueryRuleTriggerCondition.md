@@ -29,6 +29,12 @@ This object is to be passed to the command that creates Alerting Action object
 PS C:\>  $triggerCondition = New-AzScheduledQueryRuleTriggerCondition -ThresholdOperator "GreaterThan" -Threshold 3 -MetricTrigger $metricTrigger
 ```
 
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> New-AzScheduledQueryRuleTriggerCondition -Threshold 3 -ThresholdOperator GreaterThan
+```
+
+Creates an object of type Trigger Condition.
+
 ## PARAMETERS
 
 ### -DefaultProfile

@@ -62,6 +62,12 @@ HostName                                 Location       ExternalIp      Sku     
 mysignalr1.service.signalr.net           eastus         52.179.3.5      Standard_S1 1         Succeeded         1.0
 ```
 
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Update-AzSignalR -Name mysignalr1 -ResourceGroupName myResourceGroup -Sku Standard_S1
+```
+
+Update a SignalR service.
+
 ## PARAMETERS
 
 ### -AllowedOrigin

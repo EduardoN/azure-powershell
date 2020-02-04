@@ -77,6 +77,12 @@ This script polls the first job that is currently in progress until the job has 
 
 Note: You can use **Wait-AzRecoveryServicesBackupJob** cmdlet to wait for an Azure Backup job to finish instead of While loop.
 
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzRecoveryServicesBackupJob -VaultId $vault.ID
+```
+
+The Get-AzRecoveryServicesBackupJob cmdlet gets Azure Backup jobs for a specific vault.
+
 ## PARAMETERS
 
 ### -BackupManagementType

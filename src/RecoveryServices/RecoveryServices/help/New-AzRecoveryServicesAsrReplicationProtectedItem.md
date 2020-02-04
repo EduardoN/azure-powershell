@@ -109,6 +109,12 @@ PS C:\> $enableDRjob = New-AzRecoveryServicesAsrReplicationProtectedItem -AzToAz
 
 Starts the replication protected item creation operation for the specified VmId and returns the ASR job used to track the operation (Azure to Azure scenario).
 
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> New-AzRecoveryServicesAsrReplicationProtectedItem -AzureToAzure  -AzureToAzureDiskReplicationConfiguration $disk1,$disk2 -AzureVmId $vmId -Name $VM.Name -ProtectionContainerMapping $ProtectionContainerMapping -RecoveryResourceGroupId $RecoveryResourceGroupId
+```
+
+The New-AzRecoveryServicesAsrReplicationProtectedItem cmdlet creates a new replication protected item.
+
 ## PARAMETERS
 
 ### -Account

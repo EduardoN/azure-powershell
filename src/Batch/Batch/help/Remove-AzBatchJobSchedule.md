@@ -42,6 +42,12 @@ The command passes that job schedule to the current cmdlet by using the pipeline
 The command deletes that job schedule.
 Because the command includes the *Force* parameter, it does not prompt you for confirmation.
 
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Remove-AzBatchJobSchedule -BatchContext $Context -Force  -Id MyJobSchedule
+```
+
+This command gets the job schedule that has the ID MyJobSchedule by using the Get-AzBatchJobSchedule cmdlet.
+
 ## PARAMETERS
 
 ### -BatchContext

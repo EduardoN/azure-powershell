@@ -194,6 +194,12 @@ PS C:\>Get-AzLog -ResourceProvider "Microsoft.Web" -StartTime 2017-04-15T04:30 -
 
 This command lists at most 1000 events associated with the specified resource provider that took place on or after 2017-04-15T04:30 local time, but before 2017-04-25T12:30 local time if the whole date/time range is not older than 90 days from the current date/time, i.e.: the retention period.
 
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzLog -EndTime Current date (time: 00:00:00 AM) + 1 day -ResourceId /subscriptions/00000000-0000-0000-0000-000000000000/ResourceGroups/Contoso-Web-CentralUS/providers/Microsoft.Web/ServerFarms/Contoso1 -StartTime EndTime - 7 days -Status {Status}
+```
+
+The Get-AzLog cmdlet gets a log of events.
+
 ## PARAMETERS
 
 ### -Caller

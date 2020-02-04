@@ -46,6 +46,12 @@ ManagedInstanceName		     : ManagedInstance01
 IsEnabled		             : True
 ```
 
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzSqlInstanceAdvancedDataSecurityPolicy -InstanceName ContosoManagedInstanceName -ResourceGroupName MyResourceGroup
+```
+
+ResourceGroupName            : ResourceGroup01
+
 ## PARAMETERS
 
 ### -DefaultProfile

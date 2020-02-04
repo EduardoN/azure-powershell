@@ -46,6 +46,12 @@ ProvisioningState : Succeeded
 Tags              :
 ```
 
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> New-AzCognitiveServicesAccount -Location westus -Name myaccount -ResourceGroupName cognitive-services-resource-group -SkuName S0 -Type LUIS
+```
+
+The New-AzCognitiveServicesAccount cmdlet creates a Cognitive Services account with the
+
 ## PARAMETERS
 
 ### -CustomSubdomainName

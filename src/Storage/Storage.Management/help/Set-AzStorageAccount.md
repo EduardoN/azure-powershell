@@ -122,6 +122,12 @@ PS C:\> Set-AzStorageAccount -ResourceGroupName "MyResourceGroup" -AccountName "
 
 The command update a Storage account by enable Azure Files AAD DS Authentication.
 
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Set-AzStorageAccount -AssignIdentity  -Name mystorageaccount -ResourceGroupName MyResourceGroup
+```
+
+The Set-AzStorageAccount cmdlet modifies an Azure Storage account.
+
 ## PARAMETERS
 
 ### -AccessTier

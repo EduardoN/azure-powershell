@@ -128,6 +128,12 @@ PS C:\> Restore-AzSqlDatabase -FromGeoBackup -ResourceGroupName "TargetResourceG
 The first command gets the geo-redundant backup for the database named Database01, and then stores it in the $GeoBackup variable.
 The second command restores the backup in $GeoBackup to the SQL database named RestoredDatabase.
 
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Restore-AzSqlDatabase -Edition Standard -FromGeoBackup  -ResourceGroupName $Database.ResourceGroupName -ResourceId $Database.ResourceID -ServerName $Database.ServerName -ServiceObjectiveName S2 -TargetDatabaseName RestoredDatabase
+```
+
+The Restore-AzSqlDatabase cmdlet restores a SQL database from a geo-redundant backup, a backup of a deleted database, a long term retention backup, or a point in time in a live database.
+
 ## PARAMETERS
 
 ### -AsJob
