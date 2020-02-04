@@ -75,6 +75,12 @@ PS C:\> Get-AzLoadBalancer -Name "MyLB" -ResourceGroupName "NrpTest" | Add-AzLoa
 The first command gets the Azure public IP address named MyPub and stores the result in the variable named $PublicIp.
 The second command gets the load balancer named MyLB and passes the result to the **Add-AzLoadBalancerFrontendIpConfig** cmdlet that adds a front-end IP configuration to the load balancer with public IP address stored in the variable named $PublicIp.
 
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Add-AzLoadBalancerFrontendIpConfig -Name NewFrontend -PublicIpAddress $gwpip2
+```
+
+The first command gets the Azure public IP address named MyPub and stores the result in the variable named $PublicIp.
+
 ## PARAMETERS
 
 ### -DefaultProfile

@@ -71,6 +71,12 @@ PS C:\>Get-AzAutomationScheduledRunbook -AutomationAccountName "Contoso17" -Reso
 
 This command gets all scheduled runbooks for the schedule Schedule01 in the Azure Automation account named Contoso17.
 
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzAutomationScheduledRunbook -AutomationAccountName Contoso17 -ResourceGroupName ResourceGroup01 -RunbookName Runbk01 -ScheduleName Schedule01
+```
+
+The Get-AzAutomationScheduledRunbook cmdlet gets one or more Azure Automation runbooks and associated schedules.
+
 ## PARAMETERS
 
 ### -AutomationAccountName

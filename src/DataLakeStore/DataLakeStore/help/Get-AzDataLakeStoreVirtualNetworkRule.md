@@ -38,6 +38,12 @@ State                            :
 
 Returns the virtual network rule named "myVNET" from account "dls"
 
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzDataLakeStoreVirtualNetworkRule -Account dls
+```
+
+The Get-AzDataLakeStoreVirtualNetworkRule cmdlet gets the specified virtual network rules in the specified Data Lake Store.
+
 ## PARAMETERS
 
 ### -Account

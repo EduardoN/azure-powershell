@@ -120,6 +120,12 @@ PS C:\>  Get-AsrJob -name $Job.id
 
 Starts the replication policy creation operation using the specified parameters and returns the ASR job used to track the operation.
 
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> New-AzRecoveryServicesAsrPolicy -ApplicationConsistentSnapshotFrequencyInHours 5 -AzureToAzure  -Name $policyName1 -RecoveryPointRetentionInHours 20
+```
+
+The New-AzRecoveryServicesAsrPolicy cmdlet creates an Azure Site Recovery replication policy.
+
 ## PARAMETERS
 
 ### -ApplicationConsistentSnapshotFrequencyInHours

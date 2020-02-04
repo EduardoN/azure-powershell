@@ -68,6 +68,12 @@ PS C:\> Get-AzADApplication -ObjectId 7663d3fb-6f86-4352-9e6d-cf9d50d5ee82 | Rem
 
 Gets the application with object id '7663d3fb-6f86-4352-9e6d-cf9d50d5ee82' and pipes that to the Remove-AzADAppCredential cmdlet and removes all credentials from that application.
 
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Remove-AzADAppCredential -Force  -KeyId 00000000-0000-0000-0000-00000007ebb -ObjectId 00000000-0000-0000-0000-000000000000
+```
+
+The Remove-AzADAppCredential cmdlet can be used to remove a credential key from an application in the case of a compromise or as part of credential key rollover expiration.
+
 ## PARAMETERS
 
 ### -ApplicationId

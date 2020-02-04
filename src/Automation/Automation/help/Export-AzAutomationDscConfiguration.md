@@ -32,6 +32,12 @@ PS C:\>Export-AzAutomationDscConfiguration -ResourceGroupName "ResourceGroup01" 
 
 This command exports the published version of a DSC configuration in Automation to the specified folder, which is the desktop.
 
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Export-AzAutomationDscConfiguration -AutomationAccountName AutomationAccount01 -Name Configuration01 -OutputFolder C:\Users\PattiFuller\Desktop -ResourceGroupName ResourceGroup01
+```
+
+The Export-AzAutomationDscConfiguration cmdlet exports an APS Desired State Configuration (DSC) configuration from Azure Automation to a local file.
+
 ## PARAMETERS
 
 ### -AutomationAccountName

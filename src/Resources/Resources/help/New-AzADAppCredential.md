@@ -97,6 +97,12 @@ PS C:\> Get-AzADApplication -ObjectId 1f89cf81-0146-4f4e-beae-2007d0668416 | New
 
 Gets the application with object id '1f89cf81-0146-4f4e-beae-2007d0668416' and pipes that to the New-AzADAppCredential to create a new application credential for that application with the given password.
 
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> New-AzADAppCredential -EndDate $cer.NotAfter -ObjectId 00000000-0000-0000-0000-000000000000 -Password $SecureStringPassword -StartDate $cer.NotBefore
+```
+
+The New-AzADAppCredential cmdlet can be used to add a new credential or to roll credentials for an application.
+
 ## PARAMETERS
 
 ### -ApplicationId

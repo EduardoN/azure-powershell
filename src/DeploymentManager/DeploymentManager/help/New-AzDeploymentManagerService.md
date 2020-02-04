@@ -48,6 +48,12 @@ PS C:\> New-AzDeploymentManagerService -ResourceGroupName ContosoResourceGroup -
 
 Creates a new service with name ContosoService1 under service topology ContosoServiceTopology in Resource Group ContosoResourceGroup, in the location Central US. The TargetLocation property indicates that the service ContosoService1 should be deployed to the East US region in the subscription specified.
 
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> New-AzDeploymentManagerService -Location Central US -Name ContosoService1 -ServiceTopologyObject {ServiceTopologyObject} -TargetLocation East US -TargetSubscriptionId XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+```
+
+The New-AzDeploymentManagerService cmdlet creates a service under a service topology, and returns an object that represents that service.
+
 ## PARAMETERS
 
 ### -DefaultProfile

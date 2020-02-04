@@ -125,6 +125,12 @@ This command gets the job schedule that has the ID JobSchedule27 by using the Ge
 The command passes that job schedule to the current cmdlet by using the pipeline operator.
 The command gets all jobs for that job schedule.
 
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzBatchJob -BatchContext $Context -Filter state eq 'active' -MaxCount {MaxCount} -Select jobPreparationTaskExecutionInfo
+```
+
+The Get-AzBatchJob cmdlet gets the Azure Batch jobs for the Batch account specified by the BatchAccountContext parameter.
+
 ## PARAMETERS
 
 ### -BatchContext

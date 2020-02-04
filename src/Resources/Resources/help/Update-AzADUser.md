@@ -70,6 +70,12 @@ PS C:\> Get-AzADUser -ObjectId 155a5c10-93a9-4941-a0df-96d83ab5ab24 | Update-AzA
 
 Gets the user with object id '155a5c10-93a9-4941-a0df-96d83ab5ab24' and pipes that to the Update-AzADUser cmdlet to update the display name of that user to 'MyNewDisplayName'.
 
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Update-AzADUser -ForceChangePasswordNextLogin  -Password $SecureStringPassword
+```
+
+Updates an existing active directory user (work/school account also popularly known as org-id).
+
 ## PARAMETERS
 
 ### -DefaultProfile
