@@ -89,6 +89,12 @@ The configuration is then downloaded using this commandlet.
 
 If the commandlet is successful, then the download configuration will be written to the blob indicated by the SignedSasUrl.
 
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzVirtualWanVpnConfiguration -Name cert01 -ResourceGroupName MyResourceGroup -StorageSasUrl SignedSasUrl -VpnSite $vpnSitesForConfig
+```
+
+Gets the Vpn configuration for a subset of VpnSites connected to this WAN via VpnConnections. Uploads the generated Vpn
+
 ## PARAMETERS
 
 ### -DefaultProfile

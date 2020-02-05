@@ -47,6 +47,12 @@ PS C:\> Get-AzRecoveryServicesBackupContainer -ContainerType Windows -BackupMana
 This command gets all Windows containers that are protected by Azure Backup agent.
 The **BackupManagementType** parameter is only required for Windows containers.
 
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzRecoveryServicesBackupContainer -ContainerType AzureVM -VaultId $vault.ID
+```
+
+The Get-AzRecoveryServicesBackupContainer cmdlet gets a backup container.
+
 ## PARAMETERS
 
 ### -BackupManagementType

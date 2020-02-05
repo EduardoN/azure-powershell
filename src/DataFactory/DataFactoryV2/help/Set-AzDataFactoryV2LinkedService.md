@@ -53,6 +53,12 @@ The command passes the result to the Format-List cmdlet by using the pipeline op
 That Windows PowerShell cmdlet formats the results.
 For more information, type Get-Help Format-List.
 
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Set-AzDataFactoryV2LinkedService -DataFactoryName WikiADF -DefinitionFile C:\samples\WikiSample\LinkedServiceCuratedWikiData.json -Force  -Name LinkedServiceCuratedWikiData -ResourceGroupName ADF
+```
+
+The Set-AzDataFactoryV2LinkedService cmdlet links a data store or a cloud service to Azure Data Factory.
+
 ## PARAMETERS
 
 ### -DataFactoryName

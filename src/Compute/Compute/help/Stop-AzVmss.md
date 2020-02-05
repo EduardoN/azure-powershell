@@ -46,6 +46,12 @@ PS C:\> Stop-AzVmss -ResourceGroupName "ContosoGroup" -VMScaleSetName "ContosoVM
 
 This command stops a specific set of virtual machines specified by the instance ID string array that belong to the VMSS named ContosoVMSS.
 
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Stop-AzVmss -Force  -ResourceGroupName ContosoGroup -VMScaleSetName ContosoVMSS
+```
+
+The Stop-AzVmss cmdlet stops all the virtual machines within the Virtual Machine Scale Set (VMSS) or a set of virtual machines.
+
 ## PARAMETERS
 
 ### -AsJob

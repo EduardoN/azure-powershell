@@ -30,6 +30,12 @@ PS C:\> $source = New-AzScheduledQueryRuleSource -Query "Heartbeat | summarize A
 				  -QueryType "ResultCount"
 ```
 
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> New-AzScheduledQueryRuleSource -DataSourceId <String> -Query Heartbeat | summarize AggregatedValue = count() by bin(TimeGenerated, 5m)
+```
+
+Creates an object of type Source.
+
 ## PARAMETERS
 
 ### -AuthorizedResource

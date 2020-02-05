@@ -31,6 +31,12 @@ The cmdlet uses the specified resource group and name of the lab to set the poli
 
 ## EXAMPLES
 
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Set-AzDtlAutoShutdownPolicy -Enable  -LabName {LabName} -ResourceGroupName MyResourceGroup -Time {Time}
+```
+
+The Set-AzDtlAutoShutdownPolicy cmdlet sets the auto shutdown policy of a lab, which automatically shuts down all the virtual machines in the lab at a specified time of the day.
+
 ## PARAMETERS
 
 ### -DefaultProfile

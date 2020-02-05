@@ -36,6 +36,12 @@ PS C:\>Remove-AzNotificationHub -Namespace "ContosoNamespace" -ResourceGroup "Co
 This command removes the notification hub named ContosoInternalHub.
 In order to remove the hub, you must specify the namespace where the hub is located as well as the resource group the hub is assigned to.
 
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Remove-AzNotificationHub -Force  -Namespace ContosoNamespace -NotificationHub ContosoInternalHub -ResourceGroup ContosoNotificationsGroup
+```
+
+The Remove-AzNotificationHub cmdlet removes an existing notification hub.
+
 ## PARAMETERS
 
 ### -DefaultProfile

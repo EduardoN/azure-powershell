@@ -32,6 +32,12 @@ connectivity.
 Get-AzExpressRouteCircuitRouteTable -ResourceGroupName $RG -ExpressRouteCircuitName $CircuitName -DevicePath 'Primary'
 ```
 
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzExpressRouteCircuitRouteTable -DevicePath Primary -ExpressRouteCircuitName $CircuitName -PeeringType AzurePrivatePeering -ResourceGroupName $RG
+```
+
+The Get-AzExpressRouteCircuitRouteTable cmdlet retrieves a detailed route table of an
+
 ## PARAMETERS
 
 ### -DefaultProfile

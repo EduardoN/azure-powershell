@@ -77,6 +77,12 @@ Tags              :
 This command modifies properties for an elastic pool named elasticpool01. The command sets the max
 storage for an elastic pool to 2 TB.
 
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Set-AzSqlElasticPool -Dtu 1000 -Edition GeneralPurpose -ElasticPoolName ElasticPool01 -ResourceGroupName ResourceGroup01 -ServerName Server01
+```
+
+The Set-AzSqlElasticPool cmdlet sets properties for an elastic pool in Azure SQL Database. This cmdlet can modify the eDTUs per pool (Dtu), storage max size per pool (StorageMB), maximum eDTUs per database (DatabaseDtuMax), and minimum eDTUs per database (DatabaseDtuMin).
+
 ## PARAMETERS
 
 ### -AsJob

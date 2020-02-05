@@ -32,6 +32,12 @@ Remove-AzLocalNetworkGateway -Name myLocalGW -ResourceGroupName myRG
 Deletes the object of the Local Network Gateway with the name "myLocalGW" within the resource group "myRG"
 Note: You must first delete all connections to the Local Network Gateway using the **Remove-AzVirtualNetworkGatewayConnection** cmdlet.
 
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Remove-AzLocalNetworkGateway -Force 
+```
+
+The Local Network Gateway is the object representing your VPN device On-Premises.
+
 ## PARAMETERS
 
 ### -AsJob

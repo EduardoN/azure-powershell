@@ -24,6 +24,12 @@ This cmdlet implements the ShouldProcess pattern, i.e. it might request confirma
 
 ## EXAMPLES
 
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Remove-AzLogProfile -Name MySetting
+```
+
+The Remove-AzLogProfile cmdlet removes a log profile.
+
 ## PARAMETERS
 
 ### -DefaultProfile

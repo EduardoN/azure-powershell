@@ -44,6 +44,12 @@ PS C:\>Get-AzAutomationWebhook -RunbookName "Runbook03" -ResourceGroup "Resource
 
 This command gets all webhooks for a runbook named Runbook03 in the Automation account named AutomationAccount01 in the resource group named ResourceGroup01.
 
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzAutomationWebhook -AutomationAccountName AutomationAccount01 -ResourceGroupName ResourceGroup01 -RunbookName Runbook03
+```
+
+The Get-AzAutomationWebhook cmdlet gets webhooks.
+
 ## PARAMETERS
 
 ### -AutomationAccountName
