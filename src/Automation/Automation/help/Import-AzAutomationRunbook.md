@@ -38,6 +38,13 @@ The first command assigns two key/value pairs to the $Tags variable.
 The second command imports a graphical runbook called GraphicalRunbook06 into the Automation account named AutomationAccount01.
 The command also assigns the tags stored in $Tags.
 
+Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Import-AzAutomationRunbook -AutomationAccountName AutomationAccount01 -Force  -LogVerbose $True -Name Configuration01 -Path .GraphicalRunbook06.graphrunbook -Published  -ResourceGroupName ResourceGroup01 -Type PowerShell
+```
+
+The Import-AzAutomationRunbook cmdlet imports an Azure Automation runbook. Specify the 
+
 ## PARAMETERS
 
 ### -AutomationAccountName

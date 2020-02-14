@@ -37,6 +37,13 @@ PS C:\>$Setting = New-AzApplicationGatewayBackendHttpSetting -Name "Setting01" -
 This command creates back-end HTTP settings named Setting01 on port 80, using the HTTP protocol, with cookie-based affinity disabled.
 The settings are stored in the $Setting variable.
 
+Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> New-AzApplicationGatewayBackendHttpSetting -CookieBasedAffinity Enabled -Name Setting01 -Port 80 -Protocol Http -RequestTimeout {RequestTimeout}
+```
+
+The New-AzApplicationGatewayBackendHttpSetting cmdlet creates back-end HTTP settings for an application gateway.
+
 ## PARAMETERS
 
 ### -AffinityCookieName

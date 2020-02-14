@@ -32,6 +32,13 @@ Remove-AzVirtualNetworkGateway -Name myGateway -ResourceGroupName myRG
 Deletes the object of the Virtual Network Gateway with the name "myGateway" within the resource group "myRG"
 Note: You must first delete all connections to the Virtual Network Gateway using the **Remove-AzVirtualNetworkGatewayConnection** cmdlet.
 
+Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Remove-AzVirtualNetworkGateway -Force  -Name myGateway -ResourceGroupName myRG
+```
+
+The Virtual Network Gateway is the object representing your gateway in Azure.
+
 ## PARAMETERS
 
 ### -AsJob

@@ -62,6 +62,13 @@ co03-vm         ConfigureBackup  Completed       11-Apr-16 12:19:49 PM      11-A
 The first cmdlet gets a default policy object, and then stores it in the $Pol variable.
 The second cmdlet sets the Backup protection policy for the ARM virtual machine named V2VM using the policy in $Pol.
 
+Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Enable-AzRecoveryServicesBackupProtection -Item $Item -Policy $Pol -VaultId $vault
+```
+
+The Enable-AzRecoveryServicesBackupProtection cmdlet sets Azure Backup protection policy on an item.
+
 ## PARAMETERS
 
 ### -DefaultProfile

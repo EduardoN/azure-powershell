@@ -38,6 +38,13 @@ PS C:\> Add-AzIotHubKey -ResourceGroupName "myresourcegroup" -Name "myiothub" -K
 
 Creates a key named "mykey" for the iothub "myiothub" with RegistryRead permissions.
 
+Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Add-AzIotHubKey -KeyName newkey -Name myiothub -ResourceGroupName myresourcegroup -Rights RegistryRead
+```
+
+Creates a Key for the provided IotHub.
+
 ## PARAMETERS
 
 ### -DefaultProfile

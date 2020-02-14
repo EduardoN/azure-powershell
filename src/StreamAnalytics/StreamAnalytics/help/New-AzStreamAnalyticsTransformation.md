@@ -43,6 +43,13 @@ PS C:\>New-AzStreamAnalyticsTransformation -ResourceGroupName "StreamAnalytics-D
 
 This command replaces the definition of StreamingJobTransform in the job StreamingJob without confirmation.
 
+Example 3
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> New-AzStreamAnalyticsTransformation -File C:\Transformation.json -Force  -JobName StreamingJob -ResourceGroupName StreamAnalytics-Default-West-US
+```
+
+The New-AzStreamAnalyticsTransformation cmdlet creates a transformation within a Stream Analytics job or updates the existing transformation.
+
 ## PARAMETERS
 
 ### -DefaultProfile

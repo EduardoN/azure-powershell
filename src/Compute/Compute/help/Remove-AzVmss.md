@@ -39,6 +39,13 @@ PS C:\> Remove-AzVmss -ResourceGroupName "Group002" -VMScaleSetName "VMScaleSet0
 
 This command removes the virtual machine with instance ID 3 from the VMSS named VMScaleSet002 that belongs to the resource group named Group002.
 
+Example 3
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Remove-AzVmss -Force  -ResourceGroupName Group001 -VMScaleSetName VMScaleSet001
+```
+
+The Remove-AzVmss cmdlet removes the Virtual Machine Scale Set (VMSS) from Azure.
+
 ## PARAMETERS
 
 ### -AsJob

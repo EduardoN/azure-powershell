@@ -44,6 +44,13 @@ The first command marks the virtual machine named VirtualMachine07 as generalize
 The second command captures a virtual machine named VirtualMachine07 as a VMImage.
 The **Output** property returns a JSON template.
 
+Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Save-AzVMImage -DestinationContainerName VMContainer01 -Name VirtualMachine07 -Path /home/admin/.ssh/authorized_keys -ResourceGroupName ResourceGroup11 -VHDNamePrefix VM07
+```
+
+The Save-AzVMImage cmdlet saves a virtual machine as a VMImage.
+
 ## PARAMETERS
 
 ### -AsJob

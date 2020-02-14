@@ -67,6 +67,13 @@ MaxPacketsPerSecond       : 1
 
 For the Azure virtual network gateway named gatewayname in resource group resourceGroup, retrieves the currently connected vpn client connection by using OpenVpn. 
 
+Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzVirtualNetworkGatewayVpnClientConnectionHealth -ResourceGroupName resourceGroup -VirtualNetworkGatewayName ContosoVirtualNetwork
+```
+
+List  all connected vpn client connection health. This includes:
+
 ## PARAMETERS
 
 ### -ResourceGroupName

@@ -35,6 +35,13 @@ The command stores the virtual machine in the $VirtualMachine variable.
 The second command removes the data disk named Disk3 from the virtual machine stored in $VirtualMachine.
 The final command updates the state of the virtual machine stored in $VirtualMachine in ResourceGroup11.
 
+Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Remove-AzVMDataDisk -DataDiskNames Disk3 -VM $VirtualMachine
+```
+
+The first command gets the virtual machine named VirtualMachine07 by using the Get-AzVM cmdlet.
+
 ## PARAMETERS
 
 ### -DataDiskNames

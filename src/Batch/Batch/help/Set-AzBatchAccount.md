@@ -44,6 +44,13 @@ TaskTenantUrl                : https://cmdletexample.westus.batch.azure.com
 
 This command updates the tags on the account named pfuller.
 
+Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Set-AzBatchAccount -AccountName cmdletexample -AutoStorageAccountId {AutoStorageAccountId} -ResourceGroupName MyResourceGroup -Tag @{key0=value0;key1=$null;key2=value2}
+```
+
+The Set-AzBatchAccount cmdlet updates an Azure Batch account.
+
 ## PARAMETERS
 
 ### -AccountName

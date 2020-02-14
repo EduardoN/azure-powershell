@@ -47,6 +47,13 @@ PS C:\> $Item = Get-AzRecoveryServicesProtectableItem -Container $Container -Ite
 The first command gets the container of type MSSQL, and then stores it in the $Container variable.
 The second command gets the Backup item in $Container, and then stores it in the $Item variable.
 
+Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzRecoveryServicesBackupProtectableItem -ItemType SQLDataBase -Name V2VM -ServerName {ServerName} -VaultId $vault.ID -WorkloadType AzureVM
+```
+
+The Get-AzRecoveryServicesBackupProtectableItem cmdlet gets the protectable items in a container or a value in Azure Backup and the protection status of the items.
+
 ## PARAMETERS
 
 ### -Container

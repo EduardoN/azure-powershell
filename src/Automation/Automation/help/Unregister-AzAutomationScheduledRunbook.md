@@ -40,6 +40,13 @@ PS C:\>Unregister-AzAutomationScheduledRunbook -AutomationAccountName "Contoso17
 
 This command removes the association between the runbook named Runbk01 and the schedule named Runbk01Sched.
 
+Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Unregister-AzAutomationScheduledRunbook -AutomationAccountName Contoso17 -Force  -ResourceGroupName ResourceGroup01 -RunbookName Runbk01 -ScheduleName Runbk01Sched
+```
+
+The Unregister-AzAutomationScheduledRunbook cmdlet removes the association between an Azure Automation runbook and a schedule.
+
 ## PARAMETERS
 
 ### -AutomationAccountName

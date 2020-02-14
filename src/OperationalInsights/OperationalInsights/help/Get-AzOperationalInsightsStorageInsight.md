@@ -48,6 +48,13 @@ PS C:\>Get-AzOperationalInsightsStorageInsight -Workspace $Workspace -Name "MySt
 The first command uses the **Get-AzOperationalInsightsWorkspace** cmdlet to get an Operational Insights workspace, and then stores it in the $Workspace variable.
 The second command gets the storage insight named MyStorageInsight for the workspace in $Workspace.
 
+Example 3
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzOperationalInsightsStorageInsight -ResourceGroupName ContosoResourceGroup -WorkspaceName ContosoWorkspace
+```
+
+The Get-AzOperationalInsightsStorageInsight cmdlet gets information about an existing Storage Insight.
+
 ## PARAMETERS
 
 ### -DefaultProfile

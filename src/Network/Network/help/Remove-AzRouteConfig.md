@@ -54,6 +54,13 @@ The command passes that table to the current cmdlet by using the pipeline operat
 The current cmdlet remove the route named Route02, and the passes the result to the **Set-AzRouteTable** cmdlet, which updates the table to reflect your changes.
 The table no longer contains the route named Route02.
 
+Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Remove-AzRouteConfig -Name cert01
+```
+
+This command gets the route table named RouteTable01 by using the Get-AzRouteTable cmdlet.
+
 ## PARAMETERS
 
 ### -DefaultProfile

@@ -60,6 +60,13 @@ PS C:\> Set-AzEventHub -ResourceGroupName MyResourceGroupName -Namespace MyNames
 
 Creates an Event Hub named \`MyEventHubName\` with a 3-day message retention period, 2 partitions and CaptureDescription properties in the \`WestUS\` location, with resource group \`MyResourceGroupName\`.
 
+Example 3
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> New-AzEventHub -MessageRetentionInDays 3 -Name MyEventHubName -Namespace MyNamespaceName -ResourceGroupName MyResourceGroupName
+```
+
+The New-AzEventHub cmdlet creates a new Azure Event Hub.
+
 ## PARAMETERS
 
 ### -DefaultProfile

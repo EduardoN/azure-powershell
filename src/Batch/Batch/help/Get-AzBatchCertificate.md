@@ -101,6 +101,13 @@ DeleteCertificateError      :
 This command gets all certificates in the active state from the Batch account.
 The *Filter* parameter specifies the state.
 
+Example 3
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzBatchCertificate -BatchContext $Context -MaxCount {MaxCount}
+```
+
+The Get-AzBatchCertificate cmdlet gets the certificates in the Azure Batch account that the BatchContext parameter specifies.
+
 ## PARAMETERS
 
 ### -BatchContext

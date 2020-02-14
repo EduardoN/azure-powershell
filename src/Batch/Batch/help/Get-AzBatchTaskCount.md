@@ -45,6 +45,13 @@ ValidationStatus    : Validated
 This command gets the task counts for job Job01.
 Use the Get-AzBatchAccountKeys cmdlet to assign a context to the $Context variable.
 
+Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzBatchTaskCount -BatchContext $Context -JobId Job01
+```
+
+This command gets the task counts for job Job01.
+
 ## PARAMETERS
 
 ### -BatchContext

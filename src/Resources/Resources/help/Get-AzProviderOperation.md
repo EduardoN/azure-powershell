@@ -42,6 +42,13 @@ PS C:\> Get-AzProviderOperation Microsoft.Insights/*
 PS C:\> Get-AzProviderOperation */virtualMachines/*
 ```
 
+Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzProviderOperation -OperationSearchString "*"
+```
+
+The Get-AzProviderOperation gets the operations exposed by Azure resource providers.
+
 ## PARAMETERS
 
 ### -DefaultProfile

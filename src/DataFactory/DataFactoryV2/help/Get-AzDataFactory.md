@@ -56,6 +56,13 @@ Properties        : Microsoft.WindowsAzure.Commands.Utilities.PSDataFactoryConfi
 This command displays information about the data factory named WikiADF in the subscription for the resource group named ADF, and then stores it in the $DataFactory variable.
 Specify the *DataFactory* parameter in subsequent cmdlets to use the data factory stored in $DataFactory.
 
+Example 3
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzDataFactory -DefaultProfile {DefaultProfile} -Name ContosoFactory -ResourceGroupName ADF
+```
+
+The Get-AzDataFactory cmdlet gets information about data factories in an Azure resource group.
+
 ## PARAMETERS
 
 ### -DefaultProfile

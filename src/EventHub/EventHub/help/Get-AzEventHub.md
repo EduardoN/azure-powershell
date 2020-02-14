@@ -38,6 +38,13 @@ PS C:\> Get-AzEventHub -ResourceGroup MyResourceGroupName -NamespaceName MyNames
 
 Returns a list of Event Hubs in the namespace \`MyNamespaceName\`.
 
+Example 3
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzEventHub -Namespace MyNamespaceName -ResourceGroupName MyResourceGroupName
+```
+
+The Get-AzEventHub cmdlet returns either the details of an Event Hub, or a list of all Event Hubs in the current namespace.
+
 ## PARAMETERS
 
 ### -DefaultProfile

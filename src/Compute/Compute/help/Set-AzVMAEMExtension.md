@@ -33,6 +33,13 @@ PS C:\> Set-AzVMAEMExtension -ResourceGroupName "ResourceGroup11" -VMName "conto
 This command configures the virtual machine named contoso-server to use the AEM extension.
 The command specifies the storage account named stdstorage.
 
+Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Set-AzVMAEMExtension -ResourceGroupName ResourceGroup11 -VMName contoso-server
+```
+
+The Set-AzVMAEMExtension cmdlet updates the configuration of a virtual machine to enable or update the support for monitoring for SAP systems that are installed on the virtual machine.
+
 ## PARAMETERS
 
 ### -DefaultProfile

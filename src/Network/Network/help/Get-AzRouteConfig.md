@@ -40,6 +40,13 @@ This command gets the route table named RouteTable01 by using the **Get-AzRouteT
 The command passes that table to the current cmdlet by using the pipeline operator.
 The current cmdlet gets the route named Route07 in the route table named RouteTable01.
 
+Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzRouteConfig -Name cert01 -RouteTable $RouteTable
+```
+
+The Get-AzRouteConfig cmdlet gets routes from an Azure route table.
+
 ## PARAMETERS
 
 ### -DefaultProfile

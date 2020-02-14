@@ -31,6 +31,13 @@ PS C:\> $currentJob = Remove-AzRecoveryServicesAsrReplicationProtectedItem -Repl
 
 Starts the disable replication operation for the specified replication protected item and returns the ASR job used to track the operation.
 
+Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Remove-AzRecoveryServicesAsrReplicationProtectedItem -Force  -InputObject $ReplicationProtectedItem -WaitForCompletion 
+```
+
+The Remove-AzRecoveryServicesAsrReplicationProtectedItem cmdlet disables replication of the specified Azure Site Recovery replication protected item.
+
 ## PARAMETERS
 
 ### -DefaultProfile

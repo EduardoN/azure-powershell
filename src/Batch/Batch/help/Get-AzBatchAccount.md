@@ -63,6 +63,13 @@ TaskTenantUrl                : https://cmdletexample.westus.batch.azure.com
 
 This command gets the batch accounts associated with the CmdletExampleRG resource group.
 
+Example 3
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzBatchAccount -AccountName pfuller -ResourceGroupName CmdletExampleRG
+```
+
+The Get-AzBatchAccount cmdlet gets an Azure Batch account in the current subscription. You
+
 ## PARAMETERS
 
 ### -AccountName

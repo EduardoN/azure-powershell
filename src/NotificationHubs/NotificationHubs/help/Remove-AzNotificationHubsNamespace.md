@@ -34,6 +34,13 @@ PS C:\>Remove-AzNotificationHubsNamespace -Namespace "ContosoNamespace" -Resourc
 This command removes the namespace named ContosoNamespace.
 You must specify the resource group the namespace is assigned to.
 
+Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Remove-AzNotificationHubsNamespace -Force  -Namespace ContosoNamespace -ResourceGroup ContosoNotificationsGroup
+```
+
+The Remove-AzNotificationHubsNamespace cmdlet removes a notification hub namespace from your deployment.
+
 ## PARAMETERS
 
 ### -DefaultProfile

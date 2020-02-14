@@ -38,6 +38,13 @@ PS C:\>Remove-AzWebApp -ResourceGroupName "Default-Web-WestUS" -Name "ContosoSit
 
 This command removes the Azure Web App named ContosoSite that belongs to the resource group named Default-Web-WestUS.
 
+Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Remove-AzWebApp -Force  -Name ContosoSite -ResourceGroupName Default-Web-WestUS
+```
+
+The Remove-AzWebApp cmdlet removes an Azure Web App provided the resource group and Web App name.
+
 ## PARAMETERS
 
 ### -AsJob

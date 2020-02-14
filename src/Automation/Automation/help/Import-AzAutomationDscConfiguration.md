@@ -34,6 +34,13 @@ This command imports the DSC configuration in the file named client.ps1 into the
 named Contoso17. The command specifies the *Force* parameter. If there is an existing DSC
 configuration, this command replaces it.
 
+Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Import-AzAutomationDscConfiguration -AutomationAccountName Contoso17-ResourceGroupName -Force  -Published  -ResourceGroupName MyResourceGroup -SourcePath C:\DSC\client.ps1
+```
+
+The Import-AzAutomationDscConfiguration cmdlet imports an APS Desired State Configuration (DSC) configuration into Azure Automation.
+
 ## PARAMETERS
 
 ### -AutomationAccountName

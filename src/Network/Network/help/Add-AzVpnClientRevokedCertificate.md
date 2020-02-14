@@ -34,6 +34,13 @@ PS C:\>Add-AzVpnClientRevokedCertificate -VirtualNetworkGatewayName "ContosoVirt
 This command adds a new client-revocation certificate to the virtual network gateway named ContosoVirtualNetwork.
 In order to add the certificate, you must specify both the certificate name and the certificate thumbprint.
 
+Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Add-AzVpnClientRevokedCertificate -ResourceGroupName ContosoResourceGroup -Thumbprint E3A38EBA60CAA1C162785A2E1C44A15AD450199C3 -VirtualNetworkGatewayName ContosoVirtualNetwork -VpnClientRevokedCertificateName ContosoRevokedClientCertificate-Thumbprint
+```
+
+The Add-AzVpnClientRevokedCertificate cmdlet assigns a client-revocation certificate to a virtual network gateway.
+
 ## PARAMETERS
 
 ### -DefaultProfile

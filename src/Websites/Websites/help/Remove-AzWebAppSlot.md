@@ -36,6 +36,13 @@ PS C:\>Remove-AzWebAppSlot -ResourceGroupName "Default-Web-WestUS" -Name "Contos
 
 This command removes the Slot named Slot001 associated with Web App ContosoSite that belongs to the resource group named Default-Web-WestUS.
 
+Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Remove-AzWebAppSlot -Force  -Name ContosoSite -ResourceGroupName Default-Web-WestUS -Slot Slot001
+```
+
+The Remove-AzWebAppSlot cmdlet removes an Azure Web App Slot provided the resource group and Web App name.
+
 ## PARAMETERS
 
 ### -AsJob
