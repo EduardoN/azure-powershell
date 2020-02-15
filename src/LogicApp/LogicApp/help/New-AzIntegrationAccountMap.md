@@ -49,6 +49,13 @@ Metadata    :
 This command creates the integration account map in the specified resource group.
 The command specifies a map definition stored in the $MapContent variable by a previous command.
 
+###Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> New-AzIntegrationAccountMap -MapFilePath {MapFilePath} -MapName IntegrationAccountMap47 -MapType Xslt -Name IntegrationAccount31 -ResourceGroupName ResourceGroup11
+```
+
+The New-AzIntegrationAccountMap cmdlet creates an integration account map.
+
 ## PARAMETERS
 
 ### -ContentType

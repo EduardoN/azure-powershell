@@ -136,6 +136,13 @@ TopologyResources : [
 
 In this example we run the Get-AzNetworkWatcherTopology cmdlet on a resource group that contains a VM, Nic, NSG, and public IP.
 
+###Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzNetworkWatcherTopology -NetworkWatcher $networkWatcher -TargetResourceGroupName <String>
+```
+
+The Get-AzNetworkWatcherTopology cmdlet a network level view of resources and their relationships in a resource group. 
+
 ## PARAMETERS
 
 ### -DefaultProfile

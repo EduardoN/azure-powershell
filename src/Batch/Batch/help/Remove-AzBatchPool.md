@@ -40,6 +40,13 @@ PS C:\>Get-AzBatchPool -BatchContext $Context | Remove-AzBatchPool -Force -Batch
 This command deletes all Batch pools.
 Because the *Force* parameter is present, the confirmation prompt is suppressed.
 
+###Example 3
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Remove-AzBatchPool -BatchContext $Context -Force  -Id MyPool
+```
+
+The Remove-AzBatchPool cmdlet deletes the specified Azure Batch pool.
+
 ## PARAMETERS
 
 ### -BatchContext

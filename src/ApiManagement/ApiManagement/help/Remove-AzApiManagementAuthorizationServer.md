@@ -32,6 +32,13 @@ PS C:\>Remove-AzApiManagementAuthorizationServer -Context $ApiMgmtContext -Serve
 This command removes the specified API Management Authorization Server.
 Because the *Force* parameter is specified, no confirmation is required.
 
+###Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Remove-AzApiManagementAuthorizationServer -Context $ApiMgmtContext -ServerId authserverid
+```
+
+This command removes the specified API Management Authorization Server.
+
 ## PARAMETERS
 
 ### -Context

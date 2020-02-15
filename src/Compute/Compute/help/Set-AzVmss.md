@@ -51,6 +51,13 @@ PS C:\> Set-AzVmss -Reimage -ResourceGroupName "ContosoGroup" -VMScaleSetName "C
 
 This command reimages the VMSS named ContosoVMSS that belongs to the resource group named ContosoGroup.
 
+###Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Set-AzVmss -InstanceId $ID -Reimage  -ResourceGroupName ContosoGroup -TempDisk  -VMScaleSetName ContosoVMSS
+```
+
+The Set-AzVmss cmdlet sets specific actions on the Virtual Machine Scale Set (VMSS).
+
 ## PARAMETERS
 
 ### -AsJob

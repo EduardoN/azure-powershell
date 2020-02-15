@@ -74,6 +74,13 @@ NumberFrom        :
 NumberTo          :
 ```
 
+###Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzSqlDatabaseDataMaskingRule -DatabaseName Database01 -ResourceGroupName ResourceGroup01 -ServerName Server01 -TableName table
+```
+
+The Get-AzSqlDatabaseDataMaskingRule cmdlet gets either a specific data masking rule or all of the data masking rules for an Azure SQL database.
+
 ## PARAMETERS
 
 ### -ColumnName

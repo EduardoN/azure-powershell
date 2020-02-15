@@ -23,7 +23,7 @@ The **Remove-AzStreamAnalyticsJob** cmdlet asynchronously deletes a specific Str
 
 ## EXAMPLES
 
-### EXAMPLE 1: Remove a job
+### Example 1: EXAMPLE 1: Remove a job
 ```
 PS C:\>Remove-AzStreamAnalyticsJob -ResourceGroupName "StreamAnalytics-Default-West-US" -Name "StreamingJob"
 ```

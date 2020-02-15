@@ -27,7 +27,7 @@ Use Get-AzProviderOperation Microsoft.Compute/* to get all operations of Microso
 
 ## EXAMPLES
 
-### Get all actions for all providers
+### Example 1: Get all actions for all providers
 ```
 PS C:\> Get-AzProviderOperation *
 ```
@@ -41,6 +41,13 @@ PS C:\> Get-AzProviderOperation Microsoft.Insights/*
 ```
 PS C:\> Get-AzProviderOperation */virtualMachines/*
 ```
+
+###Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzProviderOperation -OperationSearchString "*"
+```
+
+The Get-AzProviderOperation gets the operations exposed by Azure resource providers.
 
 ## PARAMETERS
 

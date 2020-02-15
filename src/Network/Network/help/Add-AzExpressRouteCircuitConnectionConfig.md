@@ -51,6 +51,13 @@ $addressSpace = '60.0.0.0/29'
 Get-AzExpressRouteCircuit -Name $initiatingCircuitName -ResourceGroupName $rg|Add-AzExpressRouteCircuitConnectionConfig -Name $circuitConnectionName -PeerExpressRouteCircuitPeering $circuit_peer.Peerings[0].Id -AddressPrefix $addressSpace -AuthorizationKey $circuit_peer.Authorizations[0].AuthorizationKey |Set-AzExpressRouteCircuit
 ```
 
+###Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Add-AzExpressRouteCircuitConnectionConfig -AddressPrefix $addressSpace -ExpressRouteCircuit $circuit_init -Name $circuitConnectionName -PeerExpressRouteCircuitPeering $circuit_peer.Peerings[0].Id
+```
+
+The Add-AzExpressRouteCircuitConnectionConfig cmdlet adds a circuit connection configuration to
+
 ## PARAMETERS
 
 ### -AddressPrefix

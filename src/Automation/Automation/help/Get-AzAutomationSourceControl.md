@@ -45,6 +45,13 @@ Name            SourceType Branch FolderPath  AutoSync PublishRunbook RepoUrl
 VSTSNative      VsoTfvc           /MyRunbooks False    True           https://contoso.visualstudio.com/_git/Fin...
 ```
 
+###Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzAutomationSourceControl -AutomationAccountName AutomationAccount01 -ResourceGroupName MyResourceGroup
+```
+
+The Get-AzAutomationSourceControl cmdlet gets Automation source controls.
+
 ## PARAMETERS
 
 ### -AutomationAccountName
