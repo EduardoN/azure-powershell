@@ -25,8 +25,6 @@ You can use the **PrivateDnsZone** object to update the zone, for example you ca
 
 ## EXAMPLES
 
-### Example 1: Get a zone
-```
 PS C:\> $Zone = Get-AzPrivateDnsZone -ResourceGroupName "MyResourceGroup" -Name "myzone.com"
 
 This example gets the Private DNS zone named myzone.com from the specified resource group, and then stores it in the $Zone variable.
@@ -95,6 +93,13 @@ MaxNumberOfRecordSets : 5000
 ```
 
 This example gets all of the Private DNS zones in the current Azure subscription, and then stores them in the $Zones variable.
+
+###Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzPrivateDnsZone -ResourceGroupName MyResourceGroup
+```
+
+The Get-AzPrivateDnsZone cmdlet gets a Private Domain Name System (DNS) zone from the specified resource group.
 
 ## PARAMETERS
 

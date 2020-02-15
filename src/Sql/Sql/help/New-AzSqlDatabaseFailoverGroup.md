@@ -1,10 +1,7 @@
----
 external help file: Microsoft.Azure.PowerShell.Cmdlets.Sql.dll-Help.xml
 Module Name: Az.Sql
 online version: https://docs.microsoft.com/en-us/powershell/module/az.sql/new-azsqldatabasefailovergroup
 schema: 2.0.0
----
-
 # New-AzSqlDatabaseFailoverGroup
 
 ## SYNOPSIS
@@ -40,6 +37,13 @@ C:\> $failoverGroup = New-AzSqlDatabaseFailoverGroup -ResourceGroupName rg1 -Ser
 ```
 
 This command creates a new Failover Group with failover policy 'Manual' for two servers in different resource groups.
+
+###Example 3
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> New-AzSqlDatabaseFailoverGroup -FailoverGroupName fg -FailoverPolicy Automatic -GracePeriodWithDataLossHours 1 -PartnerResourceGroupName rg2 -PartnerServerName secondaryserver -ResourceGroupName rg -ServerName primaryserver
+```
+
+Creates a new Azure SQL Database Failover Group for the specified servers.
 
 ## PARAMETERS
 

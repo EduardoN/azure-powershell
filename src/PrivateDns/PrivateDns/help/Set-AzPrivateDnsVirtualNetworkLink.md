@@ -41,8 +41,6 @@ When specifying the zone using a **PSPrivateDnsVirtualNetworkLink** object (pass
 
 ## EXAMPLES
 
-### Example 1: Set a link
-```
 PS C:\>Set-AzPrivateDnsVirtualNetworkLink -ZoneName "myzone.com" -ResourceGroupName "MyResourceGroup" -Name "mylink" -Tag @{} -IsRegistrationEnabled $true
 
 Name                    : mylink
@@ -61,6 +59,13 @@ ProvisioningState       : Succeeded
 ```
 
 This command sets IsRegistrationEnabled to True for the link named mylink, linked to zone named myzone.com from the resource group named MyResourceGroup.
+
+###Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Set-AzPrivateDnsVirtualNetworkLink -IsRegistrationEnabled $true
+```
+
+The Set-AzPrivateDnsVirtualNetworkLink cmdlet updates a link associated with a zone from a specified resource group.
 
 ## PARAMETERS
 

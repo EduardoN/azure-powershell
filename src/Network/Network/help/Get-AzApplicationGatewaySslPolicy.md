@@ -23,7 +23,7 @@ The **Get-AzApplicationGatewaySslPolicy** cmdlet gets the SSL policy of an appli
 
 ## EXAMPLES
 
-### 1:
+### Example 1: 1:
 ```
 PS C:\>$AppGW = Get-AzApplicationGateway -Name "ApplicationGateway01" -ResourceGroupName "ResourceGroup01"
 PS C:\> $sslpolicy = Get-AzApplicationGatewaySslPolicy -ApplicationGateway $AppGW

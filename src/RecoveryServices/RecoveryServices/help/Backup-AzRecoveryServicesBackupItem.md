@@ -28,8 +28,6 @@ Set the vault context by using the -VaultId parameter.
 
 ## EXAMPLES
 
-### Example 1: Start a backup for a Backup item
-
 ```powershell
 PS C:\> $vault = Get-AzRecoveryServicesVault -ResourceGroupName "resourceGroup" -Name "vaultName"
 PS C:\> $NamedContainer = Get-AzRecoveryServicesBackupContainer -ContainerType AzureVM -Status Registered -FriendlyName "pstestv2vm1" -VaultId $vault.ID
@@ -44,6 +42,13 @@ pstestv2vm1      Backup               InProgress           4/23/2016 5:00:30 PM 
 The first command gets the Backup container of type AzureVM named pstestv2vm1, and then stores it in the $NamedContainer variable.
 The second command gets the Backup item corresponding to the container in $NamedContainer, and then stores it in the $Item variable.
 The last command triggers the backup job for the Backup item in $Item.
+
+###Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Backup-AzRecoveryServicesBackupItem -ExpiryDateTimeUTC {ExpiryDateTimeUTC} -Item $Item -VaultId $vault.ID
+```
+
+The Backup-AzRecoveryServicesBackupItem cmdlet starts a backup for a protected Azure Backup item that is not tied to the backup schedule.
 
 ## PARAMETERS
 

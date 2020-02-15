@@ -31,7 +31,6 @@ You can use the *Id* parameter to get a single pool, or you can use the *Filter*
 
 ## EXAMPLES
 
-### Example 1: Get a pool by ID
 ```
 PS C:\>Get-AzBatchPool -Id "MyPool" -BatchContext $Context
 AllocationState                      : Resizing
@@ -66,8 +65,6 @@ VirtualMachineSize                   : small
 
 This command gets the pool with ID MyPool.
 
-### Example 2: Get all pools using an OData filter
-```
 PS C:\>Get-AzBatchPool -Filter "startswith(id,'My')" -BatchContext $Context
 AllocationState                      : Resizing
 AllocationStateTransitionTime        : 7/25/2015 9:30:28 PM
@@ -100,6 +97,13 @@ VirtualMachineSize                   : small
 ```
 
 This command gets the pools whose IDs start with My by using the *Filter* parameter.
+
+###Example 3
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzBatchPool -BatchContext $Context
+```
+
+The Get-AzBatchPool cmdlet gets the Azure Batch pools under the Batch account specified with the BatchContext parameter.
 
 ## PARAMETERS
 

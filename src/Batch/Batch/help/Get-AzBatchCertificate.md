@@ -32,7 +32,6 @@ Specify the *Filter* parameter to get the certificates that match an Open Data P
 
 ## EXAMPLES
 
-### Example 1: Get a certificate by thumbprint
 ```
 PS C:\>Get-AzBatchCertificate -ThumbprintAlgorithm "sha1" - Thumbprint "C1E494A415149C5F211C4778B52F2E834A07247C" -BatchContext $Context
 Thumbprint                  : c1e494a415149c5f211c4778b52f2e834a07247c
@@ -58,8 +57,6 @@ DeleteCertificateError      :
 This command gets a single certificate that has the specified thumbprint.
 The certificate thumbprint algorithm is sha1.
 
-### Example 2: Get filtered certificates
-```
 PS C:\>Get-AzBatchCertificate -Filter "state eq 'active'" -BatchContext $Context
 Thumbprint                  : 025b351b087a084c5067f5e71eff8591970323f9
 ThumbprintAlgorithm         : sha1
@@ -100,6 +97,13 @@ DeleteCertificateError      :
 
 This command gets all certificates in the active state from the Batch account.
 The *Filter* parameter specifies the state.
+
+###Example 3
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzBatchCertificate -BatchContext $Context -MaxCount {MaxCount}
+```
+
+The Get-AzBatchCertificate cmdlet gets the certificates in the Azure Batch account that the BatchContext parameter specifies.
 
 ## PARAMETERS
 

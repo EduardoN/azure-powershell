@@ -4,7 +4,6 @@ Module Name: Az.DevTestLabs
 ms.assetid: 5029179A-99A5-4350-A8E5-D15ABA59CC93
 online version: https://docs.microsoft.com/en-us/powershell/module/az.devtestlabs/get-azdtlvmsperuserpolicy
 schema: 2.0.0
----
 
 # Get-AzDtlVMsPerUserPolicy
 
@@ -23,6 +22,13 @@ The **Get-AzDtlVMsPerUserPolicy** cmdlet gets the virtual machines per user poli
 The cmdlet returns the enabled or disabled status of the policy and the maximum number of virtual machines allowed per user that you have set in the policy.
 
 ## EXAMPLES
+
+###Example 1
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzDtlVMsPerUserPolicy -LabName {LabName} -ResourceGroupName MyResourceGroup
+```
+
+The Get-AzDtlVMsPerUserPolicy cmdlet gets the virtual machines per user policy of a lab, which allows you to set the maximum number of virtual machines allowed per user.
 
 ## PARAMETERS
 

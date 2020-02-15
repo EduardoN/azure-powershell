@@ -35,8 +35,6 @@ Azure Operational Insights can collect syslog data.
 
 ## EXAMPLES
 
-### Example 1: Create syslog data sources
-```
 $FacilityNames       = @()
 $FacilityNames      += 'auth'
 $FacilityNames      += 'authpriv'
@@ -74,6 +72,13 @@ Get-AzOperationalInsightsDataSource `
    -WorkspaceName $WorkspaceName `
    -Kind 'LinuxSyslog'
 ```
+
+###Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> New-AzOperationalInsightsLinuxSyslogDataSource -CollectAlert  -CollectCritical  -CollectDebug  -CollectEmergency  -CollectError  -CollectInformational  -CollectNotice  -CollectWarning  -Facility {Facility} -Force  -Name MyStorageInsight -ResourceGroupName $ResourceGroupName -WorkspaceName ContosoWorkspace
+```
+
+The New-AzOperationalInsightsLinuxSyslogDataSource cmdlet adds a syslog data source to connected Linux computers in a workspace.
 
 ## PARAMETERS
 

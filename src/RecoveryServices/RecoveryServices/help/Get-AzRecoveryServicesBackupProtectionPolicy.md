@@ -44,7 +44,6 @@ Set the vault context by using the Set-AzRecoveryServicesVaultContext cmdlet bef
 
 ## EXAMPLES
 
-### Example 1: Get all policies in the vault
 ```
 PS C:\> Get-AzRecoveryServicesBackupProtectionPolicy 
 Name                 WorkloadType       BackupManagementType BackupTime                DaysOfWeek   
@@ -56,12 +55,17 @@ NewPolicy2           AzureVM            AzureVM              4/24/2016 1:30:00 A
 
 This command gets all protection policies created in the vault.
 
-### Example 2: Get a specific policy
-```
 PS C:\> $Pol= Get-AzRecoveryServicesBackupProtectionPolicy -Name "DefaultPolicy"
 ```
 
 This command gets the protection policy named DefaultPolicy, and then stores it in the $Pol variable.
+
+###Example 3
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzRecoveryServicesBackupProtectionPolicy -Name DefaultPolicy -VaultId $vault
+```
+
+The Get-AzRecoveryServicesBackupProtectionPolicy cmdlet gets Azure Backup protection policies for a vault.
 
 ## PARAMETERS
 

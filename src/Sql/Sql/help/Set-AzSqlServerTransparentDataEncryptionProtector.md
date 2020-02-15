@@ -24,7 +24,6 @@ Changing the TDE protector type will rotate the protector.
 
 ## EXAMPLES
 
-### Example 1: Set the Transparent Data Encryption (TDE) protector type to ServiceManaged
 ```
 PS C:\> Set-AzSqlServerTransparentDataEncryptionProtector -Type ServiceManaged -ServerName 'ContosoServer' -ResourceGroup 'ContosoResourceGroup'
 ```
@@ -34,8 +33,6 @@ ResourceGroupName ServerName                   Type ServerKeyVaultKeyName
 ----------------- ----------                   ---- ---------------------
 ContosoResourceGroup ContosoServer ServiceManaged ServiceManaged
 
-### Example 2: Set the Transparent Data Encryption protector type to Azure Key Vault
-```
 PS C:\> Set-AzSqlServerTransparentDataEncryptionProtector -Type AzureKeyVault -KeyId 'https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901' -ServerName 'ContosoServer' -ResourceGroup 'ContosoResourceGroup'
 ```
 
@@ -43,6 +40,13 @@ This command updates a server to use the Server Key Vault Key with Id 'https://c
 ResourceGroupName ServerName                   Type ServerKeyVaultKeyName
 ----------------- ----------                   ---- ---------------------
 ContosoResourceGroup ContosoServer AzureKeyVault contoso_contosokey_01234567890123456789012345678901
+
+###Example 3
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Set-AzSqlServerTransparentDataEncryptionProtector -Confirm  -Force  -ResourceGroupName ContosoResourceGroup -ServerName ContosoServer -Type AzureKeyVault
+```
+
+The Set-AzSqlServerTransparentDataEncryptionProtector cmdlet sets the TDE protector for a SQL server.
 
 ## PARAMETERS
 

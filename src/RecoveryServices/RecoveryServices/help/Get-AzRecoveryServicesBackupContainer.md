@@ -28,7 +28,6 @@ Set the vault context by using the -VaultId parameter.
 
 ## EXAMPLES
 
-### Example 1: Get a specific container
 
 ```powershell
 PS C:\> $vault = Get-AzRecoveryServicesVault -ResourceGroupName "resourceGroup" -Name "vaultName"
@@ -37,8 +36,6 @@ PS C:\> Get-AzRecoveryServicesBackupContainer -ContainerType "AzureVM" -Status "
 
 This command gets the container named V2VM of type AzureVM.
 
-### Example 2: Get all containers of a specific type
-
 ```powershell
 PS C:\> $vault = Get-AzRecoveryServicesVault -ResourceGroupName "resourceGroup" -Name "vaultName"
 PS C:\> Get-AzRecoveryServicesBackupContainer -ContainerType Windows -BackupManagementType MARS -VaultId $vault.ID
@@ -46,6 +43,13 @@ PS C:\> Get-AzRecoveryServicesBackupContainer -ContainerType Windows -BackupMana
 
 This command gets all Windows containers that are protected by Azure Backup agent.
 The **BackupManagementType** parameter is only required for Windows containers.
+
+###Example 3
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzRecoveryServicesBackupContainer -ContainerType AzureVM -VaultId $vault.ID
+```
+
+The Get-AzRecoveryServicesBackupContainer cmdlet gets a backup container.
 
 ## PARAMETERS
 

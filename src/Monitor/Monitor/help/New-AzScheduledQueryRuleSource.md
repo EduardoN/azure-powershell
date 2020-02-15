@@ -1,9 +1,7 @@
----
 external help file: Microsoft.Azure.PowerShell.Cmdlets.Monitor.dll-Help.xml
 Module Name: Az.Monitor
 online version: https://docs.microsoft.com/en-us/powershell/module/az.monitor/new-azscheduledqueryrulesource
 schema: 2.0.0
----
 
 # New-AzScheduledQueryRuleSource
 
@@ -29,6 +27,13 @@ PS C:\> $source = New-AzScheduledQueryRuleSource -Query "Heartbeat | summarize A
                   -DataSourceId "/subscriptions/b67f7fec-69fc-4974-9099-a26bd6ffeda3/resourceGroups/MyResourceGroup/providers/Microsoft.OperationalInsights/workspaces/MyWorkspace" 
 				  -QueryType "ResultCount"
 ```
+
+###Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> New-AzScheduledQueryRuleSource -DataSourceId <String> -Query Heartbeat | summarize AggregatedValue = count() by bin(TimeGenerated, 5m)
+```
+
+Creates an object of type Source.
 
 ## PARAMETERS
 

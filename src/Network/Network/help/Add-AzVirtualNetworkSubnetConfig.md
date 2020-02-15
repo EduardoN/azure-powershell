@@ -38,7 +38,7 @@ The **Add-AzVirtualNetworkSubnetConfig** cmdlet adds a subnet configuration to a
 
 ## EXAMPLES
 
-### 1: Add a subnet to an existing virtual network
+### Example 1: 1: Add a subnet to an existing virtual network
 ```
 New-AzResourceGroup -Name TestResourceGroup -Location centralus
     $frontendSubnet = New-AzVirtualNetworkSubnetConfig -Name frontendSubnet -AddressPrefix "10.0.1.0/24"
@@ -51,7 +51,7 @@ New-AzResourceGroup -Name TestResourceGroup -Location centralus
     Add-AzVirtualNetworkSubnetConfig is then used to add a subnet to the in-memory representation of the virtual network. The Set-AzVirtualNetwork command updates the existing virtual 
     network with the new subnet.
 
-### 2: Add a delegation to a subnet being added to an existing virtual network
+### Example 2: 2: Add a delegation to a subnet being added to an existing virtual network
 ```powershell
 PS C:\> $vnet = Get-AzVirtualNetwork -Name "myVNet" -ResourceGroupName "myResourceGroup"
 PS C:\> $delegation = New-AzDelegation -Name "myDelegation" -ServiceName "Microsoft.Sql/servers"

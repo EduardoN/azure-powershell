@@ -28,7 +28,7 @@ If you specify the *Force* parameter and specify an existing output name, the ou
 
 ## EXAMPLES
 
-### EXAMPLE 1: Add an output to a job
+### Example 1: EXAMPLE 1: Add an output to a job
 ```
 PS C:\>New-AzStreamAnalyticsOutput -ResourceGroupName "StreamAnalytics-Default-West-US" -File "C:\Output.json" -JobName "StreamingJob" -Name "Output"
 ```
@@ -36,12 +36,18 @@ PS C:\>New-AzStreamAnalyticsOutput -ResourceGroupName "StreamAnalytics-Default-W
 This command creates a new output called Output in the job called StreamingJob.
 If an existing output with this name is already defined, the cmdlet will ask whether or not to replace it.
 
-### EXAMPLE 2: Replace a job output definition
-```
+### Example 2: EXAMPLE 2: Replace a job output definition
 PS C:\>New-AzStreamAnalyticsOutput -ResourceGroupName "StreamAnalytics-Default-West-US" -File "C:\Output.json" -JobName "StreamingJob" -Name "Output" -Force
 ```
 
 This command replaces the definition for Output in the job called StreamingJob without confirmation.
+
+###Example 3
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> New-AzStreamAnalyticsOutput -File C:\Output.json -Force  -JobName StreamingJob -ResourceGroupName StreamAnalytics-Default-West-US
+```
+
+The New-AzStreamAnalyticsOutput cmdlet creates an output within a Stream Analytics job or updates an existing output.
 
 ## PARAMETERS
 

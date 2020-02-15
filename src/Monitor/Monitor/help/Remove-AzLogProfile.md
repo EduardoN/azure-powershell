@@ -1,4 +1,3 @@
----
 external help file: Microsoft.Azure.PowerShell.Cmdlets.Monitor.dll-Help.xml
 Module Name: Az.Monitor
 ms.assetid: DDA137FD-4EB3-4FB7-A202-978922038AFC
@@ -23,6 +22,13 @@ The **Remove-AzLogProfile** cmdlet removes a log profile.
 This cmdlet implements the ShouldProcess pattern, i.e. it might request confirmation from the user before actually creating, modifying, or removing the resource.
 
 ## EXAMPLES
+
+###Example 1
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Remove-AzLogProfile -Name MySetting
+```
+
+The Remove-AzLogProfile cmdlet removes a log profile.
 
 ## PARAMETERS
 

@@ -3,8 +3,6 @@ external help file: Microsoft.Azure.PowerShell.Cmdlets.DataLakeStore.dll-Help.xm
 Module Name: Az.DataLakeStore
 online version: https://docs.microsoft.com/en-us/powershell/module/az.datalakestore/get-azdatalakestorevirtualnetworkrule
 schema: 2.0.0
----
-
 # Get-AzDataLakeStoreVirtualNetworkRule
 
 ## SYNOPSIS
@@ -37,6 +35,13 @@ State                            :
 ```
 
 Returns the virtual network rule named "myVNET" from account "dls"
+
+###Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzDataLakeStoreVirtualNetworkRule -Account dls
+```
+
+The Get-AzDataLakeStoreVirtualNetworkRule cmdlet gets the specified virtual network rules in the specified Data Lake Store.
 
 ## PARAMETERS
 

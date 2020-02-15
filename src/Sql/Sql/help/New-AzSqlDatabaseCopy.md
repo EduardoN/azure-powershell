@@ -1,4 +1,3 @@
----
 external help file: Microsoft.Azure.PowerShell.Cmdlets.Sql.dll-Help.xml
 Module Name: Az.Sql
 ms.assetid: CED38886-2DC9-450E-91FF-8209602C76CD
@@ -37,6 +36,13 @@ Note: Use the New-AzSqlDatabaseSecondary cmdlet to configure geo-replication for
 This cmdlet is also supported by the SQL Server Stretch Database service on Azure.
 
 ## EXAMPLES
+
+###Example 1
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> New-AzSqlDatabaseCopy -CopyDatabaseName {CopyDatabaseName} -CopyResourceGroupName {CopyResourceGroupName} -CopyServerName {CopyServerName} -DatabaseName Database01 -ResourceGroupName MyResourceGroup -ServerName s1
+```
+
+The New-AzSqlDatabaseCopy cmdlet creates a copy of an Azure SQL Database that uses the
 
 ## PARAMETERS
 

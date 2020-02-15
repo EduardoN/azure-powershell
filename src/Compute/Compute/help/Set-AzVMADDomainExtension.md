@@ -1,4 +1,3 @@
----
 external help file: Microsoft.Azure.PowerShell.Cmdlets.Compute.dll-Help.xml
 Module Name: Az.Compute
 ms.assetid: 65BF37D3-4FCE-48A3-BC5D-01AA20FEB6CA
@@ -25,6 +24,13 @@ The **Set-AzVMADDomainExtension** cmdlet adds an Azure Active Directory (AD) dom
 This extension lets your virtual machine join a domain.
 
 ## EXAMPLES
+
+###Example 1
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Set-AzVMADDomainExtension -Credential $vmCred -DomainName <String> -ForceRerun {ForceRerun} -JoinOption {JoinOption} -OUPath {OUPath} -ResourceGroupName MyResourceGroup -Restart  -VMName VM01
+```
+
+The Set-AzVMADDomainExtension cmdlet adds an Azure Active Directory (AD) domain virtual machine extension to a virtual machine.
 
 ## PARAMETERS
 

@@ -38,16 +38,21 @@ These events are determined by the certificate policy.
 
 ## EXAMPLES
 
-### Example 1: Add a key vault certificate contact
 ```powershell
 PS C:\> Add-AzKeyVaultCertificateContact -VaultName "ContosoKV01" -EmailAddress "patti.fuller@contoso.com" -PassThru
-
 Email                    VaultName
 -----                    ---------
 patti.fuller@contoso.com ContosoKV01
 ```
 
 This command adds Patti Fuller as a certificate contact for the ContosoKV01 key vault and returns the list of contacts for the "ContosoKV01" vault.
+
+###Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Add-AzKeyVaultCertificateContact -EmailAddress patti.fuller@contoso.com -VaultName ContosoKV01
+```
+
+The Add-AzKeyVaultCertificateContact cmdlet adds a contact for a key vault for certificate notifications in Azure Key Vault.
 
 ## PARAMETERS
 

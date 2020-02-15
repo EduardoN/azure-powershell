@@ -1,9 +1,7 @@
----
 external help file: Microsoft.Azure.PowerShell.Cmdlets.Network.dll-Help.xml
 Module Name: Az.Network
 online version: https://docs.microsoft.com/en-us/powershell/module/az.network/get-azapplicationgatewaytrustedrootcertificate
 schema: 2.0.0
----
 
 # Get-AzApplicationGatewayTrustedRootCertificate
 
@@ -30,6 +28,13 @@ PS C:\> $trustedRootCert = Get-AzApplicationGatewayTrustedRootCertificate -Appli
 
 The first command gets the Application Gateway and stores it in $gw variable.
 The second command gets the Trusted Root Certificate with a specified name from the Application Gateway.
+
+###Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzApplicationGatewayTrustedRootCertificate -ApplicationGateway $gw -Name $certName
+```
+
+The first command gets the Application Gateway and stores it in $gw variable.
 
 ## PARAMETERS
 

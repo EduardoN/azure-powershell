@@ -4,7 +4,6 @@ Module Name: Az.DevTestLabs
 ms.assetid: 8AAD9309-5763-4903-AF6A-1E50310146C0
 online version: https://docs.microsoft.com/en-us/powershell/module/az.devtestlabs/set-azdtlautoshutdownpolicy
 schema: 2.0.0
----
 
 # Set-AzDtlAutoShutdownPolicy
 
@@ -30,6 +29,13 @@ The **Set-AzDtlAutoShutdownPolicy** cmdlet sets the auto shutdown policy of a la
 The cmdlet uses the specified resource group and name of the lab to set the policy.
 
 ## EXAMPLES
+
+###Example 1
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Set-AzDtlAutoShutdownPolicy -Enable  -LabName {LabName} -ResourceGroupName MyResourceGroup -Time {Time}
+```
+
+The Set-AzDtlAutoShutdownPolicy cmdlet sets the auto shutdown policy of a lab, which automatically shuts down all the virtual machines in the lab at a specified time of the day.
 
 ## PARAMETERS
 

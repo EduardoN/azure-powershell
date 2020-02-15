@@ -44,7 +44,7 @@ The **Get-AzPublicIPAddress** cmdlet gets one or more public IP addresses in a r
 
 ## EXAMPLES
 
-### 1: Get a public IP resource
+### Example 1: 1: Get a public IP resource
 ```
 Get-AzPublicIpAddress -Name myPublicIp1 -ResourceGroupName myRg
 
@@ -75,7 +75,7 @@ IpTags                   : []
 
 This command gets a public IP address resource with name myPublicIp in the resource group myRg.
 
-### 2: Get public IP resources using filtering
+### Example 2: 2: Get public IP resources using filtering
 ```
 Get-AzPublicIpAddress -Name myPublicIp*
 

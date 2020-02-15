@@ -1,9 +1,7 @@
----
 external help file: Microsoft.Azure.PowerShell.Cmdlets.Network.dll-Help.xml
 Module Name: Az.Network
 online version: https://docs.microsoft.com/en-us/powershell/module/az.network/new-azvpnsite
 schema: 2.0.0
----
 
 # New-AzVpnSite
 
@@ -114,6 +112,13 @@ PS C:\> $vpnSite = New-AzVpnSite -ResourceGroupName "multilink" -Name "testVpnSi
 ```
 
 The above will create a resource group, Virtual WAN and a VpnSite with 1 VpnSiteLinks in East US in "multilink" resource group in Azure.
+
+###Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> New-AzVpnSite -AddressSpace $vpnSiteAddressSpaces -DeviceModel SomeDevice -DeviceVendor SomeDeviceVendor -IpAddress 1.2.3.4 -LinkSpeedInMbps 10 -Location East US -Name testVpnSite -ResourceGroupName nonlinkSite -VirtualWanName <String> -VirtualWanResourceGroupName <String>
+```
+
+Creates a new Azure VpnSite resource. This is an RM representation of customer branches that are uploaded to Azure
 
 ## PARAMETERS
 

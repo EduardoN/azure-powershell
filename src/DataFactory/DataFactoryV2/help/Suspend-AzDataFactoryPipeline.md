@@ -31,8 +31,6 @@ You can resume the pipeline by using the Resume-AzDataFactoryPipeline cmdlet.
 
 ## EXAMPLES
 
-### Example 1: Suspend a pipeline
-```
 PS C:\>Suspend-AzDataFactoryPipeline -ResourceGroupName "ADF" -Name "DPWikiSample" -DataFactoryName "WikiADF"
 Confirm
 Are you sure you want to suspend pipeline 'DPWikisample' in data factory 'WikiADF'? 
@@ -42,6 +40,13 @@ True
 
 This command suspends the pipeline named DPWikiSample in the data factory named WikiADF.
 The command returns a value of $True.
+
+###Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Suspend-AzDataFactoryPipeline -Confirm  -DataFactoryName WikiADF -Name DPWikiSample -ResourceGroupName ADF
+```
+
+The Suspend-AzDataFactoryPipeline cmdlet suspends a pipeline in Azure Data Factory.
 
 ## PARAMETERS
 

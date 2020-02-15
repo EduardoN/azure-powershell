@@ -28,10 +28,9 @@ The following values will be used for the parameters if not specified:
 
 ## EXAMPLES
 
-### Create a SignalR service
+### Example 1: Create a SignalR service
 ```powershell
 PS C:\> New-AzSignalR -ResourceGroupName myResourceGroup1 -Name mysignalr1 -Location eastus -Sku Standard_S1 -UnitCount 5
-
 HostName                                 Location       ExternalIp      Sku         UnitCount ProvisioningState Version
 --------                                 --------       ----------      ---         --------- ----------------- -------
 mysignalr1.service.signalr.net           eastus         52.179.3.5      Standard_S1 5         Succeeded         1.0
@@ -45,6 +44,13 @@ HostName                                 Location       ExternalIp      Sku     
 --------                                 --------       ----------      ---         --------- ----------------- -------
 mysignalr1.service.signalr.net           eastus         52.179.3.5      Standard_S1 1         Succeeded         1.0
 ```
+
+###Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> New-AzSignalR -Location eastus -Name mysignalr1 -ResourceGroupName myResourceGroup1 -Sku Standard_S1 -Tag {Tag}
+```
+
+Create a SignalR service.
 
 ## PARAMETERS
 

@@ -1,4 +1,3 @@
----
 external help file: Microsoft.Azure.PowerShell.Cmdlets.Sql.dll-Help.xml
 Module Name: Az.Sql
 ms.assetid: 4F28BA63-23FC-4E35-A7FB-726E6FE94D26
@@ -23,6 +22,13 @@ The **Get-AzSqlDatabaseGeoBackupPolicy** cmdlet gets the geo backup policy regis
 This is an Azure Backup resource that is used to define backup storage policy.
 
 ## EXAMPLES
+
+###Example 1
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzSqlDatabaseGeoBackupPolicy -DatabaseName Database01 -ResourceGroupName MyResourceGroup -ServerName s1
+```
+
+The Get-AzSqlDatabaseGeoBackupPolicy cmdlet gets the geo backup policy registered to this database.
 
 ## PARAMETERS
 

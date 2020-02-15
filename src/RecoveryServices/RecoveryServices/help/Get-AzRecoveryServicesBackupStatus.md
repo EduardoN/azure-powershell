@@ -1,9 +1,7 @@
----
 external help file: Microsoft.Azure.PowerShell.Cmdlets.RecoveryServices.Backup.dll-Help.xml
 Module Name: Az.RecoveryServices
 online version: https://docs.microsoft.com/en-us/powershell/module/az.recoveryservices/get-azrecoveryservicesbackupstatus
 schema: 2.0.0
----
 
 # Get-AzRecoveryServicesBackupStatus
 
@@ -45,6 +43,13 @@ $defPolicy = Get-AzRecoveryServicesBackupProtectionPolicy -Vault $vault -Workloa
 Enable-AzRecoveryServicesBackupProtection -Vault $vault -Policy $defpol -Name "myAzureVM" -ResourceGroupName "myAzureVMRG"
 }
 ```
+
+###Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzRecoveryServicesBackupStatus -Name myAzureVM -ResourceGroupName myAzureVMRG -Type AzureVM
+```
+
+The command returns null/empty if the specified resource is not protected under any Recovery Services vault in the subscription. 
 
 ## PARAMETERS
 

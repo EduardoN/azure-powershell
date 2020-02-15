@@ -30,8 +30,6 @@ You can return the string immediately or save it to a file.
 
 ## EXAMPLES
 
-### Example 1: Export as string
-```
 Export-AzMlWebService -WebService $svc -ToJsonString
 ```
 
@@ -39,6 +37,13 @@ Export-AzMlWebService -WebService $svc -ToJsonString
 ```
 Export-AzMlWebService -WebService $svc -OutputFile "C:\mlservice.json"
 ```
+
+###Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Export-AzMlWebService -OutputFile C:\mlservice.json -WebService $svc
+```
+
+Exports the definition object for the specified web service as a JSON formatted string.
 
 ## PARAMETERS
 

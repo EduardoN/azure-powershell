@@ -53,7 +53,6 @@ Specify a resource to modify by name and type or by ID.
 
 ## EXAMPLES
 
-### Example 1: Modify a resource
 ```
 PS C:\> $Resource = Get-AzResource -ResourceType Microsoft.Web/sites -ResourceGroupName ResourceGroup11 -ResourceName ContosoSite
 PS C:\> $Resource.Properties.Enabled = "False"
@@ -64,8 +63,6 @@ The first command gets the resource named ContosoSite by using the Get-AzResourc
 The second command modifies a property of $Resource.
 The final command updates the resource to match $Resource.
 
-### Example 2: Modify all resources in a given resource group
-```
 PS C:\> $Resource = Get-AzResource -ResourceGroupName testrg
 PS C:\> $Resource | ForEach-Object { $_.Tags.Add("testkey", "testval") }
 PS C:\> $Resource | Set-AzResource -Force
@@ -97,6 +94,13 @@ The first command gets the resources in the testrg resource group, and then stor
 The second command iterates over each of these resources in the resource group and adds a new tag to them.
 
 The final command updates each of these resources.
+
+###Example 3
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Set-AzResource -Force  -ResourceId /subscriptions/$subscriptionId/resourceGroups/$resourceGroupName/providers/Microsoft.EventHub/namespaces/$namespaceName -Tag @{Name=CostCenter}
+```
+
+The Set-AzResource cmdlet modifies an existing Azure resource.
 
 ## PARAMETERS
 

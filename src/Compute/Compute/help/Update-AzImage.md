@@ -1,9 +1,7 @@
----
 external help file: Microsoft.Azure.PowerShell.Cmdlets.Compute.dll-Help.xml
 Module Name: Az.Compute
 online version: https://docs.microsoft.com/en-us/powershell/module/az.compute/update-azimage
 schema: 2.0.0
----
 
 # Update-AzImage
 
@@ -45,6 +43,13 @@ PS C:\> Update-AzImage -ResourceGroupName 'ResourceGroup01' -ImageName 'Image01'
 ```
 
 This command updates the Tag value of the existing image 'Image01' in the resource group 'ResourceGroup01'.
+
+###Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Update-AzImage -ImageName Image01 -ResourceGroupName ResourceGroup01
+```
+
+The Update-AzImage cmdlet updates an image.
 
 ## PARAMETERS
 

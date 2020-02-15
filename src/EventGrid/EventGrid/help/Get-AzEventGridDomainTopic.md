@@ -1,9 +1,7 @@
----
 external help file: Microsoft.Azure.PowerShell.Cmdlets.EventGrid.dll-Help.xml
 Module Name: Az.EventGrid
 online version: https://docs.microsoft.com/en-us/powershell/module/az.eventgrid/get-azeventgriddomaintopic
 schema: 2.0.0
----
 
 # Get-AzEventGridDomainTopic
 
@@ -151,6 +149,13 @@ PS C:\> while ($result.NextLink -ne $Null)
 
 PS C:\> echo "Total number of domain topics is $Total"
 ```
+
+###Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzEventGridDomainTopic -DomainName Domain1 -ResourceGroupName MyResourceGroupName
+```
+
+The Get-AzEventGridDomainTopic cmdlet gets either the details of a specified Event Grid domain topic, or a list of all Event Grid domain topics under a specific domain in the current Azure subscription.
 
 ## PARAMETERS
 

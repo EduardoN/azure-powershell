@@ -1,9 +1,7 @@
----
 external help file: Microsoft.Azure.PowerShell.Cmdlets.Monitor.dll-Help.xml
 Module Name: Az.Monitor
 online version: https://docs.microsoft.com/en-us/powershell/module/az.monitor/new-azscheduledqueryruleaznsactiongroup
 schema: 2.0.0
----
 
 # New-AzScheduledQueryRuleAznsActionGroup
 
@@ -27,6 +25,13 @@ This object is to be passed to the command that creates Log Alert Rule.
 ```powershell
 PS C:\> $aznsActionGroup = New-AzScheduledQueryRuleAznsActionGroup -ActionGroup @("/subscriptions/ad825170-845c-47db-8f00-11978947b089/resourcegroups/MyResourceGroup/providers/microsoft.insights/actiongroups/MyActionGroup") -EmailSubject "Email subject" -CustomWebhookPayload "{}"
 ```
+
+###Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> New-AzScheduledQueryRuleAznsActionGroup -ActionGroup @(/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/MyResourceGroup/providers/microsoft.insights/actiongroups/MyActionGroup)
+```
+
+Creates an object of type Azns Action Group.
 
 ## PARAMETERS
 

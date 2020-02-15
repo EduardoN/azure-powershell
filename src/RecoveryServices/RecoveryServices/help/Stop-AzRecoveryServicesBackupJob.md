@@ -33,14 +33,19 @@ Set the vault context by using the Set-AzRecoveryServicesVaultContext cmdlet bef
 
 ## EXAMPLES
 
-### Example 1: Stop a backup job
-```
 PS C:\>$Job = Get-AzRecoveryServicesBackupJob -Operation Backup
 PS C:\> Stop-AzRecoveryServicesBackupJob -JobID $Job.InstanceId
 ```
 
 The first command gets a backup job, and then stores the job in the $Job variable.
 The last command stops the job by specifying the Instance ID of the backup job in $Job.
+
+###Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Stop-AzRecoveryServicesBackupJob -Job $Job
+```
+
+The Stop-AzRecoveryServicesBackupJob cmdlet cancels an existing Azure Backup job.
 
 ## PARAMETERS
 
