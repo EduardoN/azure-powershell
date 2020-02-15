@@ -24,12 +24,17 @@ For more information about Automation accounts, see the New-AzAutomationAccount 
 
 ## EXAMPLES
 
-### Example 1: Remove an automation account
-```
 PS C:\>Remove-AzAutomationAccount -Name "ContosoAutomationAccount" -Force -ResourceGroupName "ResourceGroup01"
 ```
 
 This command removes an automation account named ContosoAutomationAccount without prompting for user validation.
+
+###Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Remove-AzAutomationAccount -Force 
+```
+
+The Remove-AzAutomationAccount cmdlet removes an Azure Automation account from a resource group.
 
 ## PARAMETERS
 

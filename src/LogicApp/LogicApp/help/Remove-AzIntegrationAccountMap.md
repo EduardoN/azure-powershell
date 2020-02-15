@@ -28,12 +28,17 @@ If you omit a required template parameter, the cmdlet prompts you for the value.
 
 ## EXAMPLES
 
-### Example 1: Remove an integration account map
-```
 PS C:\>Remove-AzIntegrationAccountMap -ResourceGroupName "ResourceGroup11" -Name "IntegrationAccount31" -MapName "IntegrationAccountMap47"
 ```
 
 This command removes the integration account map named IntegrationAccountMap47.
+
+###Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Remove-AzIntegrationAccountMap -Force  -MapName IntegrationAccountMap47 -Name IntegrationAccount31 -ResourceGroupName ResourceGroup11
+```
+
+The Remove-AzIntegrationAccountMap cmdlet removes an integration account map from a resource group.
 
 ## PARAMETERS
 

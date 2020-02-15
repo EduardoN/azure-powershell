@@ -1,9 +1,7 @@
----
 external help file: Microsoft.Azure.PowerShell.Cmdlets.DeploymentManager.dll-Help.xml
 Module Name: Az.DeploymentManager
 online version: https://docs.microsoft.com/en-us/powershell/module/az.deploymentmanager/new-azdeploymentmanagerservice
 schema: 2.0.0
----
 
 # New-AzDeploymentManagerService
 
@@ -47,6 +45,13 @@ PS C:\> New-AzDeploymentManagerService -ResourceGroupName ContosoResourceGroup -
 ```
 
 Creates a new service with name ContosoService1 under service topology ContosoServiceTopology in Resource Group ContosoResourceGroup, in the location Central US. The TargetLocation property indicates that the service ContosoService1 should be deployed to the East US region in the subscription specified.
+
+###Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> New-AzDeploymentManagerService -Location Central US -Name ContosoService1 -ServiceTopologyObject {ServiceTopologyObject} -TargetLocation East US -TargetSubscriptionId XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+```
+
+The New-AzDeploymentManagerService cmdlet creates a service under a service topology, and returns an object that represents that service.
 
 ## PARAMETERS
 

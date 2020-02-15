@@ -1,9 +1,7 @@
----
 external help file: Microsoft.Azure.PowerShell.Cmdlets.RecoveryServices.Backup.dll-Help.xml
 Module Name: Az.RecoveryServices
 online version: https://docs.microsoft.com/en-us/powershell/module/az.recoveryservices/get-azrecoveryservicesbackuprecoverylogchain
 schema: 2.0.0
----
 
 # Get-AzRecoveryServicesBackupRecoveryLogChain
 
@@ -43,6 +41,13 @@ The second command gets today's date, and then stores it in the $EndDate variabl
 The third command gets AzureWorkload backup containers, and stores them in the $Containers variable.
 The fourth command gets the backup item, and then stores it in the $BackupItem variable.
 The last command gets an array of recovery point time ranges for the item in $BackupItem, and then stores them in the $RP variable.
+
+###Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzRecoveryServicesBackupRecoveryLogChain -Item $Item -VaultId $vault.ID
+```
+
+The Get-AzRecoveryServicesBackupRecoveryLogChain cmdlet gets the time range recovery points in time for a backed up Azure Backup item.
 
 ## PARAMETERS
 

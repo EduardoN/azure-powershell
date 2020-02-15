@@ -4,7 +4,6 @@ Module Name: Az.DevTestLabs
 ms.assetid: 52DD0511-915F-4144-B47F-E4B7AF403AA5
 online version: https://docs.microsoft.com/en-us/powershell/module/az.devtestlabs/get-azdtlautoshutdownpolicy
 schema: 2.0.0
----
 
 # Get-AzDtlAutoShutdownPolicy
 
@@ -23,6 +22,13 @@ The **Get-AzDtlAutoShutdownPolicy** cmdlet gets the auto shutdown policy of a la
 The cmdlet returns whether the status of the policy is enabled, and the time of day that you have set to automatically shut down the lab virtual machines.
 
 ## EXAMPLES
+
+###Example 1
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzDtlAutoShutdownPolicy -LabName {LabName} -ResourceGroupName MyResourceGroup
+```
+
+The Get-AzDtlAutoShutdownPolicy cmdlet gets the auto shutdown policy of a lab, which allows you to automatically shut down all the virtual machines in a lab at a specified time of the day.
 
 ## PARAMETERS
 

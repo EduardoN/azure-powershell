@@ -27,8 +27,6 @@ This cmdlet is also supported by the SQL Server Stretch Database service on Azur
 
 ## EXAMPLES
 
-### Example 1: Get all data masking rules from a database
-```
 PS C:\>Get-AzSqlDatabaseDataMaskingRule -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01"
 DatabaseName      : database01
 ResourceGroupName : resourcegroup01
@@ -73,6 +71,13 @@ ReplacementString :
 NumberFrom        :
 NumberTo          :
 ```
+
+###Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzSqlDatabaseDataMaskingRule -DatabaseName Database01 -ResourceGroupName ResourceGroup01 -ServerName Server01 -TableName table
+```
+
+The Get-AzSqlDatabaseDataMaskingRule cmdlet gets either a specific data masking rule or all of the data masking rules for an Azure SQL database.
 
 ## PARAMETERS
 

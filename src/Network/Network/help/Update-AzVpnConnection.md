@@ -1,9 +1,7 @@
----
 external help file: Microsoft.Azure.PowerShell.Cmdlets.Network.dll-Help.xml
 Module Name: Az.Network
 online version: https://docs.microsoft.com/en-us/powershell/module/az.network/update-azvpnconnection
 schema: 2.0.0
----
 
 # Update-AzVpnConnection
 
@@ -121,6 +119,13 @@ A VPN gateway will be created thereafter in the Virtual Hub with 2 scale units.
 Once the gateway has been created, it is connected to the VpnSite using the New-AzVpnConnection command.
 
 The connection is then updated to have a new shared key using the secure string construct.
+
+###Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Update-AzVpnConnection -Name cert01 -ParentResourceName westushub -ResourceGroupName MyResourceGroup -VpnSiteLinkConnection @($vpnSiteLinkConnection)
+```
+
+The Update-AzVpnConnection cmdlet updates a VPN connection.
 
 ## PARAMETERS
 

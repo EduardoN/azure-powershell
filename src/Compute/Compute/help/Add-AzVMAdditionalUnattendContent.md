@@ -24,8 +24,6 @@ Specify additional base 64 encoded .xml formatted information that this cmdlet a
 
 ## EXAMPLES
 
-### Example 1: Add content to unattend.xml
-```
 PS C:\> $AvailabilitySet = Get-AzAvailabilitySet -ResourceGroupName "ResourceGroup11" -Name "AvailabilitySet03"
 PS C:\> $VirtualMachine = New-AzVMConfig -VMName "VirtualMachine07" -VMSize "Standard_A1" -AvailabilitySetID $AvailabilitySet.Id 
 PS C:\> $Credential = Get-Credential
@@ -45,6 +43,13 @@ The fourth command uses the **Set-AzVMOperatingSystem** cmdlet to configure the 
 The fifth command assigns content to the $AucContent variable.
 The content includes a password.
 The final command adds the content stored in $AucContent to the unattend.xml file.
+
+###Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Add-AzVMAdditionalUnattendContent -Content $AucContent -SettingName AutoLogon
+```
+
+The Add-AzVMAdditionalUnattendContent cmdlet adds information to the unattended Windows Setup answer file.
 
 ## PARAMETERS
 

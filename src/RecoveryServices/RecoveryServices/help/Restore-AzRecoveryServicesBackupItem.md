@@ -53,8 +53,6 @@ Note: To successfully execute this cmdlet in addition to -VaultId parameter -Vau
 
 ## EXAMPLES
 
-### Example 1: Restore an item to a recovery point
-
 ```powershell
 PS C:\> $vault = Get-AzRecoveryServicesVault -ResourceGroupName "resourceGroup" -Name "vaultName"
 PS C:\>$Container = Get-AzRecoveryServicesBackupContainer -ContainerType AzureVM -Status Registered -Name "V2VM" -VaultId $vault.ID
@@ -75,6 +73,13 @@ The fourth command gets the current date, and then stores it in the $EndDate var
 The fifth command gets a list of recovery points for the specific backup item filtered by $StartDate and $EndDate.
 The date range specified is the last 7 days.
 The last command restores the disks to the target storage account DestAccount in the DestRG resource group.
+
+###Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Restore-AzRecoveryServicesBackupItem -VaultId $vault.ID -WLRecoveryConfig {WLRecoveryConfig}
+```
+
+The Restore-AzRecoveryServicesBackupItem cmdlet restores the data and configuration for an Azure Backup item to a specified recovery point.
 
 ## PARAMETERS
 

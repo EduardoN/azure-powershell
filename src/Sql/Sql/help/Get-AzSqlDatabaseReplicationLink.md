@@ -1,4 +1,3 @@
----
 external help file: Microsoft.Azure.PowerShell.Cmdlets.Sql.dll-Help.xml
 Module Name: Az.Sql
 ms.assetid: 40054224-52FF-4AF6-A090-9F6D07A2BA99
@@ -24,6 +23,13 @@ The **Get-AzSqlDatabaseReplicationLink** cmdlet replaces the **Get-AzSqlDatabase
 It gets all geo-replication links between the specified Azure SQL Database and a resource group or AzureSQL Server.
 
 ## EXAMPLES
+
+###Example 1
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzSqlDatabaseReplicationLink -DatabaseName Database01 -PartnerResourceGroupName rg2 -ResourceGroupName MyResourceGroup -ServerName s1
+```
+
+The Get-AzSqlDatabaseReplicationLink cmdlet replaces the Get-AzSqlDatabaseCopy cmdlet.
 
 ## PARAMETERS
 

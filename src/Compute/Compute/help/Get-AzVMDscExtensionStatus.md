@@ -1,4 +1,3 @@
----
 external help file: Microsoft.Azure.PowerShell.Cmdlets.Compute.dll-Help.xml
 Module Name: Az.Compute
 ms.assetid: 695F224D-DA25-49F2-916E-25DA2A48A4A7
@@ -23,6 +22,13 @@ The **Get-AzVMDscExtensionStatus** cmdlet gets the status of the Desired State C
 When a configuration is applied this cmdlet produces output consistent with the Start-DscConfiguration cmdlet.
 
 ## EXAMPLES
+
+###Example 1
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzVMDscExtensionStatus -ResourceGroupName MyResourceGroup -VMName VM01
+```
+
+The Get-AzVMDscExtensionStatus cmdlet gets the status of the Desired State Configuration (DSC) extension handler for a virtual machine in a resource group.
 
 ## PARAMETERS
 

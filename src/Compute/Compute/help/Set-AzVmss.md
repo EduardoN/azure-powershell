@@ -44,12 +44,17 @@ The only action this cmdlet supports is Reimage.
 
 ## EXAMPLES
 
-### Example 1: Reimage a VMSS
-```
 PS C:\> Set-AzVmss -Reimage -ResourceGroupName "ContosoGroup" -VMScaleSetName "ContosoVMSS"
 ```
 
 This command reimages the VMSS named ContosoVMSS that belongs to the resource group named ContosoGroup.
+
+###Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Set-AzVmss -InstanceId $ID -Reimage  -ResourceGroupName ContosoGroup -TempDisk  -VMScaleSetName ContosoVMSS
+```
+
+The Set-AzVmss cmdlet sets specific actions on the Virtual Machine Scale Set (VMSS).
 
 ## PARAMETERS
 

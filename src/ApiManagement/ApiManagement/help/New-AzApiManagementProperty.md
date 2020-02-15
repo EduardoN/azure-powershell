@@ -23,7 +23,6 @@ The **New-AzApiManagementProperty** cmdlet creates an Azure API Management **Pro
 
 ## EXAMPLES
 
-### Example 1: Create a property that includes tags
 ```
 PS C:\>$apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 PS C:\>$Tags = 'sdk', 'powershell'
@@ -33,13 +32,18 @@ PS C:\> New-AzApiManagementProperty -Context $apimContext -PropertyId "Property1
 The first command assigns two values to the $Tags variable.
 The second command creates a property and assigns the strings in $Tags as tags on the property.
 
-### Example 2: Create a property that has a secret value
 ```powershell
 PS C:\>$apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 PS C:\>New-AzApiManagementProperty -Context $apimContext -PropertyId "Property12" -Name "Secret Property" -Value "Secret Property Value" -Secret
-```
 
 This command creates a **Property** that has a value that is encrypted.
+
+###Example 3
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> New-AzApiManagementProperty -Context $apimContext -Name Property Name -PropertyId Property11 -Value Property Value
+```
+
+The first command assigns two values to the $Tags variable.
 
 ## PARAMETERS
 

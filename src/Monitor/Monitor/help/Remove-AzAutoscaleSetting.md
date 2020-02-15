@@ -1,4 +1,3 @@
----
 external help file: Microsoft.Azure.PowerShell.Cmdlets.Monitor.dll-Help.xml
 Module Name: Az.Monitor
 ms.assetid: 6140E973-D7AB-4A28-A4FA-818E08129372
@@ -24,6 +23,13 @@ You must specify the name of the setting and the name of the resource group to w
 This cmdlet implements the ShouldProcess pattern, i.e. it might request confirmation from the user before actually creating, modifying, or removing the resource.
 
 ## EXAMPLES
+
+###Example 1
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Remove-AzAutoscaleSetting -Name MySetting -ResourceGroupName MyResourceGroup
+```
+
+The Remove-AzAutoscaleSetting cmdlet removes an Autoscale setting.
 
 ## PARAMETERS
 

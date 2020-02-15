@@ -30,8 +30,6 @@ selected context.
 
 ## EXAMPLES
 
-### Example 1 : Target a named context
-```
 PS C:\> Select-AzContext "Work"
 
 Name    Account             SubscriptionName    Environment         TenantId
@@ -40,6 +38,13 @@ Work    test@outlook.com    Subscription1       AzureCloud          xxxxxxxx-x..
 ```
 
 Target future Azure PowerShell cmdlets at the account, tenant, and subscription in the 'Work' context.
+
+###Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Select-AzContext -Name TestEnvironment -Scope Process
+```
+
+Select a  subscription to target (or account or tenant) in Azure PowerShell cmdlets.  After this cmdlet, future cmdlets will target the 
 
 ## PARAMETERS
 

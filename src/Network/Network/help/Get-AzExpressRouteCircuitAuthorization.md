@@ -30,7 +30,6 @@ well as other information about the authorization, can be viewed at any time by 
 
 ## EXAMPLES
 
-### Example 1: Get all ExpressRoute authorizations
 ```
 $Circuit = Get-AzExpressRouteCircuit -Name "ContosoCircuit" -ResourceGroupName "ContosoResourceGroup"
 Get-AzExpressRouteCircuitAuthorization -Circuit $Circuit
@@ -43,8 +42,6 @@ variable $Circuit. The second command then uses that object reference and the
 **Get-AzExpressRouteCircuitAuthorization** cmdlet to return information about the
 authorizations associated with ContosoCircuit.
 
-### Example 2: Get all ExpressRoute authorizations using the Where-Object cmdlet
-```
 $Circuit = Get-AzExpressRouteCircuit -Name "ContosoCircuit" -ResourceGroupName "ContosoResourceGroup"
  Get-AzExpressRouteCircuitAuthorization -Circuit $Circuit | Where-Object {$_.AuthorizationUseStatus -eq "Available"}
 ```
@@ -57,6 +54,13 @@ authorization information is returned in command 2 and is piped to the **Where-O
 property is set to Available. To list only those authorizations that are not available, use this
 syntax for the Where clause:
 `{$_.AuthorizationUseStatus -ne "Available"}`
+
+###Example 3
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzExpressRouteCircuitAuthorization -ExpressRouteCircuit $circuit_init -Name cert01
+```
+
+The Get-AzExpressRouteCircuitAuthorization cmdlet gets information about the
 
 ## PARAMETERS
 

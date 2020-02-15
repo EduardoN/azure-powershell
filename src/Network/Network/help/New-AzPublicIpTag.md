@@ -22,7 +22,7 @@ The **New-AzPublicIpTag** cmdlet creates a IP Tag.
 
 ## EXAMPLES
 
-### 1: Create a new IP Tag
+###Example 1: 1: Create a new IP Tag
 ```
 $ipTag = New-AzPublicIpTag -IpTagType $ipTagType -Tag $tag
 ```

@@ -1,9 +1,7 @@
----
 external help file: Microsoft.Azure.PowerShell.Cmdlets.Monitor.dll-Help.xml
 Module Name: Az.Monitor
 online version: https://docs.microsoft.com/en-us/powershell/module/az.monitor/new-azscheduledqueryruletriggercondition
 schema: 2.0.0
----
 
 # New-AzScheduledQueryRuleTriggerCondition
 
@@ -28,6 +26,13 @@ This object is to be passed to the command that creates Alerting Action object
 ```powershell
 PS C:\>  $triggerCondition = New-AzScheduledQueryRuleTriggerCondition -ThresholdOperator "GreaterThan" -Threshold 3 -MetricTrigger $metricTrigger
 ```
+
+###Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> New-AzScheduledQueryRuleTriggerCondition -Threshold 3 -ThresholdOperator GreaterThan
+```
+
+Creates an object of type Trigger Condition.
 
 ## PARAMETERS
 

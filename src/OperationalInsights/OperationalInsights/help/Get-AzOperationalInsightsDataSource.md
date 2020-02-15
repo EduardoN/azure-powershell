@@ -1,4 +1,3 @@
----
 external help file: Microsoft.Azure.PowerShell.Cmdlets.OperationalInsights.dll-Help.xml
 Module Name: Az.OperationalInsights
 ms.assetid: 1F094EBA-E4AE-4B3E-BA20-858818C6FD12
@@ -43,6 +42,13 @@ You can specify a data source to get.
 You can filter the results based on the kind of data source.
 
 ## EXAMPLES
+
+###Example 1
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzOperationalInsightsDataSource -Kind AzureAuditLog -ResourceGroupName $ResourceGroupName -WorkspaceName ContosoWorkspace
+```
+
+The Get-AzOperationalInsightsDataSource cmdlet gets data sources.
 
 ## PARAMETERS
 

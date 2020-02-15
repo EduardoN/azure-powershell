@@ -24,13 +24,18 @@ This cmdlet prompts you before it removes an account, unless you specify the *Fo
 
 ## EXAMPLES
 
-### Example 1: Remove a Batch account
-```
 PS C:\>Remove-AzBatchAccount -AccountName "pfuller"
 ```
 
 This command removes the Batch account named pfuller.
 This command prompts you for confirmation before it deletes the account.
+
+###Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Remove-AzBatchAccount -AccountName pfuller -Force  -ResourceGroupName MyResourceGroup
+```
+
+The Remove-AzBatchAccount cmdlet removes an Azure Batch account.
 
 ## PARAMETERS
 

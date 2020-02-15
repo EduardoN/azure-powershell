@@ -25,19 +25,23 @@ If no firewall rule is specified, then lists all firewall rules for the account.
 
 ## EXAMPLES
 
-### Example 1: Retrieve a specific firewall rule
 ```
 PS C:\> Get-AzDataLakeStoreFirewallRule -AccountName "ContosoADL" -Name MyFirewallRule
 ```
 
 Returns the firewall rule named "MyFirewallRule" from account "ContosoADL"
 
-### Example 2: List all firewall rules in an account
-```
 PS C:\> Get-AzDataLakeStoreFirewallRule -AccountName "ContosoADL"
 ```
 
 Returns all firewall rules in account "ContosoADL"
+
+###Example 3
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzDataLakeStoreFirewallRule -Account ContosoADL -Name MyFirewallRule -ResourceGroupName MyResourceGroup
+```
+
+The Get-AzDataLakeStoreFirewallRule cmdlet gets the specified firewall rules in the specified Data Lake Store.
 
 ## PARAMETERS
 

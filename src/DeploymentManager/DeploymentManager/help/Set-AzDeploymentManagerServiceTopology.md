@@ -1,9 +1,7 @@
----
 external help file: Microsoft.Azure.PowerShell.Cmdlets.DeploymentManager.dll-Help.xml
 Module Name: Az.DeploymentManager
 online version: https://docs.microsoft.com/en-us/powershell/module/az.deploymentmanager/set-azdeploymentmanagerservicetopology
 schema: 2.0.0
----
 
 # Set-AzDeploymentManagerServiceTopology
 
@@ -30,6 +28,13 @@ PS C:\> Set-AzDeploymentManagerService -InputObject $serviceTopologyObject
 
 This command updates a service topology whose name and ResourceGroup match the Name and ResourceGroupName properties of the $serviceTopologyObject, respectively.
 The command returns the updated service topology object.
+
+###Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Set-AzDeploymentManagerServiceTopology -InputObject $artifactSourceObject
+```
+
+This command updates a service topology whose name and ResourceGroup match the Name and ResourceGroupName properties of the $serviceTopologyObject, respectively.
 
 ## PARAMETERS
 

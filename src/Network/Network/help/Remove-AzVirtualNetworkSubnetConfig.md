@@ -23,7 +23,7 @@ The **Remove-AzVirtualNetworkSubnetConfig** cmdlet removes a subnet from an Azur
 
 ## EXAMPLES
 
-### 1: Remove a subnet from a virtual network and update the virtual network
+###Example 1: 1: Remove a subnet from a virtual network and update the virtual network
 ```
 New-AzResourceGroup -Name TestResourceGroup -Location centralus
     $frontendSubnet = New-AzVirtualNetworkSubnetConfig -Name frontendSubnet 

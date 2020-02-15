@@ -44,8 +44,6 @@ Set the vault context by using the -VaultId parameter.
 
 ## EXAMPLES
 
-### Example 1: Get recovery points from the last week for an item
-
 ```powershell
 PS C:\> $vault = Get-AzRecoveryServicesVault -ResourceGroupName "resourceGroup" -Name "vaultName"
 PS C:\> $StartDate = (Get-Date).AddDays(-7)
@@ -60,6 +58,13 @@ The second command gets today's date, and then stores it in the $EndDate variabl
 The third command gets AzureVM backup containers, and stores them in the $Containers variable.
 The fourth command gets the backup item named V2VM, and then stores it in the $BackupItem variable.
 The last command gets an array of recovery points for the item in $BackupItem, and then stores them in the $RP variable.
+
+###Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzRecoveryServicesBackupRecoveryPoint -Item $BackupItem -VaultId $vault.ID
+```
+
+The Get-AzRecoveryServicesBackupRecoveryPoint cmdlet gets the recovery points for a backed up Azure Backup item.
 
 ## PARAMETERS
 

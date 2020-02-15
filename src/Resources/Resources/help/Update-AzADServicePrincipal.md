@@ -47,7 +47,6 @@ To update the properties associated with the underlying application, please use 
 
 ## EXAMPLES
 
-### Example 1 - Update the display name of a service principal
 
 ```
 PS C:\> Update-AzADServicePrincipal -ObjectId 784136ca-3ae2-4fdd-a388-89d793e7c780 -DisplayName MyNewDisplayName
@@ -55,13 +54,18 @@ PS C:\> Update-AzADServicePrincipal -ObjectId 784136ca-3ae2-4fdd-a388-89d793e7c7
 
 Updates the display name of the service principal with object id '784136ca-3ae2-4fdd-a388-89d793e7c780' to be 'MyNewDisplayName'.
 
-### Example 2 - Update the display name of a service principal using piping
-
 ```
 PS C:\> Get-AzADServicePrincipal -ObjectId 784136ca-3ae2-4fdd-a388-89d793e7c780 | Update-AzADServicePrincipal -DisplayName MyNewDisplayName
 ```
 
 Gets the service principal with object id '784136ca-3ae2-4fdd-a388-89d793e7c780' and pipes that to the Update-AzADServicePrincipal cmdlet to update the display name of the service principal to "MyNewDisplayName".
+
+###Example 3
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Update-AzADServicePrincipal -ObjectId 00000000-0000-0000-0000-000000000000 -PasswordCredential <PSADPasswordCredential[]>
+```
+
+Updates an existing azure active directory service principal. 
 
 ## PARAMETERS
 

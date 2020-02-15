@@ -1,4 +1,3 @@
----
 external help file: Microsoft.Azure.PowerShell.Cmdlets.ResourceManager.dll-Help.xml
 Module Name: Az.Resources
 ms.assetid: 427F7300-0FEB-4F28-9C1D-27592AEBF6A0
@@ -41,6 +40,13 @@ The **Invoke-AzResourceAction** cmdlet invokes an action on a specified Azure re
 To get a list of supported actions, use the Azure Resource Explorer tool.
 
 ## EXAMPLES
+
+###Example 1
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Invoke-AzResourceAction -Action <String> -Force  -ResourceGroupName MyResourceGroup -ResourceName ContosoSite -ResourceType Microsoft.ClassicCompute/storageAccounts
+```
+
+The Invoke-AzResourceAction cmdlet invokes an action on a specified Azure resource.
 
 ## PARAMETERS
 

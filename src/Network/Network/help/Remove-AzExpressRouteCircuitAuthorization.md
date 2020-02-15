@@ -31,8 +31,6 @@ able to use the ExpressRoute circuit to connect to Azure.
 
 ## EXAMPLES
 
-### Example 1: Remove a circuit authorization from an ExpressRoute circuit
-```
 $Circuit = Get-AzExpressRouteCircuit -Name "ContosoCircuit" -ResourceGroupName "ContosoResourceGroup"
 Remove-AzExpressRouteCircuitAuthorization -Name "ContosoCircuitAuthorization" -Circuit $Circuit
 Set-AzExpressRouteCircuit -ExpressRouteCircuit $Circuit
@@ -44,6 +42,13 @@ circuit named ContosoCircuit and stores the result in the variable named $Circui
 The second command marks the circuit authorization ContosoCircuitAuthorization for removal.
 The third command uses the Set-AzExpressRouteCircuit cmdlet to confirm the removal of the
 ExpressRoute circuit stored in the $Circuit variable.
+
+###Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Remove-AzExpressRouteCircuitAuthorization -ExpressRouteCircuit $circuit_init -Name ContosoCircuitAuthorization
+```
+
+This example removes a circuit authorization from an ExpressRoute circuit. The first command uses
 
 ## PARAMETERS
 

@@ -32,7 +32,6 @@ Alternatively, you can specify the profile by using the *Name* and *ResourceGrou
 
 ## EXAMPLES
 
-### Example 1: Disable a profile specified by name
 ```
 PS C:\>Disable-AzTrafficManagerProfile -Name "ContosoProfile" -ResourceGroupName "ResourceGroup11"
 ```
@@ -40,8 +39,6 @@ PS C:\>Disable-AzTrafficManagerProfile -Name "ContosoProfile" -ResourceGroupName
 This command disables the profile named ContosoProfile in ResourceGroup11.
 The command prompts you for confirmation.
 
-### Example 2: Disable a profile by using the pipeline
-```
 PS C:\>Get-AzTrafficManagerProfile -Name "ContosoProfile" -ResourceGroupName "ResourceGroup11" | Disable-AzTrafficManagerProfile -Force
 ```
 
@@ -50,6 +47,13 @@ The command then passes that profile to the **Disable-AzTrafficManagerProfile** 
 That cmdlet disables that profile.
 The command specifies the *Force* parameter.
 Therefore, it does not prompt you for confirmation.
+
+###Example 3
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Disable-AzTrafficManagerProfile -Force  -Name ContosoProfile -ResourceGroupName ResourceGroup11
+```
+
+This command gets the profile named ContosoProfile in ResourceGroup11.
 
 ## PARAMETERS
 

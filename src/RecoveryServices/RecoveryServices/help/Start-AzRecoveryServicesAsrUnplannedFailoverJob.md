@@ -3,8 +3,6 @@ external help file: Microsoft.Azure.PowerShell.Cmdlets.RecoveryServices.SiteReco
 Module Name: Az.RecoveryServices
 online version: https://docs.microsoft.com/en-us/powershell/module/az.recoveryservices/start-azrecoveryservicesasrunplannedfailoverjob
 schema: 2.0.0
----
-
 # Start-AzRecoveryServicesAsrUnplannedFailoverJob
 
 ## SYNOPSIS
@@ -48,6 +46,13 @@ PS C:\> $currentJob = Start-AzRecoveryServicesAsrUnplannedFailoverJob -RecoveryP
 ```
 
 Starts the unplanned failover operation for the recovery plan with the specified parameters and returns the ASR job used to track the operation.
+
+###Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Start-AzRecoveryServicesAsrUnplannedFailoverJob -Direction PrimaryToRecovery -RecoveryPoint $rp[0] -ReplicationProtectedItem $ReplicationProtectedItem
+```
+
+The Start-AzRecoveryServicesAsrUnplannedFailoverJob cmdlet starts unplanned failover of an Azure Site Recovery replication protected item or recovery plan.
 
 ## PARAMETERS
 

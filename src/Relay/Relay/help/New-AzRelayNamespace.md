@@ -3,8 +3,6 @@ external help file: Microsoft.Azure.PowerShell.Cmdlets.Relay.dll-Help.xml
 Module Name: Az.Relay
 online version: https://docs.microsoft.com/en-us/powershell/module/az.relay/new-azrelaynamespace
 schema: 2.0.0
----
-
 # New-AzRelayNamespace
 
 ## SYNOPSIS
@@ -40,6 +38,13 @@ Type               : Microsoft.Relay/namespaces
 ```
 
 Creates a new Relay namespace within the specified resource group.
+
+###Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> New-AzRelayNamespace -Location West US -Name TestNameSpace-Relay1 -ResourceGroupName Default-ServiceBus-WestUS
+```
+
+The New-AzRelayNamespace cmdlet creates a new Relay namespace. Once created, the namespace
 
 ## PARAMETERS
 

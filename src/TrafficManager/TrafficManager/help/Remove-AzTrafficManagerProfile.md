@@ -32,7 +32,6 @@ Alternatively, you can specify a **TrafficManagerProfile** object using the *Tra
 
 ## EXAMPLES
 
-### Example 1: Delete a profile specified by name
 ```
 PS C:\>Remove-AzTrafficManagerProfile -Name "ContosoProfile" -ResourceGroupName "ResourceGroup11"
 ```
@@ -40,8 +39,6 @@ PS C:\>Remove-AzTrafficManagerProfile -Name "ContosoProfile" -ResourceGroupName 
 This command deletes the profile named ContosoProfile in ResourceGroup11.
 The command prompts you for confirmation.
 
-### Example 2: Delete a profile by using the pipeline
-```
 PS C:\>Get-AzTrafficManagerProfile -Name "ContosoProfile" -ResourceGroupName "ResourceGroup11" | Remove-AzTrafficManagerProfile -Force
 ```
 
@@ -50,6 +47,13 @@ The command then passes that profile to the **Remove-AzTrafficManagerProfile** c
 That cmdlet deletes that profile.
 The command specifies the *Force* parameter.
 Therefore, it does not prompt you for confirmation.
+
+###Example 3
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Remove-AzTrafficManagerProfile -Force  -Name ContosoProfile -ResourceGroupName ResourceGroup11
+```
+
+This command gets the profile named ContosoProfile in ResourceGroup11.
 
 ## PARAMETERS
 

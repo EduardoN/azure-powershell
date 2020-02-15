@@ -1,9 +1,7 @@
----
 external help file: Microsoft.Azure.PowerShell.Cmdlets.Security.dll-Help.xml
 Module Name: Az.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/az.security/Start-AzJitNetworkAccessPolicy
 schema: 2.0.0
----
 
 # Start-AzJitNetworkAccessPolicy
 
@@ -53,6 +51,13 @@ ProvisioningState : Succeeded
 ```
 
 Opens up a network connection according to the specified connection request data.
+
+###Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Start-AzJitNetworkAccessPolicy -ResourceId /subscriptions/xxxxxxx-xxxx-xxxx-xxxxxxxxxxxxx/resourceGroups/myResourceGroup/providers/Microsoft.DocumentDb/databaseAccounts/myCosmosDBAccount/ -VirtualMachine $vmRules
+```
+
+Invokes a temporary network access request.
 
 ## PARAMETERS
 

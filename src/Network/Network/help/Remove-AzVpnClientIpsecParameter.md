@@ -36,7 +36,7 @@ The **Remove-AzVpnClientIpsecParameter** cmdlet removes the vpn custom ipsec par
 
 ## EXAMPLES
 
-### 1: Deletes the set vpn ipsec parameters set on the Virtual Network Gateway
+###Example 1: 1: Deletes the set vpn ipsec parameters set on the Virtual Network Gateway
 ```
 PS C:\> $delete = Remove-AzVpnClientIpsecParameter -VirtualNetworkGatewayName myGateway -ResourceGroupName myRG
 ```

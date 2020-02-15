@@ -40,8 +40,6 @@ This can be suppressed using the *Overwrite* parameter, which updates the zone r
 
 ## EXAMPLES
 
-### Example 1: Updates a private zone
-```
 PS C:\>Set-AzPrivateDnsZone -Name "myzone.com" -ResourceGroupName "MyResourceGroup" -Tag @{tag1="value1";tag2="value2"}
 
 
@@ -56,6 +54,13 @@ Tags                          : {tag1="value1";tag2="value2"}
 NumberOfRecordSets            : 1
 MaxNumberOfRecordSets         : 5000
 ```
+
+###Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Set-AzPrivateDnsZone -PrivateZone <PSPrivateDnsZone> -Tag @{tag1=value1;tag2=value2}
+```
+
+The Set-AzPrivateDnsZone cmdlet permanently updates a private Domain Name System (DNS) zone from a specified resource group.
 
 ## PARAMETERS
 

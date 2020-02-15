@@ -4,7 +4,6 @@ Module Name: Az.DevTestLabs
 ms.assetid: 3FADEC2E-4A2B-46EB-8A94-CF48D717C7FC
 online version: https://docs.microsoft.com/en-us/powershell/module/az.devtestlabs/set-azdtlautostartpolicy
 schema: 2.0.0
----
 
 # Set-AzDtlAutoStartPolicy
 
@@ -32,6 +31,13 @@ The **Set-AzDtlAutoStartPolicy** cmdlet sets the auto start policy of a lab, whi
 The cmdlet uses the specified resource group and name of the lab to set the policy.
 
 ## EXAMPLES
+
+###Example 1
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Set-AzDtlAutoStartPolicy -Days Sunday -Enable  -LabName {LabName} -ResourceGroupName MyResourceGroup -Time {Time}
+```
+
+The Set-AzDtlAutoStartPolicy cmdlet sets the auto start policy of a lab, which allows lab virtual machines to be scheduled for automatic start.
 
 ## PARAMETERS
 

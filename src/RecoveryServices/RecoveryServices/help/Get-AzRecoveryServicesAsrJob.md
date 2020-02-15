@@ -3,8 +3,6 @@ external help file: Microsoft.Azure.PowerShell.Cmdlets.RecoveryServices.SiteReco
 Module Name: Az.RecoveryServices
 online version: https://docs.microsoft.com/en-us/powershell/module/az.recoveryservices/get-azrecoveryservicesasrjob
 schema: 2.0.0
----
-
 # Get-AzRecoveryServicesAsrJob
 
 ## SYNOPSIS
@@ -40,6 +38,13 @@ PS C:\> $jobs = Get-AzRecoveryServicesAsrJob -TargetObjectId $ASRObjectId
 ```
 
 Returns all the jobs on a particular ASR object(reference the ASR object such as replicated item or recovery plan by its ID.) 
+
+###Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzRecoveryServicesAsrJob -Job $Job
+```
+
+The Get-AzRecoveryServicesAsrJob cmdlet gets Azure Site Recovery jobs.
 
 ## PARAMETERS
 

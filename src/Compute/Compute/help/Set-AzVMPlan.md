@@ -1,4 +1,3 @@
----
 external help file: Microsoft.Azure.PowerShell.Cmdlets.Compute.dll-Help.xml
 Module Name: Az.Compute
 ms.assetid: A1EA7D34-A8B4-4FA0-BD8C-3E846715AFBA
@@ -23,6 +22,13 @@ The **Set-AzVMPlan** cmdlet sets the Azure Marketplace plan information for a vi
 Before being able to deploy a Marketplace image through the command-line, programmatic access must be enabled or the virtual machine must be deployed by using the Azure portal.
 
 ## EXAMPLES
+
+###Example 1
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Set-AzVMPlan -Name AgentPool01 -Product {Product} -Publisher $Publisher -VM $VirtualMachine
+```
+
+The Set-AzVMPlan cmdlet sets the Azure Marketplace plan information for a virtual machine.
 
 ## PARAMETERS
 

@@ -1,9 +1,7 @@
----
 external help file: Microsoft.Azure.PowerShell.Cmdlets.RecoveryServices.Backup.dll-Help.xml
 Module Name: Az.RecoveryServices
 online version: https://docs.microsoft.com/en-us/powershell/module/az.recoveryservices/undo-azrecoveryservicesbackupitemdeletion
 schema: 2.0.0
----
 
 # Undo-AzRecoveryServicesBackupItemDeletion
 
@@ -38,6 +36,13 @@ The third command disables Backup protection for the item in $PI\[0\] and puts t
 The fourth command the new item which is in a softdeleted state.
 The last command rehydrates the softdeleted VM.
 
+
+###Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Undo-AzRecoveryServicesBackupItemDeletion -Force  -Item $PI[0] -VaultId $vault.ID
+```
+
+The Undo-AzRecoveryServicesBackupItemDeletion cmdlet rehydrates a soft-deleted item.
 
 ## PARAMETERS
 

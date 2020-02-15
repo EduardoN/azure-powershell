@@ -31,7 +31,6 @@ Note: If you see the error **The subscription is not registered to use namespace
 
 ## EXAMPLES
 
-### Example 1: Create a Standard key vault
 ```powershell
 PS C:\> New-AzKeyVault -VaultName 'Contoso03Vault' -ResourceGroupName 'Group14' -Location 'East US'
 
@@ -69,10 +68,8 @@ This command creates a key vault named Contoso03Vault, in the Azure region East 
 adds the key vault to the resource group named Group14. Because the command does not specify a
 value for the *SKU* parameter, it creates a Standard key vault.
 
-### Example 2: Create a Premium key vault
 ```powershell
 PS C:\>New-AzKeyVault -VaultName 'Contoso03Vault' -ResourceGroupName 'Group14' -Location 'East US' -Sku 'Premium'
-
 Vault Name                       : contoso03vault
 Resource Group Name              : group14
 Location                         : East US
@@ -105,6 +102,13 @@ Tags                             :
 
 This command creates a key vault, just like the previous example. However, it specifies a value of
 Premium for the *SKU* parameter to create a Premium key vault.
+
+###Example 3
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> New-AzKeyVault -Location East US -Name Contoso03Vault -ResourceGroupName Group14
+```
+
+This command creates a key vault named Contoso03Vault, in the Azure region East US. The command
 
 ## PARAMETERS
 

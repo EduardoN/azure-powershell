@@ -60,7 +60,7 @@ Following is a sample updated role definition json for Set-AzRoleDefinition
 
 ## EXAMPLES
 
-### Update using PSRoleDefinitionObject
+###Example 1: Update using PSRoleDefinitionObject
 ```
 PS C:\> $roleDef = Get-AzRoleDefinition "Contoso On-Call"
 PS C:\> $roleDef.Actions.Add("Microsoft.ClassicCompute/virtualmachines/start/action")

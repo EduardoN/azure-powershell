@@ -1,9 +1,7 @@
----
 external help file: Microsoft.Azure.PowerShell.Cmdlets.Automation.dll-Help.xml
 Module Name: Az.Automation
 online version: https://docs.microsoft.com/en-us/powershell/module/az.automation/start-azautomationsourcecontrolsyncjob
 schema: 2.0.0
----
 
 # Start-AzAutomationSourceControlSyncJob
 
@@ -33,6 +31,13 @@ SourceControlSyncJobId               SyncType Status  StartTime EndTime
 ----------------------               -------- ------  --------- -------
 b51aed78-bef6-40d4-a966-cd45fd5af576 FullSync Running
 ```
+
+###Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Start-AzAutomationSourceControlSyncJob -AutomationAccountName AutomationAccount01 -ResourceGroupName rg1 -SourceControlName <String>
+```
+
+SourceControlSyncJobId               SyncType Status  StartTime EndTime
 
 ## PARAMETERS
 

@@ -165,11 +165,16 @@ The complex example above creates a VMSS, following is an explanation of what is
 * The eighteenth command uses the **New-AzVmssConfig** cmdlet to create a VMSS configuration object and stores the result in the variable named $VMSS.
 * The nineteenth command uses the **New-AzVmss** cmdlet to create the VMSS.
 
-## PARAMETERS
+###Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> New-AzVmss -ResourceGroupName $RGName -VMScaleSetName $VMSSName -VirtualMachineScaleSet $VMSS
+```
 
+The New-AzVmss cmdlet creates a Virtual Machine Scale Set (VMSS) in Azure.
+
+## PARAMETERS
 ### -AllocationMethod
 Allocation method for the Public IP Address of the Scale Set (Static or Dynamic).  If no value is supplied, allocation will be static.
-
 ```yaml
 Type: System.String
 Parameter Sets: SimpleParameterSet

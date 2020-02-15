@@ -29,7 +29,7 @@ The **Get-AzPrivateLinkService** cmdlet gets one or more private link services.
 
 ## EXAMPLES
 
-### Example
+###Example 1: Example
 ```
 Get-AzPrivateLinkService -Name MyPLS -ResourceGroupName TestResourceGroup
 
