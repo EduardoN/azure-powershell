@@ -45,6 +45,13 @@ The second command marks the circuit authorization ContosoCircuitAuthorization f
 The third command uses the Set-AzExpressRouteCircuit cmdlet to confirm the removal of the
 ExpressRoute circuit stored in the $Circuit variable.
 
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Remove-AzExpressRouteCircuitAuthorization -ExpressRouteCircuit $circuit_init -Name ContosoCircuitAuthorization
+```
+
+This example removes a circuit authorization from an ExpressRoute circuit. The first command uses
+
 ## PARAMETERS
 
 ### -DefaultProfile

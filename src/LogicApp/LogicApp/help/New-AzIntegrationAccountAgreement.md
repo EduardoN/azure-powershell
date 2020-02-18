@@ -56,6 +56,13 @@ Content                : {"AS2":null,"X12":{"ReceiveAgreement":{"SenderBusinessI
 
 This command creates an integration account agreement in the specified Azure resource group.
 
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> New-AzIntegrationAccountAgreement -AgreementContent {AgreementContent} -AgreementName IntegrationAccountAgreement06 -AgreementType X12 -GuestIdentityQualifier BB -GuestIdentityQualifierValue <String> -GuestPartner GuestPartner -HostIdentityQualifier AA -HostIdentityQualifierValue <String> -HostPartner HostPartner -Name IntegrationAccount31-ResourceGroupName -ResourceGroupName MyResourceGroup
+```
+
+The New-AzIntegrationAccountAgreement cmdlet creates an integration account agreement.
+
 ## PARAMETERS
 
 ### -AgreementContent

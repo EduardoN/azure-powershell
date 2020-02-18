@@ -23,7 +23,7 @@ The **Set-AzPublicIpAddress** cmdlet updates a public IP address.
 
 ## EXAMPLES
 
-### 1: Change allocation method of a public IP address
+### Example 1: 1: Change allocation method of a public IP address
 ```
 PS C:\> $publicIp = Get-AzPublicIpAddress -Name $publicIpName -ResourceGroupName $rgName
 
@@ -41,7 +41,7 @@ PS C:\> Get-AzPublicIpAddress -Name $publicIpName -ResourceGroupName $rgName
     updated object, and modifies the allocation method to 'Static'. A public IP address gets 
     allocated immediately.
 
-### 2: Change DNS domain label of a public IP address
+### Example 2: 2: Change DNS domain label of a public IP address
 ```
 PS C:\> $publicIp = Get-AzPublicIpAddress -Name $publicIpName -ResourceGroupName $rgName
 

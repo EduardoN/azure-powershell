@@ -32,6 +32,13 @@ PS C:\>New-AzAutomationRunbook -AutomationAccountName "Contoso17" -Name "Runbook
 
 This command creates a runbook named Runbook02 in the Azure Automation account named Contoso17.
 
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> New-AzAutomationRunbook -AutomationAccountName Contoso17 -Name Runbook02 -ResourceGroupName ResourceGroup01 -Type PowerShell
+```
+
+The New-AzAutomationRunbook cmdlet creates an empty Azure Automation runbook by using APS.
+
 ## PARAMETERS
 
 ### -AutomationAccountName

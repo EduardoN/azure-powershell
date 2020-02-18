@@ -32,6 +32,13 @@ This command removes a variable named StringVariable22 in the Automation account
 This command specifies the *Force* parameter.
 Therefore, it does not prompt you for confirmation.
 
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Remove-AzAutomationVariable -AutomationAccountName Contoso17 -Name StringVariable22 -ResourceGroupName ResourceGroup01
+```
+
+This command removes a variable named StringVariable22 in the Automation account named Contoso17.
+
 ## PARAMETERS
 
 ### -AutomationAccountName

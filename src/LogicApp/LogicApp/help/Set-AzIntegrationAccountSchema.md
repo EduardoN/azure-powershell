@@ -48,6 +48,13 @@ ContentSize : 7901
 
 This command modifies the integration account schema named IntegrationAccountSchema43.
 
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Set-AzIntegrationAccountSchema -Force  -Name IntegrationAccount31 -ResourceGroupName ResourceGroup11 -SchemaFilePath c:\temp\schema1 -SchemaName IntegrationAccountSchema43
+```
+
+The Set-AzIntegrationAccountSchema cmdlet modifies an integration account schema.
+
 ## PARAMETERS
 
 ### -ContentType

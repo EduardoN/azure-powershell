@@ -41,6 +41,13 @@ Key2 : DMG@632e739e-1053-4070-9102-8591f067526e@41fcbc45-c594-4152-a8f1-fcbcd645
 
 This command gets gateway auth key for the data factory gateway named MyGateway.
 
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzDataFactoryGatewayAuthKey -DataFactoryName MyADF -GatewayName MyGateway -ResourceGroupName ADFResource
+```
+
+The Get-AzDataFactoryGatewayAuthKey cmdlet gets gateway auth key for a specified Azure Data Factory gateway.
+
 ## PARAMETERS
 
 ### -DataFactoryName

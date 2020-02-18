@@ -41,6 +41,13 @@ Type               : Microsoft.Relay/namespaces
 
 Creates a new Relay namespace within the specified resource group.
 
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> New-AzRelayNamespace -Location West US -Name TestNameSpace-Relay1 -ResourceGroupName Default-ServiceBus-WestUS
+```
+
+The New-AzRelayNamespace cmdlet creates a new Relay namespace. Once created, the namespace
+
 ## PARAMETERS
 
 ### -DefaultProfile

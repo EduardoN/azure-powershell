@@ -36,6 +36,13 @@ PS C:\>Remove-AzIntegrationAccountAgreement -ResourceGroupName "ResourceGroup11"
 This command removes the integration account agreement named IntegrationAccountAgreement06.
 The command does not prompt you for confirmation.
 
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Remove-AzIntegrationAccountAgreement -AgreementName IntegrationAccountAgreement06 -Name IntegrationAccount31 -ResourceGroupName ResourceGroup11
+```
+
+The Remove-AzIntegrationAccountAgreement cmdlet removes an integration account agreement from an Azure resource group.
+
 ## PARAMETERS
 
 ### -AgreementName
