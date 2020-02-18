@@ -26,7 +26,7 @@ specified type and SKU.
 
 ## EXAMPLES
 
-### 1:
+### Example 1: 1:
 ```
 PS C:\> New-AzCognitiveServicesAccount -ResourceGroupName cognitive-services-resource-group -name myluis -Type LUIS -SkuName S0 -Locatio
 n 'WestUS'
@@ -45,6 +45,13 @@ Etag              : "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
 ProvisioningState : Succeeded
 Tags              :
 ```
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> New-AzCognitiveServicesAccount -Location westus -Name myaccount -ResourceGroupName cognitive-services-resource-group -SkuName S0 -Type LUIS
+```
+
+The New-AzCognitiveServicesAccount cmdlet creates a Cognitive Services account with the
 
 ## PARAMETERS
 

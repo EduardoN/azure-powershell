@@ -53,7 +53,7 @@ PS C:\>Get-AzApiManagementUser -Context $apimContext -UserId "0123456789"
 
 This command gets a user by ID.
 
-### Example: Get users by last name
+### Example 3: Example: Get users by last name
 ```
 PS C:\>$apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 PS C:\>Get-AzApiManagementUser -Context $apimContext -LastName "Fuller"

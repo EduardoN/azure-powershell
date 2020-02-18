@@ -29,7 +29,7 @@ The **Reset-AzWebAppSlotPublishingProfile** cmdlet resets the publishing profile
 
 ## EXAMPLES
 
-### 1:
+### Example 1: 1:
 ```
 PS C:\> Reset-AzWebAppSlotPublishingProfile -ResourceGroupName "Default-Web-WestUS" -Name "ContosoWebApp" -Slot "slot001"
 ```

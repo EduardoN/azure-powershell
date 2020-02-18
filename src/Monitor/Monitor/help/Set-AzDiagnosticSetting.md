@@ -109,7 +109,7 @@ Logs
 This command enables Category1 and Category2.
 All the other metrics and logs categories remain the same.
 
-### Example 4: Enable a time grain and multiple categories
+### Example 5: Enable a time grain and multiple categories
 ```
 PS C:\>Set-AzDiagnosticSetting -ResourceId "Resource01" -Enabled $True -Category Category1,Category2 -Timegrain PT1M
 ```
@@ -117,7 +117,7 @@ PS C:\>Set-AzDiagnosticSetting -ResourceId "Resource01" -Enabled $True -Category
 This command enables only Category1, Category2, and time grain PT1M.
 All other time grains and categories are unchanged.
 
-### Example 5: Using pipeline
+### Example 6: Using pipeline
 ```
 PS C:\>Get-AzDiagnosticSetting -ResourceId "Resource01" | Set-AzDiagnosticSetting
 ```

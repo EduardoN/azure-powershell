@@ -43,6 +43,13 @@ PS C:\>Remove-AzDnsZone -Name "myzone.com" -ResourceGroupName "MyResourceGroup"
 
 This command removes the zone named myzone.com from the resource group named MyResourceGroup.
 
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Remove-AzDnsZone -Confirm  -Zone $Zone
+```
+
+The Remove-AzDnsZone cmdlet permanently deletes a Domain Name System (DNS) zone from a specified resource group.
+
 ## PARAMETERS
 
 ### -DefaultProfile

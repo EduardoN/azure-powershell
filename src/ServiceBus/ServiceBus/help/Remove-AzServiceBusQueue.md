@@ -50,7 +50,7 @@ PS C:\> Remove-AzServiceBusQueue -InputObject $inputobject
 
 Removes the Service Bus queue provided in the $inputobject for -InputObject parameter
 
-### Example 2.1 - InputObject - Using Piping:
+### Example 3.1 - InputObject - Using Piping:
 ```
 PS C:\>  Get-AzServiceBusQueue <params> | Remove-AzServiceBusQueue
 ```

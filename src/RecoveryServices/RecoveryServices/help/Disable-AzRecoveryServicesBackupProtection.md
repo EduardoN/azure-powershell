@@ -37,6 +37,13 @@ The first command gets an array of backup containers, and then stores it in the 
 The second command gets the Backup item corresponding to the first container item, and then stores it in the $PI variable.
 The last command disables Backup protection for the item in $PI\[0\], but retains the data.
 
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Disable-AzRecoveryServicesBackupProtection -Force  -Item $PI[0] -RemoveRecoveryPoints  -VaultId $vault.ID
+```
+
+The Disable-AzRecoveryServicesBackupProtection cmdlet disables protection for an Azure Backup-protected item.
+
 ## PARAMETERS
 
 ### -DefaultProfile

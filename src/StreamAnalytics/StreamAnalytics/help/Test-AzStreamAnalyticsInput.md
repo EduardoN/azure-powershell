@@ -23,7 +23,7 @@ The **Test-AzStreamAnalyticsInput** cmdlet tests the ability of Stream Analytics
 
 ## EXAMPLES
 
-### EXAMPLE 1: Test the connection status of an input stream
+### Example 1: EXAMPLE 1: Test the connection status of an input stream
 ```
 PS C:\>Test-AzStreamAnalyticsInput -ResourceGroupName "StreamAnalytics-Default-West-US" -JobName "StreamingJob" -Name "EntryStream"
 ```

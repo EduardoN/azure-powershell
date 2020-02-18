@@ -38,14 +38,14 @@ PS C:\> New-AzEventHubKey -ResourceGroup MyResourceGroupName -Namespace MyNamesp
 
 Regenerates the primary key for the authorization rule \`MyAuthRuleName\`.
 
-### Example 1.2 - EventHub - AuthorizationRule PrimaryKey
+### Example 2.2 - EventHub - AuthorizationRule PrimaryKey
 ```
 PS C:\> New-AzEventHubKey -ResourceGroup MyResourceGroupName -Namespace MyNamespaceName -EventHub MyEventHubName -Name MyAuthRuleName -RegenerateKey PrimaryKey
 ```
 
 Regenerates the primary key for the authorization rule \`MyAuthRuleName\`.
 
-### Example 2.1  - Namespace - AuthorizationRule SecondaryKey
+### Example 3.1  - Namespace - AuthorizationRule SecondaryKey
 ```
 PS C:\> New-AzEventHubKey -ResourceGroup MyResourceGroupName -Namespace MyNamespaceName -Name MyAuthRuleName -RegenerateKey SecondaryKey
 ```

@@ -46,6 +46,13 @@ The fifth command assigns content to the $AucContent variable.
 The content includes a password.
 The final command adds the content stored in $AucContent to the unattend.xml file.
 
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Add-AzVMAdditionalUnattendContent -Content $AucContent -SettingName AutoLogon
+```
+
+The Add-AzVMAdditionalUnattendContent cmdlet adds information to the unattended Windows Setup answer file.
+
 ## PARAMETERS
 
 ### -Content

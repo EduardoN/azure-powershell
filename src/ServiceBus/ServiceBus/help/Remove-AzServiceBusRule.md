@@ -45,7 +45,7 @@ PS C:\> Remove-AzServiceBusRule -InputObject $inputobject
 
 Removes the rule provided through $inputobject for -InputObject parameter
 
-### Example 2.2 - InputObject - Using Piping:
+### Example 3.2 - InputObject - Using Piping:
 ```
 PS C:\> Get-AzServiceBusRule <params> | Remove-AzServiceBusRule
 ```

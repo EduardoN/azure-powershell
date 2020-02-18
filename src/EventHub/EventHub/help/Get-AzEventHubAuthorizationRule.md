@@ -45,35 +45,35 @@ PS C:\> Get-AzEventHubAuthorizationRule -ResourceGroupName MyResourceGroupName -
 
 Gets the authorization rule \`MyAuthRuleName\` in the namespace \`MyNamespaceName\`.
 
-### Example 1.1 - AuthorizationRules for namespace
+### Example 2.1 - AuthorizationRules for namespace
 ```
 PS C:\> Get-AzEventHubAuthorizationRule -ResourceGroupName MyResourceGroupName -NamespaceName MyNamespaceName -EventHubName MyEventHubName
 ```
 
 Gets a list of all authorization rules in the namespace \`MyNamespaceName\`.
 
-### Example 2.0 - AuthorizationRule for EventHub
+### Example 3.0 - AuthorizationRule for EventHub
 ```
 PS C:\> Get-AzEventHubAuthorizationRule -ResourceGroupName MyResourceGroupName -NamespaceName MyNamespaceName -EventHubName MyEventHubName -Name MyAuthRuleName
 ```
 
 Gets the authorization rule \`MyAuthRuleName\` in the Event Hub \`MyEventHubName\`, which is scoped by the namespace \`MyNamespaceName\`.
 
-### Example 2.1 - AuthorizationRules for EventHub
+### Example 4.1 - AuthorizationRules for EventHub
 ```
 PS C:\> Get-AzEventHubAuthorizationRule -ResourceGroupName MyResourceGroupName -NamespaceName MyNamespaceName -EventHubName MyEventHubName
 ```
 
 Gets list authorization rules in the Event Hub \`MyEventHubName\`, which is scoped by the namespace \`MyNamespaceName\`.
 
-### Example 3.0 - AuthorizationRule for Alias (GeoRecovery Configuration)
+### Example 5.0 - AuthorizationRule for Alias (GeoRecovery Configuration)
 ```
 PS C:\> Get-AzEventHubAuthorizationRule -ResourceGroupName MyResourceGroupName -NamespaceName MyNamespaceName -AliasName MyAliasNameName -Name MyAuthRuleName
 ```
 
 Gets the authorization rule \`MyAuthRuleName\` in the namespace \`MyNamespaceName\`.
 
-### Example 3.1 -AuthorizationRules for Alias (GeoRecovery Configuration)
+### Example 6.1 -AuthorizationRules for Alias (GeoRecovery Configuration)
 ```
 PS C:\> Get-AzEventHubAuthorizationRule -ResourceGroupName MyResourceGroupName -NamespaceName MyNamespaceName -AliasName MyAliasNameName
 ```

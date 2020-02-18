@@ -33,7 +33,7 @@ Tables                     LastUpdateTime
 
 This command gets the sync schema for the hub database in the sync group syncGroup01.
 
-### Example 1.2: Get the sync schema for a hub database, and expand Tables
+### Example 2.2: Get the sync schema for a hub database, and expand Tables
 ```
 PS C:\>Get-AzSqlSyncSchema -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "database01" -SyncGroupName "syncGroup01"  | select -ExpandProperty Tables
 Columns    : {column1, column2}
@@ -51,7 +51,7 @@ QuotedName : [dbo].[Table_2]
 
 This command gets the sync schema for the hub database in the sync group syncGroup01 and expand Tables property.
 
-### Example 2: Get the sync schema for a member database
+### Example 3: Get the sync schema for a member database
 ```
 PS C:\>Get-AzSqlSyncSchema -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "database01" -SyncGroupName "syncGroup01" -SyncMemberName "syncMember01"
 The schema payload is the same as Example 1.
