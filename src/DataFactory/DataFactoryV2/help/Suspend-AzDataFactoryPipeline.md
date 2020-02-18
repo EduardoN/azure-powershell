@@ -43,6 +43,13 @@ True
 This command suspends the pipeline named DPWikiSample in the data factory named WikiADF.
 The command returns a value of $True.
 
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Suspend-AzDataFactoryPipeline -Confirm  -DataFactoryName WikiADF -Name DPWikiSample -ResourceGroupName ADF
+```
+
+The Suspend-AzDataFactoryPipeline cmdlet suspends a pipeline in Azure Data Factory.
+
 ## PARAMETERS
 
 ### -DataFactory

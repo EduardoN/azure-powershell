@@ -38,6 +38,13 @@ PS C:\>Get-AzVirtualNetwork -Name $vnetName -ResourceGroupName $rgname | Test-Az
 
 This command gets a virtual network and uses the pipeline operator to pass it to **Test-AzPrivateIPAddressAvailability**, which tests whether the specified private IP address is available.
 
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Test-AzPrivateIPAddressAvailability -IPAddress <String> -VirtualNetwork $vnet1
+```
+
+The Test-AzPrivateIPAddressAvailability cmdlet tests whether a specified private IP address is available in a virtual network.
+
 ## PARAMETERS
 
 ### -DefaultProfile

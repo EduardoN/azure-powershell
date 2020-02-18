@@ -67,7 +67,7 @@ PS C:\> Set-AzServiceBusNamespaceAuthorizationRule -ResourceGroup Default-Servic
 
 Removes **Manage** from the access rights of the authorization rule `AuthoRule1` in queue `SBQueue`.
 
-### Example 2
+### Example 3
 ```
 PS C:\> $authRuleObj = Get-AzServiceBusNamespaceAuthorizationRule -ResourceGroup Default-ServiceBus-WestUS -Namespace SB-Example1 -Topic SBTopic -Name AuthoRule1
 

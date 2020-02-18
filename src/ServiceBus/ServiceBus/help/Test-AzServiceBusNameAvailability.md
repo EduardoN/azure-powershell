@@ -32,7 +32,7 @@ The **Test-AzServiceBusNameAvailability** Cmdlet Check Availability of the provi
 ### Example 1
 ```powershell
 Test-AzServiceBusNameAvailability -ResourceGroupName $resourceGroupName -Namespace $namespaceName -Name $nameQueue -Queue
-True
+### Example 2
 ```
 
 Returns True if the Provided $nameQueue name is Availabile or returns False if Provided $nameQueue name in not available

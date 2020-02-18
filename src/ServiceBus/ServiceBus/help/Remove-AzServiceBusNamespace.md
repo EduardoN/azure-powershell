@@ -50,14 +50,14 @@ PS C:\> Remove-AzServiceBusNamespace -InputObject $inputobject
 
 Removes the Service Bus namespace provided through the $inputobject.
 
-### Example 2.2 - InputObject - Using Piping:
+### Example 3.2 - InputObject - Using Piping:
 ```
 PS C:\> Get-AzServiceBusNamespace <params> | Remove-AzServiceBusNamespace
 ```
 
 Removes the Service Bus namespace using Piping.
 
-### Example 3 - ResourceId
+### Example 4 - ResourceId
 ```
 PS c:\> $ResourceId = (Get-AzResource -ResourceType Microsoft.ServiceBus/namespaces).ResourceId
 PS C:\> Remove-AzServiceBusNamespace -ResourceId $resourceid

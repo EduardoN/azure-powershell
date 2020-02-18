@@ -32,7 +32,7 @@ The New-AzEventHubNamespace cmdlet creates a new namespace of type Event Hubs.
 
 ## EXAMPLES
 
-### Example 1			 								
+### Example 1
 ```
 PS C:\> New-AzEventHubNamespace -ResourceGroupName MyResourceGroupName -NamespaceName MyNamespaceName -Location MyLocation
 

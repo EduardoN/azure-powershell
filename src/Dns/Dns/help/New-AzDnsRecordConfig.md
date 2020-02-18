@@ -100,9 +100,9 @@ PS C:\> $RecordSet = New-AzDnsRecordSet -Name "www" -RecordType AAAA -ResourceGr
 This example creates a **RecordSet** named www in the zone myzone.com.
 The record set is of type AAAA and has a TTL of 1 hour (3600 seconds).
 It contains a single DNS record.
-To create a **RecordSet** using only one line of pn_PowerShell_short, or to create a record set with multiple records, see Example 1.
-
 ### Example 3: Create a RecordSet of type CNAME
+
+### Example 4: Create a RecordSet of type MX
 ```
 PS C:\> $Records = @()
 PS C:\> $Records += New-AzDnsRecordConfig -Cname www.contoso.com
@@ -112,9 +112,9 @@ PS C:\> $RecordSet = New-AzDnsRecordSet -Name "www" -RecordType CNAME -ResourceG
 This example creates a **RecordSet** named www in the zone myzone.com.
 The record set is of type CNAME and has a TTL of 1 hour (3600 seconds).
 It contains a single DNS record.
-To create a **RecordSet** using only one line of pn_PowerShell_short, or to create a record set with multiple records, see Example 1.
+### Example 5: Create a RecordSet of type NS
 
-### Example 4: Create a RecordSet of type MX
+### Example 6: Create a RecordSet of type PTR
 ```
 PS C:\> $Records = @()
 PS C:\> $Records += New-AzDnsRecordConfig -Exchange "mail.microsoft.com" -Preference 5
@@ -124,9 +124,9 @@ PS C:\> $RecordSet = New-AzDnsRecordSet -Name "www" -RecordType AAAA -ResourceGr
 This command creates a **RecordSet** named www in the zone myzone.com.
 The record set is of type MX and has a TTL of 1 hour (3600 seconds).
 It contains a single DNS record.
-To create a **RecordSet** using only one line of pn_PowerShell_short, or to create a record set with multiple records, see Example 1.
+### Example 7: Create a RecordSet of type SRV
 
-### Example 5: Create a RecordSet of type NS
+### Example 8: Create a RecordSet of type TXT
 ```
 PS C:\> $Records = @()
 PS C:\> $Records += New-AzDnsRecordConfig -Nsdname ns1-01.azure-dns.com

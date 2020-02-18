@@ -42,6 +42,13 @@ PS C:\> $currentJob = Start-AzRecoveryServicesAsrPlannedFailoverJob -RecoveryPla
 
 Starts the planned failover for the specified ASR recovery plan and returns the ASR job used to track the operation.
 
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Start-AzRecoveryServicesAsrPlannedFailoverJob -Direction PrimaryToRecovery -Optimize {Optimize} -ReplicationProtectedItem $ReplicationProtectedItem
+```
+
+The Start-AzRecoveryServicesAsrPlannedFailoverJob cmdlet starts a planned failover for an Azure Site Recovery replication protected item or recovery plan.
+
 ## PARAMETERS
 
 ### -CreateVmIfNotFound

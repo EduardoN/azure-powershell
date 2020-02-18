@@ -62,6 +62,13 @@ PS C:\>New-AzWebAppSSLBinding -ResourceGroupName "ContosoResourceGroup" -WebAppN
 
 This command binds an existing Azure certificate (a certificate with the Thumbprint E3A38EBA60CAA1C162785A2E1C44A15AD450199C3) to the web app named ContosoWebApp.
 
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> New-AzWebAppSSLBinding -Name www.contoso.com -ResourceGroupName ContosoResourceGroup -SslState Disabled -Thumbprint E3A38EBA60CAA1C162785A2E1C44A15AD450199C3 -WebAppName ContosoWebApp
+```
+
+The New-AzWebAppSSLBinding cmdlet creates a Secure Socket Layer (SSL) certificate binding for an Azure Web App.
+
 ## PARAMETERS
 
 ### -CertificateFilePath

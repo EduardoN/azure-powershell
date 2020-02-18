@@ -187,7 +187,7 @@ Metadata          :
 IsAutoRegistered  :
 ```
 
-This command creates a RecordSet named _sip._tcp in the private zone myzone.com. The record set is of type SRV and has a TTL of 1 hour (3600 seconds). It contains a single Private DNS record, pointing to the IP address 2001.2.3.4. The service (sip) and the protocol (tcp) are specified as part of the record set name, not as part of the record data. To create a RecordSet using only one line of pn_PowerShell_short, or to create a record set with multiple records, see Example 1.
+### Example 11:  Create a record set and suppress all confirmation
 
 ### Example 7: Create a RecordSet of type TXT
 ```powershell

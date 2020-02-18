@@ -45,7 +45,7 @@ Since the *DeleteCertificate* parameter is not included, the certificate will be
 PS C:\>Remove-AzWebAppSSLBinding -ResourceGroupName "ContosoResourceGroup" -WebAppName "ContosoWebApp" -Name "www.contoso.com" -DeleteCertificate $False
 ```
 
-Similar to Example 1, this command also removes the SSL binding for the Web App ContosoWebApp.
+### Example 3: Use an object reference to remove an SSL binding
 In this case, however, the *DeleteCertificate* parameter is included, and the parameter value is set to $False.
 That means that the certificate will not be deleted regardless of whether it has any SSL bindings or not.
 

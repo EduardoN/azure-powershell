@@ -114,7 +114,7 @@ ServiceName       : contoso
 
 This command gets all subscriptions which are configured for global api scope
 
-### Example 5: Get all subscriptions for a product and user scope
+### Example 6: Get all subscriptions for a product and user scope
 ```
 PS C:\>$apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-East-US" -ServiceName "contoso"
 PS C:\>Get-AzApiManagementSubscription -Context $apimContext -ProductId 59b872f28a82740f547e6270 -UserId 1
