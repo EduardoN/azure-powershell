@@ -53,6 +53,13 @@ The second command gets the policy assignment at a resource group level, and the
 The **ResourceId** property of $ResourceGroup identifies the resource group.
 The final command removes the policy assignment that the **ResourceId** property of $PolicyAssignment identifies.
 
+###Example 3
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Remove-AzPolicyAssignment -Name PolicyAssignment07 -Scope $ResourceGroup.ResourceId
+```
+
+The first command gets a resource group named ResourceGroup11 by using the Get-AzResourceGroup cmdlet.
+
 ## PARAMETERS
 
 ### -ApiVersion

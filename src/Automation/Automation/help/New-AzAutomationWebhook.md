@@ -49,6 +49,13 @@ The first command creates a dictionary of parameters, and stores them in the $Pa
 The second command creates a webhook named Webhook11 for the runbook named ContosoRunbook in the Automation account named AutomationAccount01.
 The command assigns the parameters in $Params to the webhook.
 
+###Example 3
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> New-AzAutomationWebhook -AutomationAccountName AutomationAccount01 -ExpiryTime 10/2/2016 -Force  -IsEnabled $True -Name Webhook06 -ResourceGroupName ResourceGroup01 -RunbookName ContosoRunbook
+```
+
+The New-AzAutomationWebhook cmdlet creates a webhook for an Azure Automation runbook.
+
 ## PARAMETERS
 
 ### -AutomationAccountName

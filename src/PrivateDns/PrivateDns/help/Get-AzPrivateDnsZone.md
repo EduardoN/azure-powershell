@@ -96,6 +96,13 @@ MaxNumberOfRecordSets : 5000
 
 This example gets all of the Private DNS zones in the current Azure subscription, and then stores them in the $Zones variable.
 
+###Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzPrivateDnsZone -ResourceGroupName MyResourceGroup
+```
+
+The Get-AzPrivateDnsZone cmdlet gets a Private Domain Name System (DNS) zone from the specified resource group.
+
 ## PARAMETERS
 
 ### -DefaultProfile

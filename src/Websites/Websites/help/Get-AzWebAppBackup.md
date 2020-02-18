@@ -29,7 +29,7 @@ The **Get-AzWebAppBackup** cmdlet gets the specified backup of an Azure Web App.
 
 ## EXAMPLES
 
-### 1:
+### Example 1: 1:
 ```
 PS C:\>Get-AzWebAppBackup -ResourceGroupName "Default-Web-WestUS" -Name "WebAppStandard" -BackupId "12345"
 ```

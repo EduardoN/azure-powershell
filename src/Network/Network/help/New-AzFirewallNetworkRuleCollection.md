@@ -23,7 +23,7 @@ The **New-AzFirewallNetworkRuleCollection** cmdlet creates a collection of Firew
 
 ## EXAMPLES
 
-### 1:  Create a network collection with two rules
+### Example 1: 1:  Create a network collection with two rules
 ```
 $rule1 = New-AzFirewallNetworkRule -Name "all-udp-traffic" -Description "Rule for all UDP traffic" -Protocol UDP -SourceAddress "*" -DestinationAddress "*" -DestinationPort "*"
 $rule2 = New-AzFirewallNetworkRule -Name "partial-tcp-rule" -Description "Rule for all TCP traffic from 10.0.0.0 to 60.1.5.0:4040" -Protocol TCP -SourceAddress "10.0.0.0" -DestinationAddress "60.1.5.0" -DestinationPort "4040"
@@ -36,7 +36,7 @@ The second rule is for TCP traffic from 10.0.0.0 to 60.1.5.0:4040.
 If there is another Network rule collection with higher priority (smaller number) which also matches traffic identified in $rule1 or $rule2,
 the action of the rule collection with higher priority will take in effect instead. 
 
-### 2:  Add a rule to a rule collection
+### Example 2: 2:  Add a rule to a rule collection
 ```
 $rule1 = New-AzFirewallNetworkRule -Name "all-udp-traffic" -Description "Rule for all UDP traffic" -Protocol UDP -SourceAddress "*" -DestinationAddress "*" -DestinationPort "*"
 $ruleCollection = New-AzFirewallNetworkRuleCollection -Name "MyNetworkRuleCollection" -Priority 100 -Rule $rule1 -ActionType "Allow"
@@ -48,7 +48,7 @@ $ruleCollection.AddRule($rule2)
 This example creates a new network rule collection with one rule and then adds a second rule to the rule collection using method
 AddRule on the rule collection object. Each rule name in a given rule collection must have a unique name and is case insensitive.
 
-### 3:  Get a rule from a rule collection
+### Example 3: 3:  Get a rule from a rule collection
 ```
 $rule1 = New-AzFirewallNetworkRule -Name "all-udp-traffic" -Description "Rule for all UDP traffic" -Protocol UDP -SourceAddress "*" -DestinationAddress "*" -DestinationPort "*"
 $ruleCollection = New-AzFirewallNetworkRuleCollection -Name "MyNetworkRuleCollection" -Priority 100 -Rule $rule1 -ActionType "Allow"
@@ -58,7 +58,7 @@ $getRule=$ruleCollection.GetRuleByName("ALL-UDP-traffic")
 This example creates a new network rule collection with one rule and then gets the rule by name, calling method GetRuleByName on the 
 rule collection object. The rule name for method GetRuleByName is case-insensitive.
 
-### 4:  Remove a rule from a rule collection
+### Example 4: 4:  Remove a rule from a rule collection
 ```
 $rule1 = New-AzFirewallNetworkRule -Name "all-udp-traffic" -Description "Rule for all UDP traffic" -Protocol UDP -SourceAddress "*" -DestinationAddress "*" -DestinationPort "*"
 $rule2 = New-AzFirewallNetworkRule -Name "partial-tcp-rule" -Description "Rule for all TCP traffic from 10.0.0.0 to 60.1.5.0:4040" -Protocol TCP -SourceAddress "10.0.0.0" -DestinationAddress "60.1.5.0" -DestinationPort "4040"

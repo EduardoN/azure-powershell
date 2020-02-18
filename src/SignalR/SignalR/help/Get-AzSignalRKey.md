@@ -34,7 +34,7 @@ Get the access keys of a SignalR service.
 
 ## EXAMPLES
 
-### Get access keys of a specific SignalR service
+### Example 1: Get access keys of a specific SignalR service
 ```powershell
 PS C:\> Get-AzSignalRKey -ResourceGroupName myResourceGroup -Name mysignalr1
 

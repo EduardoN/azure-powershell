@@ -48,6 +48,13 @@ The sixth command sets the retention duration to 365 days.
 The seventh command gets the Backup protection policy named NewPolicy, and then stores it in the $Pol variable.
 The final command modifies the Backup protection policy in $Pol using schedule policy in $SchPol and the retention policy in $RetPol.
 
+###Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Set-AzRecoveryServicesBackupProtectionPolicy -Policy $Pol -RetentionPolicy $RetPol -SchedulePolicy $SchPol -VaultId $vault.ID
+```
+
+The Set-AzBackupProtectionPolicy cmdlet modifies an existing Azure Backup protection policy.
+
 ## PARAMETERS
 
 ### -DefaultProfile

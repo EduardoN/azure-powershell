@@ -44,6 +44,13 @@ PS C:\> New-AzHDInsightHiveJobDefinition -StatusFolder $statusFolder `
 
 This command starts a job on the cluster named your-hadoop-001.
 
+###Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Start-AzHDInsightJob -ClusterName $clusterName -HttpCredential $clusterCreds -JobDefinition {JobDefinition} -ResourceGroupName $clusterResourceGroupName
+```
+
+The Start-AzHDInsightJob cmdlet starts a defined Azure HDInsight job on a specified cluster.
+
 ## PARAMETERS
 
 ### -ClusterName

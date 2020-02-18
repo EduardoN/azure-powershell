@@ -23,7 +23,7 @@ The **Remove-AzApplicationGatewayFrontendPort** cmdlet removes a front-end port 
 
 ## EXAMPLES
 
-### Example: Remove a front-end port from an application gateway
+### Example 1: Example: Remove a front-end port from an application gateway
 ```
 PS C:\>$AppGw = Get-AzApplicationGateway -Name "ApplicationGateway01" -ResourceGroupName "ResourceGroup01"
 PS C:\> Remove-AzApplicationGatewayFrontendPort -ApplicationGateway $AppGw -Name "FrontEndPort02"

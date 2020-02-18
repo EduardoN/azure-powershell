@@ -80,7 +80,7 @@ Following is a sample json role definition that can be provided as input
 
 ## EXAMPLES
 
-### Create using PSRoleDefinitionObject
+### Example 1: Create using PSRoleDefinitionObject
 ```
 PS C:\> $role = Get-AzRoleDefinition -Name "Virtual Machine Contributor"
           PS C:\> $role.Id = $null
@@ -108,6 +108,13 @@ PS C:\> $role = Get-AzRoleDefinition -Name "Virtual Machine Contributor"
 ```
 PS C:\> New-AzRoleDefinition -InputFile C:\Temp\roleDefinition.json
 ```
+
+###Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> New-AzRoleDefinition -InputFile C:TemproleDefinition.json
+```
+
+The New-AzRoleDefinition cmdlet creates a custom role in Azure Role-Based Access Control.
 
 ## PARAMETERS
 
