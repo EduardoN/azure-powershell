@@ -32,7 +32,7 @@ PS C:\>  Get-AzSqlInstanceAdvancedDataSecurityPolicy `
 ResourceGroupName	         : ResourceGroup01
 ManagedInstanceName		     : ManagedInstance01
 IsEnabled		             : True
-```
+```powershell
 
 ### Example 2 - Gets managed instance Advanced Data Security from managed instance resource
 ```powershell
@@ -44,7 +44,14 @@ PS C:\>  Get-AzSqlInstance `
 ResourceGroupName	         : ResourceGroup01
 ManagedInstanceName		     : ManagedInstance01
 IsEnabled		             : True
+```powershell
+
+### Example 3
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzSqlInstanceAdvancedDataSecurityPolicy -InstanceName ContosoManagedInstanceName -ResourceGroupName MyResourceGroup
 ```
+
+ResourceGroupName            : ResourceGroup01
 
 ## PARAMETERS
 

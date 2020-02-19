@@ -65,11 +65,18 @@ Tags                             :
                                    Name  Value
                                    ====  =====
                                    x     y
-```
+```powershell
 
 This command will recover the key vault 'MyKeyVault' that was previously deleted from eastus2
 region and 'MyResourceGroup' resource group, into an active and usable state. It also replaces the
 tags with new tag.
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Undo-AzKeyVaultRemoval -Location eastus2 -ResourceGroupName MyResourceGroup -VaultName MyKeyVault
+```
+
+The Undo-AzKeyVaultRemoval cmdlet will recover a previously deleted key vault. The
 
 ## PARAMETERS
 

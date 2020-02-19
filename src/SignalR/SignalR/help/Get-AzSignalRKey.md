@@ -34,7 +34,7 @@ Get the access keys of a SignalR service.
 
 ## EXAMPLES
 
-### Get access keys of a specific SignalR service
+### Example 1: Get access keys of a specific SignalR service
 ```powershell
 PS C:\> Get-AzSignalRKey -ResourceGroupName myResourceGroup -Name mysignalr1
 
@@ -45,7 +45,7 @@ PrimaryConnectionString   : Endpoint=https://mysignalr1.service.signalr.net;Acce
 SecondaryKey              : 2+HkuxAA34xiZFFiDsVM0uDyzCsg6GKsdXSjN4C/YFQ=
 SecondaryConnectionString : Endpoint=https://mysignalr1.service.signalr.net;AccessKey=2+HkuxAA34xiZFFiDsVM0uDyzCsg6GKsd
                             XSjN4C/YFQ=;
-```
+```powershell
 
 ### Get access keys from a SignalR service object in pipe
 
@@ -59,7 +59,7 @@ PrimaryConnectionString   : Endpoint=https://mysignalr1.service.signalr.net;Acce
 SecondaryKey              : 2+HkuxAA34xiZFFiDsVM0uDyzCsg6GKsdXSjN4C/YFQ=
 SecondaryConnectionString : Endpoint=https://mysignalr1.service.signalr.net;AccessKey=2+HkuxAA34xiZFFiDsVM0uDyzCsg6GKsd
                             XSjN4C/YFQ=;
-```
+```powershell
 
 ## PARAMETERS
 

@@ -26,7 +26,7 @@ parameter to get accounts under that resource group.
 ## EXAMPLES
 
 ### Example 1: Get a batch account by name
-```
+```powershell
 PS C:\>Get-AzBatchAccount -AccountName "pfuller"
 AccountName                  : pfuller
 Location                     : westus
@@ -41,7 +41,7 @@ TaskTenantUrl                : https://pfuller.westus.batch.azure.com
 This command gets the batch account named pfuller.
 
 ### Example 2: Get the batch accounts associated with a resource group
-```
+```powershell
 PS C:\>Get-AzBatchAccount -ResourceGroupName "CmdletExampleRG"
 AccountName                  : cmdletexample
 Location                     : westus
@@ -62,6 +62,13 @@ TaskTenantUrl                : https://cmdletexample.westus.batch.azure.com
 ```
 
 This command gets the batch accounts associated with the CmdletExampleRG resource group.
+
+### Example 3
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzBatchAccount -AccountName pfuller -ResourceGroupName CmdletExampleRG
+```
+
+The Get-AzBatchAccount cmdlet gets an Azure Batch account in the current subscription. You
 
 ## PARAMETERS
 

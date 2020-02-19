@@ -51,7 +51,7 @@ DomainTopicName   : Topic1
 Id                : /subscriptions/20902276-e53b-4421-8565-f57bcad74f6e/resourceGroups/MyResourceGroupName/providers/Microsoft.EventGrid/domains/Domain1/topics/DomainTopic1
 Type              : Microsoft.EventGrid/domains/topics
 ProvisioningState : Succeeded
-```
+```powershell
 
 ### Example 2
 
@@ -66,7 +66,7 @@ DomainTopicName   : DomainTopic1
 Id                : /subscriptions/20902276-e53b-4421-8565-f57bcad74f6e/resourceGroups/MyResourceGroupName/providers/Microsoft.EventGrid/domains/Domain1/topics/DomainTopic1
 Type              : Microsoft.EventGrid/domains/topics
 ProvisioningState : Succeeded
-```
+```powershell
 
 ### Example 3
 
@@ -99,7 +99,7 @@ DomainTopicName   : DomainTopic3
 Id                : /subscriptions/20902276-e53b-4421-8565-f57bcad74f6e/resourceGroups/MyResourceGroupName/providers/Microsoft.EventGrid/domains/Domain1/topics/DomainTopic3
 Type              : Microsoft.EventGrid/domains/topics
 ProvisioningState : Succeeded
-```
+```powershell
 
 ### Example 4
 
@@ -132,7 +132,7 @@ DomainTopicName   : DomainTopic3
 Id                : /subscriptions/20902276-e53b-4421-8565-f57bcad74f6e/resourceGroups/MyResourceGroupName/providers/Microsoft.EventGrid/domains/Domain1/topics/DomainTopic3
 Type              : Microsoft.EventGrid/domains/topics
 ProvisioningState : Succeeded
-```
+```powershell
 
 ### Example 5
 
@@ -150,7 +150,14 @@ PS C:\> while ($result.NextLink -ne $Null)
     }
 
 PS C:\> echo "Total number of domain topics is $Total"
+```powershell
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzEventGridDomainTopic -DomainName Domain1 -ResourceGroupName MyResourceGroupName
 ```
+
+The Get-AzEventGridDomainTopic cmdlet gets either the details of a specified Event Grid domain topic, or a list of all Event Grid domain topics under a specific domain in the current Azure subscription.
 
 ## PARAMETERS
 

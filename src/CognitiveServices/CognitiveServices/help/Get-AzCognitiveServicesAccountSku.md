@@ -36,7 +36,14 @@ Name     Tier
 ----     ----
 F0       Free
 S0   Standard
+```powershell
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzCognitiveServicesAccountSku -Location westus -Type TextAnalytics
 ```
+
+The Get-AzCognitiveServicesAccountSku cmdlet gets the available SKUs for a Cognitive Services account.
 
 ## PARAMETERS
 

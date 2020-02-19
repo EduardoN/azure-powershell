@@ -50,9 +50,16 @@ VirtualMachines   : {/subscriptions/487bb485-b5b0-471e-9c0d-10717612f869/resourc
                     Compute/virtualMachines/testService}
 Requests          : {}
 ProvisioningState : Succeeded
-```
+```powershell
 
 Opens up a network connection according to the specified connection request data.
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Start-AzJitNetworkAccessPolicy -ResourceId /subscriptions/xxxxxxx-xxxx-xxxx-xxxxxxxxxxxxx/resourceGroups/myResourceGroup/providers/Microsoft.DocumentDb/databaseAccounts/myCosmosDBAccount/ -VirtualMachine $vmRules
+```
+
+Invokes a temporary network access request.
 
 ## PARAMETERS
 

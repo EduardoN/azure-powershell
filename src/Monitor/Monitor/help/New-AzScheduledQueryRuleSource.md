@@ -28,7 +28,14 @@ This object is to be passed to the command that creates Log Alert Rule
 PS C:\> $source = New-AzScheduledQueryRuleSource -Query "Heartbeat | summarize AggregatedValue = count() by bin(TimeGenerated, 5m)"
                   -DataSourceId "/subscriptions/b67f7fec-69fc-4974-9099-a26bd6ffeda3/resourceGroups/MyResourceGroup/providers/Microsoft.OperationalInsights/workspaces/MyWorkspace" 
 				  -QueryType "ResultCount"
+```powershell
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> New-AzScheduledQueryRuleSource -DataSourceId <String> -Query Heartbeat | summarize AggregatedValue = count() by bin(TimeGenerated, 5m)
 ```
+
+Creates an object of type Source.
 
 ## PARAMETERS
 

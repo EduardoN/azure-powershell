@@ -39,7 +39,7 @@ Creates an ARM Peering for the subscription. See [New-AzPeeringDirectConnectionO
 
 ## EXAMPLES
 
-### Create New Direct Peering
+### Example 1: Create New Direct Peering
 ```powershell
 #Gets the ASN
 PS C:> $asn = Get-AzPeerAsn -PeerName Contoso
@@ -60,11 +60,11 @@ Location             : centralus
 Id                   : /subscriptions//resourceGroups/testCarrier/providers/Microsoft.Peering/peerings/ContosoSeattlePeering
 Type                 : Microsoft.Peering/peerings
 Tags                 : {}
-```
+```powershell
 
 Create a new Direct Peering with a single connection at the Seattle facility using PeerAsn 65000
 
-### Create New Exchange Peering
+### Example 2: Create New Exchange Peering
 ```powershell
 #Gets the ASN
 PS C:> $asn = Get-AzPeerAsn -PeerName Contoso
@@ -84,11 +84,11 @@ Location          : centralus
 Id                : /subscriptions//resourceGroups/test/providers/Microsoft.Peering/peerings/myExchangePeering1
 Type              : Microsoft.Peering/peerings
 Tags              : {}
-```
+```powershell
 
 Create a new exchange peering
 
-### Convert Legacy Peering to ARM Peering
+### Example 3: Convert Legacy Peering to ARM Peering
 ```powershell
 #Gets the ASN
 PS C:> $asn = Get-AzPeerAsn -PeerName Contoso
@@ -106,7 +106,7 @@ Location          : centralus
 Id                : /subscriptions//resourceGroups/test/providers/Microsoft.Peering/peerings/ContosoAmsterdamPeering
 Type              : Microsoft.Peering/peerings
 Tags              : {}
-```
+```powershell
 
 ## PARAMETERS
 

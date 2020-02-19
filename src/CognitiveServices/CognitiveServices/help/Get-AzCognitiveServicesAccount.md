@@ -48,7 +48,14 @@ ResourceType      : Microsoft.CognitiveServices/accounts
 Etag              : "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
 ProvisioningState : Succeeded
 Tags              :
+```powershell
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzCognitiveServicesAccount -Name myaccount -ResourceGroupName MyResourceGroup
 ```
+
+The Get-AzCognitiveServicesAccount cmdlet gets the provisioned Cognitive Services accounts in the resource group specified by the ResourceGroupName parameter.
 
 ## PARAMETERS
 
