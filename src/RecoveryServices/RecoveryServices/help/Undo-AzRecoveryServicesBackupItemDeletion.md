@@ -30,7 +30,7 @@ PS C:\> $PI = Get-AzRecoveryServicesBackupItem -Container $Cont[0] -WorkloadType
 PS C:\> Disable-AzRecoveryServicesBackupProtection -Item $PI[0] -RemoveRecoveryPoints
 PS C:\> $PI = Get-AzRecoveryServicesBackupItem -Container $Cont[0] -WorkloadType AzureVM 
 PS C:\> Undo-AzRecoveryServicesBackupItemDeletion -Item $PI[0]
-```
+```powershell
 
 The first command gets an array of backup containers, and then stores it in the $Cont array.
 The second command gets the Backup item corresponding to the first container item, and then stores it in the $PI variable.
@@ -38,6 +38,13 @@ The third command disables Backup protection for the item in $PI\[0\] and puts t
 The fourth command the new item which is in a softdeleted state.
 The last command rehydrates the softdeleted VM.
 
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Undo-AzRecoveryServicesBackupItemDeletion -Force  -Item $PI[0] -VaultId $vault.ID
+```
+
+The Undo-AzRecoveryServicesBackupItemDeletion cmdlet rehydrates a soft-deleted item.
 
 ## PARAMETERS
 

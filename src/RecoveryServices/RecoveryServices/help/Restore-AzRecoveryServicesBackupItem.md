@@ -66,7 +66,7 @@ PS C:\> $RestoreJob = Restore-AzRecoveryServicesBackupItem -RecoveryPoint $RP[0]
     WorkloadName    Operation       Status          StartTime              EndTime
     ------------    ---------       ------          ---------              -------
     V2VM            Restore         InProgress      26-Apr-16 1:14:01 PM   01-Jan-01 12:00:00 AM
-```
+```powershell
 
 The first command gets the Backup container of type AzureVM, and then stores it in the $Container variable.
 The second command gets the Backup item named V2VM from $Container, and then stores it in the $BackupItem variable.
@@ -75,6 +75,13 @@ The fourth command gets the current date, and then stores it in the $EndDate var
 The fifth command gets a list of recovery points for the specific backup item filtered by $StartDate and $EndDate.
 The date range specified is the last 7 days.
 The last command restores the disks to the target storage account DestAccount in the DestRG resource group.
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Restore-AzRecoveryServicesBackupItem -VaultId $vault.ID -WLRecoveryConfig {WLRecoveryConfig}
+```
+
+The Restore-AzRecoveryServicesBackupItem cmdlet restores the data and configuration for an Azure Backup item to a specified recovery point.
 
 ## PARAMETERS
 

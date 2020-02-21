@@ -31,7 +31,7 @@ PS C:\>  Get-AzSqlServerAdvancedDataSecurityPolicy `
 ResourceGroupName	         : ResourceGroup01
 ServerName		             : Server01
 IsEnabled		             : True
-```
+```powershell
 
 ### Example 2 - Gets server Advanced Data Security from server resource
 ```powershell
@@ -43,7 +43,14 @@ PS C:\>  Get-AzSqlServer `
 ResourceGroupName	         : ResourceGroup01
 ServerName		             : Server01
 IsEnabled		             : True
+```powershell
+
+### Example 3
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzSqlServerAdvancedDataSecurityPolicy -ResourceGroupName MyResourceGroup -ServerName s1
 ```
+
+ResourceGroupName            : ResourceGroup01
 
 ## PARAMETERS
 

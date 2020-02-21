@@ -43,7 +43,7 @@ PS C:\> $virtualWan = New-AzVirtualWan -ResourceGroupName testRG -Name myVirtual
 PS C:\> $virtualHub = New-AzVirtualHub -VirtualWan $virtualWan -ResourceGroupName "testRG" -Name "westushub" -AddressPrefix "10.0.0.1/24"
 PS C:\> New-AzVpnGateway -ResourceGroupName "testRG" -Name "testvpngw" -VirtualHubId $virtualHub.Id -BGPPeeringWeight 10 -VpnGatewayScaleUnit 2
 PS C:\> Remove-AzVpnGateway -ResourceGroupName "testRG" -Name "testvpngw" -Passthru
-```
+```powershell
 
 This example creates a Resource group, Virtual WAN, Virtual Hub, scalable VPN gateway in Central US and then immediately deletes it. 
 To suppress the prompt when deleting the Virtual Gateway, use the -Force flag.
@@ -57,12 +57,19 @@ PS C:\> $virtualWan = New-AzVirtualWan -ResourceGroupName testRG -Name myVirtual
 PS C:\> $virtualHub = New-AzVirtualHub -VirtualWan $virtualWan -ResourceGroupName "testRG" -Name "westushub" -AddressPrefix "10.0.0.1/24"
 PS C:\> New-AzVpnGateway -ResourceGroupName "testRG" -Name "testvpngw" -VirtualHubId $virtualHub.Id -BGPPeeringWeight 10 -VpnGatewayScaleUnit 2
 PS C:\> Get-AzVpnGateway -ResourceGroupName "testRG" -Name "testvpngw" | Remove-AzVpnGateway-Passthru
-```
+```powershell
 
 This example creates a Resource group, Virtual WAN, Virtual Hub, scalable VPN gateway in Central US and then immediately deletes it. 
 This deletion happens using powershell piping, which uses the VpnGateway object returned by the Get-AzVpnGateway command.
 To suppress the prompt when deleting the Virtual Gateway, use the -Force flag.
 This will delete the VpnGateway and all VpnConnections attached to it.
+
+### Example 3
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Remove-AzVpnGateway -Name testvpngw -ResourceGroupName testRG
+```
+
+This example creates a Resource group, Virtual WAN, Virtual Hub, scalable VPN gateway in Central US and then immediately deletes it. 
 
 ## PARAMETERS
 

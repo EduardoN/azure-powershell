@@ -34,9 +34,16 @@ VirtualNetworkRuleName           : myVNET
 VirtualNetworkSubnetId           : /subscriptions/<subscriptionId>/resourceGroups/<resourceGroup>/providers/Microsoft.Network/virtualNetworks/myVNET/subnets/testId
 IgnoreMissingVnetServiceEndpoint :
 State                            :
-```
+```powershell
 
 Returns the virtual network rule named "myVNET" from account "dls"
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzDataLakeStoreVirtualNetworkRule -Account dls
+```
+
+The Get-AzDataLakeStoreVirtualNetworkRule cmdlet gets the specified virtual network rules in the specified Data Lake Store.
 
 ## PARAMETERS
 

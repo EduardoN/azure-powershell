@@ -92,7 +92,7 @@ AddressSpace      : {192.168.2.0/24, 192.168.3.0/24}
 BgpSettings       :
 Type              : Microsoft.Network/vpnSites
 ProvisioningState : Succeeded
-```
+```powershell
 
 The above will create a resource group, Virtual WAN in East US in "nonlinkSite" resource group in Azure. 
 
@@ -111,9 +111,16 @@ PS C:\> $vpnSiteAddressSpaces[1] = "192.168.3.0/24"
 PS C:\> $vpnSiteLink = New-AzVpnSiteLink -Name "testVpnSiteLink1" -IpAddress "15.25.35.45" -LinkProviderName "SomeTelecomProvider" -LinkSpeedInMbps "10"
 PS C:\> $vpnSiteLink2 = New-AzVpnSiteLink -Name "testVpnSiteLink2" -IpAddress "15.25.35.55" -LinkProviderName "SomeTelecomProvider2" -LinkSpeedInMbps "100"
 PS C:\> $vpnSite = New-AzVpnSite -ResourceGroupName "multilink" -Name "testVpnSite" -Location "East US" -VirtualWan $virtualWan -AddressSpace $vpnSiteAddressSpaces -DeviceModel "SomeDevice" -DeviceVendor "SomeDeviceVendor" -VpnSiteLink @($vpnSiteLink1, $vpnSiteLink2)
-```
+```powershell
 
 The above will create a resource group, Virtual WAN and a VpnSite with 1 VpnSiteLinks in East US in "multilink" resource group in Azure.
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> New-AzVpnSite -AddressSpace $vpnSiteAddressSpaces -DeviceModel SomeDevice -DeviceVendor SomeDeviceVendor -IpAddress 1.2.3.4 -LinkSpeedInMbps 10 -Location East US -Name testVpnSite -ResourceGroupName nonlinkSite -VirtualWanName <String> -VirtualWanResourceGroupName <String>
+```
+
+Creates a new Azure VpnSite resource. This is an RM representation of customer branches that are uploaded to Azure
 
 ## PARAMETERS
 

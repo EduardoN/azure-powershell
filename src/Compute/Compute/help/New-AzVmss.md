@@ -51,7 +51,7 @@ $vmCred = New-Object System.Management.Automation.PSCredential(<USERNAME_HERE>, 
 
 #Create a VMSS using the default settings
 New-AzVmss -Credential $vmCred -VMScaleSetName $vmssName
-```
+```powershell
 
 The command above creates the following with the name `$vmssName` :
 * A Resource Group
@@ -143,7 +143,7 @@ $VMSS = New-AzVmssConfig -Location $LOC -SkuCapacity 2 -SkuName "Standard_A2" -U
 
 #Create the VMSS
 New-AzVmss -ResourceGroupName $RGName -Name $VMSSName -VirtualMachineScaleSet $VMSS;
-```
+```powershell
 
 The complex example above creates a VMSS, following is an explanation of what is happening:
 * The first command creates a resource group with the specified name and location.
@@ -164,6 +164,13 @@ The complex example above creates a VMSS, following is an explanation of what is
 * The seventeenth command uses the **New-AzVmssIPConfig** cmdlet to create a VMSS IP configuration and stores the information in the variable named $IPCfg.
 * The eighteenth command uses the **New-AzVmssConfig** cmdlet to create a VMSS configuration object and stores the result in the variable named $VMSS.
 * The nineteenth command uses the **New-AzVmss** cmdlet to create the VMSS.
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> New-AzVmss -ResourceGroupName $RGName -VMScaleSetName $VMSSName -VirtualMachineScaleSet $VMSS
+```
+
+The New-AzVmss cmdlet creates a Virtual Machine Scale Set (VMSS) in Azure.
 
 ## PARAMETERS
 

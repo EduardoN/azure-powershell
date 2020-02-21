@@ -53,13 +53,20 @@ PS C:\> $EndDate = Get-Date
 PS C:\> $Container = Get-AzRecoveryServicesBackupContainer -ContainerType AzureVM -Status Registered -Name "V2VM" -VaultId $vault.ID
 PS C:\> $BackupItem = Get-AzRecoveryServicesBackupItem -ContainerType AzureVM -WorkloadType AzureVM -VaultId $vault.ID
 PS C:\> $RP = Get-AzRecoveryServicesBackupRecoveryPoint -Item $BackupItem -StartDate $Startdate.ToUniversalTime() -EndDate $Enddate.ToUniversalTime() -VaultId $vault.ID
-```
+```powershell
 
 The first command gets the date from seven days ago, and then stores it in the $StartDate variable.
 The second command gets today's date, and then stores it in the $EndDate variable.
 The third command gets AzureVM backup containers, and stores them in the $Containers variable.
 The fourth command gets the backup item named V2VM, and then stores it in the $BackupItem variable.
 The last command gets an array of recovery points for the item in $BackupItem, and then stores them in the $RP variable.
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzRecoveryServicesBackupRecoveryPoint -Item $BackupItem -VaultId $vault.ID
+```
+
+The Get-AzRecoveryServicesBackupRecoveryPoint cmdlet gets the recovery points for a backed up Azure Backup item.
 
 ## PARAMETERS
 

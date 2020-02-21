@@ -44,14 +44,14 @@ The following values will be used for the parameters if not specified:
 
 ## EXAMPLES
 
-### Update a specific SignalR service.
+### Example 1: Update a specific SignalR service.
 ```powershell
 PS C:\> Update-AzSignalR -ResourceGroupName myResourceGroup -Name mysignalr1 -UnitCount 5
 
 HostName                                 Location       ExternalIp      Sku         UnitCount ProvisioningState Version
 --------                                 --------       ----------      ---         --------- ----------------- -------
 mysignalr1.service.signalr.net           eastus         52.179.3.5      Standard_S1 5         Succeeded         1.0
-```
+```powershell
 
 ### Specify ServiceMode and AllowedOrigin
 ```powershell
@@ -60,7 +60,14 @@ PS C:\> Update-AzSignalR -ResourceGroupName myResourceGroup1 -Name mysignalr2 -S
 HostName                                 Location       ExternalIp      Sku         UnitCount ProvisioningState Version
 --------                                 --------       ----------      ---         --------- ----------------- -------
 mysignalr1.service.signalr.net           eastus         52.179.3.5      Standard_S1 1         Succeeded         1.0
+```powershell
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Update-AzSignalR -Name mysignalr1 -ResourceGroupName myResourceGroup -Sku Standard_S1
 ```
+
+Update a SignalR service.
 
 ## PARAMETERS
 

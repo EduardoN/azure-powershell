@@ -32,7 +32,7 @@ An IP configuration contains the subnet in which an application gateway is deplo
 ## EXAMPLES
 
 ### Example 1: Update an IP configuration for an application gateway
-```
+```powershell
 PS C:\>$VNet = Get-AzVirtualNetwork -Name "VNet01" -ResourceGroupName "ResourceGroup01"
 PS C:\> $Subnet = Get-AzVirtualNetworkSubnetConfig -Name "Subnet01" -VirtualNetwork $VNet 
 PS C:\> $AppGw = Get-AzApplicationGateway -Name "ApplicationGateway01" -ResourceGroupName "ResourceGroup01"
@@ -43,6 +43,13 @@ The first command gets the virtual network named VNet01 that belongs to the reso
 The second command gets the subnet configuration named Subnet01 using $VNet and stores it in the $Subnet variable.
 The third command gets an application gateway named ApplicationGateway01 that belongs to the resource group named ResourceGroup01 and stores it in the $AppGw variable.
 The forth command sets the IP configuration of the application gateway stored in $AppGw to the subnet configuration stored in $Subnet.
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Set-AzApplicationGatewayIPConfiguration -ApplicationGateway $AppGw -Name AppgwSubnet01 -SubnetId $Vnet.Subnets[0].Id
+```
+
+The Set-AzApplicationGatewayIPConfiguration cmdlet modifies an IP configuration.
 
 ## PARAMETERS
 

@@ -26,10 +26,17 @@ The **Get-AzApplicationGatewayTrustedRootCertificate** cmdlet gets Trusted Root 
 ```powershell
 PS C:\> $gw = Get-AzApplicationGateway -Name $appgwName -ResourceGroupName $resgpName
 PS C:\> $trustedRootCert = Get-AzApplicationGatewayTrustedRootCertificate -ApplicationGateway $gw -Name $certName --CertificateFile ".\rootCA.cer"
-```
+```powershell
 
 The first command gets the Application Gateway and stores it in $gw variable.
 The second command gets the Trusted Root Certificate with a specified name from the Application Gateway.
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzApplicationGatewayTrustedRootCertificate -ApplicationGateway $gw -Name $certName
+```
+
+The first command gets the Application Gateway and stores it in $gw variable.
 
 ## PARAMETERS
 
