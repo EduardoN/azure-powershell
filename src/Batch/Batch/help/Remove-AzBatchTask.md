@@ -32,7 +32,7 @@ This cmdlet prompts you for confirmation, unless you specify the *Force* paramet
 ## EXAMPLES
 
 ### Example 1: Delete a Batch task by ID
-```
+```powershell
 PS C:\>Remove-AzBatchTask -JobId "Job-000001" -Id "Task23" -BatchContext $Context
 ```
 
@@ -41,7 +41,7 @@ The command prompts you for confirmation.
 Use the **Get-AzBatchAccountKeys** cmdlet to assign a context to the $Context variable.
 
 ### Example 2: Delete a Batch task by using the pipeline without confirmation
-```
+```powershell
 PS C:\>Get-AzBatchTask -JobId "Job-000001" -Id "Task26" -BatchContext $Context | Remove-AzBatchTask -Force -BatchContext $Context
 ```
 
@@ -50,6 +50,13 @@ The command passes that task to the current cmdlet by using the pipeline operato
 The command deletes that task.
 This command specifies the *Force* parameter.
 Therefore, the command does not prompt you for confirmation.
+
+### Example 3
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Remove-AzBatchTask -BatchContext $Context -Confirm 
+```
+
+The Remove-AzBatchTask cmdlet deletes an Azure Batch task.
 
 ## PARAMETERS
 
