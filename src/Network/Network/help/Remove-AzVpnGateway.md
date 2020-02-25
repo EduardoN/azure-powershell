@@ -64,6 +64,13 @@ This deletion happens using powershell piping, which uses the VpnGateway object 
 To suppress the prompt when deleting the Virtual Gateway, use the -Force flag.
 This will delete the VpnGateway and all VpnConnections attached to it.
 
+### Example 3
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Remove-AzVpnGateway -Name testvpngw -ResourceGroupName testRG
+```
+
+This example creates a Resource group, Virtual WAN, Virtual Hub, scalable VPN gateway in Central US and then immediately deletes it. 
+
 ## PARAMETERS
 
 ### -DefaultProfile

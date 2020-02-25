@@ -27,7 +27,7 @@ To update a deployment of an API Management pass the modified **PsApiManagement*
 ## EXAMPLES
 
 ### Example 1: Add new deployment regions to a PsApiManagement instance
-```
+```powershell
 PS C:\>Add-AzApiManagementRegion -ApiManagement $ApiManagement -Location "East US" -Sku "Premium" -Capacity 2
 ```
 
@@ -41,6 +41,13 @@ PS C:\>$service = Set-AzApiManagement -InputObject $service -PassThru
 ```
 
 This command gets a **PsApiManagement** object, adds two premium SKU units for the region named East US, and then updates deployment.
+
+### Example 3
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Add-AzApiManagementRegion -ApiManagement $ApiManagement -Capacity 2 -Location $secondarylocation -VirtualNetwork $additionalRegionVirtualNetwork
+```
+
+The Add-AzApiManagementRegion cmdlet adds new instance of type PsApiManagementRegion to the collection of AdditionalRegions of provided instance of type Microsoft.Azure.Commands.ApiManagement.Models.PsApiManagement.
 
 ## PARAMETERS
 
