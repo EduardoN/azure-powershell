@@ -28,18 +28,25 @@ Only values greater than or equal to 1 hour are supported for the '-GracePeriodW
 ## EXAMPLES
 
 ### Example 1
-```
+```powershell
 C:\> $failoverGroup = New-AzSqlDatabaseFailoverGroup -ResourceGroupName rg -ServerName primaryserver -PartnerServerName secondaryserver -FailoverGroupName fg -FailoverPolicy Automatic -GracePeriodWithDataLossHours 1
 ```
 
 This command creates a new Failover Group with failover policy 'Automatic' for two servers in the same resource group.
 
 ### Example 2
-```
+```powershell
 C:\> $failoverGroup = New-AzSqlDatabaseFailoverGroup -ResourceGroupName rg1 -ServerName primaryserver -PartnerResourceGroupName rg2 -PartnerServerName secondaryserver1 -FailoverGroupName fg -FailoverPolicy Manual
 ```
 
 This command creates a new Failover Group with failover policy 'Manual' for two servers in different resource groups.
+
+### Example 3
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> New-AzSqlDatabaseFailoverGroup -FailoverGroupName fg -FailoverPolicy Automatic -GracePeriodWithDataLossHours 1 -PartnerResourceGroupName rg2 -PartnerServerName secondaryserver -ResourceGroupName rg -ServerName primaryserver
+```
+
+Creates a new Azure SQL Database Failover Group for the specified servers.
 
 ## PARAMETERS
 

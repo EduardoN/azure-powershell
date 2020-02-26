@@ -122,6 +122,13 @@ Once the gateway has been created, it is connected to the VpnSite using the New-
 
 The connection is then updated to have a new shared key using the secure string construct.
 
+### Example 3
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Update-AzVpnConnection -Name cert01 -ParentResourceName westushub -ResourceGroupName MyResourceGroup -VpnSiteLinkConnection @($vpnSiteLinkConnection)
+```
+
+The Update-AzVpnConnection cmdlet updates a VPN connection.
+
 ## PARAMETERS
 
 ### -AsJob

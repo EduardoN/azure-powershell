@@ -24,7 +24,7 @@ resource manifest is immutable.
 ## EXAMPLES
 
 ### Example 1
-```
+```powershell
 PS C:\> New-AzRelayNamespace -ResourceGroupName Default-ServiceBus-WestUS -Name TestNameSpace-Relay1 -Location "West US" -Tag @{Tag1="Tag1Value"}
 
 ProvisioningState  : Succeeded
@@ -40,6 +40,13 @@ Type               : Microsoft.Relay/namespaces
 ```
 
 Creates a new Relay namespace within the specified resource group.
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> New-AzRelayNamespace -Location West US -Name TestNameSpace-Relay1 -ResourceGroupName Default-ServiceBus-WestUS
+```
+
+The New-AzRelayNamespace cmdlet creates a new Relay namespace. Once created, the namespace
 
 ## PARAMETERS
 
