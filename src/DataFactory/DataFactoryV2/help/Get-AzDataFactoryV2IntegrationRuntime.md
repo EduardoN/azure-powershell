@@ -38,7 +38,7 @@ If you do not specify a name, this cmdlet gets information about all of the inte
 ## EXAMPLES
 
 ### Example 1: List all integration runtimes in a data factory
-```
+```powershell
 PS C:\> Get-AzDataFactoryV2IntegrationRuntime -ResourceGroupName rg-test-dfv2 -DataFactoryName test-df-eu2
 
 	ResourceGroupName DataFactoryName Name                   Description
@@ -51,7 +51,7 @@ PS C:\> Get-AzDataFactoryV2IntegrationRuntime -ResourceGroupName rg-test-dfv2 -D
 List all integration runtimes in the data factory named 'test-df-eu2'.
 
 ### Example 2: Get managed dedicated integration runtime
-```
+```powershell
 PS C:\> Get-AzDataFactoryV2IntegrationRuntime -ResourceGroupName rg-test-dfv2 -DataFactoryName test-df-eu2 -Name test-dedicated-ir
 
 	Location                     : West US
@@ -74,7 +74,7 @@ PS C:\> Get-AzDataFactoryV2IntegrationRuntime -ResourceGroupName rg-test-dfv2 -D
 This command displays information about the integration runtime named 'test-dedicated-ir' in the subscription for the resource group named 'rg-test-dfv2' and data factory named 'test-df-eu2'.
 
 ### Example 3: Get managed dedicated integration runtime with detail status
-```
+```powershell
 PS C:\> Get-AzDataFactoryV2IntegrationRuntime -ResourceGroupName rg-test-dfv2 -DataFactoryName test-df-eu2 -Name test-dedicated-ir -Status
 
 	CreateTime                   : 
@@ -101,7 +101,7 @@ PS C:\> Get-AzDataFactoryV2IntegrationRuntime -ResourceGroupName rg-test-dfv2 -D
 This command displays information about the integration runtime named 'test-dedicated-ir' in the subscription for the resource group named 'rg-test-dfv2' and data factory named 'test-df-eu2'.
 
 ### Example 4: Get self-hosted integration runtime
-```
+```powershell
 PS C:\> Get-AzDataFactoryV2IntegrationRuntime -ResourceGroupName rg-test-dfv2 -DataFactoryName test-df-eu2 -Name test-selfhost-ir
 
 	ResourceGroupName DataFactoryName Name                 Description

@@ -89,7 +89,7 @@ Perform these operations in the following order:
 ## EXAMPLES
 
 ### Example 1: Create a data factory
-```
+```powershell
 PS C:\> Set-AzDataFactoryV2 -ResourceGroupName "ADF" -Name "WikiADF" -Location "WestUS"
 
     DataFactoryName   : WikiADF
@@ -103,7 +103,7 @@ PS C:\> Set-AzDataFactoryV2 -ResourceGroupName "ADF" -Name "WikiADF" -Location "
 ```
 
 ### Example 2: Create a data factory with repoconfiguration details using an existing factory object.
-```
+```powershell
 PS C:\> Get-AzDataFactoryV2 -ResourceGroupName "ADF" -Name "WikiADF" | Set-AzDataFactoryV2 -AccountName msdata -RepositoryName ADFRepo -CollaborationBranch master -RootFolder / -ProjectName "Azure Data Factory"
 
     DataFactoryName   : WikiADF

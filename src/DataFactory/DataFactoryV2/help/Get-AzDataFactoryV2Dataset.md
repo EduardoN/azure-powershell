@@ -38,7 +38,7 @@ If you do not specify a name, this cmdlet gets information about all the dataset
 ## EXAMPLES
 
 ### Example 1: Get information about all datasets
-```
+```powershell
 PS C:\> Get-AzDataFactoryV2Dataset -ResourceGroupName "ADF" -DataFactoryName "WikiADF"
 
     DatasetName       : DACuratedWikiData
@@ -63,7 +63,7 @@ PS C:\> Get-AzDataFactoryV2Dataset -ResourceGroupName "ADF" -DataFactoryName "Wi
 This command gets information about all datasets in the data factory named WikiADF.
 
 ### Example 2: Get information about a specific dataset
-```
+```powershell
 PS C:\> Get-AzDataFactoryV2Dataset -ResourceGroupName "ADF" -DataFactoryName "WikiADF" -Name "DAWikipediaClickEvents"
 
     DatasetName       : DAWikipediaClickEvents
