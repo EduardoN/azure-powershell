@@ -37,7 +37,7 @@ When you apply the Department tag to a resource, you apply only one predefined v
 ## EXAMPLES
 
 ### Example 1: Create a predefined tag
-```
+```powershell
 PS C:\>New-AzTag -Name "FY2015"
                                 
 Name   ValuesTable Count Values 
@@ -51,7 +51,7 @@ You can apply a tag with no values to a resource or resource group, or use **New
 You can also specify a value when you apply the tag to the resource or resource group.
 
 ### Example 2: Create a predefined tag with a value
-```
+```powershell
 PS C:\>New-AzTag -Name "Department" -Value "Finance"
 Name:   Department
 Count:  0
@@ -65,7 +65,7 @@ Values:
 This command creates a predefined tag named Department with a value of Finance.
 
 ### Example 3: Add a value to a predefined tag
-```
+```powershell
 PS C:\>New-AzTag -Name "Department" -Value "Finance"
 Name:   Department
 Count:  0
@@ -87,7 +87,7 @@ These commands create a predefined tag named Department with two values.
 If the tag name exists, **New-AzTag** adds the value to the existing tag instead of creating a new one.
 
 ### Example 4: Use a predefined tag
-```
+```powershell
 PS C:\>New-AzTag -Name "CostCenter" -Value "0001"
 Name:   CostCenter
 Count:  0

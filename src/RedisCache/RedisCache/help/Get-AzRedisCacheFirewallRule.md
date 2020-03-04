@@ -23,7 +23,7 @@ If **RuleName** parameter if provided, **Get-AzRedisCacheFirewallRule** cmdlet g
 ## EXAMPLES
 
 ### Example 1: Get a single firewall rule
-```
+```powershell
 PS C:\>Get-AzRedisCacheFirewallRule -Name "mycache" -RuleName "ruleone"
 
         ResourceGroupName : myGroup
@@ -38,7 +38,7 @@ PS C:\>Get-AzRedisCacheFirewallRule -Name "mycache" -RuleName "ruleone"
 This command gets firewall rule named ruleone from Redis Cache named mycache.
 
 ### Example 2: Get all firewall rules
-```
+```powershell
 PS C:\>Get-AzRedisCacheFirewallRule -Name "mycache"
 
         ResourceGroupName : myGroup

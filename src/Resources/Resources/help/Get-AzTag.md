@@ -31,7 +31,7 @@ To search resource groups for a specific tag name or name and value, use the *Ta
 ## EXAMPLES
 
 ### Example 1: Get all predefined tags
-```
+```powershell
 PS C:\>Get-AzTag
 
 Name      Count
@@ -46,7 +46,7 @@ This command gets all predefined tags in the subscription.
 The Count property shows how many times the tag has been applied to resources and resource groups in the subscription.
 
 ### Example 2: Get a tag by name
-```
+```powershell
 PS C:\>Get-AzTag -Name "Department"
 
 Name:   Department
@@ -64,7 +64,7 @@ This command gets detailed information about the Department tag and its values.
 The Count property shows how many times the tag and each of its values has been applied to resources and resource groups in the subscription.
 
 ### Example 3: Get values of all tags
-```
+```powershell
 PS C:\>Get-AzTag -Detailed
 
 Name:   Department

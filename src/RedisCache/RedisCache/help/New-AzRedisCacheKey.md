@@ -24,7 +24,7 @@ The **New-AzRedisCacheKey** cmdlet regenerates the access key of an Azure Redis 
 ## EXAMPLES
 
 ### Example 1: Regenerate a primary key
-```
+```powershell
 PS C:\>New-AzRedisCacheKey -ResourceGroupName "ResourceGroup03" -Name "myCache" -KeyType "Primary" -Force
 
           PrimaryKey        : pJ+jruGKPHDKsEC8kmoybobH3TZx2njBR3ipEsquZFo=
@@ -35,7 +35,7 @@ PS C:\>New-AzRedisCacheKey -ResourceGroupName "ResourceGroup03" -Name "myCache" 
 This command regenerates the primary key of a Redis Cache.
 
 ### Example 2: Regenerate a secondary key
-```
+```powershell
 PS C:\>New-AzRedisCacheKey -ResourceGroupName "ResourceGroup03" -Name "myCache" -KeyType "Secondary" -Force
           PrimaryKey        : pJ+jruGKPHDKsEC8kmoybobH3TZx2njBR3ipEsquZFo=
 

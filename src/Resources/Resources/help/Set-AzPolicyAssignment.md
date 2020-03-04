@@ -63,7 +63,7 @@ Specify an assignment by ID or by name and scope.
 ## EXAMPLES
 
 ### Example 1: Update the display name
-```
+```powershell
 PS C:\> $ResourceGroup = Get-AzResourceGroup -Name 'ResourceGroup11'
 PS C:\> $PolicyAssignment = Get-AzPolicyAssignment -Name 'PolicyAssignment' -Scope $ResourceGroup.ResourceId
 PS C:\> Set-AzPolicyAssignment -Id $PolicyAssignment.ResourceId -DisplayName 'Do not allow VM creation'
@@ -76,7 +76,7 @@ The command stores that object in the $PolicyAssignment variable.
 The final command updates the display name on the policy assignment on the resource group identified by the **ResourceId** property of $ResourceGroup.
 
 ### Example 2: Add a managed identity to the policy assignment
-```
+```powershell
 PS C:\> $PolicyAssignment = Get-AzPolicyAssignment -Name 'PolicyAssignment'
 PS C:\> Set-AzPolicyAssignment -Id $PolicyAssignment.ResourceId -AssignIdentity -Location 'westus'
 ```
@@ -86,7 +86,7 @@ The command stores that object in the $PolicyAssignment variable.
 The final command assigns a managed identity to the policy assignment.
 
 ### Example 3: Update policy assignment parameters with new policy parameter object
-```
+```powershell
 PS C:\> $Locations = Get-AzLocation | where {($_.displayname -like 'france*') -or ($_.displayname -like 'uk*')}
 PS C:\> $AllowedLocations = @{'listOfAllowedLocations'=($Locations.location)}
 PS C:\> $PolicyAssignment = Get-AzPolicyAssignment -Name 'PolicyAssignment'
@@ -102,7 +102,7 @@ The final command updates the parameter values on the policy assignment named Po
 ### Example 4: Update policy assignment parameters with policy parameter file
 Create a file called _AllowedLocations.json_ in the local working directory with the following content.
 
-```
+```powershell
 {
     "listOfAllowedLocations":  {
       "value": [
