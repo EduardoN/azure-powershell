@@ -66,6 +66,13 @@ PS C:\> $apim.OrganizationName = "Contoso"
 PS C:\> Set-AzApiManagement -InputObject $apim -PassThru
 ```
 
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Set-AzApiManagement -InputObject $apim
+```
+
+
+
 ## PARAMETERS
 
 ### -AsJob

@@ -52,6 +52,13 @@ PS C:> $natgateway = New-AzNatGateway -ResourceGroupName "natgateway_test" -Name
 The first command creates standard Public IP Address.
 The second command creates NAT Gateway with Public IP Address in Availability Zone 1.
 
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> New-AzNatGateway -IdleTimeoutInMinutes 4 -Location eastus2 -Name nat_gateway -PublicIpAddress $pip -ResourceGroupName natgateway_test -Sku Standard
+```
+
+
+
 ## PARAMETERS
 
 ### -AsJob

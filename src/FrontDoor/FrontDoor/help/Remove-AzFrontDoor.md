@@ -63,6 +63,13 @@ PS C:\> Remove-AzFrontDoor -Name "frontdoor1" | Remove-AzFrontDoor
 
 Remove all FrontDoors with name "frontdoor1" under the current subscription.
 
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Remove-AzFrontDoor -Name frontdoor1 -ResourceGroupName rg1
+```
+
+
+
 ## PARAMETERS
 
 ### -DefaultProfile

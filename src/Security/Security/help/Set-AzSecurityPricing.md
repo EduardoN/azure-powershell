@@ -50,6 +50,13 @@ Id
 
 Sets the "myService1" resource group Azure Security Center pricing tier to "Standard"
 
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Set-AzSecurityPricing -Name default -PricingTier Standard
+```
+
+
+
 ## PARAMETERS
 
 ### -DefaultProfile

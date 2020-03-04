@@ -77,6 +77,13 @@ PS C:\> Invoke-AzStorageSyncChangeDetection -ResourceGroupName "myResourceGroup"
 In this example, change detection is run for the "Examples" directory and will recursively detect changes in subdirectories. 
 Keep in mind that this command can detect up to 10,000 changes before it is automatically aborted. If you suspect more than 10,000 changes to have occurred, run the command on sub-parts of the namespace.
 
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Invoke-AzStorageSyncChangeDetection -DirectoryPath Examples -Name myCloudEndpointName -Recursive  -ResourceGroupName myResourceGroup -StorageSyncServiceName myStorageSyncServiceName -SyncGroupName mySyncGroupName
+```
+
+
+
 ## PARAMETERS
 
 ### -AsJob

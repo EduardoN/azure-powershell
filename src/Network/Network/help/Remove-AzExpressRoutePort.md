@@ -56,6 +56,13 @@ PS C:\> Remove-AzExpressRoutePort -Name $ResourceId $id
 
 Removes the ExpressRoutePort resource with ResourceId $id.
 
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Remove-AzExpressRoutePort -Name $PortName -ResourceGroupName $rg
+```
+
+
+
 ## PARAMETERS
 
 ### -AsJob

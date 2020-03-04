@@ -65,6 +65,13 @@ eee59839-119f-453f-adec-4a72a8687125 bab3375b-6197-4a15-a44b-16c41faa91d7 d6f6c8
 
 Deletes the registration definition given the object.
 
+### Example 3
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Remove-AzManagedServicesDefinition -Id 00000000-0000-0000-0000-000000000000
+```
+
+
+
 ## PARAMETERS
 
 ### -AsJob

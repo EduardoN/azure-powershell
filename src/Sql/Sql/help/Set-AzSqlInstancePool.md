@@ -93,6 +93,13 @@ LicenseType       : LicenseIncluded
 
 This command sets the license type and/or tags for an instance pool named instancePool0.
 
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Set-AzSqlInstancePool -LicenseType LicenseIncluded -Name instancePool0 -ResourceGroupName resourcegroup01
+```
+
+
+
 ## PARAMETERS
 
 ### -AsJob

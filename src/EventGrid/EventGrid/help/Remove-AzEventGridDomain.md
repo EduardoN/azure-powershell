@@ -49,6 +49,13 @@ PS C:\> Get-AzResource -ResourceId "/subscriptions/$subscriptionId/resourceGroup
 
 Removes the Event Grid Domain \`Domain1\` in resource group \`MyResourceGroupName\`.
 
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Remove-AzEventGridDomain -Name Domain1 -ResourceGroupName MyResourceGroupName
+```
+
+
+
 ## PARAMETERS
 
 ### -DefaultProfile

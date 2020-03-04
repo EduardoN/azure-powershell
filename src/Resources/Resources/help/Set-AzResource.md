@@ -54,7 +54,7 @@ Specify a resource to modify by name and type or by ID.
 ## EXAMPLES
 
 ### Example 1: Modify a resource
-```
+```powershell
 PS C:\> $Resource = Get-AzResource -ResourceType Microsoft.Web/sites -ResourceGroupName ResourceGroup11 -ResourceName ContosoSite
 PS C:\> $Resource.Properties.Enabled = "False"
 PS C:\> $Resource | Set-AzResource -Force
@@ -65,7 +65,7 @@ The second command modifies a property of $Resource.
 The final command updates the resource to match $Resource.
 
 ### Example 2: Modify all resources in a given resource group
-```
+```powershell
 PS C:\> $Resource = Get-AzResource -ResourceGroupName testrg
 PS C:\> $Resource | ForEach-Object { $_.Tags.Add("testkey", "testval") }
 PS C:\> $Resource | Set-AzResource -Force

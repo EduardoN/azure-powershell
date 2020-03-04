@@ -78,6 +78,13 @@ PS C:\> Get-AzVMGuestPolicyStatus -ReportId "/subscriptions/4e6c6ed2-0bf6-41d7-9
 Get guest configuration policy status by ReportId.
 The ReportId is the ReportId property that can be found in the results of Get-AzVMGuestPolicyStatus by initiativeId or Initiative name (please refer other examples)
 
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzVMGuestPolicyStatus -ResourceGroupName MyResourceGroupName -VMName MyVMName
+```
+
+
+
 ## PARAMETERS
 
 ### -DefaultProfile

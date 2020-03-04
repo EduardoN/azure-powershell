@@ -90,6 +90,13 @@ PS C:\> Get-AzEventGridTopic $result.NextLink
 
 List the first 10 Event Grid topics (if any) in the subscription that satisfies the $odataFilter query. If more results are available, the $result.NextLink will not be $null. In order to get next page(s) of topics, user is expected to re-call Get-AzEventGridTopic and uses result.NextLink obtained from the previous call. Caller should stop when result.NextLink becomes $null.
 
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzEventGridTopic -Name Topic1 -ResourceGroupName MyResourceGroup
+```
+
+
+
 ## PARAMETERS
 
 ### -DefaultProfile

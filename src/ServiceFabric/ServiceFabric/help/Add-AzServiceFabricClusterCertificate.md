@@ -51,13 +51,20 @@ Add-AzServiceFabricClusterCertificate -ResourceGroupName 'Group1' -Name 'Contoso
 This command will add a certificate in the existing Azure key vault as a secondary cluster certificate.
 
 ### Example 2
-```
+```powershell
 PS c:\> $pwd = ConvertTo-SecureString -String "123" -AsPlainText -Force
 PS c:\> add-AzServiceFabricClusterCertificate -ResourceGroupName 'Group2' -Name 'Contoso02SFCluster'  -CertificateSubjectName 'Contoso.com' 
 -CertificateOutputFolder 'c:\test' -CertificatePassword $pwd
 ```
 
 This command will create a self-signed certificate in the Azure key vault and upgrade the cluster to use it as a secondary cluster certificate.
+
+### Example 3
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Add-AzServiceFabricClusterCertificate -Name Contoso01SFCluster -ResourceGroupName Group1 -SecretIdentifier https://contoso03vault.vault.azure.net/secrets/contoso03vaultrg/00000000-0000-0000-0000-000000000000
+```
+
+
 
 ## PARAMETERS
 

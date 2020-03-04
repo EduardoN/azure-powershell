@@ -41,6 +41,13 @@ PS C:\> $SasToken = New-AzServiceBusAuthorizationRuleSASToken -AuthorizationRule
 
 Generate SAS token for the given authorixation rule for Namespace with expiry time.
 
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> New-AzServiceBusAuthorizationRuleSASToken -AuthorizationRuleId $updatedAuthRule.Id -ExpiryTime $EndTime -KeyType Primary -StartTime $StartTime
+```
+
+
+
 ## PARAMETERS
 
 ### -AuthorizationRuleId

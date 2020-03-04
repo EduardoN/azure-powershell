@@ -56,6 +56,13 @@ PS C:\> Get-AzEventHubNetworkRuleSet -ResourceId /SubscriptionId/resourcegroups/
 
 Get the details of Event Hubs NetworkruleSet of namespace using Resource Id of other Namespace 
 
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzEventHubNetworkRuleSet -Namespace Eventhub-Namespace1-1375 -ResourceGroupName v-ajnavtest
+```
+
+
+
 ## PARAMETERS
 
 ### -DefaultProfile

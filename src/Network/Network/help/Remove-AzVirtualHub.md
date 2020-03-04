@@ -74,6 +74,13 @@ The above will create a resource group "testRG", a Virtual WAN and a Virtual Hub
 
 It then deletes the virtual hub using powershell piping using output from Get-AzVirtualHub.
 
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Remove-AzVirtualHub -Name westushub -ResourceGroupName testRG
+```
+
+
+
 ## PARAMETERS
 
 ### -AsJob

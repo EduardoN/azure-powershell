@@ -57,6 +57,13 @@ Id                                                                              
 
 Turns off automatic provisioning setting for a subscription.
 
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Set-AzSecurityAutoProvisioningSetting -EnableAutoProvision  -Name default
+```
+
+
+
 ## PARAMETERS
 
 ### -DefaultProfile

@@ -54,6 +54,13 @@ UsageDate:  10/7/2017 12:00:00 AM
 UsedHour:  24
 ```
 
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzConsumptionReservationDetail -EndDate 2017-12-07 -ReservationOrderId 00000000-0000-0000-0000-000000000000 -StartDate 2017-10-01
+```
+
+
+
 ## PARAMETERS
 
 ### -DefaultProfile

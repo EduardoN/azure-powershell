@@ -103,6 +103,13 @@ UsageEnd:  2018-04-29T00:00:00Z
 UsageStart:  2018-04-28T00:00:00Z
 ```
 
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzConsumptionMarketplace -EndDate 2018-01-20 -StartDate 2018-01-03 -Top 10
+```
+
+
+
 ## PARAMETERS
 
 ### -BillingPeriodName

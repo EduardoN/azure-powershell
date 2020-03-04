@@ -49,6 +49,13 @@ PS C:\> Get-AzFrontDoorWafPolicy -ResourceGroupName $resourceGroupName | Remove-
 
 Remove all WAF policy in $resourceGroupName.
 
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Remove-AzFrontDoorWafPolicy -Name $policyName -ResourceGroupName $resourceGroupName
+```
+
+
+
 ## PARAMETERS
 
 ### -DefaultProfile

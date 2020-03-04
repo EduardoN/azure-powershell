@@ -67,6 +67,13 @@ PS C:\> Get-AzDeploymentManagerRollout -InputObject $rolloutObject
 
 This command gets a rollout whose name and ResourceGroup match the Name and ResourceGroupName properties of the $rolloutObject, respectively.
 
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzDeploymentManagerRollout -Name ContosoRollout -ResourceGroupName ContosoResourceGroup
+```
+
+
+
 ## PARAMETERS
 
 ### -DefaultProfile

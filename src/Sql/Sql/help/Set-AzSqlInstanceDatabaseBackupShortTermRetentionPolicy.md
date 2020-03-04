@@ -79,6 +79,13 @@ RetentionDays     : 8
 
 This command sets the short term retention policy for all deleted databases named DB1 via piping in a deleted database object. Note you can only reduce retention period on deleted databases.
 
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Set-AzSqlInstanceDatabaseBackupShortTermRetentionPolicy -DatabaseName database01 -InstanceName server01 -ResourceGroupName resourcegroup01 -RetentionDays 35
+```
+
+
+
 ## PARAMETERS
 
 ### -DatabaseName

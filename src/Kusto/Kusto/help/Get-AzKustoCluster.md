@@ -57,7 +57,7 @@ Uri               : https://mykustocluster2.centralus.kusto.windows.net
 DataIngestionUri  : https://ingest-mykustocluster2.centralus.kusto.windows.net
 
 
-```
+```powershell
 PS C:\> Get-AzKustoCluster -ResourceGroupName testrg
 ```
 
@@ -65,7 +65,7 @@ The above command lists all Kusto clusters in the resource group "testrg".
 
 ### Example 2 - Get a specific Kusto cluster by name
 
-```
+```powershell
 PS C:\> Get-AzKustoCluster -ResourceGroupName testrg -Name mykustocluster
 
 Type              : Microsoft.Kusto/Clusters
@@ -86,7 +86,7 @@ The above command returns the Kusto cluster named "mykustocluster" in the resour
 
 ### Example 3 - Get a specific Kusto cluster by resource id
 
-```
+```powershell
 PS C:\> Get-AzKustoCluster -ResourceId /subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/testrg/providers/Microsoft.Kusto/clusters/mykustocluster
 Type              : Microsoft.Kusto/Clusters
 Id                : /subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/testrg/providers/Microsoft.Kusto/Clusters/mykustocluster

@@ -79,6 +79,13 @@ RetentionDays     : 7
 
 This command gets the short term retention policy for all deleted databases named database01 via piping in a deleted database object.
 
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzSqlInstanceDatabaseBackupShortTermRetentionPolicy -DatabaseName database01 -InstanceName instance01 -ResourceGroupName resourcegroup01
+```
+
+
+
 ## PARAMETERS
 
 ### -DatabaseName

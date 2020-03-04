@@ -54,6 +54,13 @@ PS C:\> Get-AzServiceFabricApplication -ResourceGroupName $resourceGroupName -Cl
 
 This example gets a list of the applications under the cluster "testCluster".
 
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzServiceFabricApplication -ClusterName $clusterName -Name $appName -ResourceGroupName $resourceGroupName
+```
+
+
+
 ## PARAMETERS
 
 ### -ClusterName

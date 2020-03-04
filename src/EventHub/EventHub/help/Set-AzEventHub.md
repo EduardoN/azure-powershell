@@ -34,7 +34,7 @@ The Set-AzEventHub cmdlet updates the properties of the specified Event Hub.
 ### Example 1
 To update Eventhub with Capture description properties, please follow the below steps. 
 
-```
+```powershell
 PS C:\> $CreatedEventHub = Get-AzEventHub -ResourceGroupName MyResourceGroupName -Namespace MyNamespaceName -Name MyEventHubName
 PS C:\> $createdEventHub.CaptureDescription = New-Object -TypeName Microsoft.Azure.Commands.EventHub.Models.PSCaptureDescriptionAttributes
 PS C:\> $createdEventHub.CaptureDescription.Enabled = $true
@@ -51,7 +51,7 @@ PS C:\> Set-AzEventHub -ResourceGroupName MyResourceGroupName -Namespace MyNames
 Updates the Event Hub \`MyEventHubName\` represented by the \`MyCreatedEventHub\` object, setting the message retention period to 4 days, the number of partitions to 2 and CaptureDescription properties
 
 ### Example 2
-```
+```powershell
 PS C:\> Set-AzEventHub -ResourceGroupName MyResourceGroupName -Namespace MyNamespaceName -Name MyEventHubName -InputObject MyCreatedEventHub -messageRetentionInDays 4 -partitionCount 2
 ```
 

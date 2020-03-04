@@ -213,6 +213,13 @@ PS C:\> Get-AzEventGridSubscription $result.NextLink
 
 List the first 100 event subscriptions (if any) created for the specific resource group that satisfies the $odataFilter query. If more results are available, the $result.NextLink will not be $null. In order to get next page(s) of event subscriptions, user is expected to re-call Get-AzEventGridSubscription and uses result.NextLink obtained from the previous call. Caller should stop when result.NextLink becomes $null.
 
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzEventGridSubscription -EventSubscriptionName ES1 -ResourceGroupName MyResourceGroupName -TopicName Topic1
+```
+
+
+
 ## PARAMETERS
 
 ### -DefaultProfile

@@ -47,6 +47,13 @@ PS C:\> Restore-AzDeletedWebApp -ResourceGroupName Default-Web-WestUS -Name Cont
 
 Restores the Staging slot of a deleted app named ContosoApp belonging to the resource group Default-Web-WestUS. The web app named ContosoRestore belonging to the resource group Default-Web-EastUS will be overwritten. The deleted web app settings will not be restored.
 
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Restore-AzDeletedWebApp -Name ContosoApp -ResourceGroupName Default-Web-WestUS -TargetAppServicePlanName ContosoPlan
+```
+
+
+
 ## PARAMETERS
 
 ### -AsJob

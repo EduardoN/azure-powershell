@@ -57,6 +57,13 @@ PS C:\> Get-AzHealthcareApisService -ResourceGroupName MyResourceGroup -Name MyS
 
 Deletes the provided HealthcareApis service object.
 
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Remove-AzHealthcareApisService -Name MyService -ResourceGroupName MyResourceGroup
+```
+
+
+
 ## PARAMETERS
 
 ### -AsJob

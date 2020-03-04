@@ -60,6 +60,13 @@ PS c:\>Get-AzMetricAlertRuleV2 -ResourceGroupName alertstest -Name sampleAlertRu
 
 This command gets an alert and removes it.
 
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Remove-AzMetricAlertRuleV2 -Name PsSdk -ResourceGroupName xxxxRG
+```
+
+
+
 ## PARAMETERS
 
 ### -AsJob

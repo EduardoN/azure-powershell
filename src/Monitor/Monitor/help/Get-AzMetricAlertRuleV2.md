@@ -108,7 +108,7 @@ Tags                 : {}
 
 This command gets all the metric alert rules in the resource group named metricAlertsRG.
 
-### Example 3: Get a metric alert rule by name
+### Example 3: Get a metric alert rule by ruleID
 
 ```powershell
 PS C:\> Get-AzMetricAlertRuleV2 -ResourceGroupName metricAlertsRG -Name PS3182019

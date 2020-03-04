@@ -77,6 +77,13 @@ This command gets all the keys in the key vault named Contoso, and passes them t
 That cmdlet passes the keys that have a value of $False for the **Enabled** attribute to the current cmdlet.
 That cmdlet removes those keys.
 
+### Example 3
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Remove-AzKeyVaultKey -Force  -Name ITSoftware -VaultName Contoso
+```
+
+
+
 ## PARAMETERS
 
 ### -DefaultProfile

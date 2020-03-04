@@ -44,6 +44,13 @@ PS C:\> Set-AzApplicationGateway -ApplicationGateway $AppGw
 
 This command adds a custom error of http status code 502 to the application gateway $appgw at the listener level, and return the updated gateway.
 
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Add-AzApplicationGatewayCustomError -ApplicationGateway $appgw -CustomErrorPageUrl $customError502Url -StatusCode HttpStatus502
+```
+
+
+
 ## PARAMETERS
 
 ### -ApplicationGateway

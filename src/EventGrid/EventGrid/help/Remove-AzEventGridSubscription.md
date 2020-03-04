@@ -108,6 +108,13 @@ PS C:\> Get-AzEventGridTopic -ResourceGroup MyResourceGroup -TopicName Topic1 | 
 
 Removes the event subscription \`EventSubscription1\` to an Event Grid Topic.
 
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Remove-AzEventGridSubscription -EventSubscriptionName EventSubscription1
+```
+
+
+
 ## PARAMETERS
 
 ### -DefaultProfile

@@ -240,6 +240,13 @@ Then, it further groups the results of this grouping with the same properties ex
 It orders the results by the count aggregation in descending order, and takes only top 5 of those listed in that order.
 This generates the top 5 policies with the most number of non-compliant resources.
 
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzPolicyState -Filter ComplianceState eq 'NonCompliant'
+```
+
+
+
 ## PARAMETERS
 
 ### -All

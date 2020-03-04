@@ -106,7 +106,7 @@ DnsZone                  : ad35cna0mw
 
 This command gets information about the instance named managedInstance1.
 
-### Example 3: Get all instances assigned to a resource group using filtering
+### Example 3: Get all instances within an instance pool
 ```powershell
 PS C:\> Get-AzSqlInstance -ResourceGroupName "ResourceGroup01" -Name "managedInstance*"
 Location                 : westcentralus
@@ -225,7 +225,7 @@ InstancePoolName         : instancePool0
 
 This command gets information about all instances within the instance pool "instancePool0".
 
-### Example 6: Get all instances within an instance pool using instance pool resource identifier
+### Example 6: Get a managed instance using its resource identifier
 ```powershell
 PS C:\> Get-AzSqlInstance -InstancePoolResourceIdentifier "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/resourcegroup01/providers/Microsoft.Sql/instancePools/instancePool0"
 Location                 : westcentralus

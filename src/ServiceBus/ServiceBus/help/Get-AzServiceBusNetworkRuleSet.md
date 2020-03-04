@@ -75,6 +75,13 @@ VirtualNetworkRules : {/subscriptions/subscriptionId/resourcegroups/v-ajnavtest/
 
 Get the details of Event Hubs NetworkruleSet of namespace using Resource Id of other Namespace 
 
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzServiceBusNetworkRuleSet -Namespace ServiceBus-Namespace-1122 -ResourceGroupName v-ajnavtest
+```
+
+
+
 ## PARAMETERS
 
 ### -DefaultProfile

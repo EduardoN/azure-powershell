@@ -38,6 +38,13 @@ Set-AzExpressRoutePort -InputObject $erport
 
 Modifies the admin state of a link of an ExpressRoutePort
 
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Set-AzExpressRoutePort -ExpressRoutePort $erport
+```
+
+
+
 ## PARAMETERS
 
 ### -AsJob

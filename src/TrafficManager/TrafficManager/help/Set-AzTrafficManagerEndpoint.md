@@ -29,7 +29,7 @@ Modify the object locally and then use **Set-AzTrafficManagerEndpoint** to commi
 ## EXAMPLES
 
 ### Example 1: Update an endpoint
-```
+```powershell
 PS C:\>$TrafficManagerEndpoint = Get-AzTrafficManagerEndpoint -Name "endpoint1" -Type AzureEndpoints -ProfileName "ContosoProfile" -ResourceGroupName "ResourceGroup11"
 PS C:\> $TrafficManagerEndpoint.Weight = 20
 PS C:\> Set-AzTrafficManagerEndpoint -TrafficManagerEndpoint $TrafficManagerEndpoint

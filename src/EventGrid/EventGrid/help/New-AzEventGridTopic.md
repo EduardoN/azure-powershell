@@ -36,6 +36,13 @@ PS C:\> New-AzEventGridTopic -ResourceGroupName MyResourceGroupName -Name Topic1
 
 Creates an Event Grid topic \`Topic1\` in the specified geographic location \`westus2\`, in resource group \`MyResourceGroupName\` with the specified tags "Department" and "Environment".
 
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> New-AzEventGridTopic -Location westus2 -Name Topic1 -ResourceGroupName MyResourceGroupName
+```
+
+
+
 ## PARAMETERS
 
 ### -DefaultProfile

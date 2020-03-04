@@ -115,6 +115,13 @@ PS c:\> Get-AzApiManagementPolicy -Context $context -Format rawxml
 
 This command gets the tenant-scope policy in Non-Xml escaped format.
 
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzApiManagementPolicy -ApiId 9876543210 -Context $apimContext -OperationId 777
+```
+
+
+
 ## PARAMETERS
 
 ### -ApiId

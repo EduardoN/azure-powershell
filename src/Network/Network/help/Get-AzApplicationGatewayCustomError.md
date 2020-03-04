@@ -36,6 +36,13 @@ PS C:\> $ces = Get-AzApplicationGatewayCustomError -ApplicationGateway $appgw
 
 This command gets and returns the list of all custom errors from the application gateway $appgw.
 
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzApplicationGatewayCustomError -ApplicationGateway $appgw -StatusCode HttpStatus502
+```
+
+
+
 ## PARAMETERS
 
 ### -ApplicationGateway

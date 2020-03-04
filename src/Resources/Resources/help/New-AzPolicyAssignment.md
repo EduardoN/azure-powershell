@@ -60,7 +60,7 @@ Specify a policy and scope.
 ## EXAMPLES
 
 ### Example 1: Policy assignment at subscription level
-```
+```powershell
 PS C:\> $Subscription = Get-AzSubscription -SubscriptionName 'Subscription01'
 PS C:\> $Policy = Get-AzPolicyDefinition -Name 'VirtualMachinePolicy'
 PS C:\> New-AzPolicyAssignment -Name 'VirtualMachinePolicyAssignment' -PolicyDefinition $Policy -Scope "/subscriptions/$($Subscription.Id)"
@@ -71,7 +71,7 @@ The second command gets the policy definition named VirtualMachinePolicy by usin
 The final command assigns the policy in $Policy at the level of the subscription identified by the subscription scope string.
 
 ### Example 2: Policy assignment at resource group level
-```
+```powershell
 PS C:\> $ResourceGroup = Get-AzResourceGroup -Name 'ResourceGroup11'
 PS C:\> $Policy = Get-AzPolicyDefinition -Name 'VirtualMachinePolicy'
 PS C:\> New-AzPolicyAssignment -Name 'VirtualMachinePolicyAssignment' -PolicyDefinition $Policy -Scope $ResourceGroup.ResourceId
@@ -82,7 +82,7 @@ The second command gets the policy definition named VirtualMachinePolicy by usin
 The final command assigns the policy in $Policy at the level of the resource group identified by the **ResourceId** property of $ResourceGroup.
 
 ### Example 3: Policy assignment at resource group level with policy parameter object
-```
+```powershell
 PS C:\> $ResourceGroup = Get-AzResourceGroup -Name 'ResourceGroup11'
 PS C:\> $Policy = Get-AzPolicyDefinition -BuiltIn | Where-Object {$_.Properties.DisplayName -eq 'Allowed locations'}
 PS C:\> $Locations = Get-AzLocation | where displayname -like '*east*'
@@ -102,7 +102,7 @@ The **ResourceId** property of $ResourceGroup identifies the resource group.
 ### Example 4: Policy assignment at resource group level with policy parameter file
 Create a file called _AllowedLocations.json_ in the local working directory with the following content.
 
-```
+```powershell
 {
     "listOfAllowedLocations":  {
       "value": [
@@ -124,8 +124,8 @@ The first command gets a resource group named ResourceGroup11 by using the Get-A
 The second command gets the built-in policy definition for allowed locations by using the Get-AzPolicyDefinition cmdlet and stores it in the $Policy variable.
 The final command assigns the policy in $Policy at the resource group identified by the **ResourceId** property of $ResourceGroup using the policy parameter file AllowedLocations.json from the local working directory.
 
-### Example 5: Policy assignment with a managed identity
-```
+### Example 5: ```
+```powershell
 PS C:\> $ResourceGroup = Get-AzResourceGroup -Name 'ResourceGroup11'
 PS C:\> $Policy = Get-AzPolicyDefinition -Name 'VirtualMachinePolicy'
 PS C:\> New-AzPolicyAssignment -Name 'VirtualMachinePolicyAssignment' -PolicyDefinition $Policy -Scope $ResourceGroup.ResourceId -Location 'eastus' -AssignIdentity
