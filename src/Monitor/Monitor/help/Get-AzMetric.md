@@ -33,7 +33,7 @@ The **Get-AzMetric** cmdlet gets the metric values for a specified resource.
 ## EXAMPLES
 
 ### Example 1: Get a metric with summarized output
-```
+```powershell
 PS C:\>Get-AzMetric -ResourceId "/subscriptions/e3f5b07d-3c39-4b0f-bf3b-40fdeba10f2a/resourceGroups/Default-Web-EastUS/providers/microsoft.web/sites/website3" -TimeGrain 00:01:00
 DimensionName  : 
 DimensionValue : 
@@ -62,7 +62,7 @@ Unit           : Bytes
 This command gets the metric values for website3 with a time grain of 1 minute.
 
 ### Example 2: Get a metric with detailed output
-```
+```powershell
 PS C:\>Get-AzMetric -ResourceId "/subscriptions/e3f5b07d-3c39-4b0f-bf3b-40fdeba10f2a/resourceGroups/Default-Web-EastUS/providers/microsoft.web/sites/website3" -TimeGrain 00:01:00 -DetailedOutput
 MetricValues   : 
                      Average    : 0
@@ -104,7 +104,7 @@ This command gets the metric values for website3 with a time grain of 1 minute.
 The output is detailed.
 
 ### Example 3: Get detailed output for a specified metric
-```
+```powershell
 PS C:\>Get-AzMetric -ResourceId "/subscriptions/e3f5b07d-3c39-4b0f-bf3b-40fdeba10f2a/resourceGroups/Default-Web-EastUS/providers/microsoft.web/sites/website3" -MetricName "Requests" -TimeGrain 00:01:00 -DetailedOutput
 MetricValues   : 
                      Average    : 1
@@ -161,7 +161,7 @@ Unit           : Count
 This command gets detailed output for the Requests metric.
 
 ### Example 4: Get summarized output for a specified metric with specified dimension filter
-```
+```powershell
 PS C:\> $dimFilter = @((New-AzMetricFilter -Dimension City -Operator eq -Value "Seattle","Toronto"), (New-AzMetricFilter -Dimension AuthenticationType -Operator eq -Value User))
 
 PS C:\> Get-AzMetric -ResourceId <resourceId> -MetricName PageViews -TimeGrain PT5M -MetricFilter $dimFilter -StartTime 2018-02-01T12:00:00Z -EndTime 2018-02-01T12:10:00Z -AggregationType -Average
