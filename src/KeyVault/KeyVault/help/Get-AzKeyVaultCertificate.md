@@ -103,7 +103,7 @@ Updated     : 2/8/2016 11:21:45 PM
 
 This command gets the certificate named TestCert01 from the key vault named ContosoKV01.
 
-### Example 2: Get all the certificates that have been deleted but not purged for this key vault.
+### Example 2: This command gets the certificate named TestCert01 from the key vault named ContosoKV01.
 ```powershell
 PS C:\> Get-AzKeyVaultCertificate -VaultName 'contoso' -InRemovedState
 
