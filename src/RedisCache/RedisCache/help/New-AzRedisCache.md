@@ -26,7 +26,7 @@ The **New-AzRedisCache** cmdlet creates an Azure Redis Cache.
 ## EXAMPLES
 
 ### Example 1: Create a Redis Cache
-```
+```powershell
 PS C:\>New-AzRedisCache -ResourceGroupName "MyGroup" -Name "MyCache" -Location "North Central US"
 
           PrimaryKey         : pJ+jruGKPHDKsEC8kmoybobH3TZx2njBR3ipEsquZFo=
@@ -51,8 +51,8 @@ PS C:\>New-AzRedisCache -ResourceGroupName "MyGroup" -Name "MyCache" -Location "
 
 This command creates a Redis Cache.
 
-### Example 2: Create a Standard SKU Redis Cache
-```
+### Example 2: This command creates a Redis Cache.
+```powershell
 PS C:\>New-AzRedisCache -ResourceGroupName "MyGroup" -Name "MyCache" -Location "North Central US" -Size 250MB -Sku "Standard" -RedisConfiguration @{"maxmemory-policy" = "allkeys-random"} -Force
 
           PrimaryKey         : pJ+jruGKPHDKsEC8kmoybobH3TZx2njBR3ipEsquZFo=

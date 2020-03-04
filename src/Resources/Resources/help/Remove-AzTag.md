@@ -30,7 +30,7 @@ You can define and apply tags in a single step, but predefined tags let you esta
 ## EXAMPLES
 
 ### Example 1: Delete a predefined tag
-```
+```powershell
 PS C:\>Remove-AzTag -Name "Department"
 ```
 
@@ -38,7 +38,7 @@ This command deletes the predefined tag named Department and all of its resource
 If the tag has been applied to any resources or resource groups, the command fails.
 
 ### Example 2: Delete a value from a predefined tag
-```
+```powershell
 PS C:\>Remove-AzTag -Name "Department" -Value "HumanResources" -PassThru
 Name:   Department
 Count:  14

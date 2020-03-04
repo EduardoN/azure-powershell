@@ -47,6 +47,13 @@ ServerName		             : Server01
 IsEnabled		             : False
 ```
 
+### Example 3
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Disable-AzSqlServerAdvancedDataSecurity -ResourceGroupName MyResourceGroup -ServerName s1
+```
+
+
+
 ## PARAMETERS
 
 ### -DefaultProfile

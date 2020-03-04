@@ -40,7 +40,7 @@ Next hop allows you to view the type of Azure resource, the associated IP addres
 ## EXAMPLES
 
 ### Example 1: Get the Next Hop when communicating with an Internet IP
-```
+```powershell
 $nw = Get-AzResource | Where {$_.ResourceType -eq "Microsoft.Network/networkWatchers" -and $_.Location -eq "WestCentralUS" } 
 $networkWatcher = Get-AzNetworkWatcher -Name $nw.Name -ResourceGroupName $nw.ResourceGroupName 
 $VM = Get-AzVM -ResourceGroupName ContosoResourceGroup -Name VM0

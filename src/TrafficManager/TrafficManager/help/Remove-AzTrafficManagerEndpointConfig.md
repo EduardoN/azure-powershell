@@ -29,7 +29,7 @@ To remove an endpoint and commit changes in a single operation, use the Remove-A
 ## EXAMPLES
 
 ### Example 1: Remove an endpoint
-```
+```powershell
 PS C:\>$TrafficManagerProfile = Get-AzTrafficManagerProfile -Name "ContosoProfile" -ResourceGroupName "ResourceGroup11"
 PS C:\> Remove-AzTrafficManagerEndpointConfig -EndpointName "contoso" -TrafficManagerProfile $TrafficManagerProfile 
 PS C:\> Set-AzTrafficManagerProfile -TrafficManagerProfile $TrafficManagerProfile

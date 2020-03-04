@@ -32,7 +32,7 @@ The **Get-AzDataFactoryV2ActivityRun** cmdlet gets information about runs in Azu
 ## EXAMPLES
 
 ### Example 1: Get all activity runs for a pipeline run
-```
+```powershell
 PS C:\> Get-AzDataFactoryV2ActivityRun -ResourceGroupName "ADF" -DataFactoryName "WikiADF" -PipelineRunId "f288712d-fb08-4cb8-96ef-82d3b9b30621" -RunStartedAfter "2017-09-01" -RunStartedBefore "2017-09-30"
 
     ResourceGroupName : ADF
